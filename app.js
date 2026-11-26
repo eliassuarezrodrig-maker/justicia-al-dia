@@ -18,6 +18,11 @@
   let cols = store.get('jad-colecciones', null);
   if (!Array.isArray(cols)) cols = [{ id: 'leer', name: 'Leer más tarde', items: {}, created: Date.now() }];
   const saveCols = () => { store.set('jad-colecciones', cols); updateBadge(); };
+  // Notas personales: una por noticia, compartida entre todas las colecciones donde esté.
+  let notes = store.get('jad-notas', {});
+  if (!notes || typeof notes !== 'object' || Array.isArray(notes)) notes = {};
+  const saveNotes = () => store.set('jad-notas', notes);
+  const noteOf = (id) => (notes[id] && notes[id].text) || '';
 
   const state = { items: [], byId: new Map(), q: '', f: {}, shown: PAGE, route: 'portada' };
   const DOC_ORDER = ['Sentencia', 'Auto', 'Recurso', 'Resolución'];
@@ -45,6 +50,7 @@
     save: '<svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
     doc: '<svg viewBox="0 0 24 24"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>',
     share: '<svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.9 15.8 6.1M8.2 13.1l7.6 4.8"/></svg>',
+    note: '<svg viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="m13.5 6.5 4 4"/></svg>',
     bell: '<svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 8 3 8H3s3-1 3-8M10 20a2 2 0 0 0 4 0"/></svg>',
   };
 
@@ -58,6 +64,7 @@
   }
   function card(i, variant = 'grid') {
     const saved = inCols(i.id);
+    const note = noteOf(i.id);
     const cls = variant === 'lead' ? 'card lead' : variant === 'row' ? 'card row-card' : 'card';
     return `<article class="${cls}" data-id="${esc(i.id)}">
       ${media(i)}
@@ -67,10 +74,12 @@
         <h3><a href="${esc(href(i))}" target="_blank" rel="noopener">${hl(i.title)}</a></h3>
         ${i.summary && variant !== 'row' ? `<p class="sum">${hl(i.summary)}</p>` : ''}
         ${(i.ecli || i.recurso) && variant !== 'row' ? `<div class="refs">${i.ecli ? `<code>${esc(i.ecli)}</code>` : ''}${i.recurso ? `<code>Rec. ${esc(i.recurso)}</code>` : ''}</div>` : ''}
+        ${note && variant !== 'row' ? `<p class="note"><b>Mi nota</b>${esc(note)}</p>` : ''}
         <div class="foot">
           <div class="tags">${(i.topics || []).slice(0, 2).map((t) => `<span class="tag">#${esc(t)}</span>`).join('')}</div>
           <div class="actions">
             ${variant !== 'row' ? `<a class="act" href="${esc(href(i))}" target="_blank" rel="noopener" title="Abrir en ${esc(i.origin || i.source)}">${ICON.out}<span class="lbl">${i.kind === 'Oficial' ? 'Ver texto' : 'Fuente'}</span></a>` : ''}
+            ${saved || note ? `<button class="act${note ? ' noted' : ''}" data-note="${esc(i.id)}" aria-label="${note ? 'Editar nota' : 'Añadir nota'}">${ICON.note}<span class="lbl">${note ? 'Nota' : 'Anotar'}</span></button>` : ''}
             <button class="act" data-share="${esc(i.id)}" aria-label="Compartir">${ICON.share}</button>
             <button class="act${saved ? ' saved' : ''}" data-save="${esc(i.id)}" aria-label="Guardar en colección">${ICON.save}<span class="lbl">${saved ? 'Guardada' : 'Guardar'}</span></button>
           </div>
@@ -262,8 +271,8 @@
     const c = cols.find((x) => x.id === id);
     if (!c) { location.hash = '#colecciones'; return; }
     const list = Object.values(c.items).sort((a, b) => (b.savedAt || 0) - (a.savedAt || 0));
-    view.innerHTML = `<button class="back" data-go="#colecciones">← Colecciones</button><h1 class="page-title">${esc(c.name)}</h1><p class="page-sub">${list.length} noticias guardadas</p>
-      <div class="toolbar"><button class="btn" data-rename="${esc(c.id)}">Cambiar nombre</button><button class="btn danger" data-delcol="${esc(c.id)}">Borrar colección</button></div>
+    view.innerHTML = `<button class="back" data-go="#colecciones">← Colecciones</button><h1 class="page-title">${esc(c.name)}</h1><p class="page-sub">${list.length} ${list.length === 1 ? "noticia guardada" : "noticias guardadas"}${list.filter((i) => noteOf(i.id)).length ? ` · ${list.filter((i) => noteOf(i.id)).length} con notas` : ''}</p>
+      <div class="toolbar">${list.length ? `<button class="btn primary" data-pdf="${esc(c.id)}">Exportar PDF</button><button class="btn" data-word="${esc(c.id)}">Exportar Word</button>` : ''}<button class="btn" data-rename="${esc(c.id)}">Cambiar nombre</button><button class="btn danger" data-delcol="${esc(c.id)}">Borrar colección</button></div>
       ${list.length ? `<div class="grid">${list.map((i) => card(i)).join('')}</div>` : '<p class="empty">Esta colección está vacía. Pulsa “Guardar” en cualquier noticia para añadirla.</p>'}`;
   }
 
@@ -299,6 +308,64 @@
     catch { window.open(`https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`, '_blank', 'noopener'); }
   }
 
+  // ---------- Exportar una colección (PDF y Word) ----------
+  const fmtDate = (iso) => { const d = new Date(iso); return isNaN(d) ? '' : d.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }); };
+  const fileName = (s) => norm(s).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'coleccion';
+  function exportBody(c) {
+    const list = Object.values(c.items).sort((a, b) => new Date(b.date) - new Date(a.date));
+    const nNotes = list.filter((i) => noteOf(i.id)).length;
+    const items = list.map((i, k) => {
+      const meta = [i.doc, i.court, i.origin || i.source, fmtDate(i.date), i.ecli, i.recurso ? 'Rec. ' + i.recurso : ''].filter(Boolean).map(esc).join(' · ');
+      const note = noteOf(i.id);
+      return `<div class="doc-item"><h2>${k + 1}. ${esc(i.title)}</h2><p class="doc-meta">${meta}</p>${i.summary ? `<p>${esc(i.summary)}</p>` : ''}${note ? `<p class="doc-note"><b>Mi nota:</b> ${esc(note).replace(/\n/g, '<br>')}</p>` : ''}<p><a href="${esc(href(i))}">${esc(href(i))}</a></p></div>`;
+    }).join('');
+    return `<div class="doc-export"><h1>${esc(c.name)}</h1><p class="doc-sub">Justicia al día · ${list.length} ${list.length === 1 ? 'documento' : 'documentos'}${nNotes ? ` · ${nNotes} con notas` : ''} · exportado el ${fmtDate(new Date().toISOString())}</p>${items}</div>`;
+  }
+  function exportPdf(c) {
+    $('#printArea').innerHTML = exportBody(c);
+    const title = document.title; document.title = `${c.name} - Justicia al día`;
+    document.body.classList.add('printing');
+    const done = () => { document.body.classList.remove('printing'); $('#printArea').innerHTML = ''; document.title = title; window.removeEventListener('afterprint', done); };
+    window.addEventListener('afterprint', done);
+    toast('Elige “Guardar como PDF” en la ventana de impresión');
+    setTimeout(() => { window.print(); setTimeout(() => { if (!matchMedia('print').matches) done(); }, 500); }, 50);
+  }
+  function exportWord(c) {
+    // Word abre directamente un documento HTML con estas cabeceras (.doc).
+    const css = `body{font:11pt/1.45 Calibri,Arial,sans-serif;color:#000}h1{font:bold 20pt Arial;margin:0 0 4pt}h2{font:bold 13pt Arial;margin:0 0 3pt}.doc-sub{color:#555;font-size:10pt}.doc-item{border-top:1px solid #999;padding:8pt 0}.doc-meta{color:#444;font-size:9.5pt;margin:0 0 4pt}.doc-note{border-left:3pt solid #2D4E98;background:#EEF2FA;padding:6pt 9pt}a{color:#2D4E98;font-size:9pt}`;
+    const html = `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8"><title>${esc(c.name)}</title><style>${css}</style></head><body>${exportBody(c)}</body></html>`;
+    const blob = new Blob(['\ufeff', html], { type: 'application/msword' });
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `${fileName(c.name)}-${new Date().toISOString().slice(0, 10)}.doc`; a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    toast('Documento de Word descargado');
+  }
+
+  // ---------- Notas ----------
+  let noteItem = null;
+  function openNote(id) {
+    noteItem = state.byId.get(id) || findSaved(id) || (archive || []).find((x) => x.id === id);
+    if (!noteItem) return;
+    $('#noteNews').textContent = noteItem.title;
+    $('#noteText').value = noteOf(id);
+    $('#noteDel').hidden = !noteOf(id);
+    $('#noteSheet').hidden = false;
+    setTimeout(() => $('#noteText').focus(), 50);
+  }
+  const closeNote = () => { $('#noteSheet').hidden = true; noteItem = null; };
+  $('#noteForm').addEventListener('submit', (e) => {
+    e.preventDefault(); if (!noteItem) return;
+    const text = $('#noteText').value.trim();
+    if (text) notes[noteItem.id] = { text, updated: Date.now() }; else delete notes[noteItem.id];
+    if (!saveNotes()) toast('No se pudo guardar: el almacenamiento está lleno');
+    else toast(text ? 'Nota guardada' : 'Nota borrada');
+    closeNote(); render();
+  });
+  $('#noteDel').addEventListener('click', () => {
+    if (!noteItem) return;
+    delete notes[noteItem.id]; saveNotes(); toast('Nota borrada'); closeNote(); render();
+  });
+  $('#noteSheet').addEventListener('click', (e) => { if (e.target.id === 'noteSheet' || e.target.closest('[data-close]')) closeNote(); });
+
   // ---------- Guardar en colecciones ----------
   let sheetItem = null;
   function openSheet(id) {
@@ -327,7 +394,7 @@
     toast(`Colección “${name}” creada`);
   });
   $('#sheet').addEventListener('click', (e) => { if (e.target.id === 'sheet' || e.target.closest('[data-close]')) closeSheet(); });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !$('#sheet').hidden) closeSheet(); });
+  document.addEventListener('keydown', (e) => { if (e.key !== 'Escape') return; if (!$('#noteSheet').hidden) closeNote(); else if (!$('#sheet').hidden) closeSheet(); });
 
   // ---------- Clicks ----------
   view.addEventListener('click', (e) => {
@@ -335,6 +402,9 @@
     const d = t.dataset;
     if (d.save) { e.preventDefault(); openSheet(d.save); }
     else if (d.share) { e.preventDefault(); share(d.share); }
+    else if (d.note) { e.preventDefault(); openNote(d.note); }
+    else if (d.pdf) { const c = cols.find((x) => x.id === d.pdf); if (c) exportPdf(c); }
+    else if (d.word) { const c = cols.find((x) => x.id === d.word); if (c) exportWord(c); }
     else if (d.more !== undefined) { state.shown += PAGE; render(); }
     else if (d.f) { state.f[d.f] = d.v; state.shown = PAGE; render(); }
     else if (d.preset) { state.pending = JSON.parse(d.preset); }
@@ -360,7 +430,7 @@
       cols = cols.filter((x) => x !== c); if (!cols.length) cols.push({ id: 'leer', name: 'Leer más tarde', items: {}, created: Date.now() });
       saveCols(); location.hash = '#colecciones';
     } else if (d.export !== undefined) {
-      const blob = new Blob([JSON.stringify({ app: 'justicia-al-dia', version: 1, cols }, null, 1)], { type: 'application/json' });
+      const blob = new Blob([JSON.stringify({ app: 'justicia-al-dia', version: 2, cols, notes }, null, 1)], { type: 'application/json' });
       const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `justicia-al-dia-colecciones-${new Date().toISOString().slice(0, 10)}.json`; a.click();
       setTimeout(() => URL.revokeObjectURL(a.href), 1000);
     } else if (d.import !== undefined) {
@@ -372,7 +442,9 @@
             const ex = cols.find((x) => x.name === c.name);
             if (ex) Object.assign(ex.items, c.items); else cols.push(c);
           }
-          saveCols(); render(); toast('Colecciones importadas');
+          // Las notas importadas solo rellenan las que no tienes; no pisan las tuyas.
+          for (const [id, n] of Object.entries(data.notes || {})) if (n && n.text && !noteOf(id)) notes[id] = n;
+          saveNotes(); saveCols(); render(); toast('Colecciones importadas');
         } catch { toast('Ese archivo no es una copia válida'); }
       };
       inp.click();

@@ -13,7 +13,10 @@ App personal (web instalable en el móvil) con noticias judiciales, sentencias y
 
 - Buscador (sin importar tildes).
 - Filtros por tipo de fuente y por tema (penal, laboral, civil, mercantil, administrativo, fiscal, constitucional, europeo).
-- Guardar noticias con ☆ (se quedan en tu dispositivo).
+- Guardar noticias en colecciones (se quedan en tu dispositivo).
+- Notas personales en cada noticia o sentencia guardada (botón del lápiz).
+- Exportar una colección, con tus notas, a PDF (“Guardar como PDF” al imprimir) o a Word (.doc).
+- La copia de seguridad (“Exportar copia”) incluye colecciones y notas.
 - Funciona sin conexión con lo último descargado y se puede instalar como app.
 - Al final de la página, "Estado de las fuentes" indica qué fuentes respondieron en la última actualización.
 
