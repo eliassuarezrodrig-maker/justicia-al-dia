@@ -125,11 +125,11 @@ function parseFeed(xml, source) {
   return items;
 }
 
-async function get(url, ms, accept) {
+async function get(url, ms, accept, simple = false) {
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), ms);
   try {
-    const res = await fetch(url, { signal: ctrl.signal, redirect: 'follow', headers: { 'User-Agent': UA, Accept: accept, 'Accept-Language': 'es-ES,es;q=0.9' } });
+    const res = await fetch(url, { signal: ctrl.signal, redirect: 'follow', headers: simple ? { 'User-Agent': 'JusticiaAlDia/1.0 (lector RSS personal)', Accept: '*/*' } : { 'User-Agent': UA, Accept: accept, 'Accept-Language': 'es-ES,es;q=0.9' } });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const buf = Buffer.from(await res.arrayBuffer());
     let text = buf.toString('utf8');
@@ -144,7 +144,9 @@ async function fetchSource(source) {
   let lastErr = '';
   for (const url of urls) {
     try {
-      const xml = await get(url, 25000, 'application/rss+xml, application/atom+xml, application/xml, text/xml, */*');
+      let xml;
+      try { xml = await get(url, 25000, 'application/rss+xml, application/atom+xml, application/xml, text/xml, */*'); }
+      catch (e) { if (/HTTP (403|406|415)/.test(e.message)) xml = await get(url, 25000, '*/*', true); else throw e; }
       const items = parseFeed(xml, { ...source, url });
       if (!items.length) throw new Error('sin noticias legibles');
       return { items, status: { id: source.id, name: source.name, ok: true, count: items.length, url } };
