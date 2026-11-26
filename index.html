@@ -74,6 +74,25 @@
     </div>
   </div>
 
+  <div class="sheet-backdrop" id="noteSheet" hidden>
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="noteTitle">
+      <div class="sheet-head">
+        <h3 id="noteTitle">Mi nota</h3>
+        <button class="icon-btn dark" data-close aria-label="Cerrar"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </div>
+      <p class="sheet-news" id="noteNews"></p>
+      <form id="noteForm">
+        <textarea id="noteText" rows="7" maxlength="5000" placeholder="Escribe aquí tu resumen, la doctrina que fija, para qué te sirve (TFG, examen, caso)…"></textarea>
+        <div class="note-actions">
+          <button type="button" class="btn danger" id="noteDel">Borrar nota</button>
+          <button type="submit" class="btn primary">Guardar nota</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="printArea" aria-hidden="true"></div>
+
   <div class="toast" id="toast" hidden></div>
 
   <script src="app.js"></script>
