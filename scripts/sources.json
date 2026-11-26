@@ -2,79 +2,176 @@
   {
     "id": "boe-tc",
     "name": "BOE · Tribunal Constitucional",
-    "group": "Oficial",
-    "url": "https://www.boe.es/rss/boe.php?s=T"
+    "scope": "Nacional",
+    "kind": "Oficial",
+    "outlet": "BOE",
+    "home": "https://www.boe.es",
+    "url": "https://www.boe.es/rss/boe.php?s=T",
+    "noImages": true
   },
   {
     "id": "boe-1",
     "name": "BOE · Disposiciones generales",
-    "group": "Oficial",
-    "url": "https://www.boe.es/rss/boe.php?s=1"
-  },
-  {
-    "id": "gn-cgpj",
-    "name": "Prensa · Poder Judicial (CGPJ)",
-    "group": "Prensa general",
-    "url": "https://news.google.com/rss/search?q=(CGPJ+OR+%22Consejo+General+del+Poder+Judicial%22)+when:3d&hl=es&gl=ES&ceid=ES:es"
+    "scope": "Nacional",
+    "kind": "Oficial",
+    "outlet": "BOE",
+    "home": "https://www.boe.es",
+    "url": "https://www.boe.es/rss/boe.php?s=1",
+    "noImages": true
   },
   {
     "id": "confilegal",
     "name": "Confilegal",
-    "group": "Prensa jurídica",
+    "scope": "Nacional",
+    "kind": "Prensa jurídica",
     "url": "https://confilegal.com/feed/"
   },
   {
     "id": "legaltoday",
     "name": "Legal Today",
-    "group": "Prensa jurídica",
+    "scope": "Nacional",
+    "kind": "Prensa jurídica",
     "url": "https://www.legaltoday.com/feed/"
   },
   {
     "id": "lawyerpress",
     "name": "Lawyerpress",
-    "group": "Prensa jurídica",
+    "scope": "Nacional",
+    "kind": "Prensa jurídica",
     "url": "https://www.lawyerpress.com/feed/"
   },
   {
     "id": "economistjurist",
     "name": "Economist & Jurist",
-    "group": "Prensa jurídica",
+    "scope": "Nacional",
+    "kind": "Prensa jurídica",
     "url": "https://www.economistjurist.es/feed/"
   },
   {
     "id": "diariojuridico",
     "name": "Diario Jurídico",
-    "group": "Prensa jurídica",
+    "scope": "Nacional",
+    "kind": "Prensa jurídica",
     "url": "https://www.diariojuridico.com/feed/"
   },
   {
     "id": "elderecho",
     "name": "El Derecho",
-    "group": "Prensa jurídica",
+    "scope": "Nacional",
+    "kind": "Prensa jurídica",
     "url": "https://elderecho.com/feed"
   },
   {
     "id": "gn-supremo",
-    "name": "Prensa · Tribunal Supremo",
-    "group": "Prensa general",
+    "name": "Tribunal Supremo en prensa",
+    "scope": "Nacional",
+    "kind": "Prensa",
     "url": "https://news.google.com/rss/search?q=%22Tribunal+Supremo%22+sentencia+when:3d&hl=es&gl=ES&ceid=ES:es"
   },
   {
     "id": "gn-constitucional",
-    "name": "Prensa · Tribunal Constitucional",
-    "group": "Prensa general",
+    "name": "Tribunal Constitucional en prensa",
+    "scope": "Nacional",
+    "kind": "Prensa",
     "url": "https://news.google.com/rss/search?q=%22Tribunal+Constitucional%22+when:3d&hl=es&gl=ES&ceid=ES:es"
   },
   {
-    "id": "gn-tjue",
-    "name": "Prensa · Justicia europea (TJUE/TEDH)",
-    "group": "Prensa general",
-    "url": "https://news.google.com/rss/search?q=(TJUE+OR+%22Tribunal+de+Justicia+de+la+UE%22+OR+%22Tribunal+Europeo+de+Derechos+Humanos%22)+Espa%C3%B1a+when:3d&hl=es&gl=ES&ceid=ES:es"
+    "id": "gn-cgpj",
+    "name": "Poder Judicial (CGPJ) en prensa",
+    "scope": "Nacional",
+    "kind": "Prensa",
+    "url": "https://news.google.com/rss/search?q=(CGPJ+OR+%22Consejo+General+del+Poder+Judicial%22)+when:3d&hl=es&gl=ES&ceid=ES:es"
+  },
+  {
+    "id": "gn-an",
+    "name": "Audiencia Nacional y Fiscalía en prensa",
+    "scope": "Nacional",
+    "kind": "Prensa",
+    "url": "https://news.google.com/rss/search?q=(%22Audiencia+Nacional%22+OR+%22Fiscal%C3%ADa+General%22+OR+%22Ministerio+de+Justicia%22)+when:3d&hl=es&gl=ES&ceid=ES:es"
+  },
+  {
+    "id": "staj",
+    "name": "STAJ",
+    "scope": "Nacional",
+    "kind": "Sindicatos",
+    "outlet": "STAJ",
+    "urls": [
+      "https://www.stajsindicato.es/feed/",
+      "https://stajsindicato.es/feed/",
+      "https://www.staj.es/feed/"
+    ]
+  },
+  {
+    "id": "gn-sindicatos",
+    "name": "Sindicatos de Justicia en prensa",
+    "scope": "Nacional",
+    "kind": "Sindicatos",
+    "url": "https://news.google.com/rss/search?q=(STAJ+OR+CSIF+OR+CCOO+OR+UGT+OR+Intersindical)+(%22Administraci%C3%B3n+de+Justicia%22+OR+juzgados+OR+%22funcionarios+de+justicia%22)+when:7d&hl=es&gl=ES&ceid=ES:es"
+  },
+  {
+    "id": "boc",
+    "name": "BOC · Boletín Oficial de Canarias",
+    "scope": "Canarias",
+    "kind": "Oficial",
+    "outlet": "BOC",
+    "home": "https://www.gobiernodecanarias.org/boc/",
+    "noImages": true,
+    "urls": [
+      "https://www.gobiernodecanarias.org/boc/rss/boc.xml",
+      "https://www.gobiernodecanarias.org/boc/rss.xml",
+      "https://www.gobiernodecanarias.org/boc/feed/rss.xml",
+      "https://www.gobiernodecanarias.org/boc/rss/"
+    ]
+  },
+  {
+    "id": "gn-boc",
+    "name": "BOC en prensa",
+    "scope": "Canarias",
+    "kind": "Prensa",
+    "url": "https://news.google.com/rss/search?q=%22Bolet%C3%ADn+Oficial+de+Canarias%22+when:7d&hl=es&gl=ES&ceid=ES:es"
   },
   {
     "id": "gn-canarias",
-    "name": "Prensa · Tribunales en Canarias",
-    "group": "Prensa general",
-    "url": "https://news.google.com/rss/search?q=(%22TSJ+de+Canarias%22+OR+%22TSJC%22+OR+%22Audiencia+Provincial+de+Las+Palmas%22+OR+%22Audiencia+Provincial+de+Santa+Cruz+de+Tenerife%22+OR+%22juzgado+de+Las+Palmas%22+OR+%22juzgado+de+Santa+Cruz%22)+-TSJCyL+-Castilla+when:3d&hl=es&gl=ES&ceid=ES:es"
+    "name": "Tribunales de Canarias",
+    "scope": "Canarias",
+    "kind": "Prensa",
+    "url": "https://news.google.com/rss/search?q=(%22TSJ+de+Canarias%22+OR+TSJC+OR+%22Audiencia+Provincial+de+Las+Palmas%22+OR+%22Audiencia+Provincial+de+Santa+Cruz+de+Tenerife%22+OR+%22juzgado+de+Las+Palmas%22+OR+%22juzgado+de+Santa+Cruz%22)+-TSJCyL+when:3d&hl=es&gl=ES&ceid=ES:es"
+  },
+  {
+    "id": "gn-prensa-canaria",
+    "name": "Prensa canaria · Justicia",
+    "scope": "Canarias",
+    "kind": "Prensa",
+    "url": "https://news.google.com/rss/search?q=(site:canarias7.es+OR+site:laprovincia.es+OR+site:eldia.es+OR+site:canariasahora.es+OR+site:diariodeavisos.elespanol.com)+(juzgado+OR+tribunal+OR+sentencia+OR+fiscal%C3%ADa+OR+condenado)+when:3d&hl=es&gl=ES&ceid=ES:es"
+  },
+  {
+    "id": "gn-europa",
+    "name": "Justicia europea",
+    "scope": "Europa",
+    "kind": "Prensa",
+    "url": "https://news.google.com/rss/search?q=(TJUE+OR+%22Tribunal+de+Justicia+de+la+UE%22+OR+%22Tribunal+de+Justicia+de+la+Uni%C3%B3n+Europea%22+OR+TEDH+OR+%22Tribunal+Europeo+de+Derechos+Humanos%22+OR+%22Fiscal%C3%ADa+Europea%22)+when:3d&hl=es&gl=ES&ceid=ES:es"
+  },
+  {
+    "id": "gn-ue-derecho",
+    "name": "UE · Estado de derecho y normativa",
+    "scope": "Europa",
+    "kind": "Prensa",
+    "url": "https://news.google.com/rss/search?q=(%22Comisi%C3%B3n+Europea%22+OR+%22Parlamento+Europeo%22)+(%22Estado+de+derecho%22+OR+directiva+OR+reglamento)+justicia+when:3d&hl=es&gl=ES&ceid=ES:es"
+  },
+  {
+    "id": "onu-ddhh",
+    "name": "Noticias ONU · Derechos humanos",
+    "scope": "Internacional",
+    "kind": "Oficial",
+    "outlet": "Noticias ONU",
+    "home": "https://news.un.org/es/",
+    "url": "https://news.un.org/feed/subscribe/es/news/topic/human-rights/feed/rss.xml"
+  },
+  {
+    "id": "gn-internacional",
+    "name": "Justicia internacional",
+    "scope": "Internacional",
+    "kind": "Prensa",
+    "url": "https://news.google.com/rss/search?q=(%22Corte+Penal+Internacional%22+OR+%22Corte+Internacional+de+Justicia%22+OR+%22Tribunal+Supremo+de+Estados+Unidos%22+OR+%22Corte+Suprema%22+OR+extradici%C3%B3n)+when:3d&hl=es&gl=ES&ceid=ES:es"
   }
 ]
