@@ -95,7 +95,17 @@ async function fetchSource(source) {
 let previous = { items: [] };
 try { previous = JSON.parse(await readFile(OUT, 'utf8')); } catch {}
 
-const results = await Promise.all(SOURCES.map(fetchSource));
+// Las búsquedas de Google News van de una en una para evitar el bloqueo por exceso de peticiones (HTTP 429).
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const direct = Promise.all(SOURCES.filter((s) => !s.id.startsWith('gn-')).map(fetchSource));
+const news = [];
+for (const s of SOURCES.filter((s) => s.id.startsWith('gn-'))) {
+  let r = await fetchSource(s);
+  if (!r.status.ok && /429/.test(r.status.error)) { await sleep(8000); r = await fetchSource(s); }
+  news.push(r);
+  await sleep(2500);
+}
+const results = [...(await direct), ...news];
 const byId = new Map(previous.items.map((i) => [i.id, i]));
 let added = 0;
 for (const { items } of results) {
