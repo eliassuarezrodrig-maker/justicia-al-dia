@@ -1,0 +1,16 @@
+{
+  "name": "Justicia al día",
+  "short_name": "Justicia al día",
+  "description": "Noticias judiciales, sentencias y novedades jurídicas, actualizadas automáticamente.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F4F5F7",
+  "theme_color": "#111111",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Justicia al día</title>
+  <meta name="description" content="Noticias judiciales, sentencias y novedades jurídicas, actualizadas automáticamente.">
+  <meta name="theme-color" content="#111111">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <img src="icons/icon.svg" alt="" width="44" height="44">
+      <div>
+        <h1>JUSTICIA</h1>
+        <span class="tag">AL DÍA</span>
+      </div>
+    </div>
+    <p class="updated" id="updated">Cargando…</p>
+  </header>
+
+  <div class="controls">
+    <input id="q" type="search" placeholder="Buscar: despido, hipoteca, Supremo…" autocomplete="off">
+    <div class="chips" id="views">
+      <button class="chip on" data-view="all">Todo</button>
+      <button class="chip" data-view="saved">★ Guardadas</button>
+    </div>
+    <div class="chips" id="groups"></div>
+    <div class="chips" id="topics"></div>
+  </div>
+
+  <main id="list" aria-live="polite"></main>
+
+  <footer class="foot">
+    <details>
+      <summary>Estado de las fuentes</summary>
+      <ul id="status"></ul>
+    </details>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+[
+  { "id": "boe-tc", "name": "BOE · Tribunal Constitucional", "group": "Oficial", "url": "https://www.boe.es/rss/boe.php?s=T" },
+  { "id": "boe-1", "name": "BOE · Disposiciones generales", "group": "Oficial", "url": "https://www.boe.es/rss/boe.php?s=1" },
+  { "id": "cgpj", "name": "Poder Judicial (CGPJ)", "group": "Oficial", "url": "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Noticias-Judiciales/rss" },
+  { "id": "confilegal", "name": "Confilegal", "group": "Prensa jurídica", "url": "https://confilegal.com/feed/" },
+  { "id": "legaltoday", "name": "Legal Today", "group": "Prensa jurídica", "url": "https://www.legaltoday.com/feed/" },
+  { "id": "lawyerpress", "name": "Lawyerpress", "group": "Prensa jurídica", "url": "https://www.lawyerpress.com/feed/" },
+  { "id": "economistjurist", "name": "Economist & Jurist", "group": "Prensa jurídica", "url": "https://www.economistjurist.es/feed/" },
+  { "id": "diariojuridico", "name": "Diario Jurídico", "group": "Prensa jurídica", "url": "https://www.diariojuridico.com/feed/" },
+  { "id": "elderecho", "name": "El Derecho", "group": "Prensa jurídica", "url": "https://elderecho.com/feed" },
+  { "id": "gn-supremo", "name": "Prensa · Tribunal Supremo", "group": "Prensa general", "url": "https://news.google.com/rss/search?q=%22Tribunal+Supremo%22+sentencia+when:3d&hl=es&gl=ES&ceid=ES:es" },
+  { "id": "gn-constitucional", "name": "Prensa · Tribunal Constitucional", "group": "Prensa general", "url": "https://news.google.com/rss/search?q=%22Tribunal+Constitucional%22+when:3d&hl=es&gl=ES&ceid=ES:es" },
+  { "id": "gn-tjue", "name": "Prensa · Justicia europea (TJUE/TEDH)", "group": "Prensa general", "url": "https://news.google.com/rss/search?q=(TJUE+OR+%22Tribunal+de+Justicia+de+la+UE%22+OR+%22Tribunal+Europeo+de+Derechos+Humanos%22)+Espa%C3%B1a+when:3d&hl=es&gl=ES&ceid=ES:es" },
+  { "id": "gn-canarias", "name": "Prensa · Tribunales en Canarias", "group": "Prensa general", "url": "https://news.google.com/rss/search?q=(TSJC+OR+%22Audiencia+Provincial%22)+Canarias+when:3d&hl=es&gl=ES&ceid=ES:es" }
+]
