@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T13:09:43.159Z",
+ "updated": "2026-11-26T13:10:38.813Z",
  "sources": [
   {
    "id": "boe-tc",
@@ -12,12 +12,6 @@
    "name": "BOE · Disposiciones generales",
    "ok": true,
    "count": 14
-  },
-  {
-   "id": "cgpj",
-   "name": "Poder Judicial (CGPJ)",
-   "ok": false,
-   "error": "HTTP 404"
   },
   {
    "id": "confilegal",
@@ -56,28 +50,34 @@
    "count": 10
   },
   {
+   "id": "gn-cgpj",
+   "name": "Prensa · Poder Judicial (CGPJ)",
+   "ok": true,
+   "count": 43
+  },
+  {
    "id": "gn-supremo",
    "name": "Prensa · Tribunal Supremo",
    "ok": true,
-   "count": 51
+   "count": 26
   },
   {
    "id": "gn-constitucional",
    "name": "Prensa · Tribunal Constitucional",
    "ok": true,
-   "count": 100
+   "count": 87
   },
   {
    "id": "gn-tjue",
    "name": "Prensa · Justicia europea (TJUE/TEDH)",
-   "ok": false,
-   "error": "HTTP 429"
+   "ok": true,
+   "count": 38
   },
   {
    "id": "gn-canarias",
    "name": "Prensa · Tribunales en Canarias",
    "ok": true,
-   "count": 29
+   "count": 24
   }
  ],
  "items": [
@@ -357,6 +357,30 @@
    "topics": []
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQnQwOWo0RkZjbVY5ZzlSLWZ3eTc5NGRzTW9ueDAyUVZOUDNyS0Vkb1h4eTZVcXU4QzdsTnFtTzF3SFlacHNCSUFzLXJicjBDbDdLVUFZeG1FcXFrYWhCOWtBZUtrdzNISWxSQkRRRzVldG5OMVgyT3Z3aEdremVkU1g3LVdOdGNENjRzc1c5LTFjbHRESFl4NXhIYnJyV19CTlY2aElhSEd5QXRYREN6c3VMSXFSdnlkUnJya0Z1WGJGWmdicExiTmNLbGh3a0xsS3B4d3FoWGpMaUxuYmxhWDFIWXNmemlmQmRLd9IB7AFBVV95cUxOQnQwOWo0RkZjbVY5ZzlSLWZ3eTc5NGRzTW9ueDAyUVZOUDNyS0Vkb1h4eTZVcXU4QzdsTnFtTzF3SFlacHNCSUFzLXJicjBDbDdLVUFZeG1FcXFrYWhCOWtBZUtrdzNISWxSQkRRRzVldG5OMVgyT3Z3aEdremVkU1g3LVdOdGNENjRzc1c5LTFjbHRESFl4NXhIYnJyV19CTlY2aElhSEd5QXRYREN6c3VMSXFSdnlkUnJya0Z1WGJGWmdicExiTmNLbGh3a0xsS3B4d3FoWGpMaUxuYmxhWDFIWXNmemlmQmRLdw?oc=5",
+   "title": "JJpD critica que el CGPJ no emita un pronunciamiento institucional por el Día contra la Violencia sobre las Mujeres",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQnQwOWo0RkZjbVY5ZzlSLWZ3eTc5NGRzTW9ueDAyUVZOUDNyS0Vkb1h4eTZVcXU4QzdsTnFtTzF3SFlacHNCSUFzLXJicjBDbDdLVUFZeG1FcXFrYWhCOWtBZUtrdzNISWxSQkRRRzVldG5OMVgyT3Z3aEdremVkU1g3LVdOdGNENjRzc1c5LTFjbHRESFl4NXhIYnJyV19CTlY2aElhSEd5QXRYREN6c3VMSXFSdnlkUnJya0Z1WGJGWmdicExiTmNLbGh3a0xsS3B4d3FoWGpMaUxuYmxhWDFIWXNmemlmQmRLd9IB7AFBVV95cUxOQnQwOWo0RkZjbVY5ZzlSLWZ3eTc5NGRzTW9ueDAyUVZOUDNyS0Vkb1h4eTZVcXU4QzdsTnFtTzF3SFlacHNCSUFzLXJicjBDbDdLVUFZeG1FcXFrYWhCOWtBZUtrdzNISWxSQkRRRzVldG5OMVgyT3Z3aEdremVkU1g3LVdOdGNENjRzc1c5LTFjbHRESFl4NXhIYnJyV19CTlY2aElhSEd5QXRYREN6c3VMSXFSdnlkUnJya0Z1WGJGWmdicExiTmNLbGh3a0xsS3B4d3FoWGpMaUxuYmxhWDFIWXNmemlmQmRLdw?oc=5",
+   "summary": "",
+   "date": "2026-11-26T10:32:31.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Demócrata",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxObTdfVHJwV1BOdE10VTZvbnpUc3hqZktaV3JpV19VN21sck5Rc0szcjQzQXFuT1VYemNBMFB1MGN4V3ZSN25fMldiZTRWNWRLM3p3YlZhWkNBU3A4OWxPcVBOc0ZGZHFtdVlQQnRybmpMbGdtUXVuZWp1aHJHSGU0ZGlvenk5N0d6aUhfWUp2ektsX1hEN2ktcklPRGUyVWJQLUVRLXdjQzFMYm1QcXF0M3NYeTN5V0xaNE1yMVBXQ3U3UTR0QWJvc252bDUyZzVEOXFWNDU5SG1HT2R4dVl4b0tIRVFsQQ?oc=5",
+   "title": "JJpD lamenta que el CGPJ no haya emitido un pronunciamiento conjunto por el Día contra la Violencia sobre las Mujeres",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxObTdfVHJwV1BOdE10VTZvbnpUc3hqZktaV3JpV19VN21sck5Rc0szcjQzQXFuT1VYemNBMFB1MGN4V3ZSN25fMldiZTRWNWRLM3p3YlZhWkNBU3A4OWxPcVBOc0ZGZHFtdVlQQnRybmpMbGdtUXVuZWp1aHJHSGU0ZGlvenk5N0d6aUhfWUp2ektsX1hEN2ktcklPRGUyVWJQLUVRLXdjQzFMYm1QcXF0M3NYeTN5V0xaNE1yMVBXQ3U3UTR0QWJvc252bDUyZzVEOXFWNDU5SG1HT2R4dVl4b0tIRVFsQQ?oc=5",
+   "summary": "",
+   "date": "2026-11-26T10:30:56.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Europa Press",
+   "topics": []
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQZFZ2Tkd3TnFqTEVHQmFlbDM5Mk5MTFhDQUZkd0xvSUVsZThXS3NSNXd4amtHWFB4R0hZY053Z0NMNi0tTTdwMGtVMXNNRjE5SnBUQ2w4ZFYtWVRwbWtjUGMtVERNbXFtemxBNXl1XzhWU3VzdFpZUzJEcXcyV2lmaGloZ3hPeFRIX2NjWC15cndQOWliam9HNWtCMGFvQnFVUER3aU5PUGZMQTkyRmQ1WnhQeFI0VmlJeGwtVW5oUkViLTNXX0E5ZXdrQzV5TElWWGJ0dFdxbm9HZE5PaFJSdWthN2RFUWR5S0lkM2Iwcw?oc=5",
    "title": "Vasectomía fallida: pareja puede ser indemnizada en España",
    "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQZFZ2Tkd3TnFqTEVHQmFlbDM5Mk5MTFhDQUZkd0xvSUVsZThXS3NSNXd4amtHWFB4R0hZY053Z0NMNi0tTTdwMGtVMXNNRjE5SnBUQ2w4ZFYtWVRwbWtjUGMtVERNbXFtemxBNXl1XzhWU3VzdFpZUzJEcXcyV2lmaGloZ3hPeFRIX2NjWC15cndQOWliam9HNWtCMGFvQnFVUER3aU5PUGZMQTkyRmQ1WnhQeFI0VmlJeGwtVW5oUkViLTNXX0E5ZXdrQzV5TElWWGJ0dFdxbm9HZE5PaFJSdWthN2RFUWR5S0lkM2Iwcw?oc=5",
@@ -458,6 +482,18 @@
    "topics": []
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQa3FLR2NBVkdFNS1jNjV0UGhTOFRyOHFJUVNwSURGMXhBUFdDTTBhTjQyeDRaMFprNC1hVUI5YUpYLTRUNzVuOHFOMldQS2lOZF9BODdFcllYOXIzNXNiZWdweVpTMDdwZXh1X3p1bXBlaWFwSjNtRTZTX2MzMVZuWmxobw?oc=5",
+   "title": "Gobierne quien gobierne: los jueces y fiscales y sus órganos de gobierno tienen que ser independientes",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQa3FLR2NBVkdFNS1jNjV0UGhTOFRyOHFJUVNwSURGMXhBUFdDTTBhTjQyeDRaMFprNC1hVUI5YUpYLTRUNzVuOHFOMldQS2lOZF9BODdFcllYOXIzNXNiZWdweVpTMDdwZXh1X3p1bXBlaWFwSjNtRTZTX2MzMVZuWmxobw?oc=5",
+   "summary": "",
+   "date": "2026-11-26T06:15:25.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Fundación Hay Derecho",
+   "topics": []
+  },
+  {
    "id": "https://www.diariojuridico.com/los-servicios-societarios-y-fiscales-entre-los-mas-demandados-por-los-emprendedores-tras-crear-una-empresa/",
    "title": "Los servicios societarios y fiscales, entre los más demandados por los emprendedores tras crear una empresa",
    "link": "https://www.diariojuridico.com/los-servicios-societarios-y-fiscales-entre-los-mas-demandados-por-los-emprendedores-tras-crear-una-empresa/",
@@ -545,6 +581,18 @@
    "topics": []
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaTN2akIyMFFZRHlzRHpRMzhFVUZRMGEwNnVFMS1IMlZ5dE5XdU1EdHFUd18yOVpqZXprODN3MVBjSExTVlQ5LUhFdk5jWTJVMzNCdm9FVTZnbGo2bURTTV80am9YanQzdXkyZ0wwMng4bDhteVFZaHE0TUY4NEh0STVrakc?oc=5",
+   "title": "Opinión | La justicia, la gran olvidada de la campaña electoral",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaTN2akIyMFFZRHlzRHpRMzhFVUZRMGEwNnVFMS1IMlZ5dE5XdU1EdHFUd18yOVpqZXprODN3MVBjSExTVlQ5LUhFdk5jWTJVMzNCdm9FVTZnbGo2bURTTV80am9YanQzdXkyZ0wwMng4bDhteVFZaHE0TUY4NEh0STVrakc?oc=5",
+   "summary": "",
+   "date": "2026-11-26T05:35:07.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Confilegal",
+   "topics": []
+  },
+  {
    "id": "https://confilegal.com/20261126-justicia-gran-olvidada-campana-electoral-cgpj/",
    "title": "Opinión | La justicia, la gran olvidada de la campaña electoral",
    "link": "https://confilegal.com/20261126-justicia-gran-olvidada-campana-electoral-cgpj/",
@@ -572,6 +620,20 @@
    "id": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOby1ZRWFjMUQzSTVjYjJ0YUdOMExJZnROSW5nRnMxUHR4TEtXQXVRMTVzcmVWTGd5RmJ2TWtMWEhDUW4zWGVXMHBUT2xtZnR3SC03Rkc2c3k5ekhQR2Z4ZWRHUFpSa1N5SThjU2E3cFpNdHhhaHhOamo5UXYyUk5HMHNnREVqbDdxYVlhV0Vpb1g4a1QxN0FiYzNVVXhjMVg3eTQxM3dDdE9BVVdwY2hXZHNtR1V0ZFNHM2ZRak9kRXhhdHhhNU1VNTJ4R3pGS3ZCUVc1cFNaQkk2VDVHdDQyX25EM3A0UHlrQ2fSAeoBQVVfeXFMTm8tWUVhYzFEM0k1Y2IydGFHTjBMSWZ0TkluZ0ZzMVB0eExLV0F1UTE1c3JlVkxneUZidk1rTFhIQ1FuM1hlVzBwVE9sbWZ0d0gtN0ZHNnN5OXpIUEdmeGVkR1BaUmtTeUk4Y1NhN3BaTXR4YWh4TmpqOVF2MlJORzBzZ0RFamw3cWFZYVdFaW9YOGtUMTdBYmMzVVV4YzFYN3k0MTN3Q3RPQVVXcGNoV2RzbUdVdGRTRzNmUWpPZEV4YXR4YTVNVTUyeEd6Rkt2QlFXNXBTWkJJNlQ1R3Q0Ml9uRDNwNFB5a0Nn?oc=5",
    "title": "Ayuso lleva al Constitucional el decreto de vivienda de Sánchez",
    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOby1ZRWFjMUQzSTVjYjJ0YUdOMExJZnROSW5nRnMxUHR4TEtXQXVRMTVzcmVWTGd5RmJ2TWtMWEhDUW4zWGVXMHBUT2xtZnR3SC03Rkc2c3k5ekhQR2Z4ZWRHUFpSa1N5SThjU2E3cFpNdHhhaHhOamo5UXYyUk5HMHNnREVqbDdxYVlhV0Vpb1g4a1QxN0FiYzNVVXhjMVg3eTQxM3dDdE9BVVdwY2hXZHNtR1V0ZFNHM2ZRak9kRXhhdHhhNU1VNTJ4R3pGS3ZCUVc1cFNaQkk2VDVHdDQyX25EM3A0UHlrQ2fSAeoBQVVfeXFMTm8tWUVhYzFEM0k1Y2IydGFHTjBMSWZ0TkluZ0ZzMVB0eExLV0F1UTE1c3JlVkxneUZidk1rTFhIQ1FuM1hlVzBwVE9sbWZ0d0gtN0ZHNnN5OXpIUEdmeGVkR1BaUmtTeUk4Y1NhN3BaTXR4YWh4TmpqOVF2MlJORzBzZ0RFamw3cWFZYVdFaW9YOGtUMTdBYmMzVVV4YzFYN3k0MTN3Q3RPQVVXcGNoV2RzbUdVdGRTRzNmUWpPZEV4YXR4YTVNVTUyeEd6Rkt2QlFXNXBTWkJJNlQ1R3Q0Ml9uRDNwNFB5a0Nn?oc=5",
+   "summary": "",
+   "date": "2026-11-26T05:30:00.000Z",
+   "source": "Prensa · Tribunal Constitucional",
+   "sourceId": "gn-constitucional",
+   "group": "Prensa general",
+   "origin": "Estrella Digital",
+   "topics": [
+    "Constitucional"
+   ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNRkVsUjlac2R3NG9BXzN5aFByZWVLcnUwazh2UjBST0daV0N3QlJTS1JUaktOQmphc1FaRlRuZHJkV3gydTd3cDlhWjl6MHZRZEtiVWRHT2xoUU1nQVZpSldOQjljVVpfUnJnNDlCZUpZNnFGX0ptb3JqdDhjNVU2VlJMa2F4ODBOVlRkVHU1TWd4TG43TWdCcUs0NFdoZF80RFhCMElaMG5SSlhMSDg4NlVpY0FXT0pIVTgtbXZjTmd2V1VEcEhwUjFoRC11aklJRmowUEdwVnhUT0kyMEwzcjlKTlHSAeoBQVVfeXFMTm8tWUVhYzFEM0k1Y2IydGFHTjBMSWZ0TkluZ0ZzMVB0eExLV0F1UTE1c3JlVkxneUZidk1rTFhIQ1FuM1hlVzBwVE9sbWZ0d0gtN0ZHNnN5OXpIUEdmeGVkR1BaUmtTeUk4Y1NhN3BaTXR4YWh4TmpqOVF2MlJORzBzZ0RFamw3cWFZYVdFaW9YOGtUMTdBYmMzVVV4YzFYN3k0MTN3Q3RPQVVXcGNoV2RzbUdVdGRTRzNmUWpPZEV4YXR4YTVNVTUyeEd6Rkt2QlFXNXBTWkJJNlQ1R3Q0Ml9uRDNwNFB5a0Nn?oc=5",
+   "title": "Ayuso lleva al Constitucional el decreto de vivienda de Sánchez",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNRkVsUjlac2R3NG9BXzN5aFByZWVLcnUwazh2UjBST0daV0N3QlJTS1JUaktOQmphc1FaRlRuZHJkV3gydTd3cDlhWjl6MHZRZEtiVWRHT2xoUU1nQVZpSldOQjljVVpfUnJnNDlCZUpZNnFGX0ptb3JqdDhjNVU2VlJMa2F4ODBOVlRkVHU1TWd4TG43TWdCcUs0NFdoZF80RFhCMElaMG5SSlhMSDg4NlVpY0FXT0pIVTgtbXZjTmd2V1VEcEhwUjFoRC11aklJRmowUEdwVnhUT0kyMEwzcjlKTlHSAeoBQVVfeXFMTm8tWUVhYzFEM0k1Y2IydGFHTjBMSWZ0TkluZ0ZzMVB0eExLV0F1UTE1c3JlVkxneUZidk1rTFhIQ1FuM1hlVzBwVE9sbWZ0d0gtN0ZHNnN5OXpIUEdmeGVkR1BaUmtTeUk4Y1NhN3BaTXR4YWh4TmpqOVF2MlJORzBzZ0RFamw3cWFZYVdFaW9YOGtUMTdBYmMzVVV4YzFYN3k0MTN3Q3RPQVVXcGNoV2RzbUdVdGRTRzNmUWpPZEV4YXR4YTVNVTUyeEd6Rkt2QlFXNXBTWkJJNlQ1R3Q0Ml9uRDNwNFB5a0Nn?oc=5",
    "summary": "",
    "date": "2026-11-26T05:30:00.000Z",
    "source": "Prensa · Tribunal Constitucional",
@@ -703,6 +765,18 @@
    "topics": []
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSjI4SVA1NTFielhuU2NGb3g0UTExTDZUaXhZQ2txXzBreDIza1ZZSmlMbjJ5SGJybjF1SnJsSGR1ZFlqSWFSVDV2bVlIcW1EYm9DbEtQMVFmRG1QNTRLVHJkMHdUdjBLTEtzZTB2YjFQc25DQ2VrUngxalQ5Wi1FMGZoWnJyUQ?oc=5",
+   "title": "A cuatro días de las urnas, los Premios Confilegal ponen el foco en la lentitud, la independencia y la divulgación de la justicia",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSjI4SVA1NTFielhuU2NGb3g0UTExTDZUaXhZQ2txXzBreDIza1ZZSmlMbjJ5SGJybjF1SnJsSGR1ZFlqSWFSVDV2bVlIcW1EYm9DbEtQMVFmRG1QNTRLVHJkMHdUdjBLTEtzZTB2YjFQc25DQ2VrUngxalQ5Wi1FMGZoWnJyUQ?oc=5",
+   "summary": "",
+   "date": "2026-11-26T04:25:10.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Confilegal",
+   "topics": []
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPM3g1VUJYTFhaSFFyTkQtalNWdWxUVUZuUDBrNXNoRlFONjNScjl4RVd1OWxaaURTa3pVMWdpZ01qT1JNbTVVa3I1d2FZSV9YSUNMZ3I1Ty1fS0ZiVmJ1TkFsV0JOXzlyaHc3QnZzYWhiUlZGVWVPQWtSSHZIVjhiZ3c5eFBwTUdndGFXb1RjdmN1ME1oX2FmWGdpbUk5dHM3Q2xtUkxhWllNdi15a2FfZEpjUTh2TGM1S3lhTXFYSmJTTlhTdVHSAcsBQVVfeXFMT3FENV9oQ05wQklmZ0pWcUQwRVBBcGR1eEtUWE9ub2RJaHM0LXFPbUdQemgxbVBGS2tQVFBQMUR1dnQ5TEFZZHNaZXZHaTg4YmZhbUJUUWplaXl2TG94RWdyNExMY1dHdE1kT25oZ3RmdWpTekU4cXFEeWdGUHZPamhzeU9kQjcxbFlvZHctQy12OGl1UFdqYXg4ajU2RGdHX2QyUF9QLTduZUZPempsX0xiOFpWUjIyM3JMRHhIZHBabjY0eklGblMxRGM?oc=5",
    "title": "El Tribunal Constitucional avala que empresas adelanten subsidios por licencias médicas",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPM3g1VUJYTFhaSFFyTkQtalNWdWxUVUZuUDBrNXNoRlFONjNScjl4RVd1OWxaaURTa3pVMWdpZ01qT1JNbTVVa3I1d2FZSV9YSUNMZ3I1Ty1fS0ZiVmJ1TkFsV0JOXzlyaHc3QnZzYWhiUlZGVWVPQWtSSHZIVjhiZ3c5eFBwTUdndGFXb1RjdmN1ME1oX2FmWGdpbUk5dHM3Q2xtUkxhWllNdi15a2FfZEpjUTh2TGM1S3lhTXFYSmJTTlhTdVHSAcsBQVVfeXFMT3FENV9oQ05wQklmZ0pWcUQwRVBBcGR1eEtUWE9ub2RJaHM0LXFPbUdQemgxbVBGS2tQVFBQMUR1dnQ5TEFZZHNaZXZHaTg4YmZhbUJUUWplaXl2TG94RWdyNExMY1dHdE1kT25oZ3RmdWpTekU4cXFEeWdGUHZPamhzeU9kQjcxbFlvZHctQy12OGl1UFdqYXg4ajU2RGdHX2QyUF9QLTduZUZPempsX0xiOFpWUjIyM3JMRHhIZHBabjY0eklGblMxRGM?oc=5",
@@ -759,6 +833,20 @@
    "topics": []
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPQWxnQkFuVFVYWTB3eUZVNzJEb0dqMUtLN29vdHRrZlIydmNDcnVaSEhKUnZ4ekw2MXhEd25xRHNRSjM4T0F0SmlNR2hnSnZZc0hyZ2swWnA5OU5WWHFfY2dSUHFsQzRDMUI1M2NnUTUxYTBHV0syT1ZhOHBybnFFZkpSNEtQYUdKZ1JBM0d1TzNPa0dVS0lpUnpJVUhMaUxTRjhFcVc1M2hlTERiRkd0ZFRBRHBOTHJlS3pINGV4aFdSVURkdWVpOEFiOGxSVzNTR3VleHFPQmluVkVIenBZ?oc=5",
+   "title": "Clúber Aliaga cuestionó que Tribunal Constitucional ordene a la PNP revisar normativa que regula uso de tatuajes",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPQWxnQkFuVFVYWTB3eUZVNzJEb0dqMUtLN29vdHRrZlIydmNDcnVaSEhKUnZ4ekw2MXhEd25xRHNRSjM4T0F0SmlNR2hnSnZZc0hyZ2swWnA5OU5WWHFfY2dSUHFsQzRDMUI1M2NnUTUxYTBHV0syT1ZhOHBybnFFZkpSNEtQYUdKZ1JBM0d1TzNPa0dVS0lpUnpJVUhMaUxTRjhFcVc1M2hlTERiRkd0ZFRBRHBOTHJlS3pINGV4aFdSVURkdWVpOEFiOGxSVzNTR3VleHFPQmluVkVIenBZ?oc=5",
+   "summary": "",
+   "date": "2026-11-26T01:22:00.000Z",
+   "source": "Prensa · Tribunal Constitucional",
+   "sourceId": "gn-constitucional",
+   "group": "Prensa general",
+   "origin": "AP Noticias",
+   "topics": [
+    "Constitucional"
+   ]
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNHdrVGVXelcyWG5hMHRsWnQyT3ZPNG1oZzdJbkdEalk5TnZWOHRlN3I1QlZNZUIxQkc2QlIxb3pTSEFyckNDYnZSTlBwS3FVdV9DakoyYlVyMUpaOU1KRWJBVGp4dHRwa3NGN0tUajZ1OFIxX3ctQms5V2xnQzlZc2JIZ2dzbmEy?oc=5",
    "title": "Juezas del Tribunal Constitucional analizan el papel de la mujer en la justicia",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNHdrVGVXelcyWG5hMHRsWnQyT3ZPNG1oZzdJbkdEalk5TnZWOHRlN3I1QlZNZUIxQkc2QlIxb3pTSEFyckNDYnZSTlBwS3FVdV9DakoyYlVyMUpaOU1KRWJBVGp4dHRwa3NGN0tUajZ1OFIxX3ctQms5V2xnQzlZc2JIZ2dzbmEy?oc=5",
@@ -784,6 +872,21 @@
    "origin": "Ciudadoriental.com",
    "topics": [
     "Constitucional"
+   ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPQUIzUGM0c3dfSDliblE5azdRVzIyMnRQSmh0ZGRzQ2JXRllNX2R0OGJkbmZQSE9NNUh3azJoZDV0YzhIUFhzdEtjUFd6WFAtcjZhUkNIaTNZRFZzRDJyN3J5RDl3a0hBRmhlUU5JVm5jVGxEVUtoMWdEbUNMbE1mSURjaTBJXzU2Wm5ENjhOT1ZaUTlFTmQzam5FdjZvTno0ZVFKTkwxTGtVSUlHMHdNaUZGZS1OTW5nZXphamNvREgwbEJCOWFRXy1WbUZ2QWtNc2c4Zlh5dUxGRnY0ZnExamJoMzNVYjFZNzhSRl8ydzlVb2pfOXgxd2pnZDFLaXYx?oc=5",
+   "title": "Un magistrado de lo mercantil pregunta al TJUE si un error involuntario restringe la Segunda Oportunidad a un deudor",
+   "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPQUIzUGM0c3dfSDliblE5azdRVzIyMnRQSmh0ZGRzQ2JXRllNX2R0OGJkbmZQSE9NNUh3azJoZDV0YzhIUFhzdEtjUFd6WFAtcjZhUkNIaTNZRFZzRDJyN3J5RDl3a0hBRmhlUU5JVm5jVGxEVUtoMWdEbUNMbE1mSURjaTBJXzU2Wm5ENjhOT1ZaUTlFTmQzam5FdjZvTno0ZVFKTkwxTGtVSUlHMHdNaUZGZS1OTW5nZXphamNvREgwbEJCOWFRXy1WbUZ2QWtNc2c4Zlh5dUxGRnY0ZnExamJoMzNVYjFZNzhSRl8ydzlVb2pfOXgxd2pnZDFLaXYx?oc=5",
+   "summary": "",
+   "date": "2026-11-26T00:56:00.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Law & Trends",
+   "topics": [
+    "Mercantil",
+    "Europeo"
    ]
   },
   {
@@ -848,6 +951,30 @@
    "sourceId": "gn-canarias",
    "group": "Prensa general",
    "origin": "Diario de Avisos",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQVBCWXlJaHozamxiczVRTEpsWWkwZlRrcnVMYXpfa0IxSGhkVG1Cd29WRmY0YnRJZGZ5N1huMkxJZmRiRXc4aDNWQ1JobUREamRfWkxja3ljR3hjeldqeHZpMXlXOXg3cF9kdVBrSUNfTEIzUE9aeHBnX192UlJkSi1BVllNSC02eUFodXVzLUJ3MEtKQl93UWMtdzhFM08xQnFpcm1jTlNRbjFBRmQ3WkNKejlWeHRKVWt3?oc=5",
+   "title": "Ministro Robert Currie asume la presidencia del Tercer Tribunal Ambiental",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQVBCWXlJaHozamxiczVRTEpsWWkwZlRrcnVMYXpfa0IxSGhkVG1Cd29WRmY0YnRJZGZ5N1huMkxJZmRiRXc4aDNWQ1JobUREamRfWkxja3ljR3hjeldqeHZpMXlXOXg3cF9kdVBrSUNfTEIzUE9aeHBnX192UlJkSi1BVllNSC02eUFodXVzLUJ3MEtKQl93UWMtdzhFM08xQnFpcm1jTlNRbjFBRmQ3WkNKejlWeHRKVWt3?oc=5",
+   "summary": "",
+   "date": "2026-11-25T23:31:19.000Z",
+   "source": "Prensa · Tribunal Constitucional",
+   "sourceId": "gn-constitucional",
+   "group": "Prensa general",
+   "origin": "Diario Constitucional",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNdEw0d2ZaTzJaaXFyNjZVSms1X1B0TngzS3VZYTliMnFTQ1pGcXVmVVJIWDRHUlMzZFdrQ2Foby1oSFF0THM1ZS1ORWVtQWEzMGtkZVJ2MmRrdTRpZktvUW4zRXVOS1p2U0ZHdXN6N1JvY29kYm9DaHB1eGhpVU1DWUFIeFHSAYoBQVVfeXFMTjk2WjdKeklqQjd6WlR5VWg4MWUtZjlKOHJyd2d0cWJLd2t4NkdTa3dZZkpncUtqdm1KUGZ4UFdKYmhRY3N2a0VfdUxtSTRlZlFvRENkaDNaV0dsd1ZWNU9QQ0tIWVlZV05sQk81RW4xWDNVRTZrOW1iOTVNYlRZX3d6YkY0WGNvM3p3?oc=5",
+   "title": "El grito de auxilio de los tribunales",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNdEw0d2ZaTzJaaXFyNjZVSms1X1B0TngzS3VZYTliMnFTQ1pGcXVmVVJIWDRHUlMzZFdrQ2Foby1oSFF0THM1ZS1ORWVtQWEzMGtkZVJ2MmRrdTRpZktvUW4zRXVOS1p2U0ZHdXN6N1JvY29kYm9DaHB1eGhpVU1DWUFIeFHSAYoBQVVfeXFMTjk2WjdKeklqQjd6WlR5VWg4MWUtZjlKOHJyd2d0cWJLd2t4NkdTa3dZZkpncUtqdm1KUGZ4UFdKYmhRY3N2a0VfdUxtSTRlZlFvRENkaDNaV0dsd1ZWNU9QQ0tIWVlZV05sQk81RW4xWDNVRTZrOW1iOTVNYlRZX3d6YkY0WGNvM3p3?oc=5",
+   "summary": "",
+   "date": "2026-11-25T23:01:02.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "La Verdad",
    "topics": []
   },
   {
@@ -1069,6 +1196,20 @@
    "topics": []
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSHVibDdyUEtRbXZnMG42VHpSY2NSTk1PQ2R3X0REcFo0eXVVbHNjQUY5OFBwY0pPcXNKc01uT0M5YWxhNmlqSmgwLWN5RXVlTzZpSW1jVXFqVlQ0WnpfaUVBM3VGTFlQSEFIWUNvODJEaWdndF9PUmxtMzBDWUZsR25sc2VyRDJTQnFLaDZuSTU5cjUyVXZReFA3aWxMbmhYZ0U1ZXVhX3BwbUVKdHlaRQ?oc=5",
+   "title": "Diputados aprueban cambios a la Ley Orgánica del Tribunal Constitucional",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSHVibDdyUEtRbXZnMG42VHpSY2NSTk1PQ2R3X0REcFo0eXVVbHNjQUY5OFBwY0pPcXNKc01uT0M5YWxhNmlqSmgwLWN5RXVlTzZpSW1jVXFqVlQ0WnpfaUVBM3VGTFlQSEFIWUNvODJEaWdndF9PUmxtMzBDWUZsR25sc2VyRDJTQnFLaDZuSTU5cjUyVXZReFA3aWxMbmhYZ0U1ZXVhX3BwbUVKdHlaRQ?oc=5",
+   "summary": "",
+   "date": "2026-11-25T20:50:49.000Z",
+   "source": "Prensa · Tribunal Constitucional",
+   "sourceId": "gn-constitucional",
+   "group": "Prensa general",
+   "origin": "elperiodico.com.do",
+   "topics": [
+    "Constitucional"
+   ]
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPblJ2WEY3SktXTHBpaG1tSlJqR1ktWEFDaU1TZHdwdm5zcVJJWG9DVV9SeXFrX05lSWZ4Vi0wU1J6dmV1UzdtMFNaNnY5NllhWjhrdjNTc04zX2t3N2RoN0h4cHMxeVBIU2lScS13cGtURi10U3Nmbndkek9VNUF4YmdfT2d6dHVOaW5NXzk5akZ0SDNjVGk5MGItczZEVkRfUjFUZFdNLVExSTVVQ0dMa01kTWg0YnM3TmlKSnFKSGFjQnI1WVR6UHZZWFp1TVdpalZuY3hEcjhTWDlRNDBCX1BiZ1JJTU04U3BGMTRn?oc=5",
    "title": "SALA PRIMERA DEL TRIBUNAL CONSTITUCIONAL SESIONARÁ EN AUDIENCIA PÚBLICA EL PRÓXIMO MARTES 1 DE DICIEMBRE | TC",
    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPblJ2WEY3SktXTHBpaG1tSlJqR1ktWEFDaU1TZHdwdm5zcVJJWG9DVV9SeXFrX05lSWZ4Vi0wU1J6dmV1UzdtMFNaNnY5NllhWjhrdjNTc04zX2t3N2RoN0h4cHMxeVBIU2lScS13cGtURi10U3Nmbndkek9VNUF4YmdfT2d6dHVOaW5NXzk5akZ0SDNjVGk5MGItczZEVkRfUjFUZFdNLVExSTVVQ0dMa01kTWg0YnM3TmlKSnFKSGFjQnI1WVR6UHZZWFp1TVdpalZuY3hEcjhTWDlRNDBCX1BiZ1JJTU04U3BGMTRn?oc=5",
@@ -1081,6 +1222,18 @@
    "topics": [
     "Constitucional"
    ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdndNa1ljRjNHelJRV29WTUxCM2xWRG1aT2E5MDlOVWtEbWVqeG5GREVSUFhkU29DREcxcWVXQVlxNmJJcHpUVmpwcXprMGZXd254ek1kMUZuRDJIc19xV2ZnbHp6R1pvY1BDekRCR3FnbGgtV3EwMXJOblE1dWIydmZXWWdmNFJ5Q0NyM29ZRXJhVl9BZTlMTi16cW1sbnNVZGtv0gGoAUFVX3lxTE9XcmJWcUtOeG9aSWpVN25ZX2pHaXlUNmZ0Zm1kc3R4TVhfcjJzcGZGOFdnTHpsU3N0Q1RmVWdEZmNjZUI1Q2NacFk5eXctWmx1TldrazVFNDlwSXJ0UmhmU0lhMDVyYXBEcWV3YmkxUlRYQmQtUUxEMHpFcEhQSXpfRW0xdGNKaS1wSG1XWFFoNGtZUFg4MTBmZGVkMjdxLXpPNjdWOV84LQ?oc=5",
+   "title": "El acusado niega que asesinara a Julio César y sospecha del hermano de la víctima",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdndNa1ljRjNHelJRV29WTUxCM2xWRG1aT2E5MDlOVWtEbWVqeG5GREVSUFhkU29DREcxcWVXQVlxNmJJcHpUVmpwcXprMGZXd254ek1kMUZuRDJIc19xV2ZnbHp6R1pvY1BDekRCR3FnbGgtV3EwMXJOblE1dWIydmZXWWdmNFJ5Q0NyM29ZRXJhVl9BZTlMTi16cW1sbnNVZGtv0gGoAUFVX3lxTE9XcmJWcUtOeG9aSWpVN25ZX2pHaXlUNmZ0Zm1kc3R4TVhfcjJzcGZGOFdnTHpsU3N0Q1RmVWdEZmNjZUI1Q2NacFk5eXctWmx1TldrazVFNDlwSXJ0UmhmU0lhMDVyYXBEcWV3YmkxUlRYQmQtUUxEMHpFcEhQSXpfRW0xdGNKaS1wSG1XWFFoNGtZUFg4MTBmZGVkMjdxLXpPNjdWOV84LQ?oc=5",
+   "summary": "",
+   "date": "2026-11-25T20:18:45.000Z",
+   "source": "Prensa · Tribunales en Canarias",
+   "sourceId": "gn-canarias",
+   "group": "Prensa general",
+   "origin": "Eldía",
+   "topics": []
   },
   {
    "id": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxON2hRNVVYNWJaa3E3bEN6NDVWMmdFVXhYTHRWVHZUX2N0cUx3b2RUQi1LLTIybHE2VVN3X1VGbVdKYmlqM0tJdUtBN0tGdnkzX1laV2FpNklEZGhGVlZsZ1BwN19WT1Z4MTlHbjRtbVlPUHlsZ1lsUFRaekZabzRWNHp0S0FsVDFqSEkwVkNlRlgwQWMzMFc1YmZiNndLOHN0Y2pRYlZhcjc4SVhEV3RSdzcwbTlSLWZ0UTM0Qlg3dVBGbk4wVWtHbDl0SmtjcXI4dl9nVXBwYWxCTlNfeEVEMWJLTk9VcUlKV1hxdXZGbkg?oc=5",
@@ -1111,6 +1264,44 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORURvdng2WGxaMjd3SDI5XzVwSmRJd0tXV0xVM0w4aGtjYW8yaXlnOWJlTXpvamVlUl9hdnJFRW9qbC1PUWkwazVfQ0pFamxKdGk3bURJUTRyX0RQMU9NR0ZHT1JteHQzQTE5Ui1CMkhoT0JrWlJ2NzdGRnFHV1NTN0NEaVZON2FmODN2UkgxV0N1MFQyRDZiejFiUlNrR09LWmIxNUFtQnlxNEVZZjZsRHF1UFJKWGFN?oc=5",
+   "title": "Diputados aprueban cambios a la Ley Orgánica del Tribunal Constitucional",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORURvdng2WGxaMjd3SDI5XzVwSmRJd0tXV0xVM0w4aGtjYW8yaXlnOWJlTXpvamVlUl9hdnJFRW9qbC1PUWkwazVfQ0pFamxKdGk3bURJUTRyX0RQMU9NR0ZHT1JteHQzQTE5Ui1CMkhoT0JrWlJ2NzdGRnFHV1NTN0NEaVZON2FmODN2UkgxV0N1MFQyRDZiejFiUlNrR09LWmIxNUFtQnlxNEVZZjZsRHF1UFJKWGFN?oc=5",
+   "summary": "",
+   "date": "2026-11-25T19:30:27.000Z",
+   "source": "Prensa · Tribunal Constitucional",
+   "sourceId": "gn-constitucional",
+   "group": "Prensa general",
+   "origin": "DiarioDigitalRD",
+   "topics": [
+    "Constitucional"
+   ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNV01vUDZ3UUJzVGZzNWZWbFNXa09qMXZGY2VNejl2M2QtYXlERHJLcmdWbjhILXVwX2w4cGdoWUNSNmFheHBIem1PMmNDa2dicDBQMVZKNlA5UHZGVHE3anFPOVB5SnFSQ2QyejR2SmFUcEpYdXdCdGk3RHYwLUJBaFlIRHl1cFpQcUQ0LWVWNjM1OFNrU2g2WXFmQ1Jzb0piZEFSUnQxYXdvcWtXdXdnbFUxclQ5ay1SUm9Pa19zMUFXRlF0bXNlUnl30gHeAUFVX3lxTE5vcld1Z1diS2pUYXk4ZlNyMzNDQzItbFN3WVJ4ZU5NQXVFNlBmRnR6cEx1b3d1SmhORVF6WVE1S3FuTnNBblNfSWVGY00zSFFxZ1o4VmxtdmF3cXdQQ2Vwb0toYndLYTNvOU1mNFpVX1N4a0pXRzdfSHVBQmxsM1djemFHX3hvNDJvdWdBVHgtRGp1cHRiTURRajN5S1BORHFUZThhZWlabnZQamF0aERkYXdCTldDTVJfU29hNm5SSjlDNFVRdGU4ZGdsbThiM19pRDVlLWhFQW12V0trdw?oc=5",
+   "title": "Una medalla honorífica para todos los vocales abre una nueva brecha en el Poder Judicial",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNV01vUDZ3UUJzVGZzNWZWbFNXa09qMXZGY2VNejl2M2QtYXlERHJLcmdWbjhILXVwX2w4cGdoWUNSNmFheHBIem1PMmNDa2dicDBQMVZKNlA5UHZGVHE3anFPOVB5SnFSQ2QyejR2SmFUcEpYdXdCdGk3RHYwLUJBaFlIRHl1cFpQcUQ0LWVWNjM1OFNrU2g2WXFmQ1Jzb0piZEFSUnQxYXdvcWtXdXdnbFUxclQ5ay1SUm9Pa19zMUFXRlF0bXNlUnl30gHeAUFVX3lxTE5vcld1Z1diS2pUYXk4ZlNyMzNDQzItbFN3WVJ4ZU5NQXVFNlBmRnR6cEx1b3d1SmhORVF6WVE1S3FuTnNBblNfSWVGY00zSFFxZ1o4VmxtdmF3cXdQQ2Vwb0toYndLYTNvOU1mNFpVX1N4a0pXRzdfSHVBQmxsM1djemFHX3hvNDJvdWdBVHgtRGp1cHRiTURRajN5S1BORHFUZThhZWlabnZQamF0aERkYXdCTldDTVJfU29hNm5SSjlDNFVRdGU4ZGdsbThiM19pRDVlLWhFQW12V0trdw?oc=5",
+   "summary": "",
+   "date": "2026-11-25T19:29:53.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "EL PAÍS",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZjlGYl9qamU5NXZKV3Q1Wm5YSDEzSkxzNHp6QzhGYXp2RGpfR1g1Z0ZPRENqS21BZFNuUjVuNi00QXc0Um96UEhtTjdPQk9fWjBLSmtLUXVoTE1LcFdCWk81VTFiOFFza0RDUFpFaGh3UnZHM2E4RGZYaXlCVkFfeUpnTUFhTjJlZkVhZ1VBRW13MEg2QkJpVElhM1ctN0ZHQmtkX0huVkJDNFI3ZG5SV3ExV2RYaUtYdVk4ZDlidzdNQ1VOQmpR?oc=5",
+   "title": "Una Medalla de Honor para todos los colegiados abre una nueva brecha en el sistema de justicia España",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZjlGYl9qamU5NXZKV3Q1Wm5YSDEzSkxzNHp6QzhGYXp2RGpfR1g1Z0ZPRENqS21BZFNuUjVuNi00QXc0Um96UEhtTjdPQk9fWjBLSmtLUXVoTE1LcFdCWk81VTFiOFFza0RDUFpFaGh3UnZHM2E4RGZYaXlCVkFfeUpnTUFhTjJlZkVhZ1VBRW13MEg2QkJpVElhM1ctN0ZHQmtkX0huVkJDNFI3ZG5SV3ExV2RYaUtYdVk4ZDlidzdNQ1VOQmpR?oc=5",
+   "summary": "",
+   "date": "2026-11-25T19:29:00.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Notas de Prensa",
+   "topics": []
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPV3JiVnFLTnhvWklqVTduWV9qR2l5VDZmdGZtZHN0eE1YX3Iyc3BmRjhXZ0x6bFNzdENUZlVnRGZjY2VCNUNjWnBZOXl3LVpsdU5Xa2s1RTQ5cElydFJoZlNJYTA1cmFwRHFld2JpMVJUWEJkLVFMRDB6RXBIUEl6X0VtMXRjSmktcEhtV1hRaDRrWVBYODEwZmRlZDI3cS16TzY3VjlfOC3SAagBQVVfeXFMT1dyYlZxS054b1pJalU3bllfakdpeVQ2ZnRmbWRzdHhNWF9yMnNwZkY4V2dMemxTc3RDVGZVZ0RmY2NlQjVDY1pwWTl5dy1abHVOV2trNUU0OXBJcnRSaGZTSWEwNXJhcERxZXdiaTFSVFhCZC1RTEQwekVwSFBJel9FbTF0Y0ppLXBIbVdYUWg0a1lQWDgxMGZkZWQyN3Etek82N1Y5Xzgt?oc=5",
    "title": "El acusado niega que asesinara a Julio César y sospecha del hermano de la víctima",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPV3JiVnFLTnhvWklqVTduWV9qR2l5VDZmdGZtZHN0eE1YX3Iyc3BmRjhXZ0x6bFNzdENUZlVnRGZjY2VCNUNjWnBZOXl3LVpsdU5Xa2s1RTQ5cElydFJoZlNJYTA1cmFwRHFld2JpMVJUWEJkLVFMRDB6RXBIUEl6X0VtMXRjSmktcEhtV1hRaDRrWVBYODEwZmRlZDI3cS16TzY3VjlfOC3SAagBQVVfeXFMT1dyYlZxS054b1pJalU3bllfakdpeVQ2ZnRmbWRzdHhNWF9yMnNwZkY4V2dMemxTc3RDVGZVZ0RmY2NlQjVDY1pwWTl5dy1abHVOV2trNUU0OXBJcnRSaGZTSWEwNXJhcERxZXdiaTFSVFhCZC1RTEQwekVwSFBJel9FbTF0Y0ppLXBIbVdYUWg0a1lQWDgxMGZkZWQyN3Etek82N1Y5Xzgt?oc=5",
@@ -1120,6 +1311,30 @@
    "sourceId": "gn-canarias",
    "group": "Prensa general",
    "origin": "Eldía",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOLVJEeUtvY1d1TExwQ1JPV0t6UndNa1Brb3BZS0ZCV0xISWtGVlF2VFZwZVhNbDJhaWZDRzBQamcxN1NCbjZpNkxqSTNISE56WFZBNWVPS0tkVGw2VktjN3RSWmpyUTNrSnBDVGloM0VNamllekdTc1F2bFQ2NEYyX1Bkb3JCWUJKNjJiMGFza9IBlAFBVV95cUxPeHYta2ktTnRVbm1pcmc5V1JwOXM5S0hwV2dBbTh2S0h6S2swdk92enV1US10MHdaWjh0djVhc0k3cGREdWZZbGJWRkh6aWxwdE0xQlMyQnVua2d6QS1xSjhKc1AzNlA0TTVYYmF5ZWJHZEpTNEpHNXNLOFFUUkZTNGI0OTdYVHlucEZ0SVQ5NWVhUkJn?oc=5",
+   "title": "El presidente de la sala de lo social del TSJA, José Luis Niño, aspira a una plaza de la sala cuarta del Tribunal Supremo",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOLVJEeUtvY1d1TExwQ1JPV0t6UndNa1Brb3BZS0ZCV0xISWtGVlF2VFZwZVhNbDJhaWZDRzBQamcxN1NCbjZpNkxqSTNISE56WFZBNWVPS0tkVGw2VktjN3RSWmpyUTNrSnBDVGloM0VNamllekdTc1F2bFQ2NEYyX1Bkb3JCWUJKNjJiMGFza9IBlAFBVV95cUxPeHYta2ktTnRVbm1pcmc5V1JwOXM5S0hwV2dBbTh2S0h6S2swdk92enV1US10MHdaWjh0djVhc0k3cGREdWZZbGJWRkh6aWxwdE0xQlMyQnVua2d6QS1xSjhKc1AzNlA0TTVYYmF5ZWJHZEpTNEpHNXNLOFFUUkZTNGI0OTdYVHlucEZ0SVQ5NWVhUkJn?oc=5",
+   "summary": "",
+   "date": "2026-11-25T18:34:02.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "La Nueva España",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdHdrZHFJLV9pQUtjSmI5REVKaDVyeTVOY1lTNGpyakphWUJaZU53NmNpOGlsenJVSDkzNlFwRzFmUHdLd2U5SGlqeUJldUIyTFE5bEJuVG12eEs2MlIybUpTUjlEX0FvNEw5ZkROdjRiUU9Jd3Nkd01UNHNGemJjX0Q1dWNfM1BOWUVrOU9pd3hOcGgxbU1VdndySnpndVloQTN3UTFvUC1GbUZDVGRDMjdrQWMwdjNjWi1kcEtVeVA0Y0cxQUhKNUtScGp5RTVLSGZHadIB2gFBVV95cUxQOWpybDEteVR0alNqZk9XSUhOa25rd1ZaQ0EzMXMyUFgtdngzb0RYRFBSNzFOWjdBdnFWRHpoWGdNLTBVVzFHRWFuS1Q0dmdvQkp5dlpkaWFIS21wM3Z3R2lSUGFHU3hBd0hiOXVxcUwwYnVRbWV0SUhZazZfUzV1QXVOVGpmTGN1T1Z6RFZMZVFISjFfbldnY0tLdkxCWjJhT2dvb3hfOVAyNTBNWFJtMVpuQlVSSkc4cVZITUhXX0RhVU1fSGpLSldhWnZQUktaVVdOR0JKcFNrZw?oc=5",
+   "title": "El CGPJ pide explicaciones a Marlaska tras revelar El Debate que ha reducido la escolta a la juez del hermano de Sánchez",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdHdrZHFJLV9pQUtjSmI5REVKaDVyeTVOY1lTNGpyakphWUJaZU53NmNpOGlsenJVSDkzNlFwRzFmUHdLd2U5SGlqeUJldUIyTFE5bEJuVG12eEs2MlIybUpTUjlEX0FvNEw5ZkROdjRiUU9Jd3Nkd01UNHNGemJjX0Q1dWNfM1BOWUVrOU9pd3hOcGgxbU1VdndySnpndVloQTN3UTFvUC1GbUZDVGRDMjdrQWMwdjNjWi1kcEtVeVA0Y0cxQUhKNUtScGp5RTVLSGZHadIB2gFBVV95cUxQOWpybDEteVR0alNqZk9XSUhOa25rd1ZaQ0EzMXMyUFgtdngzb0RYRFBSNzFOWjdBdnFWRHpoWGdNLTBVVzFHRWFuS1Q0dmdvQkp5dlpkaWFIS21wM3Z3R2lSUGFHU3hBd0hiOXVxcUwwYnVRbWV0SUhZazZfUzV1QXVOVGpmTGN1T1Z6RFZMZVFISjFfbldnY0tLdkxCWjJhT2dvb3hfOVAyNTBNWFJtMVpuQlVSSkc4cVZITUhXX0RhVU1fSGpLSldhWnZQUktaVVdOR0JKcFNrZw?oc=5",
+   "summary": "",
+   "date": "2026-11-25T18:13:32.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "El Debate",
    "topics": []
   },
   {
@@ -1136,6 +1351,18 @@
     "Administrativo",
     "Constitucional"
    ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQSWV5dHZ1R253Sl9DN3FkM2VBZjhpLWtETnpBUlhyUzR0d0hCNlRaZzZGUUdBRmFPbWxtOEJWUEtzZkV6dmJFV1pHR0FyWHQyREZBdWtnWU5hUWJjWldCU1U3YlJlZlk3TDlmLTh4UGRCWE1fNDhRcjVadTJzd3ZjV0J5NmdUZw?oc=5",
+   "title": "Equipaje de mano en el avión: qué te pueden cobrar hoy, qué cambia en 2027 y cómo reclamar el suplemento",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQSWV5dHZ1R253Sl9DN3FkM2VBZjhpLWtETnpBUlhyUzR0d0hCNlRaZzZGUUdBRmFPbWxtOEJWUEtzZkV6dmJFV1pHR0FyWHQyREZBdWtnWU5hUWJjWldCU1U3YlJlZlk3TDlmLTh4UGRCWE1fNDhRcjVadTJzd3ZjV0J5NmdUZw?oc=5",
+   "summary": "",
+   "date": "2026-11-25T18:00:38.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "WWWhat's new",
+   "topics": []
   },
   {
    "id": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNa3Y4ZlFUQllyN2ZLOVF6Z2ZrQk11VjlRRHk5dVg4UllGT2VQNUFpUW1DcGRQaEZ1THVfejJBNTNVQUsxd2Rrd2JBVHhxQzNKWWlITmk5ZVh6U0xQT2w5U2hKLW9JLUZPTnppeEI2ckNIQlc5LTVMQm5hM2ZqbjZPOVZ6dHRSXzR6QXVBZUY0UmE0ZGNhcWfSAZsBQVVfeXFMUGhnc3hCbkpmODF3TDNjVlA3cENPLWZfaXVSOUQ4MkRuM09WdWdTYjJGcHVmeXFhLVBKTUVFWTV1aXd6ekJuNUl0RjZvUnp6TXV3S3YxYVUtaWIwS29oXzRIbUtpM2VlTkN1LXBkTGlDQnIzVS12OUNMcl9Nc0Y5STFkQTNkMmxQWkpqdXZDbW5Yd0FtVHB6c05sUWM?oc=5",
@@ -1189,6 +1416,18 @@
     "Administrativo",
     "Constitucional"
    ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOenp1SENQNl9zV3pRRTRZXzlzYzh6NXhyWm9PcURrUkpiYml5SHlMZ1QwbTJkYkw2LUdtWVJ1Q3hBdWd6UGFVZ0RxQmtjNG5EZm42dmxLb3RSV1JFZXRqVU1nOGZURGwxNV9rNm9ScW1PV2FEd3FsZGxpdUx4RGFYYTF1c1pZRlJjMEMzZ1ZYX3JKOG1EenhLVURDaHVrY0d2TElRWkVZV29ONjRPRmk0NUpEWHdWakx3bEtZ?oc=5",
+   "title": "TC ordena a la PNP revisar normativa que regula uso de tatuajes del personal policial",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOenp1SENQNl9zV3pRRTRZXzlzYzh6NXhyWm9PcURrUkpiYml5SHlMZ1QwbTJkYkw2LUdtWVJ1Q3hBdWd6UGFVZ0RxQmtjNG5EZm42dmxLb3RSV1JFZXRqVU1nOGZURGwxNV9rNm9ScW1PV2FEd3FsZGxpdUx4RGFYYTF1c1pZRlJjMEMzZ1ZYX3JKOG1EenhLVURDaHVrY0d2TElRWkVZV29ONjRPRmk0NUpEWHdWakx3bEtZ?oc=5",
+   "summary": "",
+   "date": "2026-11-25T17:15:00.000Z",
+   "source": "Prensa · Tribunal Constitucional",
+   "sourceId": "gn-constitucional",
+   "group": "Prensa general",
+   "origin": "Exitosa Noticias",
+   "topics": []
   },
   {
    "id": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPXzNHUFBnX2tfOHlhQWlodjlxODN3dHpRRVdpWTQyTWFoQ3pPSmxabV90UWk4d3BfWDJ6VkpxTDA5amRYRnRuRzd5T0F3ZTZRMHlRTDNoTldQTlNqY213RzB4VkJ1V092TzQ5RlZ0VDhUM2s4TjlIdTMyX280Y1lqLWZiZFFCRUtJekY5cHNpVF9pcWRqZUpZYWdZYXV0eU1fSmtqNWlULVByYndoRzVMQ1pMNGZEWkpfU3htWUNWR3F1bFRiMUhVWHZjNA?oc=5",
@@ -1288,6 +1527,42 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQbS1MS2JSZUlNbnRYcTlzZmxMNWEyeWZSZEVqd3lwQU5ZMFlyM2oxeWFpNEc3QmtndDZTOFR6TDh0RWx2YUdtS0hEQ01ycG12WWkzaGZVZDA4RFl2THVkTEJCTkxxckFPSnRJb0taVkN2YmNoUUNSMVVUdzNZQldVbGZoN0ZoYXV3eVg4NHp4bXpmN2NHSjdiMUZQQ1A1MEIxeHE4dlNCTmxJanBBLWtXbnJGekZhd3RHMXdTMFZfUjZFOUxHMkdCUzhpaGtUYWdDaC1ScHF5TWtBQdIB3wFBVV95cUxNazdyRGgycmVIR1Y5aEI3UlhVeVV1TUl0ek00eERlaVhxbVRDREQzcWZ1RGJZNDhTbl9rbTItSUZnOHBxMmhwbHNPdkc4UzhzSzI4ZGVER0wzWEFKU3RYeGUwVk9tdmdWaUEycVlvOHRyTm1QcFRKU2EwZjZDLUlJdEg1OURsYTVEZ2RWYkdHZmFLdUNRX3R2SkhrejRsd1A1d2tHcjJjTUwybGR0bWUybEFQdFlVQmZXZXowZzRhaUFPZWVLT2JOakFHY3FHNGV1ZFB4dmxrbl9xakl0QlNR?oc=5",
+   "title": "Marlaska, obligado a dar explicaciones al CGPJ por retirar la escolta a la jueza Beatriz Biedma",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQbS1MS2JSZUlNbnRYcTlzZmxMNWEyeWZSZEVqd3lwQU5ZMFlyM2oxeWFpNEc3QmtndDZTOFR6TDh0RWx2YUdtS0hEQ01ycG12WWkzaGZVZDA4RFl2THVkTEJCTkxxckFPSnRJb0taVkN2YmNoUUNSMVVUdzNZQldVbGZoN0ZoYXV3eVg4NHp4bXpmN2NHSjdiMUZQQ1A1MEIxeHE4dlNCTmxJanBBLWtXbnJGekZhd3RHMXdTMFZfUjZFOUxHMkdCUzhpaGtUYWdDaC1ScHF5TWtBQdIB3wFBVV95cUxNazdyRGgycmVIR1Y5aEI3UlhVeVV1TUl0ek00eERlaVhxbVRDREQzcWZ1RGJZNDhTbl9rbTItSUZnOHBxMmhwbHNPdkc4UzhzSzI4ZGVER0wzWEFKU3RYeGUwVk9tdmdWaUEycVlvOHRyTm1QcFRKU2EwZjZDLUlJdEg1OURsYTVEZ2RWYkdHZmFLdUNRX3R2SkhrejRsd1A1d2tHcjJjTUwybGR0bWUybEFQdFlVQmZXZXowZzRhaUFPZWVLT2JOakFHY3FHNGV1ZFB4dmxrbl9xakl0QlNR?oc=5",
+   "summary": "",
+   "date": "2026-11-25T15:37:37.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "ESdiario",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQVjZnSTgxMnc0WjNjbEg4UFZuOVo5dEFNTW1YbjFaRDRCTXZSSGtTbV9WWktMalZ2TWJwSXV5S1djWEJpUFhmNHo2NVlWTHpNSkp4dGtZakFkVzJfY3B2ZDA2Nm1IVW5lVzlIOExDTWZubEVva1Y2S0VqN1JLWFh3RGlSU1BlcWpUZEp0bnNCV2lsa1BJbWtYUEJFdEtmbUVrdVgzTjc4b1hEcVlubEw0MG5Ha2p5WE1SSE42bUg0SDBucTF3bjZXMmMxNnVrV0RvM2kwcmdhenZfcUlrZU9RTm9ENGRQWlBaY2U0LUtuTEhvOU1GWlhaTXdxNUxUaG5HT1lNRmpMWGdia3pNOU1YUDE0QdIBkwJBVV95cUxQVjZnSTgxMnc0WjNjbEg4UFZuOVo5dEFNTW1YbjFaRDRCTXZSSGtTbV9WWktMalZ2TWJwSXV5S1djWEJpUFhmNHo2NVlWTHpNSkp4dGtZakFkVzJfY3B2ZDA2Nm1IVW5lVzlIOExDTWZubEVva1Y2S0VqN1JLWFh3RGlSU1BlcWpUZEp0bnNCV2lsa1BJbWtYUEJFdEtmbUVrdVgzTjc4b1hEcVlubEw0MG5Ha2p5WE1SSE42bUg0SDBucTF3bjZXMmMxNnVrV0RvM2kwcmdhenZfcUlrZU9RTm9ENGRQWlBaY2U0LUtuTEhvOU1GWlhaTXdxNUxUaG5HT1lNRmpMWGdia3pNOU1YUDE0QQ?oc=5",
+   "title": "Eskariam arranca la batalla judicial contra Booking y ultima una demanda colectiva de 1.000 hoteles por 300 millones",
+   "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQVjZnSTgxMnc0WjNjbEg4UFZuOVo5dEFNTW1YbjFaRDRCTXZSSGtTbV9WWktMalZ2TWJwSXV5S1djWEJpUFhmNHo2NVlWTHpNSkp4dGtZakFkVzJfY3B2ZDA2Nm1IVW5lVzlIOExDTWZubEVva1Y2S0VqN1JLWFh3RGlSU1BlcWpUZEp0bnNCV2lsa1BJbWtYUEJFdEtmbUVrdVgzTjc4b1hEcVlubEw0MG5Ha2p5WE1SSE42bUg0SDBucTF3bjZXMmMxNnVrV0RvM2kwcmdhenZfcUlrZU9RTm9ENGRQWlBaY2U0LUtuTEhvOU1GWlhaTXdxNUxUaG5HT1lNRmpMWGdia3pNOU1YUDE0QdIBkwJBVV95cUxQVjZnSTgxMnc0WjNjbEg4UFZuOVo5dEFNTW1YbjFaRDRCTXZSSGtTbV9WWktMalZ2TWJwSXV5S1djWEJpUFhmNHo2NVlWTHpNSkp4dGtZakFkVzJfY3B2ZDA2Nm1IVW5lVzlIOExDTWZubEVva1Y2S0VqN1JLWFh3RGlSU1BlcWpUZEp0bnNCV2lsa1BJbWtYUEJFdEtmbUVrdVgzTjc4b1hEcVlubEw0MG5Ha2p5WE1SSE42bUg0SDBucTF3bjZXMmMxNnVrV0RvM2kwcmdhenZfcUlrZU9RTm9ENGRQWlBaY2U0LUtuTEhvOU1GWlhaTXdxNUxUaG5HT1lNRmpMWGdia3pNOU1YUDE0QQ?oc=5",
+   "summary": "",
+   "date": "2026-11-25T15:35:00.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Cinco Días",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQemJCVWxaNGEzeTZUMWtXVkxDLXhpUXZVV0dsUUR3STBvNVA3WmtFU1dZc3NqUW5UdkE1QUFOUTB6ZGlVcnBwN3h3OE9EcVNzUlRxMXFOaE1iT2lBUUhxZkwtY1RpQWZBNjdLTE9aWklfMjBPOTlnYnpVV09INC1tcDBaTXFZal8tbkNKTHJXaFJyendJWWJyRXpsT25zQ0h0VUljUjdQOGsxblplLUlWeUpFclA5MHluUGFGRmhDdDRkLVJj0gHPAUFVX3lxTE15cWVTQUtZdjdmbGx3bXZUanYxTU1YOTg5N0FzLVVoZ1QxOEFlNEpUTF9ZenpfdVd1SW9VeFBVNm9IWlZWRXp0dWxqZV9VMWswOE9RaUxhblJWM3NucHpnQ2JfQjE5NXRZZHhSR1BNU1VtTmdnbnk5dThsa2s4bzNKVkJia3pwLUNlZ090ZE5XTlhITTBtOXNyakpKaDdrSEd1QjNNdWIzLVBCNTdVaURhUERnbGwyejRsZXFrWGxFTU41MW95U0NxZDhHNlIySQ?oc=5",
+   "title": "El CGPJ acorrala a Marlaska por retirar la escolta a la juez Biedma",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQemJCVWxaNGEzeTZUMWtXVkxDLXhpUXZVV0dsUUR3STBvNVA3WmtFU1dZc3NqUW5UdkE1QUFOUTB6ZGlVcnBwN3h3OE9EcVNzUlRxMXFOaE1iT2lBUUhxZkwtY1RpQWZBNjdLTE9aWklfMjBPOTlnYnpVV09INC1tcDBaTXFZal8tbkNKTHJXaFJyendJWWJyRXpsT25zQ0h0VUljUjdQOGsxblplLUlWeUpFclA5MHluUGFGRmhDdDRkLVJj0gHPAUFVX3lxTE15cWVTQUtZdjdmbGx3bXZUanYxTU1YOTg5N0FzLVVoZ1QxOEFlNEpUTF9ZenpfdVd1SW9VeFBVNm9IWlZWRXp0dWxqZV9VMWswOE9RaUxhblJWM3NucHpnQ2JfQjE5NXRZZHhSR1BNU1VtTmdnbnk5dThsa2s4bzNKVkJia3pwLUNlZ090ZE5XTlhITTBtOXNyakpKaDdrSEd1QjNNdWIzLVBCNTdVaURhUERnbGwyejRsZXFrWGxFTU41MW95U0NxZDhHNlIySQ?oc=5",
+   "summary": "",
+   "date": "2026-11-25T15:31:53.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Libertad Digital",
+   "topics": []
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNMlhPUXRRbXpKbHk2ampHTFBEMThHQzdaSUhtVjRzeWNFTEtDUFJhVC1kYlhOb2J3VWlNS2VuQU1lWWc5RkhTbkx6bzhqN0FwM2dwYXpoU0VrQnNHUy1wUmdidEVVZjNmY1BlNDhIWXpMb1hGUDBrQ2pySXgtUnlHNVJZS1ZHM1dIbmZieGtsa3FqTnFIVDhBY3JMdHJ2Y3B6eWlNdnY4VUZ6aXp2WTdULVpvbk1LdGllelM1SXVObko4MVd6Wkh2X0h2aHNyT2xrV2phbFBiczBCdWVQSmVZRllVbmFNYlMtWFRDa2xUOGh2RXVLRlhXN0RXUVU4SE1BN2FvYU1ydENZLUxab3NtMnhR?oc=5",
    "title": "El Gobierno de Ayuso llevará al Tribunal Constitucional el decreto de vivienda de Sánchez: “Supone un perjuicio grave para los propietarios y los inquilinos”",
    "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNMlhPUXRRbXpKbHk2ampHTFBEMThHQzdaSUhtVjRzeWNFTEtDUFJhVC1kYlhOb2J3VWlNS2VuQU1lWWc5RkhTbkx6bzhqN0FwM2dwYXpoU0VrQnNHUy1wUmdidEVVZjNmY1BlNDhIWXpMb1hGUDBrQ2pySXgtUnlHNVJZS1ZHM1dIbmZieGtsa3FqTnFIVDhBY3JMdHJ2Y3B6eWlNdnY4VUZ6aXp2WTdULVpvbk1LdGllelM1SXVObko4MVd6Wkh2X0h2aHNyT2xrV2phbFBiczBCdWVQSmVZRllVbmFNYlMtWFRDa2xUOGh2RXVLRlhXN0RXUVU4SE1BN2FvYU1ydENZLUxab3NtMnhR?oc=5",
@@ -1302,6 +1577,18 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQNmJxeHV4dldsT0VHRFRPbXMydVB0VVFydmw1TXFrcUk2Q0ptN19UckNnT0xza2R0OXc2d3FaS2t0T1pBdlUxbXlld0VvUjZVUWpPNjJrRVVvcmljZ05hZjV2YVlTVVBCY05IblFHWElVMUw1Z0RzTzZMdVR6eG91WXBlbnVEbWpHenF0SlBQalB4SVVXeTBoWVJKNUdta0c0eTREc0t6dEZtbVRJRldHTWN5RXg4dFJkWHUtcXgzVXMzZHFLS056UVJ5cVZ3QkU1cmtpOVVPSW1oNjBaNWJyaUp0R1Z5dlNfMHIwMmVadFE1Rm8xRHhTUTB30gH_AUFVX3lxTE1ndmpWMldDcmZZVlNHOUxKcGFlcWdFYnpnT3ZaWTA5TDhwXzdYM3BCRUdNell6ZG0tQ0d5ZzFuS294VE81Umd6MFN4NmowaWl0eXA3RnpCcXlxZnZHS2pZby00R2ZuaEdmOVdwU3owRHNfZk1lS3RFQ0xaNmhjbDJOYmI1U0N2cHRQc3dhTmpxaXl2T0lmR0dKS2F4VU16dnJ6ZlFlN01OYTNaWDVTaFgxZ0xfZFB2Y1didjdZOXFxS3lUQWFyTW1vTkRFYm8tbDlMdVUtTnotSUl4OTBwVklWeDBnQ1BCcmZhSHg0bXdiOTd6a3lpOGlJRHpTaWZ1dw?oc=5",
+   "title": "La presidenta del CGPJ pedirá explicaciones a Marlaska por retirar la escolta a la jueza amenazada por las 'cloacas del PSOE'",
+   "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQNmJxeHV4dldsT0VHRFRPbXMydVB0VVFydmw1TXFrcUk2Q0ptN19UckNnT0xza2R0OXc2d3FaS2t0T1pBdlUxbXlld0VvUjZVUWpPNjJrRVVvcmljZ05hZjV2YVlTVVBCY05IblFHWElVMUw1Z0RzTzZMdVR6eG91WXBlbnVEbWpHenF0SlBQalB4SVVXeTBoWVJKNUdta0c0eTREc0t6dEZtbVRJRldHTWN5RXg4dFJkWHUtcXgzVXMzZHFLS056UVJ5cVZ3QkU1cmtpOVVPSW1oNjBaNWJyaUp0R1Z5dlNfMHIwMmVadFE1Rm8xRHhTUTB30gH_AUFVX3lxTE1ndmpWMldDcmZZVlNHOUxKcGFlcWdFYnpnT3ZaWTA5TDhwXzdYM3BCRUdNell6ZG0tQ0d5ZzFuS294VE81Umd6MFN4NmowaWl0eXA3RnpCcXlxZnZHS2pZby00R2ZuaEdmOVdwU3owRHNfZk1lS3RFQ0xaNmhjbDJOYmI1U0N2cHRQc3dhTmpxaXl2T0lmR0dKS2F4VU16dnJ6ZlFlN01OYTNaWDVTaFgxZ0xfZFB2Y1didjdZOXFxS3lUQWFyTW1vTkRFYm8tbDlMdVUtTnotSUl4OTBwVklWeDBnQ1BCcmZhSHg0bXdiOTd6a3lpOGlJRHpTaWZ1dw?oc=5",
+   "summary": "",
+   "date": "2026-11-25T15:18:15.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Vozpopuli",
+   "topics": []
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNdzh3WDZ5SGkwRGtFaUhmcTRhdWxtZkExZ0s0bXkxd3JtMnpIWG40TWxsaHpfbWpaY0xBTW9SSlBEY0JraWlsbk45M0o5c2xIeFgwTHN6dUY4TXFPZWZQcERsVEdvandyLWowdS1KeUpGNHphR2lNeEJQeUNsRHlmTjVn?oc=5",
    "title": "La Comunidad recurrirá el decreto de vivienda ante el Constitucional",
    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNdzh3WDZ5SGkwRGtFaUhmcTRhdWxtZkExZ0s0bXkxd3JtMnpIWG40TWxsaHpfbWpaY0xBTW9SSlBEY0JraWlsbk45M0o5c2xIeFgwTHN6dUY4TXFPZWZQcERsVEdvandyLWowdS1KeUpGNHphR2lNeEJQeUNsRHlmTjVn?oc=5",
@@ -1313,6 +1600,20 @@
    "origin": "Madridiario",
    "topics": [
     "Constitucional"
+   ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMEhvcTdXdk5XTDhsWmpnclowNkJjUk5fTEltVklnOGlBRTZkaU1MYkVMMkNlUzhGVHpZaDc0Y2ZSejQ5UUdmNnhLOHV5NzdUZkwyVE1aaWpvTm1JeXFFM1RULU4zTWFjbW9JZ1had1lSZmJoMHVnLVVtQklQelBseXVxTEZGbHp6OEVIYkV0dFctNXpPM3daUVBJTGNvSUxsZVFJaU9FV3AyOFVmQVdLdnRYbmx1QQ?oc=5",
+   "title": "El TJUE confirma los límites de la exención de retención sobre dividendos",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMEhvcTdXdk5XTDhsWmpnclowNkJjUk5fTEltVklnOGlBRTZkaU1MYkVMMkNlUzhGVHpZaDc0Y2ZSejQ5UUdmNnhLOHV5NzdUZkwyVE1aaWpvTm1JeXFFM1RULU4zTWFjbW9JZ1had1lSZmJoMHVnLVVtQklQelBseXVxTEZGbHp6OEVIYkV0dFctNXpPM3daUVBJTGNvSUxsZVFJaU9FV3AyOFVmQVdLdnRYbmx1QQ?oc=5",
+   "summary": "",
+   "date": "2026-11-25T15:13:08.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Osborne Clarke",
+   "topics": [
+    "Europeo"
    ]
   },
   {
@@ -1344,6 +1645,18 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZmRpVWFxZlNGVGl2aU5QLTBMaUtfYVZhbU5JamtwSXRvWnUxUDBKZ2Z5RFZFbXV1bDFuQy11NHA0NXJTTUlFdWNXaXJoSmp3VWVyVXdRUmZLbHBiYkQ0a2lTRUc5SDRWZHhMWGtpLXdmWXhPanNYaDcwaHFTb0N4bDlaQU81SnJXUUFPOXg2d3ZhYjhpaURCS1VrbDBENnRfMVNmNWcwbGc1cGZ3WXlqRF9MNmpjbHY0UThuNU1vU3JjUjV5Zm55YnhodnZ5b1nSAc8BQVVfeXFMUGZkaVVhcWZTRlRpdmlOUC0wTGlLX2FWYW1OSWprcEl0b1p1MVAwSmdmeURWRW11dWwxbkMtdTRwNDVyU01JRXVjV2lyaEpqd1VlclV3UVJmS2xwYmJENGtpU0VHOUg0VmR4TFhraS13Zll4T2pzWGg3MGhxU29DeGw5WkFPNUpyV1FBTzl4Nnd2YWI4aWlEQktVa2wwRDZ0XzFTZjVnMGxnNXBmd1l5akRfTDZqY2x2NFE4bjVNb1NyY1I1eWZueWJ4aHZ2eW9Z?oc=5",
+   "title": "Los letrados de la Administración de Justicia reúnen a jueces, fiscales, policías y forenses para analizar la violencia de género",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZmRpVWFxZlNGVGl2aU5QLTBMaUtfYVZhbU5JamtwSXRvWnUxUDBKZ2Z5RFZFbXV1bDFuQy11NHA0NXJTTUlFdWNXaXJoSmp3VWVyVXdRUmZLbHBiYkQ0a2lTRUc5SDRWZHhMWGtpLXdmWXhPanNYaDcwaHFTb0N4bDlaQU81SnJXUUFPOXg2d3ZhYjhpaURCS1VrbDBENnRfMVNmNWcwbGc1cGZ3WXlqRF9MNmpjbHY0UThuNU1vU3JjUjV5Zm55YnhodnZ5b1nSAc8BQVVfeXFMUGZkaVVhcWZTRlRpdmlOUC0wTGlLX2FWYW1OSWprcEl0b1p1MVAwSmdmeURWRW11dWwxbkMtdTRwNDVyU01JRXVjV2lyaEpqd1VlclV3UVJmS2xwYmJENGtpU0VHOUg0VmR4TFhraS13Zll4T2pzWGg3MGhxU29DeGw5WkFPNUpyV1FBTzl4Nnd2YWI4aWlEQktVa2wwRDZ0XzFTZjVnMGxnNXBmd1l5akRfTDZqY2x2NFE4bjVNb1NyY1I1eWZueWJ4aHZ2eW9Z?oc=5",
+   "summary": "",
+   "date": "2026-11-25T14:51:41.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Canarias7",
+   "topics": []
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPaTZ3eVVja0NiVENBZW9PV2RqTmx4T1dRMXVmMkVOSmlPUjUyR1d6THRERE82ellBbjNVZ2xURWIxZ0hKUnhZN19IWnJMV0FQR3AweGgwWEhwWnFRcldFVmZaT0tZZmZSRFdDNWw4clpzZTJvb2piWnY3SWFwcWlDa29DOFljV1VyZUVLUE54V2kyRzc0RDFJQ1N0S2dFMjl1TmcxYXBtNXZFVDkxc1E?oc=5",
    "title": "El Supremo confirma la anulación del plan de Casalonga",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPaTZ3eVVja0NiVENBZW9PV2RqTmx4T1dRMXVmMkVOSmlPUjUyR1d6THRERE82ellBbjNVZ2xURWIxZ0hKUnhZN19IWnJMV0FQR3AweGgwWEhwWnFRcldFVmZaT0tZZmZSRFdDNWw4clpzZTJvb2piWnY3SWFwcWlDa29DOFljV1VyZUVLUE54V2kyRzc0RDFJQ1N0S2dFMjl1TmcxYXBtNXZFVDkxc1E?oc=5",
@@ -1353,6 +1666,18 @@
    "sourceId": "gn-supremo",
    "group": "Prensa general",
    "origin": "GaliciaPress",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZndXMGZENTFvUzdsSFI1RlRSOTJaa2NxbnJNeldvemtodEZvNDJwVHBvNGN1bklUdXdCck5CbVhwNGhYMjg5YXFEaWI2MnVNTHNJaTYwZkJWRmdmdXNzcGRTNkxNYXViblI1Y29uU3N4c01UeGdOT2lWeWd6VFRnSUR0ekhQSnh4bTRmWlFSUnRKaFBaZkxFcmRCNXpzd0tTNmFvYWo5R1FlUQ?oc=5",
+   "title": "El Pleno del CGPJ pide recabar explicaciones sobre la escolta de la jueza Biedma",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZndXMGZENTFvUzdsSFI1RlRSOTJaa2NxbnJNeldvemtodEZvNDJwVHBvNGN1bklUdXdCck5CbVhwNGhYMjg5YXFEaWI2MnVNTHNJaTYwZkJWRmdmdXNzcGRTNkxNYXViblI1Y29uU3N4c01UeGdOT2lWeWd6VFRnSUR0ekhQSnh4bTRmWlFSUnRKaFBaZkxFcmRCNXpzd0tTNmFvYWo5R1FlUQ?oc=5",
+   "summary": "",
+   "date": "2026-11-25T14:44:00.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "El Confidencial",
    "topics": []
   },
   {
@@ -1394,6 +1719,18 @@
    "topics": []
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQXVBOWdTVjhCTFdYRnNQMjhQd3g4MGIydWpMTW00Mm9aSFp2UUFhSDFhMnI2NHAyS2JZZ3ZLNkNHYlUyRmNPS1dYbXRGS3BPWEVpN3N5OUcwa3VOVVRnX25JSXpQZTRVaEdIeEdSTFUwOGczdlVCNU5GMGdQNm5Fa3N5anQ4Z0ZKbWhPTTVFbVF4RjVXVklpY09ndVlWTi1aR3BzOTdheGJNQm5VdjdXdWpEeVRFZC1GMjR5SFd5OEgxX19oOW1N0gHMAUFVX3lxTE5PSEFWdFJRQmxZeW1EMW1Genk1WUw2MGJxemlwM3pmNDFfTjB4Zm5iUlpBOEJ3V05keDh4TldwX2JhZ21jU094Nm9mSkthSkdiZ2FXZG9mQzhianBteld2RXRobmsySDVySmVEbFEzM2M0bXl1c0tpQkVnYm1iRExyRUw3bnIxUl9DWGpTdUl2YTdKemRMRUxmOUNuNk1xVEktaEx4b3M3RnFUVGNUcUxiVzlUalNfUzhlbm9hcmI3bndBaTBZSEJ3U3F4NA?oc=5",
+   "title": "La presidenta del Poder Judicial, los conservadores y un vocal de Sumar proponen concederse una “medalla de honor”",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQXVBOWdTVjhCTFdYRnNQMjhQd3g4MGIydWpMTW00Mm9aSFp2UUFhSDFhMnI2NHAyS2JZZ3ZLNkNHYlUyRmNPS1dYbXRGS3BPWEVpN3N5OUcwa3VOVVRnX25JSXpQZTRVaEdIeEdSTFUwOGczdlVCNU5GMGdQNm5Fa3N5anQ4Z0ZKbWhPTTVFbVF4RjVXVklpY09ndVlWTi1aR3BzOTdheGJNQm5VdjdXdWpEeVRFZC1GMjR5SFd5OEgxX19oOW1N0gHMAUFVX3lxTE5PSEFWdFJRQmxZeW1EMW1Genk1WUw2MGJxemlwM3pmNDFfTjB4Zm5iUlpBOEJ3V05keDh4TldwX2JhZ21jU094Nm9mSkthSkdiZ2FXZG9mQzhianBteld2RXRobmsySDVySmVEbFEzM2M0bXl1c0tpQkVnYm1iRExyRUw3bnIxUl9DWGpTdUl2YTdKemRMRUxmOUNuNk1xVEktaEx4b3M3RnFUVGNUcUxiVzlUalNfUzhlbm9hcmI3bndBaTBZSEJ3U3F4NA?oc=5",
+   "summary": "",
+   "date": "2026-11-25T14:05:34.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "elDiario.es",
+   "topics": []
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOWm9MUThNa0hPTlZCNE9scU12dVBmQk9hcGVDTDI5eVVkWDJheDI1ZEtHVURVMXRicGZrcWkyLTBNZnBLZFE2bVhyUjVDbTVnbWIwaFEzVVlXS0lEa1BnLVRMOWx6aDR6WU9nQU9LM1BrbzlPV0YzMEltblJYamM5ZEQ4MmhsY2p1T0dNemtuWkM5ZXBhTTVjb2k2OFExRjNJTDlWSlgzWEU5T0prYUFtcS1XZXJuSURJd3FURVY4ZDU?oc=5",
    "title": "El Supremo anula el fallo que dio la razón a Phone House tras despedir a una empleada por 50 euros",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOWm9MUThNa0hPTlZCNE9scU12dVBmQk9hcGVDTDI5eVVkWDJheDI1ZEtHVURVMXRicGZrcWkyLTBNZnBLZFE2bVhyUjVDbTVnbWIwaFEzVVlXS0lEa1BnLVRMOWx6aDR6WU9nQU9LM1BrbzlPV0YzMEltblJYamM5ZEQ4MmhsY2p1T0dNemtuWkM5ZXBhTTVjb2k2OFExRjNJTDlWSlgzWEU5T0prYUFtcS1XZXJuSURJd3FURVY4ZDU?oc=5",
@@ -1403,6 +1740,44 @@
    "sourceId": "gn-supremo",
    "group": "Prensa general",
    "origin": "Infoemplea2",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOdG5aX1pDMmpZeXBhR19udC1yRjJpaXFDRlY3ZTNkMmdjV3pNdHNfeUpfRkhpUnV6Wm96Q1lwcnFKN25EWFpLcTFhbFpXaEFnc05QZy0yQnZmSkVtNnZmbmYxb0FicVR3TG9RbGd0M0xIUjlXUndRblN6WUFuNEtFOEkyT1JuUzZhcGRuTUl1RkRHZ0VMcXdXYXlSajRzRWFKeFZWenozQ21RTGxqZi1GZS1jZ1l5d20zc1hkZGlvSkZldzYtVGVJN0x0ZjZGLW8wVVBCV0ZEbUY0dw?oc=5",
+   "title": "La Comunidad llevará al Constitucional el decreto de vivienda",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOdG5aX1pDMmpZeXBhR19udC1yRjJpaXFDRlY3ZTNkMmdjV3pNdHNfeUpfRkhpUnV6Wm96Q1lwcnFKN25EWFpLcTFhbFpXaEFnc05QZy0yQnZmSkVtNnZmbmYxb0FicVR3TG9RbGd0M0xIUjlXUndRblN6WUFuNEtFOEkyT1JuUzZhcGRuTUl1RkRHZ0VMcXdXYXlSajRzRWFKeFZWenozQ21RTGxqZi1GZS1jZ1l5d20zc1hkZGlvSkZldzYtVGVJN0x0ZjZGLW8wVVBCV0ZEbUY0dw?oc=5",
+   "summary": "",
+   "date": "2026-11-25T13:56:02.000Z",
+   "source": "Prensa · Tribunal Constitucional",
+   "sourceId": "gn-constitucional",
+   "group": "Prensa general",
+   "origin": "Madrid Actual",
+   "topics": [
+    "Constitucional"
+   ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOeVJITUZlSkpaQUpqWUNuUjF6X2FOZmFUMzVMN25KYnhvLVFFMEEwSlpLT05RZDZKcFRsamszVTNyTWFuampqeXVidmozNnJENDNXd1lZR2Z4YlJ1WHRVY3BCalgzOHlVUUFrZVhvcTFUN1M3LXlPaC1paWRZUllmY3hoYjl4NmowMXFsR2JvX3NFcm54ODFfVG5mRWE3ZWJETTBWVGhMZXk1dDhURHl5SEhfZ1lWTDBxOWFXSVM4YUVCX01fZjluRzl3cHBxUkQwSnNrcF9XYkVlWkY2NkHSAd4BQVVfeXFMTnlSSE1GZUpKWkFKallDblIxel9hTmZhVDM1TDduSmJ4by1RRTBBMEpaS09OUWQ2SnBUbGprM1Uzck1hbmpqanl1YnZqMzZyRDQzV3dZWUdmeGJSdVh0VWNwQmpYMzh5VVFBa2VYb3ExVDdTNy15T2gtaWlkWVJZZmN4aGI5eDZqMDFxbEdib19zRXJueDgxX1RuZkVhN2ViRE0wVlRoTGV5NXQ4VER5eUhIX2dZVkwwcTlhV0lTOGFFQl9NX2Y5bkc5d3BwcVJEMEpza3BfV2JFZVpGNjZB?oc=5",
+   "title": "El Observatorio contra la Violencia de Género del CGPJ celebrará su X Congreso el 1 y 2 de diciembre en el Senado",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOeVJITUZlSkpaQUpqWUNuUjF6X2FOZmFUMzVMN25KYnhvLVFFMEEwSlpLT05RZDZKcFRsamszVTNyTWFuampqeXVidmozNnJENDNXd1lZR2Z4YlJ1WHRVY3BCalgzOHlVUUFrZVhvcTFUN1M3LXlPaC1paWRZUllmY3hoYjl4NmowMXFsR2JvX3NFcm54ODFfVG5mRWE3ZWJETTBWVGhMZXk1dDhURHl5SEhfZ1lWTDBxOWFXSVM4YUVCX01fZjluRzl3cHBxUkQwSnNrcF9XYkVlWkY2NkHSAd4BQVVfeXFMTnlSSE1GZUpKWkFKallDblIxel9hTmZhVDM1TDduSmJ4by1RRTBBMEpaS09OUWQ2SnBUbGprM1Uzck1hbmpqanl1YnZqMzZyRDQzV3dZWUdmeGJSdVh0VWNwQmpYMzh5VVFBa2VYb3ExVDdTNy15T2gtaWlkWVJZZmN4aGI5eDZqMDFxbEdib19zRXJueDgxX1RuZkVhN2ViRE0wVlRoTGV5NXQ4VER5eUhIX2dZVkwwcTlhV0lTOGFFQl9NX2Y5bkc5d3BwcVJEMEpza3BfV2JFZVpGNjZB?oc=5",
+   "summary": "",
+   "date": "2026-11-25T13:42:33.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Teleprensa",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQRzhlOFVKNnRWWkVDQm9TRTlRQmdDY1M0QWlOMnJ2dGt4MVNWZDMwVEhDTkp1RnFPT18xbnpuLVRZQk5QcmxYRi1INHlfMktyZm9MbVljcXJyT09WZFd4RGVBRTBCR3NyYmJQcTBZNHlpUi1oVlI0QV90cVpLQ2FRRmZYR1J5aTlsOEdIM2VQOXBRSVlWZ0RDQVNxVTRDS0hxOGhtZFI5UldJd25MZm5HMU1YMTQxOXJCWHIwRy04amFRUWpvaUprQzE2cWV4ODFuQ1Z2Q3B0X2FPUFFBTE1hMVdDMXY?oc=5",
+   "title": "El Observatorio contra la Violencia de Género del CGPJ celebrará su X Congreso el 1 y 2 de diciembre en el Senado",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQRzhlOFVKNnRWWkVDQm9TRTlRQmdDY1M0QWlOMnJ2dGt4MVNWZDMwVEhDTkp1RnFPT18xbnpuLVRZQk5QcmxYRi1INHlfMktyZm9MbVljcXJyT09WZFd4RGVBRTBCR3NyYmJQcTBZNHlpUi1oVlI0QV90cVpLQ2FRRmZYR1J5aTlsOEdIM2VQOXBRSVlWZ0RDQVNxVTRDS0hxOGhtZFI5UldJd25MZm5HMU1YMTQxOXJCWHIwRy04amFRUWpvaUprQzE2cWV4ODFuQ1Z2Q3B0X2FPUFFBTE1hMVdDMXY?oc=5",
+   "summary": "",
+   "date": "2026-11-25T13:41:48.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Europa Press",
    "topics": []
   },
   {
@@ -1443,6 +1818,18 @@
    "sourceId": "gn-canarias",
    "group": "Prensa general",
    "origin": "La Voz de Asturias",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQaW5pSnJGbzRaeWNTMDdBU1laYUZXT1UtV3hoTnRCcDdEaGI0UHlIX2xqYlUwTHV1NEt5S3JvTjExdFZhazJINEpMSFQyaVp3T3BDYUhydF9jNkFPUEsxX0NScERodkc2OHdkblh1d3lfZDVObGJVNzRUMnlUbW93NUNNOE9QYTAzQTlMMFgtenpfVWdGV3BQSWlvTkcybzZJdGJSQ0EwSkd6Q2ZXcm95WnpSVVFtUDNqcWIxTk1lQlNtdzRaN01BZGFIUWxHa2xjdWfSAewBQVVfeXFMUHg0TDBvckY0cnVYOURCcmRhLVVYUl8teUNGM1BSREMwQUthMzVSRjVpWG01ZWE3N1ZUWlZMLXhvT2dtYWc1SjN5cURJSnlsTXVMLU9IclNiWFVraDFEV1RITWoyaGFRY0NGcFFFY1QzNDRTRkxXYV9Wd1hrOUstYXNBWmhlN1ZidEN6QmM5NVhCdUdkcjlCUWlxNWphdmM1akNiUTNjMFZqbU45cWFOTFFtcWFCWUVYZnBHZjBpWWtPYkRqV21kczRWYkd5c1V4LVRrWlNSSFZvRVZGVVNLZmUtOGFhTWdjZzdnVGk?oc=5",
+   "title": "Vocales progresistas del CGPJ revindican la lucha contra el maltrato sin partidismos",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQaW5pSnJGbzRaeWNTMDdBU1laYUZXT1UtV3hoTnRCcDdEaGI0UHlIX2xqYlUwTHV1NEt5S3JvTjExdFZhazJINEpMSFQyaVp3T3BDYUhydF9jNkFPUEsxX0NScERodkc2OHdkblh1d3lfZDVObGJVNzRUMnlUbW93NUNNOE9QYTAzQTlMMFgtenpfVWdGV3BQSWlvTkcybzZJdGJSQ0EwSkd6Q2ZXcm95WnpSVVFtUDNqcWIxTk1lQlNtdzRaN01BZGFIUWxHa2xjdWfSAewBQVVfeXFMUHg0TDBvckY0cnVYOURCcmRhLVVYUl8teUNGM1BSREMwQUthMzVSRjVpWG01ZWE3N1ZUWlZMLXhvT2dtYWc1SjN5cURJSnlsTXVMLU9IclNiWFVraDFEV1RITWoyaGFRY0NGcFFFY1QzNDRTRkxXYV9Wd1hrOUstYXNBWmhlN1ZidEN6QmM5NVhCdUdkcjlCUWlxNWphdmM1akNiUTNjMFZqbU45cWFOTFFtcWFCWUVYZnBHZjBpWWtPYkRqV21kczRWYkd5c1V4LVRrWlNSSFZvRVZGVVNLZmUtOGFhTWdjZzdnVGk?oc=5",
+   "summary": "",
+   "date": "2026-11-25T13:03:00.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Infobae",
    "topics": []
   },
   {
@@ -1489,6 +1876,20 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPTkIwcEhfeDBaTUI5cEU4aDVzRnNtMlYxbmdBdk5ZZzZOY3RIU0dpWmVkM0dRM3ZOM0ZSRDNnRVlLZ0NONEc5N1VpejIwZ2dnRW1OM1NOSVpXVW1JM1k4bVNMSHhPR2JQbkprdUh5Nm5Qdkc1WnVMa3N2Vi1QRU1tdmNZTkN3dWhpZGlSRmF1UG9pTzVOckNqdUZsVnBHZFF0QjB3LWxKNXJOdGJlMlJVbUtMN1VpcHU1MVI5VTZjVEZhdHowOTdBT1BkaW8xQQ?oc=5",
+   "title": "La justicia europea amplía el margen de los Estados para devolver migrantes",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPTkIwcEhfeDBaTUI5cEU4aDVzRnNtMlYxbmdBdk5ZZzZOY3RIU0dpWmVkM0dRM3ZOM0ZSRDNnRVlLZ0NONEc5N1VpejIwZ2dnRW1OM1NOSVpXVW1JM1k4bVNMSHhPR2JQbkprdUh5Nm5Qdkc1WnVMa3N2Vi1QRU1tdmNZTkN3dWhpZGlSRmF1UG9pTzVOckNqdUZsVnBHZFF0QjB3LWxKNXJOdGJlMlJVbUtMN1VpcHU1MVI5VTZjVEZhdHowOTdBT1BkaW8xQQ?oc=5",
+   "summary": "",
+   "date": "2026-11-25T12:47:33.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "France 24",
+   "topics": [
+    "Europeo"
+   ]
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQZldndmF3Z0hCVUZxSUZiQmFRRHh1eGpnZFcwdURaVU51aGxNWFU5VnZWRElxQ25nZlpycUxHNFV4dGRFTWlnYllDYjU3YlRQNldjSTZvSlgyMVdjVkFxQXhGNFY3VWpmRG14am5teXVJSHVZY3dmWk9OMnN5VlUxcGRERWNWNURxN1N2NGNrem5peGhsc3hJVTVOMmYwN25nVVhydVVZYi03Yy15TlhpV2JYZERIcTBYRXA1MnlSeGRBbnBLYUJTeVhNTklvOTA4dzZ4M2EzMTdZSnljMVVxeTRwdFpXcDFSQlHSAe8BQVVfeXFMT21MMkloZDl5d0V5Sk9uRExZZ2JGUWZpYXdicjNNY1hlU0xrcnpXeXVOZHhNaHZhMXlsN0pFQVplNU53Q2x5LVIzQVRHclJYZ1lkM0ZZV0lybVprRnU0cnNIRndVX1dDOVhGdjYxWUhuZGJNMEU0ZXU0U3NQbzh6d19hQ0VpdDhYRnNxX0tsVjVvYkxqUmFHZXNzcU1FNzBWdXJ2SG5XY1QtSG1fSVVQNDZHYnRfd3pEVE9nZzZNcXZKbE9GQUVaY2JiQlFNLVFzbW5aTUxHYmtJZHVaSklFZmQwLTU1bF9ycDd2dmU4TEU?oc=5",
    "title": "Ayuso recurrirá ante el Tribunal Constitucional el decreto Maricarmen aprobado por la Diputación Permanente",
    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQZldndmF3Z0hCVUZxSUZiQmFRRHh1eGpnZFcwdURaVU51aGxNWFU5VnZWRElxQ25nZlpycUxHNFV4dGRFTWlnYllDYjU3YlRQNldjSTZvSlgyMVdjVkFxQXhGNFY3VWpmRG14am5teXVJSHVZY3dmWk9OMnN5VlUxcGRERWNWNURxN1N2NGNrem5peGhsc3hJVTVOMmYwN25nVVhydVVZYi03Yy15TlhpV2JYZERIcTBYRXA1MnlSeGRBbnBLYUJTeVhNTklvOTA4dzZ4M2EzMTdZSnljMVVxeTRwdFpXcDFSQlHSAe8BQVVfeXFMT21MMkloZDl5d0V5Sk9uRExZZ2JGUWZpYXdicjNNY1hlU0xrcnpXeXVOZHhNaHZhMXlsN0pFQVplNU53Q2x5LVIzQVRHclJYZ1lkM0ZZV0lybVprRnU0cnNIRndVX1dDOVhGdjYxWUhuZGJNMEU0ZXU0U3NQbzh6d19hQ0VpdDhYRnNxX0tsVjVvYkxqUmFHZXNzcU1FNzBWdXJ2SG5XY1QtSG1fSVVQNDZHYnRfd3pEVE9nZzZNcXZKbE9GQUVaY2JiQlFNLVFzbW5aTUxHYmtJZHVaSklFZmQwLTU1bF9ycDd2dmU4TEU?oc=5",
@@ -1517,6 +1918,20 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNSktjQzEtQ2l4NkxZNUhYSjRnbWJBUHQtdnpUOTJXM0tvZzJ2TGEtYnJfd3VOM0FwLU9paTlFS3l0dzBkaXJhOGF5Ql9Rc2tXWXNweXg4em04VDNhN0JnQm01eGk2SEZwNzVDMV9Lc2tVMktoOWNlTGVOOWpUdlFrdE4zanRCQXZ3aUVBMjZaLXpVQXQ0V09PeG1JeU5QSnplbTFtMXpWSHl6Zk5SQU5xZ2tWZ045OHZMWm5ZYkgzeTJIN0l3WTQxblJSOGd4d2VKU1FoanpFMXJJeVY0dVdEUw?oc=5",
+   "title": "Estrasburgo avala las devoluciones en caliente mientras Sánchez sigue exculpando a Marruecos por la invasión de Ceuta",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNSktjQzEtQ2l4NkxZNUhYSjRnbWJBUHQtdnpUOTJXM0tvZzJ2TGEtYnJfd3VOM0FwLU9paTlFS3l0dzBkaXJhOGF5Ql9Rc2tXWXNweXg4em04VDNhN0JnQm01eGk2SEZwNzVDMV9Lc2tVMktoOWNlTGVOOWpUdlFrdE4zanRCQXZ3aUVBMjZaLXpVQXQ0V09PeG1JeU5QSnplbTFtMXpWSHl6Zk5SQU5xZ2tWZ045OHZMWm5ZYkgzeTJIN0l3WTQxblJSOGd4d2VKU1FoanpFMXJJeVY0dVdEUw?oc=5",
+   "summary": "",
+   "date": "2026-11-25T12:37:53.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Hispanidad",
+   "topics": [
+    "Europeo"
+   ]
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNVDZGUVN5dHBNN2lzcExJMUllVkk2VDFaQjNWQXh5aGJDUVFKV29CamNqR3I2Ukc3TUxCclEtVkg2VkZJaE0xcDBGN1hKMXdESEgzSUlCMFltZ0tvdktra05tRUN6LTNkX0xNTmFwYlI4UTFsNE8td3JDakF6X1RtemE3UVhxRERzbm1NdW5CQTV3NUhSdjVuYTJXZ09SM3FkNXE4ZmhIWGV3cVA3VTQ1VFFJa0ZqSURDYnQyWi0zekl4aXAwOG1hb1ViR1NtTmVHc0xzSDNxUW0xcE5ueXR1S1czS2JtTm14ZzdXOG1BVDdaTHFxTVQtcFVRVE15QXpYZWRWeVU2eWwweVZRQTlJTnFhakZCUkxFbk9VWFlhZ2MyZmVxdDNUZEZR?oc=5",
    "title": "El Gobierno de Ayuso lleva al Constitucional el decreto de vivienda aprobado por la Diputación Permanente alegando que \"vulnera principios constitucionales\"",
    "link": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNVDZGUVN5dHBNN2lzcExJMUllVkk2VDFaQjNWQXh5aGJDUVFKV29CamNqR3I2Ukc3TUxCclEtVkg2VkZJaE0xcDBGN1hKMXdESEgzSUlCMFltZ0tvdktra05tRUN6LTNkX0xNTmFwYlI4UTFsNE8td3JDakF6X1RtemE3UVhxRERzbm1NdW5CQTV3NUhSdjVuYTJXZ09SM3FkNXE4ZmhIWGV3cVA3VTQ1VFFJa0ZqSURDYnQyWi0zekl4aXAwOG1hb1ViR1NtTmVHc0xzSDNxUW0xcE5ueXR1S1czS2JtTm14ZzdXOG1BVDdaTHFxTVQtcFVRVE15QXpYZWRWeVU2eWwweVZRQTlJTnFhakZCUkxFbk9VWFlhZ2MyZmVxdDNUZEZR?oc=5",
@@ -1529,6 +1944,18 @@
    "topics": [
     "Constitucional"
    ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQYXIwcVlLa1doNnlEMGZkSmtacjlhOEIwcVR4SDk0aVgxeko4WkxsaUdhNXJVVm41aHdGb1RZYXZqa2R6dG9YeFNucGF1SkhBVnBmb0dZNjg1OWtaZ3VDQzVCc2o5cHBrN1NwZzJHN1c1aXo4R2lhcEFPejRXM3NDTlc1QW5WYmo4T054NUVyazlfYTJLelkweUJXMENjR3BmZThvWWVuRGRvOWhpUnpOVGJMazVYNjlPM2hFZkhFbXBMZDlRNl9YSlV3M1F5YUtsZzRBNDE2bWx5djZjS3NaTDdtRWNqZw?oc=5",
+   "title": "Sánchez acusa al CGPJ de actuar con \"excesivo celo\" contra el Gobierno y guarda silencio ante la derecha",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQYXIwcVlLa1doNnlEMGZkSmtacjlhOEIwcVR4SDk0aVgxeko4WkxsaUdhNXJVVm41aHdGb1RZYXZqa2R6dG9YeFNucGF1SkhBVnBmb0dZNjg1OWtaZ3VDQzVCc2o5cHBrN1NwZzJHN1c1aXo4R2lhcEFPejRXM3NDTlc1QW5WYmo4T054NUVyazlfYTJLelkweUJXMENjR3BmZThvWWVuRGRvOWhpUnpOVGJMazVYNjlPM2hFZkhFbXBMZDlRNl9YSlV3M1F5YUtsZzRBNDE2bWx5djZjS3NaTDdtRWNqZw?oc=5",
+   "summary": "",
+   "date": "2026-11-25T12:36:00.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "CatalunyaPress",
+   "topics": []
   },
   {
    "id": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNOW5YVWxmQWZiY1lab2hxaVRSbzFKZW9VU0p3b25oTHBCUktfRkZhS1dHeVIwZWM5Zi1BY0NlRG9hODhUblN1QnRNejRtRjBHWklMLUgxbmxGRG9OQ045M1dGd3BWRnNVT1NGWGt4TDBYc2pHbnMxN2gwMWNrMHlPMVM0bWxRaEk4WXI2bXVRbk5sT21BUEF2N1pIUzF5aVBrZlZYQ2xyVTF6S29xLS16VDBYNGhLc2Uwb3JPLUFJLUhySXBWamRHNjNDTTFmN2vSAdQBQVVfeXFMTzh2N3ItVmFhSWcwU05TRURyZEVNNlBGeks4NlJIZ0ladk5XeWxmNHJyVkdoMFlqYjNCc1NfbzB2Z0ZmSC1MNFdfUlpYSFJEcGs2dEkzQ2QwOEFMZEFHNTNYNVFETnJMQW5wQnUzSkVObFY4SGw2WXlSTllUQzljTGVONmJvcVltUUZ6U2sxNkFreEo4Ui1UTHU2QnR3SWdLODZKOHlYTnBoa0FJZzM4UlFYUDFWVDRKS0RWSUw5S0JHSllLTG5faERVZXNJcW1jMi1xZnE?oc=5",
@@ -1615,6 +2042,18 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQNmtsRFpybmxBX0U2Y0RBZ1EzbUxfckZ2NUQtVFpvOVFXTjhuMWZXaW4tUGhiU3c3dTk1ZkhCSURqUm1fblduTkZacFBnaFJaUGxjalhsbnJOSm5VQ2J0S2ZaWXJsVm5BS1JxNS1EVUk1a0d5SEszSU9xRlg3Zk1OYTA3SG5tUmVpZU5IUGN4Y1E1Y0d2TGtsa2xMTkJManQ4Q0ZDR0g4ZDkzR3dwdkhHbTBKREhzekhCcFFlbHZhVklMZFNuUHlXUGN5ekhPVXE3R1pxOGZlelhaVExyQkJQcFZKZUJxbkprS3lsNjRoaW9TR2F2YmhBLWJlY3g5UzA?oc=5",
+   "title": "El CGPJ reclama reforzar la protección de las víctimas de Violencia: «Cada crimen nos obliga a preguntarnos si habría sido posible evitarlo",
+   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQNmtsRFpybmxBX0U2Y0RBZ1EzbUxfckZ2NUQtVFpvOVFXTjhuMWZXaW4tUGhiU3c3dTk1ZkhCSURqUm1fblduTkZacFBnaFJaUGxjalhsbnJOSm5VQ2J0S2ZaWXJsVm5BS1JxNS1EVUk1a0d5SEszSU9xRlg3Zk1OYTA3SG5tUmVpZU5IUGN4Y1E1Y0d2TGtsa2xMTkJManQ4Q0ZDR0g4ZDkzR3dwdkhHbTBKREhzekhCcFFlbHZhVklMZFNuUHlXUGN5ekhPVXE3R1pxOGZlelhaVExyQkJQcFZKZUJxbkprS3lsNjRoaW9TR2F2YmhBLWJlY3g5UzA?oc=5",
+   "summary": "",
+   "date": "2026-11-25T12:19:27.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Confilegal",
+   "topics": []
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONTVyeVQ2QndXczZ4SkFzb2l3NHJZS29OVmg5NDFBcWY1QU9BSUl4X2lvd1Z0eTdaQmVkczBoNjljVnM0VERpS3ZUZTZaNnBBTWUtR1hweEVoc1RPUFgxaFBTVjF6X0lSMm1FZ1ZxV001bnBKUlFZcFEtN3dkbTNCQ05pd2EtcERkcWNpYmFELUo4T0w0VW5LMFoxY1RVajIxMDVmVTFPY3dSUdIBqgFBVV95cUxONTVyeVQ2QndXczZ4SkFzb2l3NHJZS29OVmg5NDFBcWY1QU9BSUl4X2lvd1Z0eTdaQmVkczBoNjljVnM0VERpS3ZUZTZaNnBBTWUtR1hweEVoc1RPUFgxaFBTVjF6X0lSMm1FZ1ZxV001bnBKUlFZcFEtN3dkbTNCQ05pd2EtcERkcWNpYmFELUo4T0w0VW5LMFoxY1RVajIxMDVmVTFPY3dSUQ?oc=5",
    "title": "Madrid recurrirá ante el Constitucional el decreto del Gobierno sobre vivienda",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONTVyeVQ2QndXczZ4SkFzb2l3NHJZS29OVmg5NDFBcWY1QU9BSUl4X2lvd1Z0eTdaQmVkczBoNjljVnM0VERpS3ZUZTZaNnBBTWUtR1hweEVoc1RPUFgxaFBTVjF6X0lSMm1FZ1ZxV001bnBKUlFZcFEtN3dkbTNCQ05pd2EtcERkcWNpYmFELUo4T0w0VW5LMFoxY1RVajIxMDVmVTFPY3dSUdIBqgFBVV95cUxONTVyeVQ2QndXczZ4SkFzb2l3NHJZS29OVmg5NDFBcWY1QU9BSUl4X2lvd1Z0eTdaQmVkczBoNjljVnM0VERpS3ZUZTZaNnBBTWUtR1hweEVoc1RPUFgxaFBTVjF6X0lSMm1FZ1ZxV001bnBKUlFZcFEtN3dkbTNCQ05pd2EtcERkcWNpYmFELUo4T0w0VW5LMFoxY1RVajIxMDVmVTFPY3dSUQ?oc=5",
@@ -1684,6 +2123,18 @@
     "Laboral",
     "Fiscal"
    ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPazVUWGZvMlg4eVduWExINGFiaDJEalBvMmtaR01uMmlfZVhEenhnMWhNYm9paGZZc182T1VjUV9PY2tqQWhYejh3VmRUWmd3QjRnMzdYcHpJaGJXYmFoOE5UUWhQc0w5NGFmTmc2NWYzUFM3UElfQ2pmN0xWTTUxS2Yyb1hFdjZ0MFNRUmIwZFlGWUpUc19aeUx6OUZ6TTlmcTFNcjBueHVGMkgwWS0td1Fn0gGyAUFVX3lxTE9rNVRYZm8yWDh5V25YTEg0YWJoMkRqUG8ya1pHTW4yaV9lWER6eGcxaE1ib2loZllzXzZPVWNRX09ja2pBaFh6OHdWZFRaZ3dCNGczN1hwekloYldiYWg4TlRRaFBzTDk0YWZOZzY1ZjNQUzdQSV9DamY3TFZNNTFLZjJvWEV2NnQwU1FSYjBkWUZZSlRzX1p5THo5RnpNOWZxMU1yMG54dUYySDBZLS13UWc?oc=5",
+   "title": "Esther Rojo (CGPJ) pide perfeccionar leyes y protocolos contra la violencia machista",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPazVUWGZvMlg4eVduWExINGFiaDJEalBvMmtaR01uMmlfZVhEenhnMWhNYm9paGZZc182T1VjUV9PY2tqQWhYejh3VmRUWmd3QjRnMzdYcHpJaGJXYmFoOE5UUWhQc0w5NGFmTmc2NWYzUFM3UElfQ2pmN0xWTTUxS2Yyb1hFdjZ0MFNRUmIwZFlGWUpUc19aeUx6OUZ6TTlmcTFNcjBueHVGMkgwWS0td1Fn0gGyAUFVX3lxTE9rNVRYZm8yWDh5V25YTEg0YWJoMkRqUG8ya1pHTW4yaV9lWER6eGcxaE1ib2loZllzXzZPVWNRX09ja2pBaFh6OHdWZFRaZ3dCNGczN1hwekloYldiYWg4TlRRaFBzTDk0YWZOZzY1ZjNQUzdQSV9DamY3TFZNNTFLZjJvWEV2NnQwU1FSYjBkWUZZSlRzX1p5THo5RnpNOWZxMU1yMG54dUYySDBZLS13UWc?oc=5",
+   "summary": "",
+   "date": "2026-11-25T11:55:10.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Canarias7",
+   "topics": []
   },
   {
    "id": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQcjhncDVwOHJma2JOM1NOOWRuU25iX2plNS1qLWJ2UTZTc1lEODEtNC15cHVBdUNWREN1UWhtLWkwR0ppTWJiaWJaVTBUVVk2bEZzbzhIVmxPZE50MXRxUHpoS3ozWFJvWk9uUlpEX19yMGxfZHFNZHkyM2VqSmVzSnV5WkFLYWJXLU5vN3Nub203YmlRUFJuMURCMTRPVkVIbERYcHVaR2VuVks3cFBBN1NYaEw4dXlJQ0FEWENkU2t3dVlBZEo3T2FTbHlzc1lHa0JOQzZ1THU5dzNHeEd2OFR5NHFqMXPSAecBQVVfeXFMUHI4Z3A1cDhyZmtiTjNTTjlkblNuYl9qZTUtai1idlE2U3NZRDgxLTQteXB1QXVDVkRDdVFobS1pMEdKaU1iYmliWlUwVFVZNmxGc284SFZsT2ROdDF0cVB6aEt6M1hSb1pPblJaRF9fcjBsX2RxTWR5MjNlakplc0p1eVpBS2FiVy1Obzdzbm9tN2JpUVBSbjFEQjE0T1ZFSGxEWHB1WkdlblZLN3BQQTdTWGhMOHV5SUNBRFhDZFNrd3VZQWRKN09hU2x5c3NZR2tCTkM2dUx1OXczR3hHdjhUeTRxajFz?oc=5",
@@ -1764,6 +2215,30 @@
    "topics": []
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQeUsxVXAxR2x5QnROemNQaUEwVGJ3STlhQ2hOcy1ael9jUXFfaWdyVjhHSVZ2LUpkWXdMbzg4NFJfMXhCRkhzcHFoN2h5cHY4LTZCQ1ZleGZfSzBkM0dZbVBUSkYyLVIyQmFEOE9EX25ub0ZRbW15aWd0QWJ3bmM1bksxY2MyZzNYZUprT2xHZlFnNDBsTTZwbDkyaEs5MDgwZnFtSG9EVnZ1TUE5VUVMWkpSeDhyckhkbmJEcHRITDMzMGt1NHNRcFVkcHdaT1VHZWFSNGJUNlRQcjc0WTQtTnMtNzBhcC02VndCZlA0VUY0bE3SAfMBQVVfeXFMUHlLMVVwMUdseUJ0TnpjUGlBMFRid0k5YUNoTnMtWnpfY1FxX2lnclY4R0lWdi1KZFl3TG84ODRSXzF4QkZIc3BxaDdoeXB2OC02QkNWZXhmX0swZDNHWW1QVEpGMi1SMkJhRDhPRF9ubm9GUW1teWlndEFid25jNW5LMWNjMmczWGVKa09sR2ZRZzQwbE02cGw5MmhLOTA4MGZxbUhvRFZ2dU1BOVVFTFpKUng4cnJIZG5iRHB0SEwzMzBrdTRzUXBVZHB3Wk9VR2VhUjRiVDZUUHI3NFk0LU5zLTcwYXAtNlZ3QmZQNFVGNGxN?oc=5",
+   "title": "Esther Rojo (CGPJ) pide perfeccionar leyes y protocolos contra la violencia machista: \"Siempre hay margen de mejora\"",
+   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQeUsxVXAxR2x5QnROemNQaUEwVGJ3STlhQ2hOcy1ael9jUXFfaWdyVjhHSVZ2LUpkWXdMbzg4NFJfMXhCRkhzcHFoN2h5cHY4LTZCQ1ZleGZfSzBkM0dZbVBUSkYyLVIyQmFEOE9EX25ub0ZRbW15aWd0QWJ3bmM1bksxY2MyZzNYZUprT2xHZlFnNDBsTTZwbDkyaEs5MDgwZnFtSG9EVnZ1TUE5VUVMWkpSeDhyckhkbmJEcHRITDMzMGt1NHNRcFVkcHdaT1VHZWFSNGJUNlRQcjc0WTQtTnMtNzBhcC02VndCZlA0VUY0bE3SAfMBQVVfeXFMUHlLMVVwMUdseUJ0TnpjUGlBMFRid0k5YUNoTnMtWnpfY1FxX2lnclY4R0lWdi1KZFl3TG84ODRSXzF4QkZIc3BxaDdoeXB2OC02QkNWZXhmX0swZDNHWW1QVEpGMi1SMkJhRDhPRF9ubm9GUW1teWlndEFid25jNW5LMWNjMmczWGVKa09sR2ZRZzQwbE02cGw5MmhLOTA4MGZxbUhvRFZ2dU1BOVVFTFpKUng4cnJIZG5iRHB0SEwzMzBrdTRzUXBVZHB3Wk9VR2VhUjRiVDZUUHI3NFk0LU5zLTcwYXAtNlZ3QmZQNFVGNGxN?oc=5",
+   "summary": "",
+   "date": "2026-11-25T11:27:31.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Teleprensa",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOZEt6Y3BKNEVfN0Zmb012dC1EdzF0QmxQR2FacFp1ZHp3eDRLd1RSU1dqaGU0bHBOc3dWSDJsVTdIdUlvNTZaSW1kd2E5NDgxY1BIV29LY1U1eld6V0Y4ODF4b2VKYm1fRUN4aWU0TVpkLWYzWjB5c1BtcG1vcl9OM0haRVdCMHFfREIwcXlFWXM0UGxtUTdTdldTQTZod3dEVVU1eUVxLWxrakVBT3VIMEV6NG1uLV90MUJnRWJzbWVMX3NrV0xCaEw4SzFjcl9hXzNoUU1xeGdJSlRqMXlaS3VuaE9tMjF0QXBWTF9TR0tza0FwZFowZmZCaTJiMnFxVmVxWm9BYw?oc=5",
+   "title": "Esther Rojo (CGPJ) pide perfeccionar leyes y protocolos contra la violencia machista: \"Siempre hay margen de mejora\"",
+   "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOZEt6Y3BKNEVfN0Zmb012dC1EdzF0QmxQR2FacFp1ZHp3eDRLd1RSU1dqaGU0bHBOc3dWSDJsVTdIdUlvNTZaSW1kd2E5NDgxY1BIV29LY1U1eld6V0Y4ODF4b2VKYm1fRUN4aWU0TVpkLWYzWjB5c1BtcG1vcl9OM0haRVdCMHFfREIwcXlFWXM0UGxtUTdTdldTQTZod3dEVVU1eUVxLWxrakVBT3VIMEV6NG1uLV90MUJnRWJzbWVMX3NrV0xCaEw4SzFjcl9hXzNoUU1xeGdJSlRqMXlaS3VuaE9tMjF0QXBWTF9TR0tza0FwZFowZmZCaTJiMnFxVmVxWm9BYw?oc=5",
+   "summary": "",
+   "date": "2026-11-25T11:25:20.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Europa Press",
+   "topics": []
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVm5pcVpEczlWR2VlLUpybDFwX2hQeUVzUjBielFyRDFfaUI2WmxrblV3RnRZUXpsbjNnS185MnFvaHZ2Ujcxc3VnbFlEVGZQN254VUtDY05KVUdZV2tEOHk2Sk9mdzlOTFRyaUVWbXNrQWR3VWNKckZRR3dtbkFkS0pObGttSERIblB4R1h5VkFVWE1IblQ4UzhFczUyTTdYYVNpbTc3bm9rSlnSAasBQVVfeXFMUFZuaXFaRHM5VkdlZS1KcmwxcF9oUHlFc1IwYnpRckQxX2lCNlpsa25Vd0Z0WVF6bG4zZ0tfOTJxb2h2dlI3MXN1Z2xZRFRmUDdueFVLQ2NOSlVHWVdrRDh5NkpPZnc5TkxUcmlFVm1za0Fkd1VjSnJGUUd3bW5BZEtKTmxrbUhESG5QeEdYeVZBVVhNSG5UOFM4RXM1Mk03WGFTaW03N25va0pZ?oc=5",
    "title": "Vox lleva a la Justicia la ordenanza de la Zona de Bajas Emisiones de Santa Cruz de Tenerife",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVm5pcVpEczlWR2VlLUpybDFwX2hQeUVzUjBielFyRDFfaUI2WmxrblV3RnRZUXpsbjNnS185MnFvaHZ2Ujcxc3VnbFlEVGZQN254VUtDY05KVUdZV2tEOHk2Sk9mdzlOTFRyaUVWbXNrQWR3VWNKckZRR3dtbkFkS0pObGttSERIblB4R1h5VkFVWE1IblQ4UzhFczUyTTdYYVNpbTc3bm9rSlnSAasBQVVfeXFMUFZuaXFaRHM5VkdlZS1KcmwxcF9oUHlFc1IwYnpRckQxX2lCNlpsa25Vd0Z0WVF6bG4zZ0tfOTJxb2h2dlI3MXN1Z2xZRFRmUDdueFVLQ2NOSlVHWVdrRDh5NkpPZnc5TkxUcmlFVm1za0Fkd1VjSnJGUUd3bW5BZEtKTmxrbUhESG5QeEdYeVZBVVhNSG5UOFM4RXM1Mk03WGFTaW03N25va0pZ?oc=5",
@@ -1817,6 +2292,18 @@
    "topics": []
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOYWgwRnlId3NjcWU3Q1UtX0N1TnNuQmsxYnhzTWtraWdrSHhLUWxBWndjNndiOU5DYmc2cU1oRzVyQks0TW5ob2xOX2FWQzFRWlM4aTJ5NjVEZFJGZWdKWGJfNURNMzRraF9XVzlKQkY0cW93RWF5TC1hSmlOclJFTnhCYlNuWFRoNGtOUmNfc1Vna0ZENWxjbU1MbkpGeGZsT1pJdFY0TC1RZjE4N0tMR3R4MWtoalEwUGRha0ZIWnN5OHZ4TFNCZTZId19hZzhMLVZRa1FMa3ljcGVjU0Y2NVFtM19Wdw?oc=5",
+   "title": "TC abre la puerta a indemnización por daño moral en demanda de exfuncionario del INE contra exautoridades",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOYWgwRnlId3NjcWU3Q1UtX0N1TnNuQmsxYnhzTWtraWdrSHhLUWxBWndjNndiOU5DYmc2cU1oRzVyQks0TW5ob2xOX2FWQzFRWlM4aTJ5NjVEZFJGZWdKWGJfNURNMzRraF9XVzlKQkY0cW93RWF5TC1hSmlOclJFTnhCYlNuWFRoNGtOUmNfc1Vna0ZENWxjbU1MbkpGeGZsT1pJdFY0TC1RZjE4N0tMR3R4MWtoalEwUGRha0ZIWnN5OHZ4TFNCZTZId19hZzhMLVZRa1FMa3ljcGVjU0Y2NVFtM19Wdw?oc=5",
+   "summary": "",
+   "date": "2026-11-25T11:04:21.000Z",
+   "source": "Prensa · Tribunal Constitucional",
+   "sourceId": "gn-constitucional",
+   "group": "Prensa general",
+   "origin": "Diario Constitucional",
+   "topics": []
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOb0lGOTgyRURKSjlxai01MDRJVE13OFIzVUUtWk9QZFBKRmgwcTY3RklsdUgxdkFwY3VwcXdYN0lpdWZrSHJPY2NvTmdsWVJYTVFCTC1BSVlhdUtKYWV6TTdMUmNpcTZNcGRpd1JFX28zOWZXbmVCc0NjdVo3QXB1NC1nd1l2UjR1cWZmZms4RlR0MDVEZ2kyb250OXE0b0tIWTd0Q3Zzck4wZWdFSWlKZkNCbEEzWm5xT2xuUjhLc29BY0wxckV0bGFlTGVtWWM3dTlSOHFn?oc=5",
    "title": "Alquiler turístico en España tras el fallo del Supremo: qué registro anuló la sentencia y qué control sigue en pie",
    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOb0lGOTgyRURKSjlxai01MDRJVE13OFIzVUUtWk9QZFBKRmgwcTY3RklsdUgxdkFwY3VwcXdYN0lpdWZrSHJPY2NvTmdsWVJYTVFCTC1BSVlhdUtKYWV6TTdMUmNpcTZNcGRpd1JFX28zOWZXbmVCc0NjdVo3QXB1NC1nd1l2UjR1cWZmZms4RlR0MDVEZ2kyb250OXE0b0tIWTd0Q3Zzck4wZWdFSWlKZkNCbEEzWm5xT2xuUjhLc29BY0wxckV0bGFlTGVtWWM3dTlSOHFn?oc=5",
@@ -1838,6 +2325,18 @@
    "date": "2026-11-25T10:58:18.000Z",
    "source": "Prensa · Tribunal Supremo",
    "sourceId": "gn-supremo",
+   "group": "Prensa general",
+   "origin": "Economist & Jurist",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOa1J4Mjlua1RuS2E2UTJ0Qmdrd040cFA5Qy02dkdkWmcyYmxOdXREWFM3eThDZURDY291ZURrLW1UMngyUmk5S1I4LVc4WjRwSFlmbWNUTklTNXZSWHR0dVpmTkF6Y01SbnZQUEl5VTVUcThzaXptZC1mUWp5SzhZZnBHOUpMeklCQlZYeThjaXVURmhuNzd1RkJLd1JhaDRXTlRFSmd2NA?oc=5",
+   "title": "Las peligrosas travesuras de algunos jueces con la IA",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOa1J4Mjlua1RuS2E2UTJ0Qmdrd040cFA5Qy02dkdkWmcyYmxOdXREWFM3eThDZURDY291ZURrLW1UMngyUmk5S1I4LVc4WjRwSFlmbWNUTklTNXZSWHR0dVpmTkF6Y01SbnZQUEl5VTVUcThzaXptZC1mUWp5SzhZZnBHOUpMeklCQlZYeThjaXVURmhuNzd1RkJLd1JhaDRXTlRFSmd2NA?oc=5",
+   "summary": "",
+   "date": "2026-11-25T10:58:18.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
    "group": "Prensa general",
    "origin": "Economist & Jurist",
    "topics": []
@@ -1883,6 +2382,18 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPTXFVRkl2aGFMam9SeVVxR0Q0b3Vrbkg5ekJZXzc5ZFJDaHQwVmZLX2h2TUozMGtlMjJKMTBQZHlGR2x5c0VUU0NhRmhNT0pienEzeXRPWm50UHFDR05STW5nQXhERG1COVU2S1REQzYxSXhsV2hNMHZyRXFDX0lrTTVwWmFHMzViZG96bFhhWmx2ZHpwQVNXNHBYT3d2aERTUlZsUGRuSXdZOFdtakJDLXg4VTR3QnYxT2RybmZ6Wm1JbllOY2pfLWdmYXZEbzdjQXlrT3oxUXBsQVMyT2hsTDBvcTVXWnN3bzhKbHl1VXRHcGx1QUxsVtIB-AFBVV95cUxPTXFVRkl2aGFMam9SeVVxR0Q0b3Vrbkg5ekJZXzc5ZFJDaHQwVmZLX2h2TUozMGtlMjJKMTBQZHlGR2x5c0VUU0NhRmhNT0pienEzeXRPWm50UHFDR05STW5nQXhERG1COVU2S1REQzYxSXhsV2hNMHZyRXFDX0lrTTVwWmFHMzViZG96bFhhWmx2ZHpwQVNXNHBYT3d2aERTUlZsUGRuSXdZOFdtakJDLXg4VTR3QnYxT2RybmZ6Wm1JbllOY2pfLWdmYXZEbzdjQXlrT3oxUXBsQVMyT2hsTDBvcTVXWnN3bzhKbHl1VXRHcGx1QUxsVg?oc=5",
+   "title": "La Justicia fuerza a la UE a crear un nuevo calendario para acabar con la cría de animales en jaulas",
+   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPTXFVRkl2aGFMam9SeVVxR0Q0b3Vrbkg5ekJZXzc5ZFJDaHQwVmZLX2h2TUozMGtlMjJKMTBQZHlGR2x5c0VUU0NhRmhNT0pienEzeXRPWm50UHFDR05STW5nQXhERG1COVU2S1REQzYxSXhsV2hNMHZyRXFDX0lrTTVwWmFHMzViZG96bFhhWmx2ZHpwQVNXNHBYT3d2aERTUlZsUGRuSXdZOFdtakJDLXg4VTR3QnYxT2RybmZ6Wm1JbllOY2pfLWdmYXZEbzdjQXlrT3oxUXBsQVMyT2hsTDBvcTVXWnN3bzhKbHl1VXRHcGx1QUxsVtIB-AFBVV95cUxPTXFVRkl2aGFMam9SeVVxR0Q0b3Vrbkg5ekJZXzc5ZFJDaHQwVmZLX2h2TUozMGtlMjJKMTBQZHlGR2x5c0VUU0NhRmhNT0pienEzeXRPWm50UHFDR05STW5nQXhERG1COVU2S1REQzYxSXhsV2hNMHZyRXFDX0lrTTVwWmFHMzViZG96bFhhWmx2ZHpwQVNXNHBYT3d2aERTUlZsUGRuSXdZOFdtakJDLXg4VTR3QnYxT2RybmZ6Wm1JbllOY2pfLWdmYXZEbzdjQXlrT3oxUXBsQVMyT2hsTDBvcTVXWnN3bzhKbHl1VXRHcGx1QUxsVg?oc=5",
+   "summary": "",
+   "date": "2026-11-25T10:15:32.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Redacción Médica",
+   "topics": []
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMEIxVlBBdEpOZnEwU3l3TEx3OUQ1THY0QnNabXg1cnhjaVNQVVQyeUpYNWNhbmRkSDZTc1g1c21YanhSS2hSLVhmdkl0bVFkQ2QyTExuQTNBMlh4aHFGZGVBOHFWVkE4b01DSkZYVExZdGM5M3MyM2s1UTNhUG9QeW1SVHI3VFRvYjdPWU5kdjJ6ZDZXOUV3U3Z3?oc=5",
    "title": "El Tribunal Supremo limita embargos de Hacienda sobre pensiones y salarios bajos",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMEIxVlBBdEpOZnEwU3l3TEx3OUQ1THY0QnNabXg1cnhjaVNQVVQyeUpYNWNhbmRkSDZTc1g1c21YanhSS2hSLVhmdkl0bVFkQ2QyTExuQTNBMlh4aHFGZGVBOHFWVkE4b01DSkZYVExZdGM5M3MyM2s1UTNhUG9QeW1SVHI3VFRvYjdPWU5kdjJ6ZDZXOUV3U3Z3?oc=5",
@@ -1896,6 +2407,30 @@
     "Laboral",
     "Fiscal"
    ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQLUFFNjlYMFcwaUxQSVFqMGVJZ3l6cEVnSEFMb1habjEyZUNZUDJWMGtCVzlpRTM2eWllOHRCbHRYbFRmRHp3VXlmdUNZQnpjR0JFZEg1M1N3NWlZTVE4N09fa29TN1RtSTJkczdSQzBBSjZyREpsYlhUb2owS0NibVBKcHpIMWdfUm5GQ2hzSThienRiRU9Mc2hR0gGfAUFVX3lxTE9RRGxLZ1JUaTE2Q0dYY0RGQzhqdWJYODlLREpwcXcyUXd4SUZQaE5OLWZlSXk3bDl4dHN4SElGZ0Z6QUdLQ0I4dEJEYUFQNkRtbTc1RV9PZFp3WFJ0N0tFMXBSLWlKcG1WeXROUlVDMEVZT2RmekFMVElZRTlQTktVOW1CcmhqUHlHVzJUU1FwSDE3bTJNOUx1cXhlRlM1NA?oc=5",
+   "title": "Puigdemont irrumpe en la recta final hacia el 29-N y presenta como victoria su vuelta el 12 de diciembre",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQLUFFNjlYMFcwaUxQSVFqMGVJZ3l6cEVnSEFMb1habjEyZUNZUDJWMGtCVzlpRTM2eWllOHRCbHRYbFRmRHp3VXlmdUNZQnpjR0JFZEg1M1N3NWlZTVE4N09fa29TN1RtSTJkczdSQzBBSjZyREpsYlhUb2owS0NibVBKcHpIMWdfUm5GQ2hzSThienRiRU9Mc2hR0gGfAUFVX3lxTE9RRGxLZ1JUaTE2Q0dYY0RGQzhqdWJYODlLREpwcXcyUXd4SUZQaE5OLWZlSXk3bDl4dHN4SElGZ0Z6QUdLQ0I4dEJEYUFQNkRtbTc1RV9PZFp3WFJ0N0tFMXBSLWlKcG1WeXROUlVDMEVZT2RmekFMVElZRTlQTktVOW1CcmhqUHlHVzJUU1FwSDE3bTJNOUx1cXhlRlM1NA?oc=5",
+   "summary": "",
+   "date": "2026-11-25T10:13:36.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "El Correo",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxON2ZISGM4b1VvTWh3ZDh3cDZ2Q0FSdnpWN3F1RDBqOWlGYnJKV215dW5pN1pnUkljc2stUmF2MGhId1l0bThBU1Q0T292UTl4REdFSFJQdXhnelR5RGNFdWNSV05FSnhCNWVkNV9NU3UzQTBMRGNLbzh2TjhON0hFc2lTbVZ3eWU1cl9MM3BYNVZvNVBDWUNYSzBDZlBvalB1Z3ZXb0liWHFLUQ?oc=5",
+   "title": "Sánchez reprocha al CGPJ que le advierta a él y calle ante el PP",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxON2ZISGM4b1VvTWh3ZDh3cDZ2Q0FSdnpWN3F1RDBqOWlGYnJKV215dW5pN1pnUkljc2stUmF2MGhId1l0bThBU1Q0T292UTl4REdFSFJQdXhnelR5RGNFdWNSV05FSnhCNWVkNV9NU3UzQTBMRGNLbzh2TjhON0hFc2lTbVZ3eWU1cl9MM3BYNVZvNVBDWUNYSzBDZlBvalB1Z3ZXb0liWHFLUQ?oc=5",
+   "summary": "",
+   "date": "2026-11-25T09:55:47.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "upday News",
+   "topics": []
   },
   {
    "id": "https://elderecho.com/eskariam-inicia-la-batalla-judicial-frente-a-booking-com-en-defensa-de-los-hoteles-espanoles",
@@ -1914,6 +2449,54 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPRnUwMElXQVAwcGZRVXk0Y1FqbnYzREdRYkJTU2I0UHZEc20yVHFZbjgyM05Mc2JyVDJhZnV4N3lUTjVpLXBjN19icFV5eVVOUERzbmNnSWJZN2c4NUUycmc2TmVtbk96aW5yZkN0MWpNcGZxbllQQ1psczJVcThFanlZV0tPLUxiVjR1MHVKdVQtMWViX19WQ0YxYjN5SGVOOWhENlBSZ1JaMkdRWTR5WVhWbnNqQ181UmJsdjgwRkFTS2MxQ1VrNURoTUlVQjJjWExESW96alhqT3ZfdkJucEQySkc0dGM2enZJNnN5TF9kM29pRExfa2RBVVRSXzhUb3hBM2o5SXhIbWppRnd3VzJCOXVJWGVOWFdLWmwwdXHSAaACQVVfeXFMT0Z1MDBJV0FQMHBmUVV5NGNRam52M0RHUWJCU1NiNFB2RHNtMlRxWW44MjNOTHNiclQyYWZ1eDd5VE41aS1wYzdfYnBVeXlVTlBEc25jZ0liWTdnODVFMnJnNk5lbW5PemlucmZDdDFqTXBmcW5ZUENabHMyVXE4RWp5WVdLTy1MYlY0dTB1SnVULTFlYl9fVkNGMWIzeUhlTjloRDZQUmdSWjJHUVk0eVlYVm5zakNfNVJibHY4MEZBU0tjMUNVazVEaE1JVUIyY1hMRElvempYak92X3ZCbnBEMkpHNHRjNnp2STZzeUxfZDNvaURMX2tkQVVUUl84VG94QTNqOUl4SG1qaUZ3d1cyQjl1SVhlTlhXS1psMHVx?oc=5",
+   "title": "Sánchez reprocha al CGPJ sus advertencias sobre la independencia judicial mientras guarda silencio con el PP",
+   "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPRnUwMElXQVAwcGZRVXk0Y1FqbnYzREdRYkJTU2I0UHZEc20yVHFZbjgyM05Mc2JyVDJhZnV4N3lUTjVpLXBjN19icFV5eVVOUERzbmNnSWJZN2c4NUUycmc2TmVtbk96aW5yZkN0MWpNcGZxbllQQ1psczJVcThFanlZV0tPLUxiVjR1MHVKdVQtMWViX19WQ0YxYjN5SGVOOWhENlBSZ1JaMkdRWTR5WVhWbnNqQ181UmJsdjgwRkFTS2MxQ1VrNURoTUlVQjJjWExESW96alhqT3ZfdkJucEQySkc0dGM2enZJNnN5TF9kM29pRExfa2RBVVRSXzhUb3hBM2o5SXhIbWppRnd3VzJCOXVJWGVOWFdLWmwwdXHSAaACQVVfeXFMT0Z1MDBJV0FQMHBmUVV5NGNRam52M0RHUWJCU1NiNFB2RHNtMlRxWW44MjNOTHNiclQyYWZ1eDd5VE41aS1wYzdfYnBVeXlVTlBEc25jZ0liWTdnODVFMnJnNk5lbW5PemlucmZDdDFqTXBmcW5ZUENabHMyVXE4RWp5WVdLTy1MYlY0dTB1SnVULTFlYl9fVkNGMWIzeUhlTjloRDZQUmdSWjJHUVk0eVlYVm5zakNfNVJibHY4MEZBU0tjMUNVazVEaE1JVUIyY1hMRElvempYak92X3ZCbnBEMkpHNHRjNnp2STZzeUxfZDNvaURMX2tkQVVUUl84VG94QTNqOUl4SG1qaUZ3d1cyQjl1SVhlTlhXS1psMHVx?oc=5",
+   "summary": "",
+   "date": "2026-11-25T09:48:00.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "La Voz de Galicia",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQd2tmMkpna19kTC1kREI3S1BJMzduV1RndGZlU3k2a00xbEhEZFFoazdQS1ptWUNqRHFzUVQ5ZXdJZWRwcjBjcUZoVlFfOEgwQURyOEpaczN3N3MxcHlycVM5TXJWV3Jmd2thd1JsWHpvczhqQzBsQkFOa1Y0M1M5NDA4TDhONjBmaFVrdVQwZGZ6TTVlU0lJVTlVT3dDTUExdlBwbDZVcFJfOXFwNTRqT19wS0_SAboBQVVfeXFMUHlzYjI5MXRkVXdFWTdzcUViaGpQeEVaQXhERXg4bUtYMXJFSUNoS09WS2pCR3hFajZrU255cG9PQVVXTk1vOXZOeC1JUkhSMG52WnhyY1RjSDdxcFZpdGdtb29uUFcyZzVySzJQOVZxZ3BvdDVCMUpkV0R5TExZay1TTFlOS2gzVWRxYXBVelRCQVJadkxaVHZLSFRFQU80WkZZNzd6T01rekpGb2FHUDBMVTd4ZnFkaEJ3?oc=5",
+   "title": "Sánchez reprocha al CGPJ sus advertencias sobre la independencia judicial mientras guarda silencio ante el PP",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQd2tmMkpna19kTC1kREI3S1BJMzduV1RndGZlU3k2a00xbEhEZFFoazdQS1ptWUNqRHFzUVQ5ZXdJZWRwcjBjcUZoVlFfOEgwQURyOEpaczN3N3MxcHlycVM5TXJWV3Jmd2thd1JsWHpvczhqQzBsQkFOa1Y0M1M5NDA4TDhONjBmaFVrdVQwZGZ6TTVlU0lJVTlVT3dDTUExdlBwbDZVcFJfOXFwNTRqT19wS0_SAboBQVVfeXFMUHlzYjI5MXRkVXdFWTdzcUViaGpQeEVaQXhERXg4bUtYMXJFSUNoS09WS2pCR3hFajZrU255cG9PQVVXTk1vOXZOeC1JUkhSMG52WnhyY1RjSDdxcFZpdGdtb29uUFcyZzVySzJQOVZxZ3BvdDVCMUpkV0R5TExZay1TTFlOS2gzVWRxYXBVelRCQVJadkxaVHZLSFRFQU80WkZZNzd6T01rekpGb2FHUDBMVTd4ZnFkaEJ3?oc=5",
+   "summary": "",
+   "date": "2026-11-25T09:46:44.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Diario de Noticias de Álava",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOeVRON05BMnZHSDFxdEJhc0NtVTN6VHFldXNQaWhfemFBVkJVWktzYktEbWhDcGc5dGF1OFY1MGd4eUxLbUZhbXRnZ0k2alhTdG52ZklYb3NLSHhBUXdBOEJZeU5hTG9TZkxONVVfd2d6WDRvQUR5ZW12NU1GOVBPQmZyLXpRa011ZVpHS3dXSVpUcVc1THBNSFRKTGpOd3JyaDZQallxVzItQjAyMW5sX01iQ0ZkeE1UOGdieNIBvAFBVV95cUxOeVRON05BMnZHSDFxdEJhc0NtVTN6VHFldXNQaWhfemFBVkJVWktzYktEbWhDcGc5dGF1OFY1MGd4eUxLbUZhbXRnZ0k2alhTdG52ZklYb3NLSHhBUXdBOEJZeU5hTG9TZkxONVVfd2d6WDRvQUR5ZW12NU1GOVBPQmZyLXpRa011ZVpHS3dXSVpUcVc1THBNSFRKTGpOd3JyaDZQallxVzItQjAyMW5sX01iQ0ZkeE1UOGdieA?oc=5",
+   "title": "Sánchez reprocha al CGPJ sus advertencias sobre la independencia judicial mientras guarda silencio ante el PP",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOeVRON05BMnZHSDFxdEJhc0NtVTN6VHFldXNQaWhfemFBVkJVWktzYktEbWhDcGc5dGF1OFY1MGd4eUxLbUZhbXRnZ0k2alhTdG52ZklYb3NLSHhBUXdBOEJZeU5hTG9TZkxONVVfd2d6WDRvQUR5ZW12NU1GOVBPQmZyLXpRa011ZVpHS3dXSVpUcVc1THBNSFRKTGpOd3JyaDZQallxVzItQjAyMW5sX01iQ0ZkeE1UOGdieNIBvAFBVV95cUxOeVRON05BMnZHSDFxdEJhc0NtVTN6VHFldXNQaWhfemFBVkJVWktzYktEbWhDcGc5dGF1OFY1MGd4eUxLbUZhbXRnZ0k2alhTdG52ZklYb3NLSHhBUXdBOEJZeU5hTG9TZkxONVVfd2d6WDRvQUR5ZW12NU1GOVBPQmZyLXpRa011ZVpHS3dXSVpUcVc1THBNSFRKTGpOd3JyaDZQallxVzItQjAyMW5sX01iQ0ZkeE1UOGdieA?oc=5",
+   "summary": "",
+   "date": "2026-11-25T09:46:44.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Noticias de Navarra",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNMUJRM1YxQnFIWGFsVU5aa0cxVzc2MG5QNjZibE02Y3RiSHQySUxVT2FGZ2UxaER3XzUzUmI1Z2VjQ2F1dWFBbDFqZWVIQkI2d0NxTlZ2Mmx4czd4VzFOSEpuTm5wRkc0UWwxS1hra1VzQ2RXN1lKQnIxTTNpNWw1WmU4aExMdG5HdDlJclZEX08zZlFIM3BCVW1yXzR3emJGVDlGLWs1aGcxNmR2NU1QYUd3LUgtQmJBY3hlTXYyOEdnd3hTOUlJbHlKN1Z6dVlFZjhoMTY3ZloyX0dUeHVUMGdLSm5PT2Y0dzhMRlB30gHzAUFVX3lxTE9hWU1QSU1UaTlYWVI2OFpaRmVaQmJBOUFweThSYkZPbW1qaWhxSTJRQzBDREVHeHVlZ3psWGxqZFhkaWZ4RkwxWmp0aldtUUlySkFyUWVkVkZFSGR6d1ZFTDhQT2VYSkdCQkJla2ZBQXN0Q3lDclpXTlE3ZEZLd21hT1VJdjZLWGwzRXpCaUltNU1lZnJOTUpvMEI3QmxhU21xSnUwNTlCVVN4aW9jdjJhZGdCM2hyb1duUEhYY1ZEdVZDVFU4am5NMXFPOE4wcUhMOFYxdkV5eXVsWWVzOGZJckVGY2JSUGlNNjk4TE5yYlpxcw?oc=5",
+   "title": "Sánchez critica al CGPJ por sus advertencias sobre independencia judicial y silencio ante el PP",
+   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNMUJRM1YxQnFIWGFsVU5aa0cxVzc2MG5QNjZibE02Y3RiSHQySUxVT2FGZ2UxaER3XzUzUmI1Z2VjQ2F1dWFBbDFqZWVIQkI2d0NxTlZ2Mmx4czd4VzFOSEpuTm5wRkc0UWwxS1hra1VzQ2RXN1lKQnIxTTNpNWw1WmU4aExMdG5HdDlJclZEX08zZlFIM3BCVW1yXzR3emJGVDlGLWs1aGcxNmR2NU1QYUd3LUgtQmJBY3hlTXYyOEdnd3hTOUlJbHlKN1Z6dVlFZjhoMTY3ZloyX0dUeHVUMGdLSm5PT2Y0dzhMRlB30gHzAUFVX3lxTE9hWU1QSU1UaTlYWVI2OFpaRmVaQmJBOUFweThSYkZPbW1qaWhxSTJRQzBDREVHeHVlZ3psWGxqZFhkaWZ4RkwxWmp0aldtUUlySkFyUWVkVkZFSGR6d1ZFTDhQT2VYSkdCQkJla2ZBQXN0Q3lDclpXTlE3ZEZLd21hT1VJdjZLWGwzRXpCaUltNU1lZnJOTUpvMEI3QmxhU21xSnUwNTlCVVN4aW9jdjJhZGdCM2hyb1duUEhYY1ZEdVZDVFU4am5NMXFPOE4wcUhMOFYxdkV5eXVsWWVzOGZJckVGY2JSUGlNNjk4TE5yYlpxcw?oc=5",
+   "summary": "",
+   "date": "2026-11-25T09:46:09.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Diario en Positivo",
+   "topics": []
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQZlV6Y1ViaWYtWE5JUHJPZ3FaU3lsM2ZuZUFoNTZ5VlNTZGY4STE1VWdqZ3JjLUIyT1hVSUZnWVljVVVtOFh2ZVZFTDVVSFZwb0xiLWltUl9IZlRzdVVxNk04QW5uMGZwQ3VtaUlMNDFQN1JHQWp3X29NQnk4aG1xc1FhRU9INDdBeHFBRE5GZjF6bTZNc1Y2aXUzRXFhR1VJdnJtMnJYSmRxeTZFeVl1a21pNTZvT0pDRXF4UGI3M21XOWRGdTRxVVd1ZFhBVmZmREZ0UlVULXVZLUp2bkctajZHRlJBTzlJT1NaZENUVV9LeTdnQklwYWJnTGp3SFNqekkzTUNGQVJ5Qi1RbGo00gGjAkFVX3lxTE05NTlTb2tiWWZmcHN3LTA3NmdhejFlWExlR3dkc1Y5dklFaFd5VE9WZVVRdWtBRDlVd09VV1djekRQS2xsNHpFZ0gtRFNwdVpPMDRLX1VhSURyQXVhN3ZZVW9EZDdraVRQb2VsNV93T3NIZ2E2MG5hU0Nyd2ZlaTliSFdPTW4wQy1ySWtKem5pUVBwSnprM3l2VVJyX2RZNmNnZDRkc3QxMi1rM0FVeUwzUkdFc19xMG9tejYwOEdZcmFhT2FSWEtLUGFhSEpzR2FsOVcyeWl6MzVFSDhNaC14TzVRLURCQXdycUF4TnFjSjdTZVZIT18tU0ZGYm02ZGoyUmZTcW1Nd01fV0h4UWRXcHlhODdpdnVCQlg4T2VqNFJncw?oc=5",
    "title": "La justicia eleva a más de 1,1 millones de euros la indemnización por la negligencia médica que dejó a una niña sin posibilidad de trabajar",
    "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQZlV6Y1ViaWYtWE5JUHJPZ3FaU3lsM2ZuZUFoNTZ5VlNTZGY4STE1VWdqZ3JjLUIyT1hVSUZnWVljVVVtOFh2ZVZFTDVVSFZwb0xiLWltUl9IZlRzdVVxNk04QW5uMGZwQ3VtaUlMNDFQN1JHQWp3X29NQnk4aG1xc1FhRU9INDdBeHFBRE5GZjF6bTZNc1Y2aXUzRXFhR1VJdnJtMnJYSmRxeTZFeVl1a21pNTZvT0pDRXF4UGI3M21XOWRGdTRxVVd1ZFhBVmZmREZ0UlVULXVZLUp2bkctajZHRlJBTzlJT1NaZENUVV9LeTdnQklwYWJnTGp3SFNqekkzTUNGQVJ5Qi1RbGo00gGjAkFVX3lxTE05NTlTb2tiWWZmcHN3LTA3NmdhejFlWExlR3dkc1Y5dklFaFd5VE9WZVVRdWtBRDlVd09VV1djekRQS2xsNHpFZ0gtRFNwdVpPMDRLX1VhSURyQXVhN3ZZVW9EZDdraVRQb2VsNV93T3NIZ2E2MG5hU0Nyd2ZlaTliSFdPTW4wQy1ySWtKem5pUVBwSnprM3l2VVJyX2RZNmNnZDRkc3QxMi1rM0FVeUwzUkdFc19xMG9tejYwOEdZcmFhT2FSWEtLUGFhSEpzR2FsOVcyeWl6MzVFSDhNaC14TzVRLURCQXdycUF4TnFjSjdTZVZIT18tU0ZGYm02ZGoyUmZTcW1Nd01fV0h4UWRXcHlhODdpdnVCQlg4T2VqNFJncw?oc=5",
@@ -1923,6 +2506,42 @@
    "sourceId": "gn-supremo",
    "group": "Prensa general",
    "origin": "EL PAÍS",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPWXRGWVdmalFEYUFESURrMDBOdmh3N3RHeG80clVDcEtwRmVtU2pFOF9STmNzdFdUQ3RqVm9RSWhJQUpPTTJzVVRvMnZzTjJKMWJNMWtJbGVUN0NEaDR0RWtVeGREYm5rNXJqaGtGTEtuSTl3a09GUkYxOXJMb2FzVVpjQW9UYlJDU2NCdlRTLTkxV0xZRl9QS1NBdjVyTUFsTGptN252Q0FsdmJFdFdlVWVwaWV4TjVqakdrME50NE1namZ6cG1lSTRnWFpoN1hteTFybdIB2gFBVV95cUxQZUNONEdkWmFQNHdVMDVUaGdrbWdiT3R6OUE3SFctZnNYOGhzZmd2bDU0UGhZMVA4Rk9lQUdSRmF0X0F3bS1XYVZqSnlqajFsTEFYenh4VnJFdG5xY2d3cHUzNWI5bzdSNktIcHdSdXVpTkllVFdTVDZsYWlCMGdQeG5UZjVfTzdaM3BNNklDMjFSWmczWmhGM2JaLTJpUTlzdGtFVE8wR0xpSTFRVkJtdUJmbTRjR3RUenF4aXc1OXJ3ODczODdZb0xiWTNJank5ZnNWa2ZhMC10QQ?oc=5",
+   "title": "Sánchez afea al CGPJ sus avisos sobre la independencia judicial mientras calla ante las críticas del PP",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPWXRGWVdmalFEYUFESURrMDBOdmh3N3RHeG80clVDcEtwRmVtU2pFOF9STmNzdFdUQ3RqVm9RSWhJQUpPTTJzVVRvMnZzTjJKMWJNMWtJbGVUN0NEaDR0RWtVeGREYm5rNXJqaGtGTEtuSTl3a09GUkYxOXJMb2FzVVpjQW9UYlJDU2NCdlRTLTkxV0xZRl9QS1NBdjVyTUFsTGptN252Q0FsdmJFdFdlVWVwaWV4TjVqakdrME50NE1namZ6cG1lSTRnWFpoN1hteTFybdIB2gFBVV95cUxQZUNONEdkWmFQNHdVMDVUaGdrbWdiT3R6OUE3SFctZnNYOGhzZmd2bDU0UGhZMVA4Rk9lQUdSRmF0X0F3bS1XYVZqSnlqajFsTEFYenh4VnJFdG5xY2d3cHUzNWI5bzdSNktIcHdSdXVpTkllVFdTVDZsYWlCMGdQeG5UZjVfTzdaM3BNNklDMjFSWmczWmhGM2JaLTJpUTlzdGtFVE8wR0xpSTFRVkJtdUJmbTRjR3RUenF4aXc1OXJ3ODczODdZb0xiWTNJank5ZnNWa2ZhMC10QQ?oc=5",
+   "summary": "",
+   "date": "2026-11-25T09:32:36.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Demócrata",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSGp4MjFINDdtdXppdThPWkluV3FDWTZjQUg0c19fYWtjR2w4NkF2Q2hEQ0JlR2hJdmFYNzY4eE9SUjVUYXpZaERiZjhjNkEzU05pWnhLTGJXV3Q2QVlHOXZKX1VFaUpkdEg0VUVtODg2c1psTlVzMU40MURCN1d5aXljZWV4SHhmcVNMNnFWTGU0UzN6VGk0QkxWRXQtUjRZUnpyV1o1RDV5TnpwT2E5VUdXVEJEczBlY04wMVNLVnBlRnFzODY4d05maGIwSGdvSGVhVnlmTjQwYlM1SjZYdS1iel91RWR4enfSAeoBQVVfeXFMTkhqeDIxSDQ3bXV6aXU4T1pJbldxQ1k2Y0FINHNfX2FrY0dsODZBdkNoRENCZUdoSXZhWDc2OHhPUlI1VGF6WWhEYmY4YzZBM1NOaVp4S0xiV1d0NkFZRzl2Sl9VRWlKZHRINFVFbTg4NnNabE5VczFONDFEQjdXeWl5Y2VleEh4ZnFTTDZxVkxlNFMzelRpNEJMVkV0LVI0WVJ6cldaNUQ1eU56cE9hOVVHV1RCRHMwZWNOMDFTS1ZwZUZxczg2OHdOZmhiMEhnb0hlYVZ5Zk40MGJTNUo2WHUtYnpfdUVkeHp3?oc=5",
+   "title": "Sánchez reprocha al CGPJ sus advertencias sobre la independencia judicial mientras guarda silencio con el PP",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSGp4MjFINDdtdXppdThPWkluV3FDWTZjQUg0c19fYWtjR2w4NkF2Q2hEQ0JlR2hJdmFYNzY4eE9SUjVUYXpZaERiZjhjNkEzU05pWnhLTGJXV3Q2QVlHOXZKX1VFaUpkdEg0VUVtODg2c1psTlVzMU40MURCN1d5aXljZWV4SHhmcVNMNnFWTGU0UzN6VGk0QkxWRXQtUjRZUnpyV1o1RDV5TnpwT2E5VUdXVEJEczBlY04wMVNLVnBlRnFzODY4d05maGIwSGdvSGVhVnlmTjQwYlM1SjZYdS1iel91RWR4enfSAeoBQVVfeXFMTkhqeDIxSDQ3bXV6aXU4T1pJbldxQ1k2Y0FINHNfX2FrY0dsODZBdkNoRENCZUdoSXZhWDc2OHhPUlI1VGF6WWhEYmY4YzZBM1NOaVp4S0xiV1d0NkFZRzl2Sl9VRWlKZHRINFVFbTg4NnNabE5VczFONDFEQjdXeWl5Y2VleEh4ZnFTTDZxVkxlNFMzelRpNEJMVkV0LVI0WVJ6cldaNUQ1eU56cE9hOVVHV1RCRHMwZWNOMDFTS1ZwZUZxczg2OHdOZmhiMEhnb0hlYVZ5Zk40MGJTNUo2WHUtYnpfdUVkeHp3?oc=5",
+   "summary": "",
+   "date": "2026-11-25T09:32:30.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Teleprensa",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQYVBKUU9EcFZ6SXZnUVhZb2wxWkJGMFNSX0hNX19YazhVWVR3MWpfUHg2Yk5CdlFUbVBBekNubTNJSk5XYTZyaW5lMlo0clJIUGJHVEY2RC1qS2cwSFpwYnp5ZnRrcm5vOWxmcXcxYjRHdnlLZklOWmxzWnNVUGN5emtkYnpnSXFiZFFnYkJjUGtSbjI4N3FWYUVNZ3RlN1hyVDYyVHFGX1lPTkJRcWxjNHhxSzRHcXpDZkxyT3pZemdoNWN1YWlxWjlhcEJzS2o1QW5oUEVvSEZOWGU3S2RPVzVpMA?oc=5",
+   "title": "Sánchez reprocha al CGPJ sus advertencias sobre la independencia judicial mientras guarda silencio con el PP",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQYVBKUU9EcFZ6SXZnUVhZb2wxWkJGMFNSX0hNX19YazhVWVR3MWpfUHg2Yk5CdlFUbVBBekNubTNJSk5XYTZyaW5lMlo0clJIUGJHVEY2RC1qS2cwSFpwYnp5ZnRrcm5vOWxmcXcxYjRHdnlLZklOWmxzWnNVUGN5emtkYnpnSXFiZFFnYkJjUGtSbjI4N3FWYUVNZ3RlN1hyVDYyVHFGX1lPTkJRcWxjNHhxSzRHcXpDZkxyT3pZemdoNWN1YWlxWjlhcEJzS2o1QW5oUEVvSEZOWGU3S2RPVzVpMA?oc=5",
+   "summary": "",
+   "date": "2026-11-25T09:30:33.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Europa Press",
    "topics": []
   },
   {
@@ -1947,6 +2566,30 @@
    "sourceId": "gn-supremo",
    "group": "Prensa general",
    "origin": "MUNDIARIO",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUnEwVkR2SU1kNU4zeldpbVllUXNFelBESm42bi1OdHNaWTBaRmZHc3NFaUNoSllZOWlGa3Q1RzVNUEdMRUdsVEVDMnZ3NmdxbE5DMlVGd1BvS19TVXpRc3JKLU5BRnRTdXoxQ1A1VUhTeHJqLUxFN3NRMmpsUzNkaC1tUElDNE1oZ05IZG9sWlExeHhFOEdOVlhZSdIBmwFBVV95cUxQR01QZUo0TF85ZU9tMVB2dnJJTkZlcjRETVZCUWJDQllsblk5UkpFVlFFdXhuQXMzQ1RpRTdQazlJRDBQOEJ6MVV0ZGdfczQ0djE5ZUZ1UVBfendoRDJKTEt2WllmMXRZbzZjNkNwVkxvNXlJZVJ3SG5LR1R2dW5halVTMzdfR1VrY3lJa2llZlJwYVpSbjhxZnIxdw?oc=5",
+   "title": "Sánchez cuestiona el \"excesivo celo\" de la \"vertiente conservadora\" del CGPJ con sus críticas a los jueces: \"No lo hace cuando esas expresiones vienen de la derecha\"",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUnEwVkR2SU1kNU4zeldpbVllUXNFelBESm42bi1OdHNaWTBaRmZHc3NFaUNoSllZOWlGa3Q1RzVNUEdMRUdsVEVDMnZ3NmdxbE5DMlVGd1BvS19TVXpRc3JKLU5BRnRTdXoxQ1A1VUhTeHJqLUxFN3NRMmpsUzNkaC1tUElDNE1oZ05IZG9sWlExeHhFOEdOVlhZSdIBmwFBVV95cUxQR01QZUo0TF85ZU9tMVB2dnJJTkZlcjRETVZCUWJDQllsblk5UkpFVlFFdXhuQXMzQ1RpRTdQazlJRDBQOEJ6MVV0ZGdfczQ0djE5ZUZ1UVBfendoRDJKTEt2WllmMXRZbzZjNkNwVkxvNXlJZVJ3SG5LR1R2dW5halVTMzdfR1VrY3lJa2llZlJwYVpSbjhxZnIxdw?oc=5",
+   "summary": "",
+   "date": "2026-11-25T08:55:18.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "El Mundo",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWGkzU3l5YjhZME5VMEtGNThOb2VRQVItemhqak04RkFYYk9MTUxNV0EtSGVCYmp6eEVWT3l1RnQwZ1MxVUhtdHhFWU1yVF9UcUdYaXMtbEhrV0pKdUNUNC1Tcy1xVnpIRUg0QmtaUlBYNDJ3VTJGMno2UXR3Y1VrdDJWbWdsc1BkTzVtaGMzODNaWnV1LWt4OWotbWFwMUN5Q0hXTFRfcnFPWU85NVlfbU5LWS1haFZEajRnbmU2OFV0QQ?oc=5",
+   "title": "Conclusiones del AG en Like Company c. Google: IA y publicaciones de prensa",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWGkzU3l5YjhZME5VMEtGNThOb2VRQVItemhqak04RkFYYk9MTUxNV0EtSGVCYmp6eEVWT3l1RnQwZ1MxVUhtdHhFWU1yVF9UcUdYaXMtbEhrV0pKdUNUNC1Tcy1xVnpIRUg0QmtaUlBYNDJ3VTJGMno2UXR3Y1VrdDJWbWdsc1BkTzVtaGMzODNaWnV1LWt4OWotbWFwMUN5Q0hXTFRfcnFPWU85NVlfbU5LWS1haFZEajRnbmU2OFV0QQ?oc=5",
+   "summary": "",
+   "date": "2026-11-25T08:37:00.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Cuatrecasas",
    "topics": []
   },
   {
@@ -2105,6 +2748,20 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNRzR2N1NncUFBR2I3M1l3N2M2ZWtodEdnMlJiajlRVW4yREJKczRLRGFOZllfY3RGd01zakVJVVpPVGE5WmpaRlZnYnV1V2UxTUhTeWl2WnYtc1Nydlo5YVdIY2RRVzlLOFJ0cjJ2RXVmSlNubVNsb0tSNmQ3ek03Q0d5UzgzaDZPVzY2Ny1hamZBRGc4VTVmdGdzRW5yQWlMUXhCNDg2YkVtN1RKTEtmR05CUWF4SzlZclNHMTlkSktZMDBtT0JORzMzOEJTSk5kd09TUkxhZS01aXdZSldfX3E0V01iMmNxd0RETV92dlAzRlZlSUxyX211V2RyYTk0QmdmZ0U1RFVLLTVORWhrWWVYOW1zZVBObmc5dENZZDJPSTM2U1BvUWFORU1rRVBJdEdBWW5nOWEzUWs40gHQAkFVX3lxTE1qVmhxQ1ZJMXhncEFiOWhIeEt2YlVEN2lod2pjUUYwaG5pZHAza18wQ0hKczdMUE9lZWd1SGRRdlZrZklGakxzTU1wMWRMUk5QNjEwM19kV0FMODN5bWpLcXRDbEdPckI5WXdjNE5jU3V6ZEJQbGNIZzFBV0Y2REZ5eHpzV1gwSC0wbU1KSXNYR2I5bnR5YTJuTmo1dlVrN0x3RnluOUJUU2o4YzZXcURfSTNpdHBqbF9aY211OEFZUkowUzZlX2M3allOQU1sVUxqZ1dycFI5bUhjcFhxSnNRSTRZNWY5VmJrdFdhVjVVQ1YwbXFHQUVkYUpKZlltcnRheEFneEtfTWo4UU81bW83VlM5ekVSSTVZd0V0UkV1T3dvZTJGS1RNZTVvWDFRMU1yZXozVy1xemtMZXVsWUN6cVA0bFBBd19FSUtqWU9ucw?oc=5",
+   "title": "Maria Clemente, notaria, sobre el embargo de pensiones y salarios: \"Todas esas cantidades que no superan en salario mínimo interprofesional mantienen la protección legal\"",
+   "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNRzR2N1NncUFBR2I3M1l3N2M2ZWtodEdnMlJiajlRVW4yREJKczRLRGFOZllfY3RGd01zakVJVVpPVGE5WmpaRlZnYnV1V2UxTUhTeWl2WnYtc1Nydlo5YVdIY2RRVzlLOFJ0cjJ2RXVmSlNubVNsb0tSNmQ3ek03Q0d5UzgzaDZPVzY2Ny1hamZBRGc4VTVmdGdzRW5yQWlMUXhCNDg2YkVtN1RKTEtmR05CUWF4SzlZclNHMTlkSktZMDBtT0JORzMzOEJTSk5kd09TUkxhZS01aXdZSldfX3E0V01iMmNxd0RETV92dlAzRlZlSUxyX211V2RyYTk0QmdmZ0U1RFVLLTVORWhrWWVYOW1zZVBObmc5dENZZDJPSTM2U1BvUWFORU1rRVBJdEdBWW5nOWEzUWs40gHQAkFVX3lxTE1qVmhxQ1ZJMXhncEFiOWhIeEt2YlVEN2lod2pjUUYwaG5pZHAza18wQ0hKczdMUE9lZWd1SGRRdlZrZklGakxzTU1wMWRMUk5QNjEwM19kV0FMODN5bWpLcXRDbEdPckI5WXdjNE5jU3V6ZEJQbGNIZzFBV0Y2REZ5eHpzV1gwSC0wbU1KSXNYR2I5bnR5YTJuTmo1dlVrN0x3RnluOUJUU2o4YzZXcURfSTNpdHBqbF9aY211OEFZUkowUzZlX2M3allOQU1sVUxqZ1dycFI5bUhjcFhxSnNRSTRZNWY5VmJrdFdhVjVVQ1YwbXFHQUVkYUpKZlltcnRheEFneEtfTWo4UU81bW83VlM5ekVSSTVZd0V0UkV1T3dvZTJGS1RNZTVvWDFRMU1yZXozVy1xemtMZXVsWUN6cVA0bFBBd19FSUtqWU9ucw?oc=5",
+   "summary": "",
+   "date": "2026-11-25T05:15:13.000Z",
+   "source": "Prensa · Tribunal Supremo",
+   "sourceId": "gn-supremo",
+   "group": "Prensa general",
+   "origin": "La Razón",
+   "topics": [
+    "Laboral"
+   ]
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPaHdRRm5kMW9FcEpKQl91UWdpMEw3WThqUnd4bkpRcVhBVGlUSWVDbDc1ZjdJZVh2LWNHQUo5SmYxckd4bTZHQ2RjS3Y5Y1o1R2o3bkxadk5xRndUZkZ2M1lHV0NHN0RocmdvakVYdk8wTUNXNjJaSXh0bmdwLUZoalR6dWpSQl9OcTFfWk5vZl9QeGE3TFIwYnVaRXJMN2tkeXF2WVFhd1FhbS1MN1ZlRmltWHMwS3JyTXgyNzZ4X1QzaFBOZWNCUzdHVjJKMTctREJucW1Wbl9MbjBwc3ZR0gHkAUFVX3lxTE0yMzFxN05vSXcwaDctSzNzQl9WQ0dQalN6UWVlMjlmbk0zcXBHcWF1Y3ZUajQyN0xzSFRUY2NqQ1JjbURpQkVkc1A1dGFGbGYyekZiclRWd21PakQxTTBZWldxQXY5aGp3SXl1MHJSazhPbnMyTDU5Uk9LSV9McUpBS3hLQnhlc280OHczb0NCREFRanlxSmRXVml2Yng2ZEFVRzgwLThJSEwwSVJkY01taVZiMkhHSDlWcWl6eGdjVE0zelkzLVFXbFcyY0lEdUJVdlRpTDNkR1Q1X0xrSkg4dkozNQ?oc=5",
    "title": "Feijóo convierte en promesa la medida antiabortista que provoca la guerra entre Sánchez y Ayuso en el Constitucional",
    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPaHdRRm5kMW9FcEpKQl91UWdpMEw3WThqUnd4bkpRcVhBVGlUSWVDbDc1ZjdJZVh2LWNHQUo5SmYxckd4bTZHQ2RjS3Y5Y1o1R2o3bkxadk5xRndUZkZ2M1lHV0NHN0RocmdvakVYdk8wTUNXNjJaSXh0bmdwLUZoalR6dWpSQl9OcTFfWk5vZl9QeGE3TFIwYnVaRXJMN2tkeXF2WVFhd1FhbS1MN1ZlRmltWHMwS3JyTXgyNzZ4X1QzaFBOZWNCUzdHVjJKMTctREJucW1Wbl9MbjBwc3ZR0gHkAUFVX3lxTE0yMzFxN05vSXcwaDctSzNzQl9WQ0dQalN6UWVlMjlmbk0zcXBHcWF1Y3ZUajQyN0xzSFRUY2NqQ1JjbURpQkVkc1A1dGFGbGYyekZiclRWd21PakQxTTBZWldxQXY5aGp3SXl1MHJSazhPbnMyTDU5Uk9LSV9McUpBS3hLQnhlc280OHczb0NCREFRanlxSmRXVml2Yng2ZEFVRzgwLThJSEwwSVJkY01taVZiMkhHSDlWcWl6eGdjVE0zelkzLVFXbFcyY0lEdUJVdlRpTDNkR1Q1X0xrSkg4dkozNQ?oc=5",
@@ -2114,6 +2771,20 @@
    "sourceId": "gn-constitucional",
    "group": "Prensa general",
    "origin": "Elplural.com",
+   "topics": [
+    "Constitucional"
+   ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQVWNiQi1HVVlmY2NaUnIwUjFkVWl5VW9IMTNZZm5qNGhpdFlQM0JRLTVYR0R2SVBqcUF3MTZxSUF1R0tSS0o1Qk5WOWczUXoxTlZSd3lGWXpmM0hwdHlvei1LOXljOTRMaHNzTXRmVHJQTkFLbUh4M3RYZDMzclFHVUlyT0w1WFlqQzZlNVIwRDRIT1BuMDYxUzdLanVfZVdGV2F0Q1BJOGd6dUUyd0c5czBWbG9xaXJUUkdlSklIZkxJc2p3THptY29FVlRKcWU5?oc=5",
+   "title": "Óscar Reto plantea acudir al Tribunal Constitucional si no hay acuerdo entre ambas cámaras",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQVWNiQi1HVVlmY2NaUnIwUjFkVWl5VW9IMTNZZm5qNGhpdFlQM0JRLTVYR0R2SVBqcUF3MTZxSUF1R0tSS0o1Qk5WOWczUXoxTlZSd3lGWXpmM0hwdHlvei1LOXljOTRMaHNzTXRmVHJQTkFLbUh4M3RYZDMzclFHVUlyT0w1WFlqQzZlNVIwRDRIT1BuMDYxUzdLanVfZVdGV2F0Q1BJOGd6dUUyd0c5czBWbG9xaXJUUkdlSklIZkxJc2p3THptY29FVlRKcWU5?oc=5",
+   "summary": "",
+   "date": "2026-11-25T04:49:01.000Z",
+   "source": "Prensa · Tribunal Constitucional",
+   "sourceId": "gn-constitucional",
+   "group": "Prensa general",
+   "origin": "Latina Noticias",
    "topics": [
     "Constitucional"
    ]
@@ -2134,6 +2805,18 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORDdjMF9hQ2RGX2xVNlZ5eDIzdU1ZV2VWVjVBNGplNVZPOGx3NC1RUXd5Rm9hZnM4WTVvQVE2aVlES3QtSnhTVmk0MjFZLS0zRGMzWmIxcUlCYlEwTDZmcTFwdGZmMEU1WC1vYVo5TDR2c1lXcnN2NjZrWS1OOERSbFBfMHBqaDdhUmdxTEx6OXJ4MDNWQkhj0gGcAUFVX3lxTE0yZ1ppekNEeC1rTDJ3TnB0a0Z2SlJPNFZCLXdPMUxILW8wNm02ZUZpV0lNYTEzZ2VYVFBtc0xTb09UbzYtci05amhSTjBYajZHNTgzdzBSSXVlTVc2aUE5UG1NdmJ1YW82TG5pTnZoUWNqTHhYdkpHR1Y2Vy1DVWtQTjF0TGdyUW9XZUJTRHc2VTZkV2t6T01oMXdnbA?oc=5",
+   "title": "Granada lidera la ratio andaluza de denuncias ante los juzgados de violencia sobre la mujer",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORDdjMF9hQ2RGX2xVNlZ5eDIzdU1ZV2VWVjVBNGplNVZPOGx3NC1RUXd5Rm9hZnM4WTVvQVE2aVlES3QtSnhTVmk0MjFZLS0zRGMzWmIxcUlCYlEwTDZmcTFwdGZmMEU1WC1vYVo5TDR2c1lXcnN2NjZrWS1OOERSbFBfMHBqaDdhUmdxTEx6OXJ4MDNWQkhj0gGcAUFVX3lxTE0yZ1ppekNEeC1rTDJ3TnB0a0Z2SlJPNFZCLXdPMUxILW8wNm02ZUZpV0lNYTEzZ2VYVFBtc0xTb09UbzYtci05amhSTjBYajZHNTgzdzBSSXVlTVc2aUE5UG1NdmJ1YW82TG5pTnZoUWNqTHhYdkpHR1Y2Vy1DVWtQTjF0TGdyUW9XZUJTRHc2VTZkV2t6T01oMXdnbA?oc=5",
+   "summary": "",
+   "date": "2026-11-25T03:59:20.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Granada Hoy",
+   "topics": []
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPeHdqMVNPUnFaRUREc3I4X0p6RlBTdFAtekVYR2hlNFUwY1ZWcTY2b1M1ZElQZmxaR1FkZVY1QW83cXhSbFZ3dnNYVVh4T2RwSDdIUFloY1YyQjFNMXdXVFlJYmNzRTJxOGE3MU5xTUNkb3RPbngxcDRGY1JiZGhIeVV1WUpta1VMS1VLeFZzeUQydVotcFV5VUg3dUN4WTJoMmZjaEZNclk4NjVrU0owVTlqV2dpdnFOallUWTlJUnJhSndpVld5dng1UWhqOVRZOGVGaE4zSjdPU3lfdXNKcHhJb3hHajEzV3N2M1lJOWlEeG93VS1rSlYwNzZMVFdER2tYRGVmQU5vbHgxSHBSLVg4OTlqOHJDcUpYdElGZ19td0RUNVR4Y3VvcHJjZw?oc=5",
    "title": "Tribunal Constitucional promueve una cultura de igualdad, bienestar y desarrollo humano (3)",
    "link": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPeHdqMVNPUnFaRUREc3I4X0p6RlBTdFAtekVYR2hlNFUwY1ZWcTY2b1M1ZElQZmxaR1FkZVY1QW83cXhSbFZ3dnNYVVh4T2RwSDdIUFloY1YyQjFNMXdXVFlJYmNzRTJxOGE3MU5xTUNkb3RPbngxcDRGY1JiZGhIeVV1WUpta1VMS1VLeFZzeUQydVotcFV5VUg3dUN4WTJoMmZjaEZNclk4NjVrU0owVTlqV2dpdnFOallUWTlJUnJhSndpVld5dng1UWhqOVRZOGVGaE4zSjdPU3lfdXNKcHhJb3hHajEzV3N2M1lJOWlEeG93VS1rSlYwNzZMVFdER2tYRGVmQU5vbHgxSHBSLVg4OTlqOHJDcUpYdElGZ19td0RUNVR4Y3VvcHJjZw?oc=5",
@@ -2143,6 +2826,20 @@
    "sourceId": "gn-constitucional",
    "group": "Prensa general",
    "origin": "El Nuevo Diario",
+   "topics": [
+    "Constitucional"
+   ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVUtiVjQ0eGQ1U3lRQkMwSmttcUJ6dFpyTmsxWDJ6SlVrc2hZbHZJMDhFTFZUS1FUdzhxS3hlNFYxNEhnTFZOQTRKY0pqVGFYNGVDNHpQUkN1UWZQWm05R2ljejVVQmVmTlRhVVZBcmQwY1dFd3N2QXV1QzEtenFQUHl5anBHNW01V2Qtci1R?oc=5",
+   "title": "Redondo recurre ante el Tribunal Constitucional la ley de Ayuso del «concebido no nacido»",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVUtiVjQ0eGQ1U3lRQkMwSmttcUJ6dFpyTmsxWDJ6SlVrc2hZbHZJMDhFTFZUS1FUdzhxS3hlNFYxNEhnTFZOQTRKY0pqVGFYNGVDNHpQUkN1UWZQWm05R2ljejVVQmVmTlRhVVZBcmQwY1dFd3N2QXV1QzEtenFQUHl5anBHNW01V2Qtci1R?oc=5",
+   "summary": "",
+   "date": "2026-11-25T02:29:55.000Z",
+   "source": "Prensa · Tribunal Constitucional",
+   "sourceId": "gn-constitucional",
+   "group": "Prensa general",
+   "origin": "MONCLOA.COM",
    "topics": [
     "Constitucional"
    ]
@@ -2174,6 +2871,20 @@
    "topics": []
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRmJUZjJNRGk5S3dzNXZnZkFiTVFscV9BVEQzU19GdTdpVmd3dGs2eVhZZmlxb3lteEFjZGMzS2FaRFNCVEstdDdSTjJONU91SW85NVhxaWhJYTRxOHk2YXJ0eG9QR09wcGhfcmpKeERDM2p4blQ2dHNhMVFKSlBIQTRYUUtrdGNkd2pRTU1hMTh6MmdwR2NkMXBOR0V6MjV3RHRfTG05TWppZ2tZNldic3o1bzhKUmhzU05nU29WOU9TMHdQTjdz0gHbAUFVX3lxTFBCbjFUQzJKSy1xTlJRMTJ2N3BzWmE2VG5JUHZwYk52TU5JQS1NMDVfdktObHhTcC04OV9rTGFhVzBIU2JvaE53R3ZqVDdVdm93aW5vVnQyMWVhbVZrRi1vRm5pUzVjTW9EcXYtTnFEbkRDZ0xraFk0SWhPZUl4ZDYxc0Q3X3FTbEc4NWxtSDlHeTlRekFhY3pLblNUelRaYUZOZ3J2ZzRkZFE5VlBEWnBONlFtb3JvQUtxOTFIenRvc0YtUk01T2dHbmx3ZFdSWDVtOFIzaFBUS2lhNA?oc=5",
+   "title": "Tribunal Constitucional: deja 18 procesos pendientes de votación tras audiencia pública",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRmJUZjJNRGk5S3dzNXZnZkFiTVFscV9BVEQzU19GdTdpVmd3dGs2eVhZZmlxb3lteEFjZGMzS2FaRFNCVEstdDdSTjJONU91SW85NVhxaWhJYTRxOHk2YXJ0eG9QR09wcGhfcmpKeERDM2p4blQ2dHNhMVFKSlBIQTRYUUtrdGNkd2pRTU1hMTh6MmdwR2NkMXBOR0V6MjV3RHRfTG05TWppZ2tZNldic3o1bzhKUmhzU05nU29WOU9TMHdQTjdz0gHbAUFVX3lxTFBCbjFUQzJKSy1xTlJRMTJ2N3BzWmE2VG5JUHZwYk52TU5JQS1NMDVfdktObHhTcC04OV9rTGFhVzBIU2JvaE53R3ZqVDdVdm93aW5vVnQyMWVhbVZrRi1vRm5pUzVjTW9EcXYtTnFEbkRDZ0xraFk0SWhPZUl4ZDYxc0Q3X3FTbEc4NWxtSDlHeTlRekFhY3pLblNUelRaYUZOZ3J2ZzRkZFE5VlBEWnBONlFtb3JvQUtxOTFIenRvc0YtUk01T2dHbmx3ZFdSWDVtOFIzaFBUS2lhNA?oc=5",
+   "summary": "",
+   "date": "2026-11-25T00:41:06.000Z",
+   "source": "Prensa · Tribunal Constitucional",
+   "sourceId": "gn-constitucional",
+   "group": "Prensa general",
+   "origin": "Diario Correo",
+   "topics": [
+    "Constitucional"
+   ]
+  },
+  {
    "id": "https://www.diariojuridico.com/union-internacional-de-magistrados-expulsa-a-la-delegacion-de-mexico/",
    "title": "Unión Internacional de Magistrados expulsa a la delegación de México",
    "link": "https://www.diariojuridico.com/union-internacional-de-magistrados-expulsa-a-la-delegacion-de-mexico/",
@@ -2184,6 +2895,21 @@
    "group": "Prensa jurídica",
    "origin": "",
    "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZHZocE9MZjJHeDRDYlF6d1JNN1V1ejQxSEpQckdjWDUxVEMwWGgzMTdKZUxNdkZEbV9BdThnc2drd21MYTE3UEcwU1NJV2NhdG5mVXdYVS1CRTVGSVNCMy1sQmV0S0pZTWl0SlpGQnJkcU9KMXBtdEVMdTl3UldoUThxeURxemhRb2wzT2J3dnA0SC00QTBWMjI1ZmRVcGhYLUtXV0RFX1licTB1U01hT0VucWZsMUJuWjFGNWltVk0?oc=5",
+   "title": "Absueltos dos acusados de estafar mil euros a una mujer con el falso alquiler de un piso en Tenerife",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZHZocE9MZjJHeDRDYlF6d1JNN1V1ejQxSEpQckdjWDUxVEMwWGgzMTdKZUxNdkZEbV9BdThnc2drd21MYTE3UEcwU1NJV2NhdG5mVXdYVS1CRTVGSVNCMy1sQmV0S0pZTWl0SlpGQnJkcU9KMXBtdEVMdTl3UldoUThxeURxemhRb2wzT2J3dnA0SC00QTBWMjI1ZmRVcGhYLUtXV0RFX1licTB1U01hT0VucWZsMUJuWjFGNWltVk0?oc=5",
+   "summary": "",
+   "date": "2026-11-25T00:24:10.000Z",
+   "source": "Prensa · Tribunales en Canarias",
+   "sourceId": "gn-canarias",
+   "group": "Prensa general",
+   "origin": "El Burgado Digital",
+   "topics": [
+    "Penal",
+    "Civil y familia"
+   ]
   },
   {
    "id": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOV2xMRlltdjZfa2xqRjk3c3I3cXM4TGVQaTR4WE95cXNEb1pPbzh0OFQ3V2gyUTFNcWFha0hUSmJqbUJGankwM0hUeFVKY01VLWZmUHB3MzZOMUZmX205dDRpOFFOcGRGb1pQanBlYW5KMF9DSU8wQjdSdWdrRmtDS3VtNm5fZUdOblBjOW0xZHl0Tk9vR0w4b0FHRFdKTGx1b29nNHRuNA?oc=5",
@@ -2200,6 +2926,58 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMUJsTEIxb200bGpERWJ5MXBqRDkzRUctbFhwUDBGajNwQVhleE9YaVdsWXpoVDN2WlhoazV6VTBFT1Z3Tk5fM1FVM0xGWl9ZSTNwdGN3Q04xcjdBU0ZYbUJySlNOM18yZUV2ZXpON3VqSVBvNDVnemptd1hBQmZHUkFSd2dEd3c0UUp0MVVB?oc=5",
+   "title": "Álvaro Lobato, magistrado: «Me parece fantástica la figura de los jueces divulgadores que explican a la ciudadanía cómo se aplica la ley",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMUJsTEIxb200bGpERWJ5MXBqRDkzRUctbFhwUDBGajNwQVhleE9YaVdsWXpoVDN2WlhoazV6VTBFT1Z3Tk5fM1FVM0xGWl9ZSTNwdGN3Q04xcjdBU0ZYbUJySlNOM18yZUV2ZXpON3VqSVBvNDVnemptd1hBQmZHUkFSd2dEd3c0UUp0MVVB?oc=5",
+   "summary": "",
+   "date": "2026-11-24T23:57:27.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Confilegal",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMickFVX3lxTFB4OHhRbmtZd3p2MmIzZy1Mc2xSYkU4eWFTQk5iQUd2NXhFNUNVNnNnYXBzVnRZdm1QX1JyUWw5QnFrRFhOS1NpMmhMNkJySHZFd2RqTjhUOXlGU29UdXFkZXRwOXdfMUZvRm9QaDNta2VhZw?oc=5",
+   "title": "Tribunal Constitucional llama a romper estereotipos sobre 2026",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFB4OHhRbmtZd3p2MmIzZy1Mc2xSYkU4eWFTQk5iQUd2NXhFNUNVNnNnYXBzVnRZdm1QX1JyUWw5QnFrRFhOS1NpMmhMNkJySHZFd2RqTjhUOXlGU29UdXFkZXRwOXdfMUZvRm9QaDNta2VhZw?oc=5",
+   "summary": "",
+   "date": "2026-11-24T23:07:27.000Z",
+   "source": "Prensa · Tribunal Constitucional",
+   "sourceId": "gn-constitucional",
+   "group": "Prensa general",
+   "origin": "De Último Minuto",
+   "topics": [
+    "Constitucional"
+   ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOWHYyd3N1Qkd1SEFaTHU3dTJvb0Q1QktWZGhkWjlwTHNYVG4tV0NhbFdqSzJTUVRtRkJzRXRIc2VMZ21VOWRpeTJqY19HRUlmbDlHQkpIcGktc0hHckE1Qm81WXpnZGFWOS02c2Q1U0Zwd1I3VUFBX1Z5dndKYkJDWjc1M0ZfYWhOSERzNGluVk9DekdBYmo5MEhHYVdESEFaTHFyTWNkcHBhTHc1aEo2MnRtQV9rVXlCUmU0OXBXMlhkYmtockt1cXI5RXpxQ280MmsxTW8tRVZWZVgzSGhoNllQR25NZVU4Y184YzdfQXlJZUZwMEhhZw?oc=5",
+   "title": "Estrasburgo avala con condiciones las devoluciones en frontera. ¿Qué tendría que demostrar España para aplicar ese criterio en Canarias?",
+   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOWHYyd3N1Qkd1SEFaTHU3dTJvb0Q1QktWZGhkWjlwTHNYVG4tV0NhbFdqSzJTUVRtRkJzRXRIc2VMZ21VOWRpeTJqY19HRUlmbDlHQkpIcGktc0hHckE1Qm81WXpnZGFWOS02c2Q1U0Zwd1I3VUFBX1Z5dndKYkJDWjc1M0ZfYWhOSERzNGluVk9DekdBYmo5MEhHYVdESEFaTHFyTWNkcHBhTHc1aEo2MnRtQV9rVXlCUmU0OXBXMlhkYmtockt1cXI5RXpxQ280MmsxTW8tRVZWZVgzSGhoNllQR25NZVU4Y184YzdfQXlJZUZwMEhhZw?oc=5",
+   "summary": "",
+   "date": "2026-11-24T22:38:41.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "La Gaceta de Canarias",
+   "topics": [
+    "Europeo"
+   ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPR3AwTGhpc0p1dUlRelFvM09tcWdzZ2pUbUNNSzI1Ui1iS3AxcGZFU1ZDdUF2Um1JMHlQc2llNnFBeWp5QWFINk1FT1FMVU80b1kyM0xKOV9IelRfMTZ1OG5DQXBaZkJuMUxpemFXMW1SMmFQQVJNSzlrM3F1b0FxS2JrNDJyblE4ZjBnWUE2dWRIN3FjTm5XanJVbEtBWUExbDV5RkZhVjAtQ3RLeXVxR1BhYjRfOVJjaUc5ZlB0anVRZWtpMW5peEZMVUo0MHdqLW5UWUllRzJLdjZuQVpZTVNrZXJXVjhWdUlvNUY4OGZwdkd2LWc?oc=5",
+   "title": "La Iglesia cuestiona el borrado de las partidas de bautismo",
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPR3AwTGhpc0p1dUlRelFvM09tcWdzZ2pUbUNNSzI1Ui1iS3AxcGZFU1ZDdUF2Um1JMHlQc2llNnFBeWp5QWFINk1FT1FMVU80b1kyM0xKOV9IelRfMTZ1OG5DQXBaZkJuMUxpemFXMW1SMmFQQVJNSzlrM3F1b0FxS2JrNDJyblE4ZjBnWUE2dWRIN3FjTm5XanJVbEtBWUExbDV5RkZhVjAtQ3RLeXVxR1BhYjRfOVJjaUc5ZlB0anVRZWtpMW5peEZMVUo0MHdqLW5UWUllRzJLdjZuQVpZTVNrZXJXVjhWdUlvNUY4OGZwdkd2LWc?oc=5",
+   "summary": "",
+   "date": "2026-11-24T21:40:00.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Iglesia Noticias",
+   "topics": []
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNejdERHdZVzRnNWVwenpNQW80bXc1Q3VkM3dRemhLREJOTzg1ZjVpQ1YxaWNBUlNGZTZWVFhjMXFpYkVocmxGV0paSEhxa2VBU1NFakl6aC1DbDNaVmlSbUF5RTFlWUhqc2NVLUpxMkhrbkZkN3Bubm9iUGxucXFvcVVtT3JpXzZiRU5zTTRuMmRTcTNxdkQ4X3ZKUGJ6QUtsZW95WUc3bVRuSk16dVh0X2pkSGRURl9fY1VsZmd2QnZCNG1rZmV5QWdNTdIBywFBVV95cUxNejdERHdZVzRnNWVwenpNQW80bXc1Q3VkM3dRemhLREJOTzg1ZjVpQ1YxaWNBUlNGZTZWVFhjMXFpYkVocmxGV0paSEhxa2VBU1NFakl6aC1DbDNaVmlSbUF5RTFlWUhqc2NVLUpxMkhrbkZkN3Bubm9iUGxucXFvcVVtT3JpXzZiRU5zTTRuMmRTcTNxdkQ4X3ZKUGJ6QUtsZW95WUc3bVRuSk16dVh0X2pkSGRURl9fY1VsZmd2QnZCNG1rZmV5QWdNTQ?oc=5",
    "title": "Visita judicial por las calles de Vegueta",
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNejdERHdZVzRnNWVwenpNQW80bXc1Q3VkM3dRemhLREJOTzg1ZjVpQ1YxaWNBUlNGZTZWVFhjMXFpYkVocmxGV0paSEhxa2VBU1NFakl6aC1DbDNaVmlSbUF5RTFlWUhqc2NVLUpxMkhrbkZkN3Bubm9iUGxucXFvcVVtT3JpXzZiRU5zTTRuMmRTcTNxdkQ4X3ZKUGJ6QUtsZW95WUc3bVRuSk16dVh0X2pkSGRURl9fY1VsZmd2QnZCNG1rZmV5QWdNTdIBywFBVV95cUxNejdERHdZVzRnNWVwenpNQW80bXc1Q3VkM3dRemhLREJOTzg1ZjVpQ1YxaWNBUlNGZTZWVFhjMXFpYkVocmxGV0paSEhxa2VBU1NFakl6aC1DbDNaVmlSbUF5RTFlWUhqc2NVLUpxMkhrbkZkN3Bubm9iUGxucXFvcVVtT3JpXzZiRU5zTTRuMmRTcTNxdkQ4X3ZKUGJ6QUtsZW95WUc3bVRuSk16dVh0X2pkSGRURl9fY1VsZmd2QnZCNG1rZmV5QWdNTQ?oc=5",
@@ -2210,6 +2988,46 @@
    "group": "Prensa general",
    "origin": "Canarias7",
    "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMDNKWFR4Tm5UREdlVm1iQjZVNzBkTUw1aVF0SHpFVGpWZVl1bHR2QnVCU3VhekNoN1FtOExuSVZjNXBpaUo2RnlyNWNpaUoyRnFSa2UzcmZ4SGl0QWs4UEtWN2xDZ0JuVGZnNDZtSEtxRjN0bnVCX3F2ZVk2dFpnTUxnUXJEWmJwRWRxalJVeFlTY29iZ2ZXZks2ejdsdm5IMkFoYmpRRlI3QdIBrwFBVV95cUxOOXM4bWdCMnB1TEp1N2NjeVJOM1d3b0czUDNSZVBZUWVpalc0SHRlVVZwY1V5WG1Xa0Z3TnRhQ0Zhbk9QMGxQSkhlYVJNb29sa290amQxcUZZbV9YcmJNc0c2STdDZGkwRTk4cVNMZXhrVzhVQWJoWDRxSTNJaENEaGNubWd5QnVOdVBfSElqOENsLUltTnQwM1ZkTmhyTG9EaGdOazNIaU9TcFFaNlZB?oc=5",
+   "title": "Los investigadores no hallan rastro de ADN del acusado en el lugar donde fue asesinado Julio César",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMDNKWFR4Tm5UREdlVm1iQjZVNzBkTUw1aVF0SHpFVGpWZVl1bHR2QnVCU3VhekNoN1FtOExuSVZjNXBpaUo2RnlyNWNpaUoyRnFSa2UzcmZ4SGl0QWs4UEtWN2xDZ0JuVGZnNDZtSEtxRjN0bnVCX3F2ZVk2dFpnTUxnUXJEWmJwRWRxalJVeFlTY29iZ2ZXZks2ejdsdm5IMkFoYmpRRlI3QdIBrwFBVV95cUxOOXM4bWdCMnB1TEp1N2NjeVJOM1d3b0czUDNSZVBZUWVpalc0SHRlVVZwY1V5WG1Xa0Z3TnRhQ0Zhbk9QMGxQSkhlYVJNb29sa290amQxcUZZbV9YcmJNc0c2STdDZGkwRTk4cVNMZXhrVzhVQWJoWDRxSTNJaENEaGNubWd5QnVOdVBfSElqOENsLUltTnQwM1ZkTmhyTG9EaGdOazNIaU9TcFFaNlZB?oc=5",
+   "summary": "",
+   "date": "2026-11-24T20:09:50.000Z",
+   "source": "Prensa · Tribunales en Canarias",
+   "sourceId": "gn-canarias",
+   "group": "Prensa general",
+   "origin": "Eldía",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeTNWQ3Z5NGJIYVFKdkdLLWI1UEFLOXR4SENaTW5EQnJHZjF6NTdpbzZHRTZfSDNkcjYyT1dwdjJNLXgzMXBKM3Y2R3AwU0c0dnVFNk52Q0dmUHh1d1U4NUNOOUFuamZJU1VSam13RnlKZDVpUDhXMFpEX1lxZmpoSjE5d1VIRlIzbHNORmtieXo5MDA2N0FaWi00c0lKMGdqOGFKVm1LeWRGUDJ6V1dkQ9IBtgFBVV95cUxNZHptUHhIUWJqUmVtcVBYa3phMURjeGdnd05lNTlRcUhsUHdGRnY1blZCU0R4YlhYMWZFMHlMYWkzdUdBVTFNNlZtNGJ1cWdfRk5TSVlvUTZJc04xeWZXekZjM1lBSmZSa09XRk02Sld0SjVCRTJtV3Zwc1JicVYxOFZtVVd3V3JVQ2VGVVJoeFdJQmU1N094NjF5RW16bDNiekFRWjhEYVRpMDJ0TzkyTmg2aVpodw?oc=5",
+   "title": "CGPJ llama a \"repensar\" la ampliación de competencias de los juzgados de Violencia sobre Mujer",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeTNWQ3Z5NGJIYVFKdkdLLWI1UEFLOXR4SENaTW5EQnJHZjF6NTdpbzZHRTZfSDNkcjYyT1dwdjJNLXgzMXBKM3Y2R3AwU0c0dnVFNk52Q0dmUHh1d1U4NUNOOUFuamZJU1VSam13RnlKZDVpUDhXMFpEX1lxZmpoSjE5d1VIRlIzbHNORmtieXo5MDA2N0FaWi00c0lKMGdqOGFKVm1LeWRGUDJ6V1dkQ9IBtgFBVV95cUxNZHptUHhIUWJqUmVtcVBYa3phMURjeGdnd05lNTlRcUhsUHdGRnY1blZCU0R4YlhYMWZFMHlMYWkzdUdBVTFNNlZtNGJ1cWdfRk5TSVlvUTZJc04xeWZXekZjM1lBSmZSa09XRk02Sld0SjVCRTJtV3Zwc1JicVYxOFZtVVd3V3JVQ2VGVVJoeFdJQmU1N094NjF5RW16bDNiekFRWjhEYVRpMDJ0TzkyTmg2aVpodw?oc=5",
+   "summary": "",
+   "date": "2026-11-24T19:57:52.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "ABC",
+   "topics": [
+    "Mercantil"
+   ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbHM0NUIzcTQxa0hzQ2VId19xVG1RaUFKSk9fRkxSRWdZWXdkdTl1dlZramtlOFNiSjNUeEFLLXJNSXJNdm0zVGRMMDdsU096X2o1SHV3NGhYMTk4WW1qajVBZ1lDc2xQLWdjYXJNdnZBWVg0VkdRZzZReV94QWV6WmVKaXY5Zk4zYkd2bXNyWER5NWhacnJiNkRnYjFjZWdoQ0lSLWFnU0dwcG9DLUF6NmkyUk40REpoMVBYZnFORXl2TFnSAcMBQVVfeXFMUGxzNDVCM3E0MWtIc0NlSHdfcVRtUWlBSkpPX0ZMUkVnWVl3ZHU5dXZWa2prZThTYkozVHhBSy1yTUlyTXZtM1RkTDA3bFNPel9qNUh1dzRoWDE5OFltamo1QWdZQ3NsUC1nY2FyTXZ2QVlYNFZHUWc2UXlfeEFlelplSml2OWZOM2JHdm1zclhEeTVoWnJyYjZEZ2IxY2VnaENJUi1hZ1NHcHBvQy1BejZpMlJONERKaDFQWGZxTkV5dkxZ?oc=5",
+   "title": "CGPJ llama a \"repensar\" la ampliación de competencias de los juzgados de Violencia sobre Mujer",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbHM0NUIzcTQxa0hzQ2VId19xVG1RaUFKSk9fRkxSRWdZWXdkdTl1dlZramtlOFNiSjNUeEFLLXJNSXJNdm0zVGRMMDdsU096X2o1SHV3NGhYMTk4WW1qajVBZ1lDc2xQLWdjYXJNdnZBWVg0VkdRZzZReV94QWV6WmVKaXY5Zk4zYkd2bXNyWER5NWhacnJiNkRnYjFjZWdoQ0lSLWFnU0dwcG9DLUF6NmkyUk40REpoMVBYZnFORXl2TFnSAcMBQVVfeXFMUGxzNDVCM3E0MWtIc0NlSHdfcVRtUWlBSkpPX0ZMUkVnWVl3ZHU5dXZWa2prZThTYkozVHhBSy1yTUlyTXZtM1RkTDA3bFNPel9qNUh1dzRoWDE5OFltamo1QWdZQ3NsUC1nY2FyTXZ2QVlYNFZHUWc2UXlfeEFlelplSml2OWZOM2JHdm1zclhEeTVoWnJyYjZEZ2IxY2VnaENJUi1hZ1NHcHBvQy1BejZpMlJONERKaDFQWGZxTkV5dkxZ?oc=5",
+   "summary": "",
+   "date": "2026-11-24T19:55:18.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Salamancahoy",
+   "topics": [
+    "Mercantil"
+   ]
   },
   {
    "id": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxObmg1V0RXb2FKQkh4eXVYcE5FaC03dEdJNzZkY2p1YThRdnVKSUtjYklMakFjZFNDaWgtTXhFYkxEQlVJVHhnb1RzZC1qS2NBMkwwa3YyMEJKUDMxTG14bVdPZXY0R1pTZ2x6QlFKU0dHN2hmRVcwTl9BdDNwWjJWZVFodFFVeEFPZG1pb0xoNFRFeFhzd05vUTNFemo0RFZGSTJWSG9LajUxSUEtNTVkb1dfRzVCWmlXbFNzZDFub1JkRVBMNkpMSWdSNW1aYm8tSzdNOEtSQjluVEpFTE5SVGk1Q3MtVUU4N2VGMDlhTE0zRkRGT1JSZ0dlMlfSAYICQVVfeXFMTkdFekMtal9wOXE4dGRNWGJzSVBMdDNiX2xpdXVKbXFOM0JDWXFPZEFxN195akZZRjU3b3ZIOUtNeF94TWFnZ1VINDFaUVN4c3I2VG5OQjVRaTd0ZExFV0hPbTAwWjQ3U2VzTXhMYk04aFhrRHBLcEI5SFBmYUtEQXdGLTV6T2oyTm4xdkdkZ0Q3SFdiTTFOLTc5SWVnR0JJblJVV0ZoRnBSREJqcVplRHpFWWMzbktvOVFzZU9WMGhYNVJBVjVWSHpNZEw1T3pVYWh6dHRUTk50SmF4OUFzVGtGcmNVSzZ3OVcxTlBhMmdBemxraThVelZGaFl1aVRYVUNR?oc=5",
@@ -2277,6 +3095,20 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOdWRYQXdweXFpRjF6VGZhNmh4M0JXTGdoV3RLN0xWYzkxU2tVTEU3bWV6dWpDNm5tQUxmVzdteUtkLWlrRTVZTWJQT2NvMlNydFA4YzliZThVV0g3ZGdmSXBzLVRjeFJyc2dJWklGZDdTX055emh0bmsyZWlGckhsUEJ1REFKN3BDMWFqNWk2VGF3T1E3N3hCUFh6aTk5aFYzNWhScU5fVERiUDAzdnJmLWVXX2JseVlVa0RkMDhQVWJTQU1MR1VvdnFCeVR6cnpTZUNFdXBKcmJVdWRuYWhGdzBZX1hueHlJLTFWa3hR?oc=5",
+   "title": "Esther Rojo (CGPJ) llama a \"repensar\" la ampliación de competencias de los juzgados de Violencia sobre la Mujer",
+   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOdWRYQXdweXFpRjF6VGZhNmh4M0JXTGdoV3RLN0xWYzkxU2tVTEU3bWV6dWpDNm5tQUxmVzdteUtkLWlrRTVZTWJQT2NvMlNydFA4YzliZThVV0g3ZGdmSXBzLVRjeFJyc2dJWklGZDdTX055emh0bmsyZWlGckhsUEJ1REFKN3BDMWFqNWk2VGF3T1E3N3hCUFh6aTk5aFYzNWhScU5fVERiUDAzdnJmLWVXX2JseVlVa0RkMDhQVWJTQU1MR1VvdnFCeVR6cnpTZUNFdXBKcmJVdWRuYWhGdzBZX1hueHlJLTFWa3hR?oc=5",
+   "summary": "",
+   "date": "2026-11-24T17:22:52.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Europa Press",
+   "topics": [
+    "Mercantil"
+   ]
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPX3BWeldxVlFLYlUwUzNQT0gzeklIN21DcjR4aU1fdEtOekYyVGFlSmVkRkNXVkFtWEN0Z0tyNVhmUm04MkV1cDFXTGVhXzFWUDBhMm1rR0Jja0JobFBESFhmOVJGd1YxLWg1LTJOOXJaQ1F5bjdlWU8yS0pncUpGYnJpdGNHZUZEM0Rad0NKZF9aYUdobzFnTjZNYmVKZkloVWNmTTRLVUowT2RFWU1pUGs2U01VUHo0aXExODA1Z3hfZ2ZtWmJNTkpYOTBtbjJ0Mm0zaC1KeDlOR042Z3dBcVA1Zm9HYldqeXUw0gHwAUFVX3lxTFBaZjJsQWs4Z0NuUThRWHVQOVJGNWtkU2pVd3Nkb0ZoY0twUmI0dmdKdHJ2QVdqQzdvSVFrVFllQWJwcGpkTm8zTDNsXzNtY19ZT2dtNEhkWjQtZXV3SmhKNjNhRnI2RmpMU1psU01mdGUzdWVmblkxLVBWTmV0S1RnUkd2M3R2elZicHpYQUd1WGxndjI1bk1sTHpQSGdGTEVOMC13VlBnRjVSQ2QzV0NhNDNDZGY3T2VIcHJ6bVVlT2VuM1FOaXppcUlGLVA0R3dqQXZBNEFpNzVnbHp6TC1uMFdpX2tMQlpKRHBkZGtkVA?oc=5",
    "title": "El Parlament elige a José María Macías y Yolanda Valdeolivas para cubrir las vacantes en el Tribunal Constitucional",
    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPX3BWeldxVlFLYlUwUzNQT0gzeklIN21DcjR4aU1fdEtOekYyVGFlSmVkRkNXVkFtWEN0Z0tyNVhmUm04MkV1cDFXTGVhXzFWUDBhMm1rR0Jja0JobFBESFhmOVJGd1YxLWg1LTJOOXJaQ1F5bjdlWU8yS0pncUpGYnJpdGNHZUZEM0Rad0NKZF9aYUdobzFnTjZNYmVKZkloVWNmTTRLVUowT2RFWU1pUGs2U01VUHo0aXExODA1Z3hfZ2ZtWmJNTkpYOTBtbjJ0Mm0zaC1KeDlOR042Z3dBcVA1Zm9HYldqeXUw0gHwAUFVX3lxTFBaZjJsQWs4Z0NuUThRWHVQOVJGNWtkU2pVd3Nkb0ZoY0twUmI0dmdKdHJ2QVdqQzdvSVFrVFllQWJwcGpkTm8zTDNsXzNtY19ZT2dtNEhkWjQtZXV3SmhKNjNhRnI2RmpMU1psU01mdGUzdWVmblkxLVBWTmV0S1RnUkd2M3R2elZicHpYQUd1WGxndjI1bk1sTHpQSGdGTEVOMC13VlBnRjVSQ2QzV0NhNDNDZGY3T2VIcHJ6bVVlT2VuM1FOaXppcUlGLVA0R3dqQXZBNEFpNzVnbHp6TC1uMFdpX2tMQlpKRHBkZGtkVA?oc=5",
@@ -2314,6 +3146,20 @@
    "sourceId": "gn-constitucional",
    "group": "Prensa general",
    "origin": "Forbes España",
+   "topics": [
+    "Constitucional"
+   ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPQUJKU000TmlrcEJ4MTdyU1NjUVlLM0ZTSlJiY2RMUmwzYjNvVVoyN0RPMHZzUjd5X0YwN0pYanNhQ3hibzNqYmlJdjdkMEo1anVOc3FiMU03emZPUlVvamc0UzU0Ql84ZV8wYV9neU5PVGFwekczVTBfSDJ0TU5yYWtpSTBGQktkV0N2TUhjUzFxRHp1NVRrckNrLTc5S0hPR05QaVRKUmllX1BST1ZhaTVuX0puelFVQUpJZWF4R3NtOXlVM25tMVpyd3ZfVXQxMTdTRUxESnY5QXdSZGk3ZjgtTjNGS0c0b0swSEpB?oc=5",
+   "title": "El Parlament propone a José María Macías y Yolanda Valdeolivas para las vacantes en el Tribunal Constitucional",
+   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPQUJKU000TmlrcEJ4MTdyU1NjUVlLM0ZTSlJiY2RMUmwzYjNvVVoyN0RPMHZzUjd5X0YwN0pYanNhQ3hibzNqYmlJdjdkMEo1anVOc3FiMU03emZPUlVvamc0UzU0Ql84ZV8wYV9neU5PVGFwekczVTBfSDJ0TU5yYWtpSTBGQktkV0N2TUhjUzFxRHp1NVRrckNrLTc5S0hPR05QaVRKUmllX1BST1ZhaTVuX0puelFVQUpJZWF4R3NtOXlVM25tMVpyd3ZfVXQxMTdTRUxESnY5QXdSZGk3ZjgtTjNGS0c0b0swSEpB?oc=5",
+   "summary": "",
+   "date": "2026-11-24T17:15:15.000Z",
+   "source": "Prensa · Tribunal Constitucional",
+   "sourceId": "gn-constitucional",
+   "group": "Prensa general",
+   "origin": "Europa Press",
    "topics": [
     "Constitucional"
    ]
@@ -2371,6 +3217,32 @@
    "topics": []
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNMmdrVE5Ka00xRkM4U1NLRVFUMEszSHhRZ011WmtVNFE2SmlVbXJ6bGlzMzU2dXVPZTZ3ZENUcTFUSm5tU0pacHZXUjFzeG1JdnYtN2VnRjZwREhuWmRHS3haV0NaOEdlWE5Mcng5SWh5WS1ENGtKSENzajVoY1M1YlN6YVo0Y0ppVXJ0bWp0VkVYN2s1TlhNN3hGdU5WSm1qTGJCNDBWRUJmWEpUQVItSTRsWkxWN3d3ME1BeDFNVDFialpRUUw2SGNKdnJaYlRxelY3REpoWm5aWUpUdE1QSUJqVzZaU0VpR1FvRWppdWsxbDQyNUc3TQ?oc=5",
+   "title": "Esther Rojo (CGPJ) plantea balizas satelitales para proteger a víctimas ante fallos en pulseras para maltratadores",
+   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNMmdrVE5Ka00xRkM4U1NLRVFUMEszSHhRZ011WmtVNFE2SmlVbXJ6bGlzMzU2dXVPZTZ3ZENUcTFUSm5tU0pacHZXUjFzeG1JdnYtN2VnRjZwREhuWmRHS3haV0NaOEdlWE5Mcng5SWh5WS1ENGtKSENzajVoY1M1YlN6YVo0Y0ppVXJ0bWp0VkVYN2s1TlhNN3hGdU5WSm1qTGJCNDBWRUJmWEpUQVItSTRsWkxWN3d3ME1BeDFNVDFialpRUUw2SGNKdnJaYlRxelY3REpoWm5aWUpUdE1QSUJqVzZaU0VpR1FvRWppdWsxbDQyNUc3TQ?oc=5",
+   "summary": "",
+   "date": "2026-11-24T16:35:22.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Europa Press",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZjNFa05aSzRWcXM5aGN4bXhxYy1SNGNiV1hVeENtOU16MGk2aHdvQjY1Z1BNOWlpZERiZUJvbGJaWWI3WVMyOFhkSjFBa2JCcHRBTHkzWExqMy0xYU1xaWxsQzE1YXdRaFFKSDlJc1F4Z3BiX0FleFZfYkpiRVVqUjN0TjJfYU1oaTQxME1FRlUtR3BkVXFqc3lTLWhRM3hLOFJuRWVWU0lTNVc1NHZKczF4NzFtdmdpY3JoakctU1R1RmRFeU41OdIByAFBVV95cUxQZjNFa05aSzRWcXM5aGN4bXhxYy1SNGNiV1hVeENtOU16MGk2aHdvQjY1Z1BNOWlpZERiZUJvbGJaWWI3WVMyOFhkSjFBa2JCcHRBTHkzWExqMy0xYU1xaWxsQzE1YXdRaFFKSDlJc1F4Z3BiX0FleFZfYkpiRVVqUjN0TjJfYU1oaTQxME1FRlUtR3BkVXFqc3lTLWhRM3hLOFJuRWVWU0lTNVc1NHZKczF4NzFtdmdpY3JoakctU1R1RmRFeU41OQ?oc=5",
+   "title": "Estrasburgo avisa: que un país use a migrantes para presionar a otro no es excusa para vulnerar sus derechos",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZjNFa05aSzRWcXM5aGN4bXhxYy1SNGNiV1hVeENtOU16MGk2aHdvQjY1Z1BNOWlpZERiZUJvbGJaWWI3WVMyOFhkSjFBa2JCcHRBTHkzWExqMy0xYU1xaWxsQzE1YXdRaFFKSDlJc1F4Z3BiX0FleFZfYkpiRVVqUjN0TjJfYU1oaTQxME1FRlUtR3BkVXFqc3lTLWhRM3hLOFJuRWVWU0lTNVc1NHZKczF4NzFtdmdpY3JoakctU1R1RmRFeU41OdIByAFBVV95cUxQZjNFa05aSzRWcXM5aGN4bXhxYy1SNGNiV1hVeENtOU16MGk2aHdvQjY1Z1BNOWlpZERiZUJvbGJaWWI3WVMyOFhkSjFBa2JCcHRBTHkzWExqMy0xYU1xaWxsQzE1YXdRaFFKSDlJc1F4Z3BiX0FleFZfYkpiRVVqUjN0TjJfYU1oaTQxME1FRlUtR3BkVXFqc3lTLWhRM3hLOFJuRWVWU0lTNVc1NHZKczF4NzFtdmdpY3JoakctU1R1RmRFeU41OQ?oc=5",
+   "summary": "",
+   "date": "2026-11-24T16:09:18.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "elDiario.es",
+   "topics": [
+    "Europeo"
+   ]
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQY3pNNjYyY1Z1N0x6dml3cUwzRlZJczVOVkpSRXFYQTFQV09WYXBnN3RfS29VQzJ3VHhMcHQyalZOXzBHZ21TLS0yOHVCRDduZGxERmpaWGN0T24zWkx5ZUlUT3o2Q1dfeHBKbXlvZ29TMGswZXE3emJhZUstUU1oTXBya3ZYZE5nMUs3ZnlnNEpaSVhGTkV5Uk9BTzZBWmxYQ3lXQ1IwRkdpYWw2Tnh5YkkxUWhaZ9IBuwFBVV95cUxNdnVxVG5nTlBCM0NVb2hmdy1OYWtGSzE2MU1qTHhXV1UyeVJfR3M0LXNnWGhlQTZaQ1FOendPZ3hkM3BCOWZCY0NjYWw3eVVFVXJEOWZsc25zVml3ZURITEszX0VxeFBTUFQ5aTN5SjBQT2IxZmFDTlg4SnhGeEtvVHRfUDlpNFp6cS1ScFlkTG1wSGkwZ2hvTElvcDJuTl9nVktlUnlBR0VNSVZtNGtrZVUxaU1WVlNKT2hZ?oc=5",
    "title": "La Junta de Castilla y León se enfrenta al Constitucional por sus ayudas al cine",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQY3pNNjYyY1Z1N0x6dml3cUwzRlZJczVOVkpSRXFYQTFQV09WYXBnN3RfS29VQzJ3VHhMcHQyalZOXzBHZ21TLS0yOHVCRDduZGxERmpaWGN0T24zWkx5ZUlUT3o2Q1dfeHBKbXlvZ29TMGswZXE3emJhZUstUU1oTXBya3ZYZE5nMUs3ZnlnNEpaSVhGTkV5Uk9BTzZBWmxYQ3lXQ1IwRkdpYWw2Tnh5YkkxUWhaZ9IBuwFBVV95cUxNdnVxVG5nTlBCM0NVb2hmdy1OYWtGSzE2MU1qTHhXV1UyeVJfR3M0LXNnWGhlQTZaQ1FOendPZ3hkM3BCOWZCY0NjYWw3eVVFVXJEOWZsc25zVml3ZURITEszX0VxeFBTUFQ5aTN5SjBQT2IxZmFDTlg4SnhGeEtvVHRfUDlpNFp6cS1ScFlkTG1wSGkwZ2hvTElvcDJuTl9nVktlUnlBR0VNSVZtNGtrZVUxaU1WVlNKT2hZ?oc=5",
@@ -2382,6 +3254,20 @@
    "origin": "MUNDIARIO",
    "topics": [
     "Constitucional"
+   ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNdUE0N0ZuSnEyYWZrMWNkM3Z6OTVUb0RXeF9aWVl3UXpMQWwyczcyeUJTaURQQjd5bUtwS1pFc1F6cjFXMlROU09ISUtYc2FvYzFvZFI3LUd4Mlo3N1JhajA0bDMzR1ZwNk1iN0lBWjVxMFBZS2RCakEwRFNDbDUwck1KMWpBNUxvaGtwLU93elN0bzNNYkJ6MkpEeHU2OUpRMnVlUnZ6M25MaFFqYlNfcnNycjNwTmlGaFRDT3lGdklyQUZhTWZXdw?oc=5",
+   "title": "El ICAM analizará las vías de defensa ante los incumplimientos del Derecho Fiscal europeo",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNdUE0N0ZuSnEyYWZrMWNkM3Z6OTVUb0RXeF9aWVl3UXpMQWwyczcyeUJTaURQQjd5bUtwS1pFc1F6cjFXMlROU09ISUtYc2FvYzFvZFI3LUd4Mlo3N1JhajA0bDMzR1ZwNk1iN0lBWjVxMFBZS2RCakEwRFNDbDUwck1KMWpBNUxvaGtwLU93elN0bzNNYkJ6MkpEeHU2OUpRMnVlUnZ6M25MaFFqYlNfcnNycjNwTmlGaFRDT3lGdklyQUZhTWZXdw?oc=5",
+   "summary": "",
+   "date": "2026-11-24T15:29:29.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Lawyerpress NEWS",
+   "topics": [
+    "Europeo"
    ]
   },
   {
@@ -2407,6 +3293,20 @@
    "group": "Prensa general",
    "origin": "Garrido",
    "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNQlpLN21MNHl3Q1VERGN3MDlNUVlZTU8tb01wa2JsVjJmVXRGYXh5OUZyWWN0LWxJVUVqVXN5WTF3dWs5WHN5M1hUUVo1SzdSRk9QUmFEcENrNW1RaVdKS05NbkFtNzhWUlBRbi1fNWVSOHR5LU9pTW01enlQWmtZVDQ4YXlIUGpsTHFSZWlDcU1PQlNCeEg0Z3RzMGR3aHBxMHM4ejVVeHotZ1NMeXVBd1ZRR0tOZ1ZFSElmUWtFanR3QlFGTi1qSUJGX0htNkh5LVgwbTJpT1pqdl9PSjJLalNUcU8?oc=5",
+   "title": "Rural.- La Eurocámara valida normas para mejorar la protección de los productores europeos de alimentos ecológicos",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNQlpLN21MNHl3Q1VERGN3MDlNUVlZTU8tb01wa2JsVjJmVXRGYXh5OUZyWWN0LWxJVUVqVXN5WTF3dWs5WHN5M1hUUVo1SzdSRk9QUmFEcENrNW1RaVdKS05NbkFtNzhWUlBRbi1fNWVSOHR5LU9pTW01enlQWmtZVDQ4YXlIUGpsTHFSZWlDcU1PQlNCeEg0Z3RzMGR3aHBxMHM4ejVVeHotZ1NMeXVBd1ZRR0tOZ1ZFSElmUWtFanR3QlFGTi1qSUJGX0htNkh5LVgwbTJpT1pqdl9PSjJLalNUcU8?oc=5",
+   "summary": "",
+   "date": "2026-11-24T14:30:21.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "GC Diario",
+   "topics": [
+    "Europeo"
+   ]
   },
   {
    "id": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPSUNBM1pxUDFFd0FobGpTS0lMbDZ5ZXJhdEpOZUNTTnQ2cnFxalp0Q2Fqc2I5OHVmT09UOWhFMVgzRy1DUm5hSjRIbkVxVkg4ZnNzcExDWTNFeG00QlRkYnE3bXFmOEVaYjV2T010UDZOVzc5UUZIWHg3aGg1dkVRZnd1N2hlQ0Fra2lKc3UxTHE1bjhkRjdsNk96R1JSdU5FRkh5ZjNYRFl6MVFRQmEybGZHd2RwX0V3cmtMOUh3?oc=5",
@@ -2465,6 +3365,21 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOGc0d2tXa0o1ZnRhTHpuR1F1SXZid1dfX2M1a3RkWG9BZ2FpRGhlRDVCZVhaRm9SRzVoUUlmQlYxUE4zVWY4UGYxTmU2VEpzbUhudkNQdFNZNTNtNWhsY0FtOU1NUkpfZXFJZllkbnk3Z1U2V2VZeWZzRUMwRVY0TWwzeTk0YjNSQnkwUUtyMm5ZaEJ4Ni1nMHZ3?oc=5",
+   "title": "El Juzgado de lo Contencioso-Administrativo de Madrid plantea al TJUE cinco cuestiones prejudiciales sobre desalojos",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOGc0d2tXa0o1ZnRhTHpuR1F1SXZid1dfX2M1a3RkWG9BZ2FpRGhlRDVCZVhaRm9SRzVoUUlmQlYxUE4zVWY4UGYxTmU2VEpzbUhudkNQdFNZNTNtNWhsY0FtOU1NUkpfZXFJZllkbnk3Z1U2V2VZeWZzRUMwRVY0TWwzeTk0YjNSQnkwUUtyMm5ZaEJ4Ni1nMHZ3?oc=5",
+   "summary": "",
+   "date": "2026-11-24T13:00:24.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "MONCLOA.COM",
+   "topics": [
+    "Administrativo",
+    "Europeo"
+   ]
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQTczRVNtZXNKMmVyeUs5Z2FiMC14R2RLZkpLT1dVYzFFWkladjZtOTZ6UTBQY2JaTGNHbFFlM25Wd2Q4VElXXzZlTUR1TzJ0dDV3MExjdzFZUmdGVnFfdEQyUXIwTXJtZlVabjZOVGhuSDZ0X1VZVUY1enloMVpZZHFQdUQ4SWo5QjZneXZWdjVPR3RBa1l5VGtmQjdGaTFseUZUNnZwQmFBc3VF0gGyAUFVX3lxTE5lNFhMUk02a1hsWGhrc0NVTUxxTFozMTNzMnBPU0ptMVozRFgtSTd2VFRMTS1uWHFKcW1XMDI1YnpuRVRkbDRDbUY5MzRoRXpnYXFqSTNQbF9jbDY2SnFqQjVaMkRNYW55X29qYjBuQURuVWRRaVg0blRrVkplSHFxcng1U01oZXdCY2NkRWlvQnlmQWJRbFo1aHZyQm0zRXd3LVh2dVluMmNlRi1CdmxoTnc?oc=5",
    "title": "El Supremo confirma 5 años de cárcel para un procurador que se quedó con 1,5 millones que los juzgados le daban para clientes",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQTczRVNtZXNKMmVyeUs5Z2FiMC14R2RLZkpLT1dVYzFFWkladjZtOTZ6UTBQY2JaTGNHbFFlM25Wd2Q4VElXXzZlTUR1TzJ0dDV3MExjdzFZUmdGVnFfdEQyUXIwTXJtZlVabjZOVGhuSDZ0X1VZVUY1enloMVpZZHFQdUQ4SWo5QjZneXZWdjVPR3RBa1l5VGtmQjdGaTFseUZUNnZwQmFBc3VF0gGyAUFVX3lxTE5lNFhMUk02a1hsWGhrc0NVTUxxTFozMTNzMnBPU0ptMVozRFgtSTd2VFRMTS1uWHFKcW1XMDI1YnpuRVRkbDRDbUY5MzRoRXpnYXFqSTNQbF9jbDY2SnFqQjVaMkRNYW55X29qYjBuQURuVWRRaVg0blRrVkplSHFxcng1U01oZXdCY2NkRWlvQnlmQWJRbFo1aHZyQm0zRXd3LVh2dVluMmNlRi1CdmxoTnc?oc=5",
@@ -2484,6 +3399,18 @@
    "date": "2026-11-24T12:16:26.000Z",
    "source": "Prensa · Tribunales en Canarias",
    "sourceId": "gn-canarias",
+   "group": "Prensa general",
+   "origin": "Libertad Digital",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQcFE5NGNHVTNOeTB4NzY1VGxvMEdzeE5jMUNhSmhna1VOX25lNng3TnpsNEJNUW1tYlZkazNJR3JLNnA5RXc3clBzWTVMd3FfcDNTMFo5aTExbkR3VlVzdWlBQjRWWFN3aTdEUjVGU0Y2bWxGMWVqc0U2YUtiNnBKZEVYZTdqbmRacHdVU0VHRGRCOFBQRjl0b0RYT2paSi0yY1oyVFYxdGwyM1BVeUVYQWNGWURMUlZIUGpaQ0JlWjZCTDZMYUpINEVJaEtHOXd3QlYtWGtpWXpEU0ZyWmZvb2U5S2E0WjhnNlVKcDh4cC3SAfsBQVVfeXFMUDBlTFA2UlJCdkpoRDdaanIyaU8wbG9qRzdIbUVmRUNUSTU4b2s2am1aN2prSXRibXFob2gxRWF2U09yY1FvZmR5Y3REd2dwTTl2VnFmaVc1VUxTT1NEVVl1ejhsRXFsR2pHVWJIMzk0eFhhU09IdER2UE5sbzhiSXVMZ0JueU5RSTFxbE53MTdEYUE3bGFjNVB3M0JmSU83cTBwZzd4SFdteHpYd1ExRUp2TjJqTlpTeENRUXBYdVllZ3FqZnpTLXlBVWNtXzhLUHZQQjNxWHIxX19LN1hwcGxBVmpiZXd6M3h5cHZvcnZJYzhaN1g3ZzVvNUE?oc=5",
+   "title": "El TSJC rechaza aplicar la amnistía a dos altos cargos de ERC imputados por malversación en el 1-O",
+   "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQcFE5NGNHVTNOeTB4NzY1VGxvMEdzeE5jMUNhSmhna1VOX25lNng3TnpsNEJNUW1tYlZkazNJR3JLNnA5RXc3clBzWTVMd3FfcDNTMFo5aTExbkR3VlVzdWlBQjRWWFN3aTdEUjVGU0Y2bWxGMWVqc0U2YUtiNnBKZEVYZTdqbmRacHdVU0VHRGRCOFBQRjl0b0RYT2paSi0yY1oyVFYxdGwyM1BVeUVYQWNGWURMUlZIUGpaQ0JlWjZCTDZMYUpINEVJaEtHOXd3QlYtWGtpWXpEU0ZyWmZvb2U5S2E0WjhnNlVKcDh4cC3SAfsBQVVfeXFMUDBlTFA2UlJCdkpoRDdaanIyaU8wbG9qRzdIbUVmRUNUSTU4b2s2am1aN2prSXRibXFob2gxRWF2U09yY1FvZmR5Y3REd2dwTTl2VnFmaVc1VUxTT1NEVVl1ejhsRXFsR2pHVWJIMzk0eFhhU09IdER2UE5sbzhiSXVMZ0JueU5RSTFxbE53MTdEYUE3bGFjNVB3M0JmSU83cTBwZzd4SFdteHpYd1ExRUp2TjJqTlpTeENRUXBYdVllZ3FqZnpTLXlBVWNtXzhLUHZQQjNxWHIxX19LN1hwcGxBVmpiZXd6M3h5cHZvcnZJYzhaN1g3ZzVvNUE?oc=5",
+   "summary": "",
+   "date": "2026-11-24T12:16:26.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
    "group": "Prensa general",
    "origin": "Libertad Digital",
    "topics": []
@@ -2528,6 +3455,21 @@
    "topics": []
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOU09hTnVuZ0RXMFlrMG5xejUzVG96YjMyNFpKa1lPNkFQU2xCblBjdDZxb3dtVDZvVFBwRXRMWDlYdHdaTzZxdzhPMk1ONzdxbV9Rbnk5RVVyRy1fYkQzZVRSd29YdVA1V2VOT1ZENVVEbDhfS2JlOUk3dkVrQ1Vjd19VNGFDTnRwdklCYWswOGRsRk95ajFzUDQxQXp5Rm9KUHVXcEcxQk1peXljS2lxUFJneWpUZ9IBuwFBVV95cUxOZnlaTVpBZHM5Zkk0Q3gxT09IYVNHVmFMdmFYR3JnaXhSSFo3QTdSdUJKbzEtSkdqd21YMzctSjByNTVCbk5PVm4xSE9uWDZjS2dtRnJ1MnpLWUUtS2dSaHV6ZTZLbnlDQkV3UG9CSWdvOThSZ1BDTE1NNGVXVmwtMW1YaFVtdjRmb2dXUDRTQk04SE8zemJSejMyTUFuRmFxenYzbmhrM2tJRTcxUmdZNjF6SXNqSWtCZllj?oc=5",
+   "title": "El TSJ catalán se resiste a amnistiar a dos cargos de ERC pese al Constitucional y el TJUE",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOU09hTnVuZ0RXMFlrMG5xejUzVG96YjMyNFpKa1lPNkFQU2xCblBjdDZxb3dtVDZvVFBwRXRMWDlYdHdaTzZxdzhPMk1ONzdxbV9Rbnk5RVVyRy1fYkQzZVRSd29YdVA1V2VOT1ZENVVEbDhfS2JlOUk3dkVrQ1Vjd19VNGFDTnRwdklCYWswOGRsRk95ajFzUDQxQXp5Rm9KUHVXcEcxQk1peXljS2lxUFJneWpUZ9IBuwFBVV95cUxOZnlaTVpBZHM5Zkk0Q3gxT09IYVNHVmFMdmFYR3JnaXhSSFo3QTdSdUJKbzEtSkdqd21YMzctSjByNTVCbk5PVm4xSE9uWDZjS2dtRnJ1MnpLWUUtS2dSaHV6ZTZLbnlDQkV3UG9CSWdvOThSZ1BDTE1NNGVXVmwtMW1YaFVtdjRmb2dXUDRTQk04SE8zemJSejMyTUFuRmFxenYzbmhrM2tJRTcxUmdZNjF6SXNqSWtCZllj?oc=5",
+   "summary": "",
+   "date": "2026-11-24T11:24:49.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "elDiario.es",
+   "topics": [
+    "Constitucional",
+    "Europeo"
+   ]
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPenRicmRWY3VpcmtwNUNweENIOHlDYXkwUlVRLVNGS1Q3WE9IX3prYVZPaDlyQk5Ecm1QcWY4aEJhWUhBNnBGV2toRC1wTDRlVnhmcFdBQTIwUnBkbFpWODEzQnZfRHhhSWpjYTFjTHQtYld3X2d5SEZqNThIRUJIdFdtSGFZYThyWWN6a0hKS2RudUZxVENTbW1nRno4X3NIMUVvZ2xvb0RBUEVDNm4xX3JwbkpTcVRfUnFTQU9GSmh4VFVIcnc3b0M1ZzRMaDNKMk03TEdhQU9KSmZITk9xcHNWRTJ3QmJjMzdPNHo3elFKdHg4SUZ5TUszRVM?oc=5",
    "title": "El Supremo confirma que el Servicio Canario de Salud vulneró la libertad sindical al eliminar los comités de empresa del banco de sangre",
    "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPenRicmRWY3VpcmtwNUNweENIOHlDYXkwUlVRLVNGS1Q3WE9IX3prYVZPaDlyQk5Ecm1QcWY4aEJhWUhBNnBGV2toRC1wTDRlVnhmcFdBQTIwUnBkbFpWODEzQnZfRHhhSWpjYTFjTHQtYld3X2d5SEZqNThIRUJIdFdtSGFZYThyWWN6a0hKS2RudUZxVENTbW1nRno4X3NIMUVvZ2xvb0RBUEVDNm4xX3JwbkpTcVRfUnFTQU9GSmh4VFVIcnc3b0M1ZzRMaDNKMk03TEdhQU9KSmZITk9xcHNWRTJ3QmJjMzdPNHo3elFKdHg4SUZ5TUszRVM?oc=5",
@@ -2542,6 +3484,20 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQeWM2bFgxS0ptWmw0TW9EVGd3bFFOVHZObDY3U3RDUjZmZGVMMnVxUGJtUEFwMk14cXRMLWhGVm51c1BUZTNmRXNsLW1PeDFDeUoySngydXRGbHNmNWxvS1ptRHFQWFVQMW9LS1FlRHJtSjR2T0ktYThUS3NfT2FudnRkWmpUcTZoQ0RsUzk2S0pDcWRzX2YxQW5GTk44N3Fkd1RQTERQNlJuMlhFZDN2X2FDSE1NR0pOZDltN3FkTEtUelVtdzZRenl6dEJGTlRQbXlNR1lKRWZpdU00M2ozbkRGYTRQTGFOUDVRemJzVEhIbFJ3aGZGam5XckJEMDJqaXFoLdIB7wFBVV95cUxNZzF6NG9NTjZhckZWV1E4MENmb2t2akNGV2xuNzYwUU9VME04VnlzaUU0Y0Ric3VIVEsweFNtcnNBcFMtLW5DSnhIeGN5UW9tQmsyVXZyZzJjYmFjNWhmMmpyeTUtS1dZLWlzOEtZd2owb3E0N2NjWVNBNVJKcWVfem5uVGZYa1RlT3A4WHlWUXdrSEtSY2lPNVJWQWNidzc1alBKQVpFUk84NkFDQ25tNWtJYTNjWksxRWJCOW9Fbm94ZXlTZFlmejhkb0FsNE1LdVNCUUN4ZlBxUlpmR1kxaHNNUUhGR0J0bTFCOE5IRQ?oc=5",
+   "title": "El 'decreto Maricarmen' llega al TJUE por permitir a la Administración desahuciar y prohibirlo a los particulares",
+   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQeWM2bFgxS0ptWmw0TW9EVGd3bFFOVHZObDY3U3RDUjZmZGVMMnVxUGJtUEFwMk14cXRMLWhGVm51c1BUZTNmRXNsLW1PeDFDeUoySngydXRGbHNmNWxvS1ptRHFQWFVQMW9LS1FlRHJtSjR2T0ktYThUS3NfT2FudnRkWmpUcTZoQ0RsUzk2S0pDcWRzX2YxQW5GTk44N3Fkd1RQTERQNlJuMlhFZDN2X2FDSE1NR0pOZDltN3FkTEtUelVtdzZRenl6dEJGTlRQbXlNR1lKRWZpdU00M2ozbkRGYTRQTGFOUDVRemJzVEhIbFJ3aGZGam5XckJEMDJqaXFoLdIB7wFBVV95cUxNZzF6NG9NTjZhckZWV1E4MENmb2t2akNGV2xuNzYwUU9VME04VnlzaUU0Y0Ric3VIVEsweFNtcnNBcFMtLW5DSnhIeGN5UW9tQmsyVXZyZzJjYmFjNWhmMmpyeTUtS1dZLWlzOEtZd2owb3E0N2NjWVNBNVJKcWVfem5uVGZYa1RlT3A4WHlWUXdrSEtSY2lPNVJWQWNidzc1alBKQVpFUk84NkFDQ25tNWtJYTNjWksxRWJCOW9Fbm94ZXlTZFlmejhkb0FsNE1LdVNCUUN4ZlBxUlpmR1kxaHNNUUhGR0J0bTFCOE5IRQ?oc=5",
+   "summary": "",
+   "date": "2026-11-24T11:21:06.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "El Economista",
+   "topics": [
+    "Europeo"
+   ]
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQTUlLU0xlR1JOaVZyRFdWLTNpcExlVmlwcjJTVFA2NkxYdDhDT0VZcE9wUXhBdVAzZUpENU5NVzBRZ2Etd3JwRWNfWHAxUERPMDFQa2czVDJZZzI1enhjNTlqSjVqdVZSUXEtYVpDMUZtRHkwREVPdUVPSWp1ZzZEV2h3TWdUUFlYSzVLa0tMMjlRX1djaHp3anNnMnU0QjF5SXFhc2dEUEdhcHJKM0ZSc0lvT09YRGF6cFExd0xBNUJBVDVGNDZVSGhjT0NfakJyZE8wODZqTXRuZEpCZ0g5SlY3ekhhek9BNEJKc1Z3VGpzUQ?oc=5",
    "title": "La sentencia imposible de Bilbao: inadmitió el recurso por tardío y lo estimó \"subsidiariamente\"",
    "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQTUlLU0xlR1JOaVZyRFdWLTNpcExlVmlwcjJTVFA2NkxYdDhDT0VZcE9wUXhBdVAzZUpENU5NVzBRZ2Etd3JwRWNfWHAxUERPMDFQa2czVDJZZzI1enhjNTlqSjVqdVZSUXEtYVpDMUZtRHkwREVPdUVPSWp1ZzZEV2h3TWdUUFlYSzVLa0tMMjlRX1djaHp3anNnMnU0QjF5SXFhc2dEUEdhcHJKM0ZSc0lvT09YRGF6cFExd0xBNUJBVDVGNDZVSGhjT0NfakJyZE8wODZqTXRuZEpCZ0g5SlY3ekhhek9BNEJKc1Z3VGpzUQ?oc=5",
@@ -2551,6 +3507,18 @@
    "sourceId": "gn-supremo",
    "group": "Prensa general",
    "origin": "Economist & Jurist",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQLWRuak9ocU42Qkt1R3A0ajhSZWREOXR0c0pzR19xeWtuUmN6c2d0T2xXQmNUQUlmcnd0MlhTQmFIaDZqdzJVM2pHX1p3UkRldXdxUmp5MXVJVWstN3NNM3RwMERVaGlrR0NlS3JmVEd4SE8zN1FjVHdNSHpSVUNUVUVnd3dlOGl4WHZGbW5La3JXbWhoWVBUZ3FGQlgzSHotTHF4VFNHR2ZWZENqSkNoMjVUWUpyWTlucUN5MlQtWlpUV2FjT0VTcENySGVhMkJGc1BEeDNvdFMtbDE5YTdtWjlvdzBmbi1OOGcyWk8wb09NLVAyc3AtVUx4US1iU2py0gGAAkFVX3lxTFAtZG5qT2hxTjZCS3VHcDRqOFJlZEQ5dHRzSnNHX3F5a25SY3pzZ3RPbFdCY1RBSWZyd3QyWFNCYUhoNmp3MlUzakdfWndSRGV1d3FSankxdUlVay03c00zdHAwRFVoaWtHQ2VLcmZUR3hITzM3UWNUd01IelJVQ1RVRWd3d2U4aXhYdkZtbktrcldtaGhZUFRncUZCWDNIei1McXhUU0dHZlZkQ2pKQ2gyNVRZSnJZOW5xQ3kyVC1aWlRXYWNPRVNwQ3JIZWEyQkZzUER4M290Uy1sMTlhN21aOW93MGZuLU44ZzJaTzBvT00tUDJzcC1VTHhRLWJTanI?oc=5",
+   "title": "Un tribunal rechaza amnistiar ya a dos excargos del referéndum del 1-O hasta que Europa aclare sus dudas",
+   "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQLWRuak9ocU42Qkt1R3A0ajhSZWREOXR0c0pzR19xeWtuUmN6c2d0T2xXQmNUQUlmcnd0MlhTQmFIaDZqdzJVM2pHX1p3UkRldXdxUmp5MXVJVWstN3NNM3RwMERVaGlrR0NlS3JmVEd4SE8zN1FjVHdNSHpSVUNUVUVnd3dlOGl4WHZGbW5La3JXbWhoWVBUZ3FGQlgzSHotTHF4VFNHR2ZWZENqSkNoMjVUWUpyWTlucUN5MlQtWlpUV2FjT0VTcENySGVhMkJGc1BEeDNvdFMtbDE5YTdtWjlvdzBmbi1OOGcyWk8wb09NLVAyc3AtVUx4US1iU2py0gGAAkFVX3lxTFAtZG5qT2hxTjZCS3VHcDRqOFJlZEQ5dHRzSnNHX3F5a25SY3pzZ3RPbFdCY1RBSWZyd3QyWFNCYUhoNmp3MlUzakdfWndSRGV1d3FSankxdUlVay03c00zdHAwRFVoaWtHQ2VLcmZUR3hITzM3UWNUd01IelJVQ1RVRWd3d2U4aXhYdkZtbktrcldtaGhZUFRncUZCWDNIei1McXhUU0dHZlZkQ2pKQ2gyNVRZSnJZOW5xQ3kyVC1aWlRXYWNPRVNwQ3JIZWEyQkZzUER4M290Uy1sMTlhN21aOW93MGZuLU44ZzJaTzBvT00tUDJzcC1VTHhRLWJTanI?oc=5",
+   "summary": "",
+   "date": "2026-11-24T11:19:27.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "EL PAÍS",
    "topics": []
   },
   {
@@ -2607,6 +3575,21 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeXBIZ1BNeG1md0VjUzhFMEZ1LUU2cGpRZHhkMTN5OU9naXE0TEhTcFpDYlRxZE9WMUktTkFWRDRleV85NkFmU1ZNdUxmeU9ZMjdaQVVJWlNoNTFTaldNek9weDVsM25HSjVOUkhDdTBCSDdYa3ExRE9sc0hxNU5wRUIxbWduU2hHSjJoczhrSXBFc2M4U3p0aVE1U044ZG9Fd3ZWOENGTmxzTjlVRERmc190TzhaMUowMjgwMkk4bW9pWS1pTzdlLWNWVm50QmRQU2fSAdIBQVVfeXFMTnlwSGdQTXhtZndFY1M4RTBGdS1FNnBqUWR4ZDEzeTlPZ2lxNExIU3BaQ2JUcWRPVjFJLU5BVkQ0ZXlfOTZBZlNWTXVMZnlPWTI3WkFVSVpTaDUxU2pXTXpPcHg1bDNuR0o1TlJIQ3UwQkg3WGtxMURPbHNIcTVOcEVCMW1nblNoR0oyaHM4a0lwRXNjOFN6dGlRNVNOOGRvRXd2VjhDRk5sc045VUREZnNfdE84WjFKMDI4MDJJOG1vaVktaU83ZS1jVlZudEJkUFNn?oc=5",
+   "title": "Una jueza suspende un desahucio en Madrid y lleva al TJUE la protección de las familias vulnerables ante los desalojos",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeXBIZ1BNeG1md0VjUzhFMEZ1LUU2cGpRZHhkMTN5OU9naXE0TEhTcFpDYlRxZE9WMUktTkFWRDRleV85NkFmU1ZNdUxmeU9ZMjdaQVVJWlNoNTFTaldNek9weDVsM25HSjVOUkhDdTBCSDdYa3ExRE9sc0hxNU5wRUIxbWduU2hHSjJoczhrSXBFc2M4U3p0aVE1U044ZG9Fd3ZWOENGTmxzTjlVRERmc190TzhaMUowMjgwMkk4bW9pWS1pTzdlLWNWVm50QmRQU2fSAdIBQVVfeXFMTnlwSGdQTXhtZndFY1M4RTBGdS1FNnBqUWR4ZDEzeTlPZ2lxNExIU3BaQ2JUcWRPVjFJLU5BVkQ0ZXlfOTZBZlNWTXVMZnlPWTI3WkFVSVpTaDUxU2pXTXpPcHg1bDNuR0o1TlJIQ3UwQkg3WGtxMURPbHNIcTVOcEVCMW1nblNoR0oyaHM4a0lwRXNjOFN6dGlRNVNOOGRvRXd2VjhDRk5sc045VUREZnNfdE84WjFKMDI4MDJJOG1vaVktaU83ZS1jVlZudEJkUFNn?oc=5",
+   "summary": "",
+   "date": "2026-11-24T10:43:49.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Diario Público",
+   "topics": [
+    "Civil y familia",
+    "Europeo"
+   ]
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQTmNVNnFidEF6UUpWZGdtWjNsOWxsVVpDQ0x0WS1DTTNJYW44OXFBNG1ObG9ObGtFX3lKQk9YNU10N3RiLUFHMUFJM1MydklZVjFmZmJmM2M3RzhFNWJveDhUd2N4UUtTVEpWUnNTMEZLQzYtaE5MbkVzaS1rN2VZZHM2Mkg5eU1yaE85SGt6MUd5Wnl3NmZfNV82bERIUFU4QXIyWmZVTThPU1d0andkb01fakpJNzNGNExfbHNoOF8wVkN5c0VLLWV1VlFwaUFyc0tfOW9WUy00Tk1oc0M2NUZLQ3NsNkhrUlRLQdIB8gFBVV95cUxNN3RNOHd2VkNyUXZxYW5reW5YU29NZm52cGJQeVhCZGloSDQxdEFvZXh0QUlLT3l1cHdCbVRhSkRybk94SmhscnVqcmFNZlZNR3BQc2JGNDEycW5GTWlNV2VhNHlPd0prbTNkTE01NDRIcDFrWFRubTZKNlJOcmlYYlJLWTBmbDktaUE1WnVjR3dFU1FWUjliTnRJcmNQSE9OWEtycHM3T3hWSUJEdVVOWGVMT05wY2U5NWRrRTFJWmxDZlFOb2VxMFhZTk41U3NQRnlpUUp6VGtEaGJlMVptb0RidldfTHY0OWNhVzRXVlBTdw?oc=5",
    "title": "El Gobierno recurrirá ante el Constitucional las ayudas al cine de Castilla y León al considerarlas «ilegales»",
    "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQTmNVNnFidEF6UUpWZGdtWjNsOWxsVVpDQ0x0WS1DTTNJYW44OXFBNG1ObG9ObGtFX3lKQk9YNU10N3RiLUFHMUFJM1MydklZVjFmZmJmM2M3RzhFNWJveDhUd2N4UUtTVEpWUnNTMEZLQzYtaE5MbkVzaS1rN2VZZHM2Mkg5eU1yaE85SGt6MUd5Wnl3NmZfNV82bERIUFU4QXIyWmZVTThPU1d0andkb01fakpJNzNGNExfbHNoOF8wVkN5c0VLLWV1VlFwaUFyc0tfOW9WUy00Tk1oc0M2NUZLQ3NsNkhrUlRLQdIB8gFBVV95cUxNN3RNOHd2VkNyUXZxYW5reW5YU29NZm52cGJQeVhCZGloSDQxdEFvZXh0QUlLT3l1cHdCbVRhSkRybk94SmhscnVqcmFNZlZNR3BQc2JGNDEycW5GTWlNV2VhNHlPd0prbTNkTE01NDRIcDFrWFRubTZKNlJOcmlYYlJLWTBmbDktaUE1WnVjR3dFU1FWUjliTnRJcmNQSE9OWEtycHM3T3hWSUJEdVVOWGVMT05wY2U5NWRrRTFJWmxDZlFOb2VxMFhZTk41U3NQRnlpUUp6VGtEaGJlMVptb0RidldfTHY0OWNhVzRXVlBTdw?oc=5",
@@ -2618,6 +3601,20 @@
    "origin": "El Debate",
    "topics": [
     "Constitucional"
+   ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQ1p2azVwRHNEdHNZaXRMQTR0ZEVfTTBUdG0td3FkdktSTUdqRzhxUnZVcE94RkJqcFpxbUN6RjFRdTZycGFyd2N3amExTmxHbHluZ21zWW1BYjZzdHpYMWpPdWNOOGdvYWp4UjY0SFFSNkxjNTlBRzFRRlo2VE9heEo5MEdhRlplX3I1Ul9ZMldfMzBEWjktVTNRak82THA3WkRDOFFCUnpwdnZ6Q01uMzF1ajQ5TllvMUgwSHBNeWtGdlpUYjhFZm1QSFZmbEVyUFZJMlkyc9IB8gFBVV95cUxPQ1RKTm1fa0lpaG9raFU3Q3k5NXVDb0lxdFRDaWJ1Z1Q1Z2c1aF8wSUhYeVo4bm9iMnR2MkNWUzR5OWpFbUpQRmZVTHQ4NFVlLVlRTUpzUUk1eDJxUy1uTDFIa1VXOGUxM2x5bU0zRFhTc1ItTG9tSUFidE1mSWRQY3lYck1NSDczU2V4Zkd4NWw0amFiVGM3ZWZCbUE4UHRNcG1wNnhzMmtrREpCZFRXaWRPeE5WMndKbUtrN1plc3BmY1A5ZERFNnZtNXJNVGRGOTFZcWtvbU9Zd3NMSlp2akp6MlBPbUZrSnNIY0tuWFByQQ?oc=5",
+   "title": "Juzgado plantea cuestiones al TJUE sobre protección del derecho de vivienda en desalojos",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQ1p2azVwRHNEdHNZaXRMQTR0ZEVfTTBUdG0td3FkdktSTUdqRzhxUnZVcE94RkJqcFpxbUN6RjFRdTZycGFyd2N3amExTmxHbHluZ21zWW1BYjZzdHpYMWpPdWNOOGdvYWp4UjY0SFFSNkxjNTlBRzFRRlo2VE9heEo5MEdhRlplX3I1Ul9ZMldfMzBEWjktVTNRak82THA3WkRDOFFCUnpwdnZ6Q01uMzF1ajQ5TllvMUgwSHBNeWtGdlpUYjhFZm1QSFZmbEVyUFZJMlkyc9IB8gFBVV95cUxPQ1RKTm1fa0lpaG9raFU3Q3k5NXVDb0lxdFRDaWJ1Z1Q1Z2c1aF8wSUhYeVo4bm9iMnR2MkNWUzR5OWpFbUpQRmZVTHQ4NFVlLVlRTUpzUUk1eDJxUy1uTDFIa1VXOGUxM2x5bU0zRFhTc1ItTG9tSUFidE1mSWRQY3lYck1NSDczU2V4Zkd4NWw0amFiVGM3ZWZCbUE4UHRNcG1wNnhzMmtrREpCZFRXaWRPeE5WMndKbUtrN1plc3BmY1A5ZERFNnZtNXJNVGRGOTFZcWtvbU9Zd3NMSlp2akp6MlBPbUZrSnNIY0tuWFByQQ?oc=5",
+   "summary": "",
+   "date": "2026-11-24T10:32:00.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Infobae",
+   "topics": [
+    "Europeo"
    ]
   },
   {
@@ -2635,6 +3632,34 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZFJYbGxxVm1wMVRPSWYzaHhZSzBGeEtuX1lyWG9YSVBYWnN6ZU1nQXpXYmM3THRoU25mM0xnX1Z0aWZ5WVd3dDBtMWpVWjk3bThHS3c3aVJiVFNRRWVtaFlmZVd4cENsamxYa1JOOXVOT2VOcnJnN1lGdWdDYUt5R0NtVXdGTWtHeExyeGhUQnN2bmJpbEdDbXJlWDBJcmhKMm9zMmFXNnFCMzA4R0tESUs0cGRRRDMtamR0VjhQSF9EVm9JOFZSUlk2NDZzV1B3dUpJ0gHYAUFVX3lxTFBNcS1kZ3NkN19ZTExNdXN6QXowa25lb1Z3ckNGVFR3RnhaZlZIR2JwMWo1UVpyVEo4YWl6OVBTSm9heGFxUHFyeGRoVU0ydFUtSjZLUlQtMkxQam45eDEzLTNNZGVLYUhRV1hybUg4b0RRNk90X0plWnoyenJhbUFLa1ZLTkFsRnNmMVlzY0NqM2RrRXRvb3BWTmgwUlhRdUZmejlzUXFhbmlFclVEd2pFWERpZUdhNEd2MUhQcEIzd00weXRzMVJQUHU1NFdrTDZTUHBmNHlISA?oc=5",
+   "title": "Una jueza eleva al TJUE la protección de familias vulnerables frente a desalojos de vivienda pública",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZFJYbGxxVm1wMVRPSWYzaHhZSzBGeEtuX1lyWG9YSVBYWnN6ZU1nQXpXYmM3THRoU25mM0xnX1Z0aWZ5WVd3dDBtMWpVWjk3bThHS3c3aVJiVFNRRWVtaFlmZVd4cENsamxYa1JOOXVOT2VOcnJnN1lGdWdDYUt5R0NtVXdGTWtHeExyeGhUQnN2bmJpbEdDbXJlWDBJcmhKMm9zMmFXNnFCMzA4R0tESUs0cGRRRDMtamR0VjhQSF9EVm9JOFZSUlk2NDZzV1B3dUpJ0gHYAUFVX3lxTFBNcS1kZ3NkN19ZTExNdXN6QXowa25lb1Z3ckNGVFR3RnhaZlZIR2JwMWo1UVpyVEo4YWl6OVBTSm9heGFxUHFyeGRoVU0ydFUtSjZLUlQtMkxQam45eDEzLTNNZGVLYUhRV1hybUg4b0RRNk90X0plWnoyenJhbUFLa1ZLTkFsRnNmMVlzY0NqM2RrRXRvb3BWTmgwUlhRdUZmejlzUXFhbmlFclVEd2pFWERpZUdhNEd2MUhQcEIzd00weXRzMVJQUHU1NFdrTDZTUHBmNHlISA?oc=5",
+   "summary": "",
+   "date": "2026-11-24T10:06:28.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Demócrata",
+   "topics": [
+    "Europeo"
+   ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZEREcjhmZDlfakpITGRJOHpjcFo4anhfb01XeGJfMjBoM1N2TzNpalBXVFY3X2MtOW04eEtRZ2VxbGZlWmd6RWtOVkVPcl80UmFDd3hzQjlWOTF0V1Z5SzNkel9sa0thZjg3czIzeC12M3kycEdUWnJUX0o4d3AxY01rcnZZbVBOSFV4Y2FndkJ6SDAxZEhVYlVIVTRBU0xSMHFUNGJtZTJYTjFTNkVNcWplS0VLNUtyXzVkaw?oc=5",
+   "title": "Una jueza lleva al TJUE la protección de familias vulnerables ante los desalojos",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZEREcjhmZDlfakpITGRJOHpjcFo4anhfb01XeGJfMjBoM1N2TzNpalBXVFY3X2MtOW04eEtRZ2VxbGZlWmd6RWtOVkVPcl80UmFDd3hzQjlWOTF0V1Z5SzNkel9sa0thZjg3czIzeC12M3kycEdUWnJUX0o4d3AxY01rcnZZbVBOSFV4Y2FndkJ6SDAxZEhVYlVIVTRBU0xSMHFUNGJtZTJYTjFTNkVNcWplS0VLNUtyXzVkaw?oc=5",
+   "summary": "",
+   "date": "2026-11-24T09:46:27.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Europa Press",
+   "topics": [
+    "Europeo"
+   ]
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQMzJsd2RlanpfQ2RlY1VWLUc5ZTFOZC05ZktYMjlVMWd5X0E2WHZacEZEeDhZVk9TZUdMQ29GdnFTMUVuMnBDX3ZBQnNKY3FtdWMwRWpBbmxOSUVKV0VEUWdUOXE3YnJOT3BWd25GN3lCYUctekRTcFdsdlNzQk9VeXdjTG1yT0I2ZkFqWnlUUWRjTUZjZHZPVkxFSnVpcW8yaENzTFJsSVVFUzd0RmZkMmctS1dHbXJrTV9SX1dXXzBKNlQxbl9OZHYyS0ItcFM4aG9WSXN30gHbAUFVX3lxTFBuU01IaFlQVU1XQ0pRUU5EUlNTcDVHbGVqeVppMU8tNDFkYWpwSkpOQi1GNVdNTlA1RTRZdnRMWXVlcFhOYzVob1o4T2ltSmhpNzlSWHpzX0dQQVhFWm9tR2ZFSHpBVjMxd3YzMjN5a2xhbGFSTGZvWXBnSk84VTBIR2FJV2RWSkpQVXJTTmYtTHBKbVlqTU9CUHFpRzczUEdXaUdPdDNCSC1ZaW1fQmdpVWxYaFFOUXNpMnFwTjZTZEstd1FGSVlrY1ladVRCZUFpZnQ4NUJlLWdRMA?oc=5",
    "title": "El Gobierno recurre al Constitucional la ley del 'concebido no nacido' de la Comunidad de Madrid",
    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQMzJsd2RlanpfQ2RlY1VWLUc5ZTFOZC05ZktYMjlVMWd5X0E2WHZacEZEeDhZVk9TZUdMQ29GdnFTMUVuMnBDX3ZBQnNKY3FtdWMwRWpBbmxOSUVKV0VEUWdUOXE3YnJOT3BWd25GN3lCYUctekRTcFdsdlNzQk9VeXdjTG1yT0I2ZkFqWnlUUWRjTUZjZHZPVkxFSnVpcW8yaENzTFJsSVVFUzd0RmZkMmctS1dHbXJrTV9SX1dXXzBKNlQxbl9OZHYyS0ItcFM4aG9WSXN30gHbAUFVX3lxTFBuU01IaFlQVU1XQ0pRUU5EUlNTcDVHbGVqeVppMU8tNDFkYWpwSkpOQi1GNVdNTlA1RTRZdnRMWXVlcFhOYzVob1o4T2ltSmhpNzlSWHpzX0dQQVhFWm9tR2ZFSHpBVjMxd3YzMjN5a2xhbGFSTGZvWXBnSk84VTBIR2FJV2RWSkpQVXJTTmYtTHBKbVlqTU9CUHFpRzczUEdXaUdPdDNCSC1ZaW1fQmdpVWxYaFFOUXNpMnFwTjZTZEstd1FGSVlrY1ladVRCZUFpZnQ4NUJlLWdRMA?oc=5",
@@ -2646,6 +3671,20 @@
    "origin": "Andalucía Información",
    "topics": [
     "Constitucional"
+   ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQWGRJY3lDQVJ6dDNkb3ZILUJobk00dFV6R2cwNnFDVGZzMXpmaVI4VFhBUGt2bXVxbXVVQkdob2s3TVJWMmh2MjJNYl9qVU55R0Qwc3VNakNtMG92dGl2bU5nbFNQMDgxSXNqUm8wRTBTTHZORVZaQ0ZWN0hpbGh5TG8yWnFqUjZ1MWxsbE9nR0ZQRjdfTXN5YzltczZrNHJZMThpOXhjcmNwTlg1d2swRmktYVBwVl9oZHRnUEpnNmRpY3hzWUZ3M3BfN19QMXkzc1NFT0RodDlpZ1lfTDBFVHc3NWJ2d9IBgAJBVV95cUxNeko0WG1QN0pMM2FDY01Qc2M1TXJpcVFKNnRDWF9MNDZrZHhyV2FlcGpYcXlEYmE2RjJwd0hrR1NvTFV6ZjlwT2FTS01DbzFoMHpxbUZ2NmNsVUZDMzJ2d0NzN2Npb3NlWGhKczlzQWE0Q3VLNEZrYzQ4VmFyYkpXSGgzaXJZWWNjakE4aXM4a0RJSlllLVVodDN4Mnoyd1I1NE5TRDh4QUpUb2drT0tSeHBOekxfZ1R3RzZTMU42WllUX3J3VVhtQUpLM3Y2dlBLeFBFZ0R5d05UblduVWhrVkd1Wmx1NEhYQktPbjEyQmJSN0lmdUh0V0N6eng2cW1m?oc=5",
+   "title": "El TSJC mantiene las cuestiones prejudiciales ante el TJUE y no aplica la amnistía a Jové y Salvadó",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQWGRJY3lDQVJ6dDNkb3ZILUJobk00dFV6R2cwNnFDVGZzMXpmaVI4VFhBUGt2bXVxbXVVQkdob2s3TVJWMmh2MjJNYl9qVU55R0Qwc3VNakNtMG92dGl2bU5nbFNQMDgxSXNqUm8wRTBTTHZORVZaQ0ZWN0hpbGh5TG8yWnFqUjZ1MWxsbE9nR0ZQRjdfTXN5YzltczZrNHJZMThpOXhjcmNwTlg1d2swRmktYVBwVl9oZHRnUEpnNmRpY3hzWUZ3M3BfN19QMXkzc1NFT0RodDlpZ1lfTDBFVHc3NWJ2d9IBgAJBVV95cUxNeko0WG1QN0pMM2FDY01Qc2M1TXJpcVFKNnRDWF9MNDZrZHhyV2FlcGpYcXlEYmE2RjJwd0hrR1NvTFV6ZjlwT2FTS01DbzFoMHpxbUZ2NmNsVUZDMzJ2d0NzN2Npb3NlWGhKczlzQWE0Q3VLNEZrYzQ4VmFyYkpXSGgzaXJZWWNjakE4aXM4a0RJSlllLVVodDN4Mnoyd1I1NE5TRDh4QUpUb2drT0tSeHBOekxfZ1R3RzZTMU42WllUX3J3VVhtQUpLM3Y2dlBLeFBFZ0R5d05UblduVWhrVkd1Wmx1NEhYQktPbjEyQmJSN0lmdUh0V0N6eng2cW1m?oc=5",
+   "summary": "",
+   "date": "2026-11-24T09:16:00.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Infobae",
+   "topics": [
+    "Europeo"
    ]
   },
   {
@@ -2671,6 +3710,20 @@
    "group": "Prensa general",
    "origin": "Noticias Jurídicas",
    "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOQzJBN2pZVG5taS1yU0pfWU9IalBTY1paZzBNSmdNYmtxbTI4eUJGSnFhcXhoVnpHdEh5YXVENmdZNDlRRDJzZzFzQnREUVhac3pIcXJNcm1WcGthTmhTcTBhUURsei15NF9fQWJuOTJkMkZqSlBjREkyOWl5RGR2TmVabWpQMk9Rakt0Q0dqRlRVbXpra05rS2Q1Y1VfNW5uak82ZjlWa0IwOHRTa252cDhZSGRHU1JpQTZSb21rT0Z2MGo0U3dqclNreVJzSHJoaG1QcEVpZXjSAdgBQVVfeXFMTkMyQTdqWVRubWktclNKX1lPSGpQU2NaWmcwTUpnTWJrcW0yOHlCRkpxYXF4aFZ6R3RIeWF1RDZnWTQ5UUQyc2cxc0J0RFFYWnN6SHFyTXJtVnBrYU5oU3EwYVFEbHoteTRfX0FibjkyZDJGakpQY0RJMjlpeURkdk5lWm1qUDJPUWpLdENHakZUVW16a2tOa0tkNWNVXzVubmpPNmY5VmtCMDh0U2tudnA4WUhkR1NSaUE2Um9ta09GdjBqNFN3anJTa3lSc0hyaGhtUHBFaWV4?oc=5",
+   "title": "El TSJC mantiene las cuestiones prejudiciales ante el TJUE y no aplica la amnistía a Jové y Salvadó",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOQzJBN2pZVG5taS1yU0pfWU9IalBTY1paZzBNSmdNYmtxbTI4eUJGSnFhcXhoVnpHdEh5YXVENmdZNDlRRDJzZzFzQnREUVhac3pIcXJNcm1WcGthTmhTcTBhUURsei15NF9fQWJuOTJkMkZqSlBjREkyOWl5RGR2TmVabWpQMk9Rakt0Q0dqRlRVbXpra05rS2Q1Y1VfNW5uak82ZjlWa0IwOHRTa252cDhZSGRHU1JpQTZSb21rT0Z2MGo0U3dqclNreVJzSHJoaG1QcEVpZXjSAdgBQVVfeXFMTkMyQTdqWVRubWktclNKX1lPSGpQU2NaWmcwTUpnTWJrcW0yOHlCRkpxYXF4aFZ6R3RIeWF1RDZnWTQ5UUQyc2cxc0J0RFFYWnN6SHFyTXJtVnBrYU5oU3EwYVFEbHoteTRfX0FibjkyZDJGakpQY0RJMjlpeURkdk5lWm1qUDJPUWpLdENHakZUVW16a2tOa0tkNWNVXzVubmpPNmY5VmtCMDh0U2tudnA4WUhkR1NSaUE2Um9ta09GdjBqNFN3anJTa3lSc0hyaGhtUHBFaWV4?oc=5",
+   "summary": "",
+   "date": "2026-11-24T08:52:28.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Teleprensa",
+   "topics": [
+    "Europeo"
+   ]
   },
   {
    "id": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNc1dueC1WeEFoV2s3cUZTcjF4SEhPXzlETkVidDV5U09BVzVCV3g4RXBTRElvLVV3RFc4UG1qRWtCclFqRUpLRzVlV3RQbjVScTcwMkZyZmp6R1BWTmhBblVORThJSm03QTNCWEJQc3hjemctSGp4a2FxcTJrTjl0ZUQxblpxSFZBT3JsUFlpaC1LdTlva0MwSk5yd3F0eTZVam4xaDN2RzV3Ymp1czQ0Q3J6cVpuUTFrTWYwMF92Mk1ZV09OaVhiQ2dXQVFGbDVjUVdiZnR2ZzlIcGk3QmdaeFZuZDRaNXh0NGdoYzdKNGlhWi1ISnF0Tm44eHJNaFQxMFdqb0hzeXMxWTJlT2xxMVB2SGlob2c0c3c?oc=5",
@@ -2699,6 +3752,18 @@
    "topics": [
     "Europeo"
    ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMmJBNlJZQUpjcnJtcnp4ZGcwT3cwWGhSZ3NjWDVyRVpma2lMRHBHdUJxa1dHYUI1NGYzS3drNG8yQjNQLV81MHBaaGdWY2pPTThUVzlSb09NaE9zRDdyMkJnajYzaWVWOS1feGkxLXRZczRiZVVTS0NsTWk2bl81V19Ibl9PTEhsdVZ3dW1VMA?oc=5",
+   "title": "El Gobierno desbloquea 9.100 millones del Plan Social para el Clima con la rehabilitación de viviendas como eje",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMmJBNlJZQUpjcnJtcnp4ZGcwT3cwWGhSZ3NjWDVyRVpma2lMRHBHdUJxa1dHYUI1NGYzS3drNG8yQjNQLV81MHBaaGdWY2pPTThUVzlSb09NaE9zRDdyMkJnajYzaWVWOS1feGkxLXRZczRiZVVTS0NsTWk2bl81V19Ibl9PTEhsdVZ3dW1VMA?oc=5",
+   "summary": "",
+   "date": "2026-11-24T08:43:44.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "MONCLOA.COM",
+   "topics": []
   },
   {
    "id": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNDVmX0wzd1p4b1lJa1d4MjJ0VnZMWWhUc1FfcExJaXI0V3dUN25XUEQ5ZEVfS0xQXzBDXzFqVWVFS2FMTmpGUnpNNW9jbmJXeG9OVHpJSVFMZkpCLU03ZW05NlluVDNBUTFULW81VFFlbHpyWlRoXzFBWmlvRGVLbGFlSloxZmVmTWUwNkItUGlpaFJaTmxsc2YzdU85TFRUeEE1aVMxXzQ0ZWY0UUY5NTBNdExUQ2ZZeWExSEFB0gHDAUFVX3lxTE9qcHN6bzRVeEJaZU5pVmU4TmpKekV5bE5aYlNWcVVCYmR0bVFrZ0k0U2hqY2hDd09DSjVORGVpdnVkTFV5bGEzZFM1U3dqaG9IZVkwMHZxNEtCc1g3WDExR1FkWnM2VjJxejktYjJfNUMyNlJ1bWFXZkJHem1NblhUcVktTmtxVVE5cnZlOW5MZUE3MnhpRlU0dkEwelpMYW1wRW94ZmNwdU11VmloUm45ZUpaTVItQW9SajZMcldYYzFZbw?oc=5",
@@ -2813,6 +3878,20 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbF9acl9Bc3pIOTNBVThBTEd3YmZrN2psSTdGeHVFMFI3R2FMSE91Y1owVnYwR3hsaWtWc1ZzUzVOZk9XbVdURUNlZXNiVE50YThUZDJYbnFJN1cwenl5OVpuR01IZmRjaXdZYVEyajRma29VeTFoQjJ0bllwc2t2WWxYYU1LY3ZjRGpIZjFZMG8wTWViTXZLRzRjLTJWRV9YNHVoN3RCSUhtM2FlNWlxQkNHeUZPUkNZYktjRlZldWtSUdIBxwFBVV95cUxOUXdDTmhRYTdESjRuS29qSmRrUmNlRnpvbWtNRDlNbHVGREY0d2NmUUpDVmczRWZsanltTFVRdktCazFmZC1RLXVmU3l5U19PUFc2YVFNRWlxaVR6Nk9yU0FfbGhCZGtTNEloelcwRVF3cTVOVVYyRGJnVkoxWVVNOGVUVmFQVVJoVGp6S3VOb0NvdEJRWms0SEFkeDdPS2F2Y0JqQmtveU5PVFRwWVBXWnI2TmdYdzRCelI4SWRsUnltVktfeEhJ?oc=5",
+   "title": "Sánchez mantiene el IVA a los autónomos mientras Bruselas reclama una multa de 135.811 euros al día",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbF9acl9Bc3pIOTNBVThBTEd3YmZrN2psSTdGeHVFMFI3R2FMSE91Y1owVnYwR3hsaWtWc1ZzUzVOZk9XbVdURUNlZXNiVE50YThUZDJYbnFJN1cwenl5OVpuR01IZmRjaXdZYVEyajRma29VeTFoQjJ0bllwc2t2WWxYYU1LY3ZjRGpIZjFZMG8wTWViTXZLRzRjLTJWRV9YNHVoN3RCSUhtM2FlNWlxQkNHeUZPUkNZYktjRlZldWtSUdIBxwFBVV95cUxOUXdDTmhRYTdESjRuS29qSmRrUmNlRnpvbWtNRDlNbHVGREY0d2NmUUpDVmczRWZsanltTFVRdktCazFmZC1RLXVmU3l5U19PUFc2YVFNRWlxaVR6Nk9yU0FfbGhCZGtTNEloelcwRVF3cTVOVVYyRGJnVkoxWVVNOGVUVmFQVVJoVGp6S3VOb0NvdEJRWms0SEFkeDdPS2F2Y0JqQmtveU5PVFRwWVBXWnI2TmdYdzRCelI4SWRsUnltVktfeEhJ?oc=5",
+   "summary": "",
+   "date": "2026-11-24T08:21:23.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "ESdiario",
+   "topics": [
+    "Fiscal"
+   ]
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWEFFZXdrUDhWal96VnI3MUI4NFY4QkN3TldMNDBYNVdyLVJ6djA1ejU5d3I1cW5EM3JnbVdUcFY5NFU1WUNGei1IbmZSZUcwVEllbWVyd1dQaDItRDVrTElIczR4Skc3OWxqTjBFbTBMc05hWksyMV9Odjhtdkp0dHpWSzBKUURFajBucFNUUDY2NHlQdjEwZzM4QdIBoAFBVV95cUxQaXNFSmRISHExTzQ3LVlpdEYzR2FWd2U0WlJYQ0RhRE1fYm9qWkxYWXVuOTFmMUZMdmJ2T2dHMk5rOGl1TmxQTGtvaTBpR0t2ZjhQb3JFUHQ5a29fcWpTZVVsWmE0dDFwRGEtd3JMdWNad3JVbTJuamRvWnhWQW42YkNTNlhYeG9NT2pFYURHd2wxbk5Cem5vaDN4YnNxSks3?oc=5",
    "title": "El Gobierno recurre al Constitucional la ley del «concebido no nacido» de Madrid",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWEFFZXdrUDhWal96VnI3MUI4NFY4QkN3TldMNDBYNVdyLVJ6djA1ejU5d3I1cW5EM3JnbVdUcFY5NFU1WUNGei1IbmZSZUcwVEllbWVyd1dQaDItRDVrTElIczR4Skc3OWxqTjBFbTBMc05hWksyMV9Odjhtdkp0dHpWSzBKUURFajBucFNUUDY2NHlQdjEwZzM4QdIBoAFBVV95cUxQaXNFSmRISHExTzQ3LVlpdEYzR2FWd2U0WlJYQ0RhRE1fYm9qWkxYWXVuOTFmMUZMdmJ2T2dHMk5rOGl1TmxQTGtvaTBpR0t2ZjhQb3JFUHQ5a29fcWpTZVVsWmE0dDFwRGEtd3JMdWNad3JVbTJuamRvWnhWQW42YkNTNlhYeG9NT2pFYURHd2wxbk5Cem5vaDN4YnNxSks3?oc=5",
@@ -2869,6 +3948,20 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQVHlRSU1VN1lHeE9vODUwME5rRmRQcUpySUdObk9PRV8xdFVYVXJlVU9SUG5DbFVPYVhEbGFQaU9ibU5VbnZpVWw0RmF2RFQ3c3BpTGd2NG45Z0JsT1JGZi10VzdmV1BudDRRdHVUUzNhRW5NTTVQaTlQai0zNDZOMXhpNG9LangzOVFaQzYxYlNOcHdvS0VKR09USnNIVlJsOFZTRTVPekhmQnRqVFBwU0QzUjhXWVVQbmRVdmhvSDZEM0RpamFWV1IyZWRUNDNFLVNRRHBSRTjSAewBQVVfeXFMTVBpelNJeTByVVM1Y3NVQXlITmRmNFFZWmQ5Tm9oQ000bUtoZ2tyUlhLeW90cVdBXzNQcU55Q2RsTUJuX29vZlljS1lUc3B5R0NReUcwdjI3Y1NQMGFmTnJLbktURHI3Z3BQZ3NtbGxXck8yMmd6TktGSV9pVDRTSGN2MTNzTkN0a0NfM0hsV0ZObmV3amFTMmJXVWxmY2ZrdGRBVF95UGRtMzRwU1NRMWhlT2lMYi1DeWlQNllaN3RTaWoxRzJjc1hib1VwZkxxa0JhUWp2V0ZGYnlHT2VIemluc1pCX1dtbmZnVlQ?oc=5",
+   "title": "La familia del joven apuñalado en Lanzarote culpa a los dos acusados de su asesinato",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQVHlRSU1VN1lHeE9vODUwME5rRmRQcUpySUdObk9PRV8xdFVYVXJlVU9SUG5DbFVPYVhEbGFQaU9ibU5VbnZpVWw0RmF2RFQ3c3BpTGd2NG45Z0JsT1JGZi10VzdmV1BudDRRdHVUUzNhRW5NTTVQaTlQai0zNDZOMXhpNG9LangzOVFaQzYxYlNOcHdvS0VKR09USnNIVlJsOFZTRTVPekhmQnRqVFBwU0QzUjhXWVVQbmRVdmhvSDZEM0RpamFWV1IyZWRUNDNFLVNRRHBSRTjSAewBQVVfeXFMTVBpelNJeTByVVM1Y3NVQXlITmRmNFFZWmQ5Tm9oQ000bUtoZ2tyUlhLeW90cVdBXzNQcU55Q2RsTUJuX29vZlljS1lUc3B5R0NReUcwdjI3Y1NQMGFmTnJLbktURHI3Z3BQZ3NtbGxXck8yMmd6TktGSV9pVDRTSGN2MTNzTkN0a0NfM0hsV0ZObmV3amFTMmJXVWxmY2ZrdGRBVF95UGRtMzRwU1NRMWhlT2lMYi1DeWlQNllaN3RTaWoxRzJjc1hib1VwZkxxa0JhUWp2V0ZGYnlHT2VIemluc1pCX1dtbmZnVlQ?oc=5",
+   "summary": "",
+   "date": "2026-11-24T08:15:11.000Z",
+   "source": "Prensa · Tribunales en Canarias",
+   "sourceId": "gn-canarias",
+   "group": "Prensa general",
+   "origin": "Cadena SER",
+   "topics": [
+    "Penal"
+   ]
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZnBKbmlReHFzdnNWc2l6V1d6ZFVaell1RnE0MWo0eUNRaVlCaTE4b21ZMWZJV2VWTmppb3Y1dDI4bjFNazRaM2VOSEd2a3RPWmRCczJCcTdhR3dVUnpEalZ4RkoyeWFXY3poS2pheE1HbG9sblVHdHdJUTV5S1o2N2pKRTNodnc2WEVoWWliWVByWV9aQXFhM1BRWTFNZjEwZFlLcjhQNWRoNkFGcUk1XzBGNHozdkFSanJ2SWJpZTI3ZGlLTGo4cUtkR0FlYjNYSm03dENNQdIB6wFBVV95cUxPTkl1X3dWdG1LcHQwZEZnandQcDlsc0I1YzNXSWZvSWdkdWFWOTNoTlh0ck9ia1hJa1BCQlVRYzBOc3BSQWFPV29sdEdiU2ZpUHMzM0E1S25FNVdBbHlyV2NJMEh5dFJRSGNDaDd1VjFKR1RwcUJZVjBPYVJISndVMXlSaUNzNG9DN1YzWXU5MjM2WGpvaHNPbkhjMExSS1JOMmRZLXZjNWJkcXhsYk1MRXFuZExMSXh1bHNfYTc1VWgtbEFFc1pDMVk2SS1raWYwcjB6RjI4T2dCdk9wcnVIeFpaaTYyeG9xZ013?oc=5",
    "title": "El Gobierno recurrirá al Constitucional la ley del concebido no nacido de la Comunidad de Madrid",
    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZnBKbmlReHFzdnNWc2l6V1d6ZFVaell1RnE0MWo0eUNRaVlCaTE4b21ZMWZJV2VWTmppb3Y1dDI4bjFNazRaM2VOSEd2a3RPWmRCczJCcTdhR3dVUnpEalZ4RkoyeWFXY3poS2pheE1HbG9sblVHdHdJUTV5S1o2N2pKRTNodnc2WEVoWWliWVByWV9aQXFhM1BRWTFNZjEwZFlLcjhQNWRoNkFGcUk1XzBGNHozdkFSanJ2SWJpZTI3ZGlLTGo4cUtkR0FlYjNYSm03dENNQdIB6wFBVV95cUxPTkl1X3dWdG1LcHQwZEZnandQcDlsc0I1YzNXSWZvSWdkdWFWOTNoTlh0ck9ia1hJa1BCQlVRYzBOc3BSQWFPV29sdEdiU2ZpUHMzM0E1S25FNVdBbHlyV2NJMEh5dFJRSGNDaDd1VjFKR1RwcUJZVjBPYVJISndVMXlSaUNzNG9DN1YzWXU5MjM2WGpvaHNPbkhjMExSS1JOMmRZLXZjNWJkcXhsYk1MRXFuZExMSXh1bHNfYTc1VWgtbEFFc1pDMVk2SS1raWYwcjB6RjI4T2dCdk9wcnVIeFpaaTYyeG9xZ013?oc=5",
@@ -2881,6 +3974,18 @@
    "topics": [
     "Constitucional"
    ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxOXzBmdVRWTWczeFBmQTlzRFVDMWkzXzhVOUNmN2hsOVpHLS1IYzN6M1RfOUpFQ0ItY1JDVHFsMlJmUHJXNDB0RTY0MDlCUURmM2tuZUtTQzdRQ0YtRGFRMENFdUdnOFdwdTNrd29JS1U0VmhFSnhLQ0ZENWhWaVB6RWRkeWlTY3ZHRVlXWkVWdWNaekdpaTc1U2xmNThYaUxYWFpKSzJNaElwRmNxaDJQNFhVX3JkRUJ2VkVrdldxTHNOd3dZUEF3RE1BUTZSeWNNTS0wNmV2YnNhbTZNRlZyaEZRLUNWSXI5LWNCUGtGYk1WUWJOYXF4SDJwbTlTMVpoY3k3ek1zcDVuLW50dW9oc3JvVWhja0JFSHFUYjBlZWdzcTBnMzN0Y200c18tTTJqWXhrUVY0bDBxWGQyS2Q5V0lfaFI5SEMw0gHjAkFVX3lxTE9abGdDWmoyMFg0dHNoN1N3NkFFUmx3emtUTFMyZ19hd1paRVFIa3JKTjZ0MGN1bnNGTDVXUWZYMVJFU0MzdVFJS2ZreG8tMjhEN2RBQ0U0OGQ2dTRxbTI5Zm4xNm52TWY3RGJMdUREaWdYREtyX2VtTFpYSXlhMTNXMkZOVWNlRkRZeXNPNGdfQk1zT0o4TEZlTjZfYjNPMTZiXy1FX3V0Z2FadzZOeUlzUkcwdUcwSVJvd2E1MW5pTHlKTDJ0V3BqNEtPRno4Mi1UbGdKXzF1UTdFNUo4c1FWT213b2VueGJZZFdMbERpWmN1S0cwWVp2VDIxVXBqRmhjVlZaTHNxNjlJT1FmZWF3NHI1NGxibE8yRGh0SmZpek5wSGJVN2Vpa3RackVMam5MSmhUNWRpc1p4bWdBUGl2T1V1TzFqai04YjdVVTVKSmI4RkRucWp3LXdaN0pwOHFoUmc?oc=5",
+   "title": "Qué es y quién compone la Junta Electoral Central (JEC), el árbitro de las elecciones del 29-N: jueces del Supremo nombrados por el CGPJ y profesores por los partidos",
+   "link": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxOXzBmdVRWTWczeFBmQTlzRFVDMWkzXzhVOUNmN2hsOVpHLS1IYzN6M1RfOUpFQ0ItY1JDVHFsMlJmUHJXNDB0RTY0MDlCUURmM2tuZUtTQzdRQ0YtRGFRMENFdUdnOFdwdTNrd29JS1U0VmhFSnhLQ0ZENWhWaVB6RWRkeWlTY3ZHRVlXWkVWdWNaekdpaTc1U2xmNThYaUxYWFpKSzJNaElwRmNxaDJQNFhVX3JkRUJ2VkVrdldxTHNOd3dZUEF3RE1BUTZSeWNNTS0wNmV2YnNhbTZNRlZyaEZRLUNWSXI5LWNCUGtGYk1WUWJOYXF4SDJwbTlTMVpoY3k3ek1zcDVuLW50dW9oc3JvVWhja0JFSHFUYjBlZWdzcTBnMzN0Y200c18tTTJqWXhrUVY0bDBxWGQyS2Q5V0lfaFI5SEMw0gHjAkFVX3lxTE9abGdDWmoyMFg0dHNoN1N3NkFFUmx3emtUTFMyZ19hd1paRVFIa3JKTjZ0MGN1bnNGTDVXUWZYMVJFU0MzdVFJS2ZreG8tMjhEN2RBQ0U0OGQ2dTRxbTI5Zm4xNm52TWY3RGJMdUREaWdYREtyX2VtTFpYSXlhMTNXMkZOVWNlRkRZeXNPNGdfQk1zT0o4TEZlTjZfYjNPMTZiXy1FX3V0Z2FadzZOeUlzUkcwdUcwSVJvd2E1MW5pTHlKTDJ0V3BqNEtPRno4Mi1UbGdKXzF1UTdFNUo4c1FWT213b2VueGJZZFdMbERpWmN1S0cwWVp2VDIxVXBqRmhjVlZaTHNxNjlJT1FmZWF3NHI1NGxibE8yRGh0SmZpek5wSGJVN2Vpa3RackVMam5MSmhUNWRpc1p4bWdBUGl2T1V1TzFqai04YjdVVTVKSmI4RkRucWp3LXdaN0pwOHFoUmc?oc=5",
+   "summary": "",
+   "date": "2026-11-24T08:01:16.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Infobae",
+   "topics": []
   },
   {
    "id": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQalY1VjFwLXNRYVU4TEd5d1NsVW1HWTVXdW5BdHB3NmU2MFFNb25sQjMweWdHLWhlQTQ3ZnhTSEJIeGRtWnpSQ3lDVkdRTXpKTzR4TGFGcnI4Ql84SVhWLWhicFo2N1JlUHlyNUU5Vm01Sld1MjdGa2VtVjZHajVKNlV3dzBZdmdPR1IxRG9BYnQ5ZnhZbl84N1FwZHhYRUZ1aGFyVUNOd3duUnJwckEtWllXbUnSAboBQVVfeXFMTmRBRGRETTJKUVlNR0dOMWJmd3BlcW02anRKd00temV1UWJSTEdwVjNmcE9acFlkTFBzcnNkamNzYWQxeGNGeHltRG1OQUx1Ul92QV9kcGR3cGlUaUw5dnR2bnl3bXNRZTE0a1B6VXpZTVhfMmZ6dnFMUlktbGhwTHdMSWwxWDJOZU5LR2tOZkxWY1VpNzR6bGpYU2NoalNlX1ZGdndLRTRTbXdnSkxMY2hORi0zc2tzWmlB?oc=5",
@@ -2977,6 +4082,18 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRTc3S0l1TnBVY29JS184ekpYLW51THVadW1MVk1mMU5feVN3MHhud3VWTzlEYW9iTENXRXRVRVczQmJLdUE4RDJXM0hNOXdJYlk0ZnptODVOak04UWlEdWNMaWRQaTZ0RnRkYzcwX1I0a3pBYjU3ZnRvbHNwWHdmRlRJWnQ0U25UVWdRM0tUQUd1T3U4ZWVmMEtramdjdlVKVW5MY1BmaWN2Z0c0VlU3SDJseXdZNGZxUGxJT1JWenlDTU9oQ2hV0gHHAUFVX3lxTE1FNzdLSXVOcFVjb0lLXzh6SlgtbnVMdVp1bUxWTWYxTl95U3cweG53dVZPOURhb2JMQ1dFdFVFVzNCYkt1QThEMlczSE05d0liWTRmem04NU5qTThRaUR1Y0xpZFBpNnRGdGRjNzBfUjRrekFiNTdmdG9sc3BYd2ZGVEladDRTblRVZ1EzS1RBR3VPdThlZWYwS2tqZ2N2VUpVbkxjUGZpY3ZnRzRWVTdIMmx5d1k0ZnFQbElPUlZ6eUNNT2hDaFU?oc=5",
+   "title": "Vía de urgencia para una necesaria ley de crédito al consumo",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRTc3S0l1TnBVY29JS184ekpYLW51THVadW1MVk1mMU5feVN3MHhud3VWTzlEYW9iTENXRXRVRVczQmJLdUE4RDJXM0hNOXdJYlk0ZnptODVOak04UWlEdWNMaWRQaTZ0RnRkYzcwX1I0a3pBYjU3ZnRvbHNwWHdmRlRJWnQ0U25UVWdRM0tUQUd1T3U4ZWVmMEtramdjdlVKVW5MY1BmaWN2Z0c0VlU3SDJseXdZNGZxUGxJT1JWenlDTU9oQ2hV0gHHAUFVX3lxTE1FNzdLSXVOcFVjb0lLXzh6SlgtbnVMdVp1bUxWTWYxTl95U3cweG53dVZPOURhb2JMQ1dFdFVFVzNCYkt1QThEMlczSE05d0liWTRmem04NU5qTThRaUR1Y0xpZFBpNnRGdGRjNzBfUjRrekFiNTdmdG9sc3BYd2ZGVEladDRTblRVZ1EzS1RBR3VPdThlZWYwS2tqZ2N2VUpVbkxjUGZpY3ZnRzRWVTdIMmx5d1k0ZnFQbElPUlZ6eUNNT2hDaFU?oc=5",
+   "summary": "",
+   "date": "2026-11-24T04:40:00.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Cinco Días",
+   "topics": []
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVEM1ck03Q2xpU2NsNWlNSEJqbFhDNmJ4TnVjdlp1dHJLVmNEUkFOZk54ZWJ3TnFCMFVMQXhPVHhtczdudTNDZFRvQnhycnVQRGFoSWRUN3B6cjVMMjZOYXVPXzBRMm00dDBhZVQyWFN3R3U4Z2o1cklTYVh1YWtZcHRuTnd2VVhWMTJlRW1LNTlad2M3YVZvTE85RktSYTdGQVZWZk9DMlhuellfTVpFeGpxZndMbmE5czNDcEdUQkZzVFpPSXliYTVHNGZzUjFJbzBWWjBiZw?oc=5",
    "title": "El Supremo impide a una empresa retirar la cesta de Navidad a los empleados",
    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVEM1ck03Q2xpU2NsNWlNSEJqbFhDNmJ4TnVjdlp1dHJLVmNEUkFOZk54ZWJ3TnFCMFVMQXhPVHhtczdudTNDZFRvQnhycnVQRGFoSWRUN3B6cjVMMjZOYXVPXzBRMm00dDBhZVQyWFN3R3U4Z2o1cklTYVh1YWtZcHRuTnd2VVhWMTJlRW1LNTlad2M3YVZvTE85RktSYTdGQVZWZk9DMlhuellfTVpFeGpxZndMbmE5czNDcEdUQkZzVFpPSXliYTVHNGZzUjFJbzBWWjBiZw?oc=5",
@@ -3030,6 +4147,20 @@
    "group": "Prensa general",
    "origin": "MONCLOA.COM",
    "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSzQwR21uaDZaR1MwMG1jbC1OcWZtQkx1QkVjMGk5aUtBRnBPUGJWNFRyVHR0bDRBSVA0M24tZGVzV1BTSWpnek04aG9tV0tNMDVoU2VHYkVEZlZIWC00eVRZbnc2QVZvOVJZcUQzY3E3NTZqckFXeWk1ZE5hUFE1UEhBR3BQeUJV?oc=5",
+   "title": "PP y Vox se juegan en el Senado el vuelco del Tribunal Constitucional: tres quintos",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSzQwR21uaDZaR1MwMG1jbC1OcWZtQkx1QkVjMGk5aUtBRnBPUGJWNFRyVHR0bDRBSVA0M24tZGVzV1BTSWpnek04aG9tV0tNMDVoU2VHYkVEZlZIWC00eVRZbnc2QVZvOVJZcUQzY3E3NTZqckFXeWk1ZE5hUFE1UEhBR3BQeUJV?oc=5",
+   "summary": "",
+   "date": "2026-11-24T02:18:05.000Z",
+   "source": "Prensa · Tribunal Constitucional",
+   "sourceId": "gn-constitucional",
+   "group": "Prensa general",
+   "origin": "MONCLOA.COM",
+   "topics": [
+    "Constitucional"
+   ]
   },
   {
    "id": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQai1peEdkSjJiRV9rMUU5YlZSSnBnWWtFWkI0ZF9FUmpIUlJwYnlrdXk1X2lHSHFDd09hblNVYnlXYTQ1bVFxUnU2djF6SUtEUmc3VVVHN1BuS1JmUG1CaWdfVGRwUmtFVk1CT19uMmwxdWk2ckFobE9pMjhGYkJNNGwyTDgxdU5RWXI2NmdhZ1FjeVQ3M2d6eVBZYlRCbWtyZnNaM3E3R3NGS2gwRmFOd0pGVnFMS1pGQmxhUTB2TFZtSy11S3piNWVBQU8yYzYxNURWVGE2Wlh1M1dRbzF2d01NUXJleEFfdHVuRjBwQzR1Um1CbHVnak41akstUTjSAaACQVVfeXFMTjE5bThnd3dDMWlocS1XcjJHSWUzY3V0ck92dkotMTMtaHJkOWowdi1EbEFaek9CZldnRGR5Wm5JeDBxOG45M2ZGQ3BEcTEzZXJQd09VQ3RXUUJHb09rMld6TWVUTDlyVlRsdHZEVDlmRjlYRFRhOVFETmg1UmlpZ2x2N2xWWmVYekt0Q1NUTUlWRHZ2d3lucHRaeUlvTG5VeTk5bkljVi1HT2VNWEJ3bnJjanFiZFQtUHUwZkNlX0phMEZZdXpxdV9CMlRCTWc4S2E4YTcxVGMzODVLZm54MFdJdndDckptZ1BpRmRmUGJJX0pId3JVbDR3ZWY4YmU0c2p2R3NVeGJIdG9NTDZZOWlaRVZ5bWRCSmIyUHEzSEo5?oc=5",
@@ -3249,6 +4380,60 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRktPOHBzNlpUUnZkSlJaT2VNaExfWUxfMk53NC1CZDdyTzBXWlNqRjBEQ0RMdTlHc1psUVB4SGJVZnVhaDBrSHdGMUZ5ZFFZd1o0YWtmNHVpNHRiYmhsRUs5Z1U2OGZMUl80Vl9pUk8waHpOM2VtR0c1T0paa1pxSjZSa2VEaE01REFzeGE5OUh6YThiQmJVZThybEFSVHYxQXhuSWpHM0NZcnhoZUR5OEo2SHZqTXZJaGxvejlqZ3NpbS1nb053VXR5VUhwd9IBzgFBVV95cUxNRktPOHBzNlpUUnZkSlJaT2VNaExfWUxfMk53NC1CZDdyTzBXWlNqRjBEQ0RMdTlHc1psUVB4SGJVZnVhaDBrSHdGMUZ5ZFFZd1o0YWtmNHVpNHRiYmhsRUs5Z1U2OGZMUl80Vl9pUk8waHpOM2VtR0c1T0paa1pxSjZSa2VEaE01REFzeGE5OUh6YThiQmJVZThybEFSVHYxQXhuSWpHM0NZcnhoZUR5OEo2SHZqTXZJaGxvejlqZ3NpbS1nb053VXR5VUhwdw?oc=5",
+   "title": "Abanca deberá reintegrar más de 20.000 euros estafados tras aplicar la nueva doctrina del TJUE",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRktPOHBzNlpUUnZkSlJaT2VNaExfWUxfMk53NC1CZDdyTzBXWlNqRjBEQ0RMdTlHc1psUVB4SGJVZnVhaDBrSHdGMUZ5ZFFZd1o0YWtmNHVpNHRiYmhsRUs5Z1U2OGZMUl80Vl9pUk8waHpOM2VtR0c1T0paa1pxSjZSa2VEaE01REFzeGE5OUh6YThiQmJVZThybEFSVHYxQXhuSWpHM0NZcnhoZUR5OEo2SHZqTXZJaGxvejlqZ3NpbS1nb053VXR5VUhwd9IBzgFBVV95cUxNRktPOHBzNlpUUnZkSlJaT2VNaExfWUxfMk53NC1CZDdyTzBXWlNqRjBEQ0RMdTlHc1psUVB4SGJVZnVhaDBrSHdGMUZ5ZFFZd1o0YWtmNHVpNHRiYmhsRUs5Z1U2OGZMUl80Vl9pUk8waHpOM2VtR0c1T0paa1pxSjZSa2VEaE01REFzeGE5OUh6YThiQmJVZThybEFSVHYxQXhuSWpHM0NZcnhoZUR5OEo2SHZqTXZJaGxvejlqZ3NpbS1nb053VXR5VUhwdw?oc=5",
+   "summary": "",
+   "date": "2026-11-23T18:00:35.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Demócrata",
+   "topics": [
+    "Penal",
+    "Europeo"
+   ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOUWstYndyaE50anR5ZUFVaXdodG0tM0RfaFVBZXE5ZHpJZHVpZ2V5WUlJSVIyRWRiN0YzTjh2STBocUpYSWl5WlVORWlNSV9KZ3lhamZqaWR0b3o5dk5kR0cxVFpIa2VHQ0hWOV9WSmFMS1lpbGVLOE1PZElkWlRkX0E3cTFCSVFFcVMxNG9GWTl5RkFKNUR2LUkxMDhFWVlGeWlKak5jcUFyck51SkRUS3YtTWk2NjNUbEVLMzhIRVFZUndDcmZzRVdHVU1wQ2xKamZFdEJ5UjQ4UUIxSFYyZkVsQWZkZlRfVWVNbEVfbVpRSkZJQzFVUnVhNDBwTDl6dG45QdIBigJBVV95cUxQZ2hOeUt4NVBVUVRRWG1naG9vWjFVYi1MYXJpSl9tVUJTbl9xdVZMNzROSnkyZXZtYXAxc1FQT3FCQVlIZnN0bmxSVUdVb1ZUVlV1ejhlcEFDTFBEVWtYbklsaUZWWE9jSXBUYnRNQzlSQzBhOUgwM0cwT3BGQXpJVDVKZG5XbURwa3hEWmdYdnNEamNrUVR3S2FnVDdHWmpsQU9uUllBd0tNdDJMLXhhbHBVS29rS3lmR1RoUVBhNloxVnpxenhYQUo5NFdUNjM5VmItWlFPR040TXM1V1dDZjRud2xTZXJnd2Z3WVA1S2tRamtvYk8wc2FrY1dOTWFLY0h0RC1XN1ZFUQ?oc=5",
+   "title": "Economía/Finanzas.- Abanca, condenada a devolver más de 20.000 euros estafados, aplicando de la nueva doctrina del TJUE",
+   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOUWstYndyaE50anR5ZUFVaXdodG0tM0RfaFVBZXE5ZHpJZHVpZ2V5WUlJSVIyRWRiN0YzTjh2STBocUpYSWl5WlVORWlNSV9KZ3lhamZqaWR0b3o5dk5kR0cxVFpIa2VHQ0hWOV9WSmFMS1lpbGVLOE1PZElkWlRkX0E3cTFCSVFFcVMxNG9GWTl5RkFKNUR2LUkxMDhFWVlGeWlKak5jcUFyck51SkRUS3YtTWk2NjNUbEVLMzhIRVFZUndDcmZzRVdHVU1wQ2xKamZFdEJ5UjQ4UUIxSFYyZkVsQWZkZlRfVWVNbEVfbVpRSkZJQzFVUnVhNDBwTDl6dG45QdIBigJBVV95cUxQZ2hOeUt4NVBVUVRRWG1naG9vWjFVYi1MYXJpSl9tVUJTbl9xdVZMNzROSnkyZXZtYXAxc1FQT3FCQVlIZnN0bmxSVUdVb1ZUVlV1ejhlcEFDTFBEVWtYbklsaUZWWE9jSXBUYnRNQzlSQzBhOUgwM0cwT3BGQXpJVDVKZG5XbURwa3hEWmdYdnNEamNrUVR3S2FnVDdHWmpsQU9uUllBd0tNdDJMLXhhbHBVS29rS3lmR1RoUVBhNloxVnpxenhYQUo5NFdUNjM5VmItWlFPR040TXM1V1dDZjRud2xTZXJnd2Z3WVA1S2tRamtvYk8wc2FrY1dOTWFLY0h0RC1XN1ZFUQ?oc=5",
+   "summary": "",
+   "date": "2026-11-23T17:58:36.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Bolsamania",
+   "topics": [
+    "Penal",
+    "Europeo"
+   ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNXFaUExkMmRGR0RBLTVsanFXUEhkcWpjNzh4QjVvZVM0RW1rNXdhOVZULVRjSEthczdsZWtWcVB3VS10S2FvenJrNURwclE4Y3o3bEo2RE0zZmN2ZEF0YXZULU5lNkw3ZHFRaFZJUUN4U2RXQm9xVU1aSDMtREpDVGJHODhXcl9mYjdPdXRVNHFpM1BCWVFlbkRrTkRBRGRaSkJESGlNUU0zSm5Wck1Tc1dqajNUN2JDc2hOOFpJSFR1dGQ1RDRXVtIBzgFBVV95cUxPdDVaanVrYmRkNUl3WDcxaWlUT3JSaG93N0pkRHRzZUlRek5ZWm5UaFI0dlh5ek03V0toc0JUZ0psclplVU4wVl9TNWNkdFB4SldOMXpqanFNWjF3bGdneXdINGVEVmZJb3p6X1dXQTNPVW81M2hMeHFmbkRKVmNVNEdsQnZpMUZxQk5yeG5oSzhCNmRRVktFQ184RnNUNGd4T0I1TXlOT0Vpb1RWQUQtX0swTDR6bGVVUk43VXc4Y0dSbVozWllYVlJEU3YyQQ?oc=5",
+   "title": "Juezas para la Democracia piden al CGPJ reforzar la formación sobre violencia de género",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNXFaUExkMmRGR0RBLTVsanFXUEhkcWpjNzh4QjVvZVM0RW1rNXdhOVZULVRjSEthczdsZWtWcVB3VS10S2FvenJrNURwclE4Y3o3bEo2RE0zZmN2ZEF0YXZULU5lNkw3ZHFRaFZJUUN4U2RXQm9xVU1aSDMtREpDVGJHODhXcl9mYjdPdXRVNHFpM1BCWVFlbkRrTkRBRGRaSkJESGlNUU0zSm5Wck1Tc1dqajNUN2JDc2hOOFpJSFR1dGQ1RDRXVtIBzgFBVV95cUxPdDVaanVrYmRkNUl3WDcxaWlUT3JSaG93N0pkRHRzZUlRek5ZWm5UaFI0dlh5ek03V0toc0JUZ0psclplVU4wVl9TNWNkdFB4SldOMXpqanFNWjF3bGdneXdINGVEVmZJb3p6X1dXQTNPVW81M2hMeHFmbkRKVmNVNEdsQnZpMUZxQk5yeG5oSzhCNmRRVktFQ184RnNUNGd4T0I1TXlOT0Vpb1RWQUQtX0swTDR6bGVVUk43VXc4Y0dSbVozWllYVlJEU3YyQQ?oc=5",
+   "summary": "",
+   "date": "2026-11-23T17:42:30.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Teleprensa",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZGYtYl82RnJKUDUwSlVpXzFKRmZETXlsejhqTUZYODk2a0l6bzM3ODZSSU81emNza0RDUXYxMXRZUEJMQjhyWXJJUGx6WndQdFo5UHl2cVU3N2QwWGNMR2t2ZGQwLXV5YmFNSWZuajVNU0RMU2JncjRsSGxXYjRFSjBER3lGd0dqUzU4VDh4ZnpaY05NZ2Zhb2RDdlpjSW1zUVRMYnhadnVraDF2X1Q1dzVUS2FVYUM0T19KNXlleW41YVNJWm4tNg?oc=5",
+   "title": "El Supremo aplica la amnistía a Puigdemont y cierra su causa",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZGYtYl82RnJKUDUwSlVpXzFKRmZETXlsejhqTUZYODk2a0l6bzM3ODZSSU81emNza0RDUXYxMXRZUEJMQjhyWXJJUGx6WndQdFo5UHl2cVU3N2QwWGNMR2t2ZGQwLXV5YmFNSWZuajVNU0RMU2JncjRsSGxXYjRFSjBER3lGd0dqUzU4VDh4ZnpaY05NZ2Zhb2RDdlpjSW1zUVRMYnhadnVraDF2X1Q1dzVUS2FVYUM0T19KNXlleW41YVNJWm4tNg?oc=5",
+   "summary": "",
+   "date": "2026-11-23T17:34:16.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "diariodelaltoaragon.es",
+   "topics": []
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNaV9nRTRiU1pYZm01TTlIXzRFdDJsRzFKWDR0alFjWGlPbEZNWERlS3A2MUpqc3k1VU5mY3RQWE1zZ29YV0ZmM3Uxb1VCcjVIM0lmdzZLTHFBbUsyOEI1S2R3ZGJfejYyeUNGUzJZb182b3dENmozT0o0Ul84ZDhNNkJHVjRhV2Y0OXRPVkdUU3FHNmFUdXlLc1ZWekhXT1UtTS1XVTR0bTFTSWJvY2JhOUhLdm8yNFdsQ3gw?oc=5",
    "title": "El Supremo reconoce a una veterinaria la prestación por riesgo durante la lactancia por exposición a agentes químicos",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNaV9nRTRiU1pYZm01TTlIXzRFdDJsRzFKWDR0alFjWGlPbEZNWERlS3A2MUpqc3k1VU5mY3RQWE1zZ29YV0ZmM3Uxb1VCcjVIM0lmdzZLTHFBbUsyOEI1S2R3ZGJfejYyeUNGUzJZb182b3dENmozT0o0Ul84ZDhNNkJHVjRhV2Y0OXRPVkdUU3FHNmFUdXlLc1ZWekhXT1UtTS1XVTR0bTFTSWJvY2JhOUhLdm8yNFdsQ3gw?oc=5",
@@ -3270,6 +4455,44 @@
    "sourceId": "gn-supremo",
    "group": "Prensa general",
    "origin": "Demócrata",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQSmVnTXN6VGVLRGpwb3pYdXBzODc5RU02dkNHUmM2TU9aN3lhMUhVdDZSeVNseUFlSi1HcVlrUmNnYUVIMkk5TUxGRXBLUGwtTmtKdENNaTNxSGJQNW54M1o5bmhMYjVkZEdMQlk5Qlh4dE0xeHZ3VW9ScVotUWwzR0RVWDAya0dRLURXaC1pbjB4enlRM2ZKMUdXcVNWd09qNXVJOURad1VSUjZSd3dzV2x2dnZvTTRuWXBKQjZBaklqZmZCVklYWXhxX3FuS0VENXNELXhSZzUyaXBTem9hMnJTQmstcnVwcEYzVtIB8gFBVV95cUxNTXNqUmdzWUsxOVdDUEdGb0hDZGxWVzViUUhTWEdRQXlkcWtBY3FDVGZCeHFQdTNVUXRVTlZxWEx1M2F6SGhQbzljQjJieG1hSVN1QXVfNmdjalJSLWQxWnlubVMzOU5lWDd3M3lEN1dTeUhCMHpEVzRiWXY3OC1fbkJIR2FNVm9sOUtmZmp6cThyQ25xOU9yMlFOWmc0UTdoTWl3dmZCb3RfRnMzRFI3SW1odVRobjk2aUdGTHhyS25oS3dHV2l0Q2VXVUtPSWRoQUQtRHlDMVVRQXdURTZnbjA1d2YwYXoyTnQ3VDZxLW9Edw?oc=5",
+   "title": "JJpD urge al CGPJ a más formación en violencia de género y a aplicar la sentencia del Supremo sobre la carga de trabajo",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQSmVnTXN6VGVLRGpwb3pYdXBzODc5RU02dkNHUmM2TU9aN3lhMUhVdDZSeVNseUFlSi1HcVlrUmNnYUVIMkk5TUxGRXBLUGwtTmtKdENNaTNxSGJQNW54M1o5bmhMYjVkZEdMQlk5Qlh4dE0xeHZ3VW9ScVotUWwzR0RVWDAya0dRLURXaC1pbjB4enlRM2ZKMUdXcVNWd09qNXVJOURad1VSUjZSd3dzV2x2dnZvTTRuWXBKQjZBaklqZmZCVklYWXhxX3FuS0VENXNELXhSZzUyaXBTem9hMnJTQmstcnVwcEYzVtIB8gFBVV95cUxNTXNqUmdzWUsxOVdDUEdGb0hDZGxWVzViUUhTWEdRQXlkcWtBY3FDVGZCeHFQdTNVUXRVTlZxWEx1M2F6SGhQbzljQjJieG1hSVN1QXVfNmdjalJSLWQxWnlubVMzOU5lWDd3M3lEN1dTeUhCMHpEVzRiWXY3OC1fbkJIR2FNVm9sOUtmZmp6cThyQ25xOU9yMlFOWmc0UTdoTWl3dmZCb3RfRnMzRFI3SW1odVRobjk2aUdGTHhyS25oS3dHV2l0Q2VXVUtPSWRoQUQtRHlDMVVRQXdURTZnbjA1d2YwYXoyTnQ3VDZxLW9Edw?oc=5",
+   "summary": "",
+   "date": "2026-11-23T17:08:41.000Z",
+   "source": "Prensa · Poder Judicial (CGPJ)",
+   "sourceId": "gn-cgpj",
+   "group": "Prensa general",
+   "origin": "Demócrata",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaHJLNjlrcmtVcTZ3VXgzNktFUngwTXlUYjBRbWNvVk9lc1p1Tlo0SFZjeFFNaDNMUWJVd0xIalE0SEs0NUN2MVlfRk0xTkRMYnBwLU1HalJiZ3Rvd05FS0FKVmpnaFdqcnRIQ2VTOUMtU0pLOHFRY0kxOU9pMlFHN1dIeUdYRFBjR09zWVd3NS1HS0dhSjV4UXNURU0xMXlmcERZOGhDNzNUVEIybjZ3SUdsM1EtLUFBcGFYUE1mdFc?oc=5",
+   "title": "El Supremo aplica la amnistía a Puigdemont y cierra su causa penal nueve años después",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaHJLNjlrcmtVcTZ3VXgzNktFUngwTXlUYjBRbWNvVk9lc1p1Tlo0SFZjeFFNaDNMUWJVd0xIalE0SEs0NUN2MVlfRk0xTkRMYnBwLU1HalJiZ3Rvd05FS0FKVmpnaFdqcnRIQ2VTOUMtU0pLOHFRY0kxOU9pMlFHN1dIeUdYRFBjR09zWVd3NS1HS0dhSjV4UXNURU0xMXlmcERZOGhDNzNUVEIybjZ3SUdsM1EtLUFBcGFYUE1mdFc?oc=5",
+   "summary": "",
+   "date": "2026-11-23T17:02:46.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "ORAIN",
+   "topics": [
+    "Penal"
+   ]
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWTVhWEJBeEtENFUwVXMxbG0zTlpldWR1SGhob25EVk1ha01PbkdocmxabUlTYWIwQlQ0b0x5TFpXSkZXcmVQWXlvcXJWM1lGaGtZYVVOcDROSy1FcUZ2T21CMWlCanVUZGJ0eXNsY1VhNmtZNURSU0JBSGRyZmFFT2lkTzB3WGZ2UDZsMU12OWVLZ1B1UE0yNHlhT2NtRUU?oc=5",
+   "title": "El próximo Gobierno hereda dos expedientes de Bruselas por la regulación de las criptomonedas",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWTVhWEJBeEtENFUwVXMxbG0zTlpldWR1SGhob25EVk1ha01PbkdocmxabUlTYWIwQlQ0b0x5TFpXSkZXcmVQWXlvcXJWM1lGaGtZYVVOcDROSy1FcUZ2T21CMWlCanVUZGJ0eXNsY1VhNmtZNURSU0JBSGRyZmFFT2lkTzB3WGZ2UDZsMU12OWVLZ1B1UE0yNHlhT2NtRUU?oc=5",
+   "summary": "",
+   "date": "2026-11-23T17:00:00.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Zonamovilidad.es",
    "topics": []
   },
   {
@@ -3313,6 +4536,20 @@
    ]
   },
   {
+   "id": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVUZOX1gzUXhwcUlIYWlKTjFxeE5JcDl3ZktsM3kxOG96UmhYMFhBTWpQbUtVcVpPN3liVmR3QUt3RnMtVFYzQVpvT0I3cGN5RTM1ZUZra1dTVVJUMXlVc1ZkV21LQURIeFFydURmWmRjbkJ4T1BqZ3N5LW5kMThoN3RLUkcxaUttend0eEpLZkF1UQ?oc=5",
+   "title": "Aval con matices en el TJUE al cobro directo del streaming",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVUZOX1gzUXhwcUlIYWlKTjFxeE5JcDl3ZktsM3kxOG96UmhYMFhBTWpQbUtVcVpPN3liVmR3QUt3RnMtVFYzQVpvT0I3cGN5RTM1ZUZra1dTVVJUMXlVc1ZkV21LQURIeFFydURmWmRjbkJ4T1BqZ3N5LW5kMThoN3RLUkcxaUttend0eEpLZkF1UQ?oc=5",
+   "summary": "",
+   "date": "2026-11-23T14:45:21.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "IndustriaMusical.com",
+   "topics": [
+    "Europeo"
+   ]
+  },
+  {
    "id": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOdzdJR0JtUTNuZHlkdjdvWTJlV2ZWVlJINUVUaHBLMkJucEJtaS1xYUxSaWxGa2xpcWlkaUg5d1drWEtJVlpQUWN0NUY5TUlscldQNnBaUmxQSmtYM255Q0dvSlI0dXpoSXZEWmlkeGU1V041cF93MklLcFBPZjZfZWxkNW1kYXBvaWhLSkVhby1neERPV3FtVlN6aXdXSmQ1ZWhvbWMwRnFheDdZMGc4NDZfX2ZEbzZRVGtQTWpPWjFaX1BrZGc0TF9PQ1Z3UUw3ZWtwZzFsWGJqNmt0QjBvUmFvbEVyeUY0NFVQTkhiSFppUQ?oc=5",
    "title": "El Tribunal Supremo de Texas archiva una demanda contra Texas Right to Life y mantiene vigente el mecanismo ciudadano de la ley de latidos",
    "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOdzdJR0JtUTNuZHlkdjdvWTJlV2ZWVlJINUVUaHBLMkJucEJtaS1xYUxSaWxGa2xpcWlkaUg5d1drWEtJVlpQUWN0NUY5TUlscldQNnBaUmxQSmtYM255Q0dvSlI0dXpoSXZEWmlkeGU1V041cF93MklLcFBPZjZfZWxkNW1kYXBvaWhLSkVhby1neERPV3FtVlN6aXdXSmQ1ZWhvbWMwRnFheDdZMGc4NDZfX2ZEbzZRVGtQTWpPWjFaX1BrZGc0TF9PQ1Z3UUw3ZWtwZzFsWGJqNmt0QjBvUmFvbEVyeUY0NFVQTkhiSFppUQ?oc=5",
@@ -3323,6 +4560,56 @@
    "group": "Prensa general",
    "origin": "voz.us",
    "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNamI4cW5YdWlXeUFwRGlQalhzQnp2c2RWUmRaUC1tTUF5RU1mYmNzeFczdUF6c1h0RGpaQUdDZFpUblVJVnBvQjQ2aWZGRUsxWWFvVkpfVFlsVEhGZTRuYnA5Z0F6RTZLd3VlaW1BZElmTlFSaFlnWlEzbkI0MzlSOC0zeFg4MmpCUDhmMDBHZ2lEcGJsMkJCVFlWamtROE9uZHdxSFhoWU0xQUU5bHRNQWU0eFh5UldmNG9fM1JjUThkdGtOSzgzRGgzNA?oc=5",
+   "title": "Puigdemont dedica un poema a sus \"queridísimos enemigos\" tras ser amnistiado por el procés",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNamI4cW5YdWlXeUFwRGlQalhzQnp2c2RWUmRaUC1tTUF5RU1mYmNzeFczdUF6c1h0RGpaQUdDZFpUblVJVnBvQjQ2aWZGRUsxWWFvVkpfVFlsVEhGZTRuYnA5Z0F6RTZLd3VlaW1BZElmTlFSaFlnWlEzbkI0MzlSOC0zeFg4MmpCUDhmMDBHZ2lEcGJsMkJCVFlWamtROE9uZHdxSFhoWU0xQUU5bHRNQWU0eFh5UldmNG9fM1JjUThkdGtOSzgzRGgzNA?oc=5",
+   "summary": "",
+   "date": "2026-11-23T13:59:26.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Telecinco",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOcnB2dVdXZDR1bXl4SW15OExhX0tYYVJBa2Z1S3FrZF9Yb2w5aFhUMFBxcUJaeDJHNjhTQXAzQW5XS0RHVEFjTlZmTnBwNGRlWGhuc09rSkRjNFJUam1rRmZjQWZrQXlwS1FyOXVJWjRncEt5aF9hWVdIZS1PS2ZyZXJiX1Z6cE54TEJjRG1nRFBuYlB3cHJSLTlzb2l0bXBZS1FIcXA4clh0XzV1bEpJU2NyRVNDU1MydHgxRVlIaW03dVJ6XzVUakxPalcwNjE2TjhEcDFEcm1UclhTMnotdA?oc=5",
+   "title": "El Supremo pone fin a la causa contra Carles Puigdemont: amnistiado y con vía libre para regresar a España",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOcnB2dVdXZDR1bXl4SW15OExhX0tYYVJBa2Z1S3FrZF9Yb2w5aFhUMFBxcUJaeDJHNjhTQXAzQW5XS0RHVEFjTlZmTnBwNGRlWGhuc09rSkRjNFJUam1rRmZjQWZrQXlwS1FyOXVJWjRncEt5aF9hWVdIZS1PS2ZyZXJiX1Z6cE54TEJjRG1nRFBuYlB3cHJSLTlzb2l0bXBZS1FIcXA4clh0XzV1bEpJU2NyRVNDU1MydHgxRVlIaW03dVJ6XzVUakxPalcwNjE2TjhEcDFEcm1UclhTMnotdA?oc=5",
+   "summary": "",
+   "date": "2026-11-23T13:57:51.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Área Costa del Sol",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNMTVRbUJHemNYSW9Gd0VKbnJhYXk3RFZpeWVWTlRORUpGemRIRmQ4NEY2ckd1dTk5ZkFKNTBTU2JkdGZSeFUwNG9iejJSclNSQ0RZS2F5d2QwRUFndUNFanFqT0JGV1VZOFhkUERpb0Z6UjJTczQ0TVNNLWkyM3I2R3VGSnljejd5VWVkdXhfSDdheGFoU196Vm9LX2ZIWVJFZFRlR0R1a1hGTzZGekh6N2g1b0IwRE5hT2ZycmtpQzNHODdObFlYTEQtT3JFNThLZUJ1Qg?oc=5",
+   "title": "El Supremo amnistía a Puigdemont y pone fin a nueve años de causa judicial por el 'procés'",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNMTVRbUJHemNYSW9Gd0VKbnJhYXk3RFZpeWVWTlRORUpGemRIRmQ4NEY2ckd1dTk5ZkFKNTBTU2JkdGZSeFUwNG9iejJSclNSQ0RZS2F5d2QwRUFndUNFanFqT0JGV1VZOFhkUERpb0Z6UjJTczQ0TVNNLWkyM3I2R3VGSnljejd5VWVkdXhfSDdheGFoU196Vm9LX2ZIWVJFZFRlR0R1a1hGTzZGekh6N2g1b0IwRE5hT2ZycmtpQzNHODdObFlYTEQtT3JFNThLZUJ1Qg?oc=5",
+   "summary": "",
+   "date": "2026-11-23T13:48:00.000Z",
+   "source": "Prensa · Justicia europea (TJUE/TEDH)",
+   "sourceId": "gn-tjue",
+   "group": "Prensa general",
+   "origin": "Crónica Balear",
+   "topics": []
+  },
+  {
+   "id": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1sX0diaFVUa0MxYlpiY3RDc3lqN0lMS2J0RXByUmNhUjlJS0pIeVVhSzlFMFJMNUdOMVNpaldmOXZ1TW5wNmpRUzE3VWpmM0x3RDlkZ2VON045dE54VFFfLW14QzFiTi1WT2k4RTVfRTZDaFk?oc=5",
+   "title": "29N: los tres quintos del Senado que pueden dar un vuelco al Tribunal Constitucional",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1sX0diaFVUa0MxYlpiY3RDc3lqN0lMS2J0RXByUmNhUjlJS0pIeVVhSzlFMFJMNUdOMVNpaldmOXZ1TW5wNmpRUzE3VWpmM0x3RDlkZ2VON045dE54VFFfLW14QzFiTi1WT2k4RTVfRTZDaFk?oc=5",
+   "summary": "",
+   "date": "2026-11-23T13:39:33.000Z",
+   "source": "Prensa · Tribunal Constitucional",
+   "sourceId": "gn-constitucional",
+   "group": "Prensa general",
+   "origin": "Qué.es",
+   "topics": [
+    "Constitucional"
+   ]
   },
   {
    "id": "https://www.legaltoday.com/sin-categoria/aranzadi-la-ley-expres-subidas-del-smi-y-de-los-sueldos-a-los-funcionarios-y-aluvion-de-reales-decretos-2026-11-18/",
