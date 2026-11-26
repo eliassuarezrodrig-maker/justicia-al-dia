@@ -48,27 +48,6 @@
     bell: '<svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 8 3 8H3s3-1 3-8M10 20a2 2 0 0 0 4 0"/></svg>',
   };
 
-  // Enlace al buscador oficial según el tribunal.
-  const STOP = new Set('el la los las un una unos unas de del al a y o e en con por para sobre que se su sus lo como tras ante contra entre sin según desde hasta este esta estos estas ese esa es son ha han fue ser más muy ya no ni le les'.split(' '));
-  function keywords(i) {
-    if (i.ecli) return `"${i.ecli}"`;
-    const w = i.title.replace(/[«»"“”‘’'()¿?¡!:;,.]/g, ' ').split(/\s+/).filter((x) => x.length > 2 && !STOP.has(x.toLowerCase()));
-    return w.slice(0, 9).join(' ');
-  }
-  function official(i) {
-    if (!i.doc) return null;
-    if (i.kind === 'Oficial') return { label: 'Ver en BOE', url: href(i) };
-    const k = keywords(i);
-    const g = (site) => `https://www.google.com/search?q=${encodeURIComponent(`site:${site} ${k}`)}`;
-    switch (i.court) {
-      case 'Tribunal Constitucional': return { label: 'Buscar en el TC', url: g('hj.tribunalconstitucional.es') };
-      case 'TJUE': return { label: 'Buscar en CURIA', url: i.recurso && /^C-/.test(i.recurso) ? `https://curia.europa.eu/juris/liste.jsf?num=${encodeURIComponent(i.recurso)}&language=es` : g('curia.europa.eu') };
-      case 'TEDH': return { label: 'Buscar en HUDOC', url: `https://hudoc.echr.coe.int/spa#${encodeURIComponent(JSON.stringify({ fulltext: [k.split(' ').slice(0, 5).join(' ')] }))}` };
-      case 'Cortes internacionales': return { label: 'Buscar texto', url: `https://www.google.com/search?q=${encodeURIComponent(k + ' sentencia texto íntegro')}` };
-      case 'DGSJFP': return { label: 'Buscar en BOE', url: g('boe.es') };
-      default: return { label: 'Buscar en CENDOJ', url: g('poderjudicial.es') };
-    }
-  }
   const hl = (s) => { let out = esc(s); for (const w of state.hl || []) { if (w.length < 3) continue; out = out.replace(new RegExp(`(${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi'), '<mark>$1</mark>'); } return out; };
 
   function placeholder(i) {
@@ -91,7 +70,6 @@
         <div class="foot">
           <div class="tags">${(i.topics || []).slice(0, 2).map((t) => `<span class="tag">#${esc(t)}</span>`).join('')}</div>
           <div class="actions">
-            ${variant !== 'row' && official(i) && i.kind !== 'Oficial' ? `<a class="act off" href="${esc(official(i).url)}" target="_blank" rel="noopener" title="${esc(official(i).label)}">${ICON.doc}<span class="lbl">${esc(official(i).label)}</span></a>` : ''}
             ${variant !== 'row' ? `<a class="act" href="${esc(href(i))}" target="_blank" rel="noopener" title="Abrir en ${esc(i.origin || i.source)}">${ICON.out}<span class="lbl">${i.kind === 'Oficial' ? 'Ver texto' : 'Fuente'}</span></a>` : ''}
             <button class="act" data-share="${esc(i.id)}" aria-label="Compartir">${ICON.share}</button>
             <button class="act${saved ? ' saved' : ''}" data-save="${esc(i.id)}" aria-label="Guardar en colección">${ICON.save}<span class="lbl">${saved ? 'Guardada' : 'Guardar'}</span></button>
