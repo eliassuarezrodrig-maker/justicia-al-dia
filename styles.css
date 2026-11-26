@@ -266,3 +266,18 @@ button { font: inherit; color: inherit; touch-action: manipulation; -webkit-tap-
 .theme-lector .doclist, .theme-lector .col-card { border: 1px solid var(--line); }
 .theme-lector .chip { border-radius: 4px; }
 .theme-lector .chip.on { background: var(--text); color: var(--bg); }
+
+/* Ajustes de la noticia principal */
+.lead .body { justify-content: flex-end; }
+.lead .foot { margin-top: 0; padding-top: 10px; }
+.lead .ph span { display: none; }
+.lead .ph img.fav { width: 64px; height: 64px; opacity: .9; margin-bottom: 140px; }
+.theme-app .lead .act { background: rgba(255,255,255,.16); color: #fff; }
+.theme-app .lead .act.saved { background: var(--blue); }
+.theme-lector .lead .ph img.fav { margin-bottom: 0; }
+.theme-lector .lead .ph span { display: block; }
+@media (max-width: 600px) {
+  .theme-lector .brand-name { font-size: 24px; }
+  .theme-lector .brand-tag { font-size: 11px; padding: 4px 6px 3px; }
+  .theme-lector .masthead-row { justify-content: flex-start; }
+}
