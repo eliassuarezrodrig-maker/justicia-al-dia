@@ -19,12 +19,6 @@
   if (!Array.isArray(cols)) cols = [{ id: 'leer', name: 'Leer más tarde', items: {}, created: Date.now() }];
   const saveCols = () => { store.set('jad-colecciones', cols); updateBadge(); };
 
-  // Estilo visual: ?tema=periodico|app|lector
-  const params = new URLSearchParams(location.search);
-  const theme = params.get('tema') || store.get('jad-tema', 'periodico');
-  if (params.get('tema')) store.set('jad-tema', theme);
-  document.body.classList.add('theme-' + theme);
-
   const state = { items: [], byId: new Map(), q: '', kind: '', topic: '', shown: PAGE, route: 'portada' };
 
   // ---------- Utilidades ----------
