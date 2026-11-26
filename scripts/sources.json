@@ -46,7 +46,8 @@
     "urls": [
       "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Tribunal-Supremo/Noticias-Judiciales/"
     ],
-    "linkPattern": "/Tribunal-Supremo/Noticias-Judiciales/.+"
+    "linkPattern": "/Tribunal-Supremo/Noticias-Judiciales/.+",
+    "ruling": true
   },
   {
     "id": "of-cgpj",
@@ -59,7 +60,8 @@
     "urls": [
       "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Noticias-Judiciales/"
     ],
-    "linkPattern": "/Noticias-Judiciales/.+"
+    "linkPattern": "/Noticias-Judiciales/.+",
+    "ruling": true
   },
   {
     "id": "of-an",
@@ -73,7 +75,8 @@
     "urls": [
       "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Audiencia-Nacional/Noticias-Judiciales/"
     ],
-    "linkPattern": "/Audiencia-Nacional/Noticias-Judiciales/.+"
+    "linkPattern": "/Audiencia-Nacional/Noticias-Judiciales/.+",
+    "ruling": true
   },
   {
     "id": "of-tsjc",
@@ -87,7 +90,8 @@
     "urls": [
       "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Tribunales-Superiores-de-Justicia/TSJ-Canarias/Noticias-Judiciales-TSJ-Canarias/"
     ],
-    "linkPattern": "Noticias-Judiciales-TSJ-Canarias/.+"
+    "linkPattern": "Noticias-Judiciales-TSJ-Canarias/.+",
+    "ruling": true
   },
   {
     "id": "confilegal",

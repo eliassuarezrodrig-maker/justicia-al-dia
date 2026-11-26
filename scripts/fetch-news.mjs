@@ -26,9 +26,9 @@ const TOPICS = {
 // Tipo de resolución y tribunal, para la sección "Sentencias y recursos".
 const DOCS = [
   ['Sentencia', /\bsentencias?\b/i],
-  ['Auto', /\b(un auto|el auto|mediante auto|en un auto|autos? del|auto de (procesamiento|apertura|prisi[oó]n))\b/i],
+  ['Auto', /\b(un auto|el auto|mediante auto|en un auto|autos? del|auto de (procesamiento|apertura|prisi[oó]n)|cita a declarar|cita como (investigad|testigo)|prisi[oó]n provisional|libertad provisional|procesa a|suplicatorio|admite (a tr[aá]mite )?una querella)/i],
   ['Recurso', /\b(recursos?|casaci[oó]n|amparo|apelaci[oó]n|cuesti[oó]n de inconstitucionalidad|cuesti[oó]n prejudicial)\b/i],
-  ['Sentencia', /\b(condena|condenad[oa]s?|absuelve|absuelt[oa]s?|avala|anula|tumba|revoca|dictamina|ratifica|desestima|ampara|da la raz[oó]n|fallo)\b/i],
+  ['Sentencia', /\b(confirma|mantiene|declara|deniega|estima|archiva|ordena|reconoce|rechaza|impone|condena|condenad[oa]s?|absuelve|absuelt[oa]s?|avala|anula|tumba|revoca|dictamina|ratifica|desestima|ampara|da la raz[oó]n|fallo)\b/i],
   ['Resolución', /\b(resoluci[oó]n de la Direcci[oó]n General de Seguridad Jur[ií]dica|DGSJFP|doctrina del Tribunal Econ[oó]mico|dictamen)\b/i],
 ];
 const COURTS = [
