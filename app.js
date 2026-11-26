@@ -43,7 +43,33 @@
   const ICON = {
     out: '<svg viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>',
     save: '<svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
+    doc: '<svg viewBox="0 0 24 24"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>',
+    share: '<svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.9 15.8 6.1M8.2 13.1l7.6 4.8"/></svg>',
+    bell: '<svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 8 3 8H3s3-1 3-8M10 20a2 2 0 0 0 4 0"/></svg>',
   };
+
+  // Enlace al buscador oficial según el tribunal.
+  const STOP = new Set('el la los las un una unos unas de del al a y o e en con por para sobre que se su sus lo como tras ante contra entre sin según desde hasta este esta estos estas ese esa es son ha han fue ser más muy ya no ni le les'.split(' '));
+  function keywords(i) {
+    if (i.ecli) return `"${i.ecli}"`;
+    const w = i.title.replace(/[«»"“”‘’'()¿?¡!:;,.]/g, ' ').split(/\s+/).filter((x) => x.length > 2 && !STOP.has(x.toLowerCase()));
+    return w.slice(0, 9).join(' ');
+  }
+  function official(i) {
+    if (!i.doc) return null;
+    if (i.kind === 'Oficial') return { label: 'Ver en BOE', url: href(i) };
+    const k = keywords(i);
+    const g = (site) => `https://www.google.com/search?q=${encodeURIComponent(`site:${site} ${k}`)}`;
+    switch (i.court) {
+      case 'Tribunal Constitucional': return { label: 'Buscar en el TC', url: g('hj.tribunalconstitucional.es') };
+      case 'TJUE': return { label: 'Buscar en CURIA', url: i.recurso && /^C-/.test(i.recurso) ? `https://curia.europa.eu/juris/liste.jsf?num=${encodeURIComponent(i.recurso)}&language=es` : g('curia.europa.eu') };
+      case 'TEDH': return { label: 'Buscar en HUDOC', url: `https://hudoc.echr.coe.int/spa#${encodeURIComponent(JSON.stringify({ fulltext: [k.split(' ').slice(0, 5).join(' ')] }))}` };
+      case 'Cortes internacionales': return { label: 'Buscar texto', url: `https://www.google.com/search?q=${encodeURIComponent(k + ' sentencia texto íntegro')}` };
+      case 'DGSJFP': return { label: 'Buscar en BOE', url: g('boe.es') };
+      default: return { label: 'Buscar en CENDOJ', url: g('poderjudicial.es') };
+    }
+  }
+  const hl = (s) => { let out = esc(s); for (const w of state.hl || []) { if (w.length < 3) continue; out = out.replace(new RegExp(`(${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi'), '<mark>$1</mark>'); } return out; };
 
   function placeholder(i) {
     return `<div class="ph k-${esc(i.kind || '')}"><img class="fav" src="${fav(i.originUrl || href(i))}" alt="" loading="lazy"><span>${esc(i.origin || i.source)}</span></div>`;
@@ -59,12 +85,15 @@
       <div class="body">
         <div class="meta"><img class="fav" src="${fav(i.originUrl || href(i))}" alt="" loading="lazy"><span class="origin">${esc(i.origin || i.source)}</span><span>· ${ago(i.date)}</span></div>
         ${i.doc ? `<div class="ruling"><span class="pill doc">${esc(i.doc)}</span>${i.court ? `<span class="pill">${esc(i.court)}</span>` : ''}</div>` : (variant !== 'row' && i.kind === 'Oficial' ? '<div class="ruling"><span class="pill">Oficial</span></div>' : '')}
-        <h3><a href="${esc(href(i))}" target="_blank" rel="noopener">${esc(i.title)}</a></h3>
-        ${i.summary && variant !== 'row' ? `<p class="sum">${esc(i.summary)}</p>` : ''}
+        <h3><a href="${esc(href(i))}" target="_blank" rel="noopener">${hl(i.title)}</a></h3>
+        ${i.summary && variant !== 'row' ? `<p class="sum">${hl(i.summary)}</p>` : ''}
+        ${(i.ecli || i.recurso) && variant !== 'row' ? `<div class="refs">${i.ecli ? `<code>${esc(i.ecli)}</code>` : ''}${i.recurso ? `<code>Rec. ${esc(i.recurso)}</code>` : ''}</div>` : ''}
         <div class="foot">
           <div class="tags">${(i.topics || []).slice(0, 2).map((t) => `<span class="tag">#${esc(t)}</span>`).join('')}</div>
           <div class="actions">
-            ${variant !== 'row' ? `<a class="act" href="${esc(href(i))}" target="_blank" rel="noopener" title="Abrir en ${esc(i.origin || i.source)}">${ICON.out}<span class="lbl">Fuente</span></a>` : ''}
+            ${variant !== 'row' && official(i) && i.kind !== 'Oficial' ? `<a class="act off" href="${esc(official(i).url)}" target="_blank" rel="noopener" title="${esc(official(i).label)}">${ICON.doc}<span class="lbl">${esc(official(i).label)}</span></a>` : ''}
+            ${variant !== 'row' ? `<a class="act" href="${esc(href(i))}" target="_blank" rel="noopener" title="Abrir en ${esc(i.origin || i.source)}">${ICON.out}<span class="lbl">${i.kind === 'Oficial' ? 'Ver texto' : 'Fuente'}</span></a>` : ''}
+            <button class="act" data-share="${esc(i.id)}" aria-label="Compartir">${ICON.share}</button>
             <button class="act${saved ? ' saved' : ''}" data-save="${esc(i.id)}" aria-label="Guardar en colección">${ICON.save}<span class="lbl">${saved ? 'Guardada' : 'Guardar'}</span></button>
           </div>
         </div>
@@ -95,6 +124,8 @@
     const side = uniq([...pool, ...all]).filter((i) => i !== lead).slice(0, 4);
     const used = new Set([lead, ...side].filter(Boolean).map((i) => i.id));
     let html = '';
+    const nAlert = alerts.reduce((s, al) => s + alertHits(al).length, 0);
+    if (nAlert) html += `<a class="alert-banner" href="#colecciones">${ICON.bell} Tienes <b>${nAlert}</b> ${nAlert === 1 ? 'novedad' : 'novedades'} en tus alertas →</a>`;
     if (lead) html += `<section class="hero">${card(lead, 'lead')}<div class="side">${side.map((i) => card(i, 'row')).join('')}</div></section>`;
     const rs = rulings().filter((i) => !used.has(i.id));
     const rsPick = uniq([...fresh(rs.filter((i) => i.kind === 'Oficial'), 72).slice(0, 2), ...rs]).slice(0, 6).sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -123,7 +154,7 @@
   }
 
   // filters: [[campo, valores, etiqueta "todos"]]; los temas son una lista dentro de cada noticia.
-  function renderList(title, sub, base, filters) {
+  function renderList(title, sub, base, filters, extra = '') {
     filters = filters || [['kind', KIND_ORDER, 'Todas las fuentes'], ['topics', null, 'Todos los temas']];
     let list = base;
     let chips = '';
@@ -134,6 +165,7 @@
       if (v) list = list.filter((i) => (field === 'topics' ? (i.topics || []).includes(v) : i[field] === v));
     }
     let html = `<h1 class="page-title">${esc(title)}</h1><p class="page-sub">${esc(sub)} · ${list.length} ${list.length === 1 ? 'resultado' : 'resultados'}</p>`;
+    html += extra;
     if (chips) html += `<div class="filters">${chips}</div>`;
     html += list.length ? `<div class="grid">${list.slice(0, state.shown).map((i) => card(i)).join('')}</div>` : '<p class="empty">No hay noticias con estos filtros.</p>';
     if (list.length > state.shown) html += `<button class="more" data-more>Ver más (${list.length - state.shown})</button>`;
@@ -152,19 +184,87 @@
     return kept;
   }
   let rulingsCache = null;
-  const rulings = () => rulingsCache || (rulingsCache = dedupe(state.items.filter((i) => i.doc && i.title !== 'Sumario')));
+  const rulings = () => rulingsCache || (rulingsCache = dedupe(everything().filter((i) => i.doc && i.title !== 'Sumario')));
   function renderSentencias() {
-    renderList('Sentencias y recursos', 'Sentencias, autos, recursos y resoluciones de los tribunales', rulings(), [
+    if (!archive) loadArchive().then(() => { if (state.route === 'sentencias' && !state.q) render(); });
+    renderList('Sentencias y recursos', 'Sentencias, autos, recursos y resoluciones de los tribunales' + (archive && archive.length ? ' · incluye el archivo' : ''), rulings(), [
       ['doc', DOC_ORDER, 'Todo'],
       ['court', COURT_ORDER, 'Todos los tribunales'],
       ['scope', ['Nacional', 'Canarias', 'Europa', 'Internacional'], 'Todos los ámbitos'],
-    ]);
+      ['topics', null, 'Todas las materias'],
+    ], alertsHtml());
   }
 
+  // ---------- Archivo de sentencias (se carga al buscar o al abrir Sentencias) ----------
+  let archive = null;
+  async function loadArchive() {
+    if (archive) return archive;
+    archive = [];
+    try {
+      const idx = await (await fetch('data/sentencias/index.json', { cache: 'no-cache' })).json();
+      const years = Object.keys(idx.years || {}).sort().reverse();
+      const parts = await Promise.all(years.map((y) => fetch(`data/sentencias/${y}.json`, { cache: 'no-cache' }).then((r) => r.json()).catch(() => [])));
+      archive = parts.flat();
+    } catch {}
+    rulingsCache = null; allCache = null;
+    return archive;
+  }
+  let allCache = null;
+  function everything() {
+    if (allCache) return allCache;
+    const seen = new Set(state.items.map((i) => i.id));
+    allCache = [...state.items, ...(archive || []).filter((i) => !seen.has(i.id))].sort((a, b) => new Date(b.date) - new Date(a.date));
+    return allCache;
+  }
+
+  // ---------- Búsqueda avanzada ----------
+  // "frase exacta", -excluir, palabras sueltas (todas deben aparecer).
+  function parseQuery(q) {
+    const phrases = []; const excl = [];
+    q = q.replace(/"([^"]+)"/g, (_, p) => { phrases.push(norm(p)); return ' '; });
+    const words = [];
+    for (const w of norm(q).split(/\s+/).filter(Boolean)) (w.startsWith('-') && w.length > 1 ? excl : words).push(w.replace(/^-/, ''));
+    return { phrases, words, excl };
+  }
+  function matches(i, pq) {
+    const t = norm(`${i.title} ${i.summary || ''} ${i.origin || ''} ${i.source || ''} ${i.court || ''} ${i.ecli || ''} ${i.recurso || ''}`);
+    return pq.phrases.every((p) => t.includes(p)) && pq.words.every((w) => t.includes(w)) && !pq.excl.some((w) => t.includes(w));
+  }
+  function searchResults(q, f) {
+    const pq = parseQuery(q);
+    let list = everything().filter((i) => matches(i, pq));
+    if (f.solo) list = list.filter((i) => i.doc);
+    if (f.desde) list = list.filter((i) => i.date.slice(0, 10) >= f.desde);
+    if (f.hasta) list = list.filter((i) => i.date.slice(0, 10) <= f.hasta);
+    return list;
+  }
   function renderSearch() {
-    const words = norm(state.q).split(/\s+/).filter(Boolean);
-    const base = state.items.filter((i) => { const t = norm(`${i.title} ${i.summary} ${i.origin} ${i.source}`); return words.every((w) => t.includes(w)); });
-    renderList(`“${state.q}”`, 'Resultados en todas las secciones', base);
+    const pq = parseQuery(state.q);
+    state.hl = [...pq.phrases, ...pq.words];
+    const base = searchResults(state.q, state.f);
+    const extra = `<div class="adv">
+      <label class="switch"><input type="checkbox" data-solo ${state.f.solo ? 'checked' : ''}> Solo sentencias y recursos</label>
+      <label>Desde <input type="date" data-date="desde" value="${esc(state.f.desde || '')}"></label>
+      <label>Hasta <input type="date" data-date="hasta" value="${esc(state.f.hasta || '')}"></label>
+      <button class="btn" data-alert>${ICON.bell} Crear alerta</button>
+    </div>
+    <p class="hint">Consejo: usa "comillas" para una frase exacta y un guion para excluir (por ejemplo: despido "fuerza mayor" -ERTE).</p>`;
+    renderList(`“${state.q}”`, archive && archive.length ? 'Noticias recientes y archivo de sentencias' : 'Resultados en todas las secciones', base, [
+      ['doc', DOC_ORDER, 'Cualquier tipo'],
+      ['court', COURT_ORDER, 'Todos los tribunales'],
+      ['scope', ['Nacional', 'Canarias', 'Europa', 'Internacional'], 'Todos los ámbitos'],
+      ['topics', null, 'Todas las materias'],
+    ], extra);
+    state.hl = [];
+  }
+
+  // ---------- Alertas por palabras clave ----------
+  let alerts = store.get('jad-alertas', []);
+  const saveAlerts = () => { store.set('jad-alertas', alerts); updateBadge(); };
+  const alertHits = (al) => searchResults(al.q, al.f || {}).filter((i) => new Date(i.date) > new Date(al.seen || 0) && (i.doc || !al.f?.solo));
+  function alertsHtml() {
+    if (!alerts.length) return `<div class="alerts-empty">${ICON.bell}<div><b>Alertas</b><p>Busca algo (por ejemplo “cláusula suelo” o “TSJ Canarias despido”) y pulsa “Crear alerta”. Aquí verás las novedades que coincidan.</p></div></div>`;
+    return `<ul class="alerts">${alerts.map((al) => { const n = alertHits(al).length; return `<li><button class="alert-open" data-alertopen="${esc(al.id)}">${ICON.bell}<span>${esc(al.q)}${al.f?.solo ? ' <small>· solo sentencias</small>' : ''}</span>${n ? `<b class="badge">${n} nuevas</b>` : '<small>sin novedades</small>'}</button><button class="icon-btn dark small" data-alertdel="${esc(al.id)}" aria-label="Borrar alerta"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button></li>`; }).join('')}</ul>`;
   }
 
   function colThumbs(c) {
@@ -176,6 +276,8 @@
   function renderColecciones() {
     view.innerHTML = `<h1 class="page-title">Colecciones</h1><p class="page-sub">Tus noticias guardadas, organizadas a tu manera. Se guardan en este dispositivo.</p>
       <div class="toolbar"><button class="btn primary" data-newcol>+ Nueva colección</button><button class="btn" data-export>Exportar copia</button><button class="btn" data-import>Importar copia</button></div>
+      <div class="sec-head"><h2>Alertas</h2></div>${alertsHtml()}
+      <div class="sec-head"><h2>Colecciones</h2></div>
       <div class="col-grid">${cols.map((c) => `<button class="col-card" data-open="${esc(c.id)}">${colThumbs(c)}<div class="body"><b>${esc(c.name)}</b><span class="n">${Object.keys(c.items).length} noticias</span></div></button>`).join('')}</div>`;
   }
   function renderColeccion(id) {
@@ -206,12 +308,23 @@
     render();
     window.scrollTo(0, 0);
   }
-  function updateBadge() { const n = cols.reduce((s, c) => s + Object.keys(c.items).length, 0); $('#colBadge').textContent = n || ''; }
+  function updateBadge() { const n = state.items.length ? alerts.reduce((s, al) => s + alertHits(al).length, 0) : 0; $('#colBadge').textContent = n || ''; }
+
+  // ---------- Compartir ----------
+  async function share(id) {
+    const i = state.byId.get(id) || findSaved(id) || (archive || []).find((x) => x.id === id);
+    if (!i) return;
+    const url = href(i);
+    const text = `${i.title}${i.doc ? ` (${i.doc}${i.court ? ' · ' + i.court : ''})` : ''} · vía ${i.origin || i.source}`;
+    if (navigator.share) { try { await navigator.share({ title: i.title, text, url }); return; } catch (e) { if (e.name === 'AbortError') return; } }
+    try { await navigator.clipboard.writeText(`${text}\n${url}`); toast('Enlace copiado: pégalo donde quieras'); }
+    catch { window.open(`https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`, '_blank', 'noopener'); }
+  }
 
   // ---------- Guardar en colecciones ----------
   let sheetItem = null;
   function openSheet(id) {
-    sheetItem = state.byId.get(id) || findSaved(id);
+    sheetItem = state.byId.get(id) || findSaved(id) || (archive || []).find((x) => x.id === id);
     if (!sheetItem) return;
     $('#sheetNews').textContent = sheetItem.title;
     drawSheet();
@@ -243,9 +356,18 @@
     const t = e.target.closest('button, a'); if (!t) return;
     const d = t.dataset;
     if (d.save) { e.preventDefault(); openSheet(d.save); }
+    else if (d.share) { e.preventDefault(); share(d.share); }
     else if (d.more !== undefined) { state.shown += PAGE; render(); }
     else if (d.f) { state.f[d.f] = d.v; state.shown = PAGE; render(); }
     else if (d.preset) { state.pending = JSON.parse(d.preset); }
+    else if (d.alert !== undefined) {
+      if (alerts.some((x) => x.q === state.q && JSON.stringify(x.f) === JSON.stringify(state.f))) { toast('Ya tienes esa alerta'); return; }
+      alerts.push({ id: 'a' + Date.now().toString(36), q: state.q, f: { ...state.f }, seen: new Date().toISOString() }); saveAlerts(); toast('Alerta creada: verás aquí las novedades');
+    } else if (d.alertopen) {
+      const al = alerts.find((x) => x.id === d.alertopen); if (!al) return;
+      al.seen = new Date().toISOString(); saveAlerts();
+      state.q = al.q; state.f = { ...(al.f || {}) }; state.shown = PAGE; $('#searchbar').hidden = false; $('#q').value = al.q; render(); window.scrollTo(0, 0);
+    } else if (d.alertdel) { alerts = alerts.filter((x) => x.id !== d.alertdel); saveAlerts(); render(); }
     else if (d.open) location.hash = '#coleccion/' + encodeURIComponent(d.open);
     else if (d.go) location.hash = d.go;
     else if (d.newcol !== undefined) {
@@ -279,13 +401,19 @@
     }
   });
 
+  view.addEventListener('change', (e) => {
+    const t = e.target;
+    if (t.dataset.solo !== undefined) { state.f.solo = t.checked; state.shown = PAGE; render(); }
+    else if (t.dataset.date) { state.f[t.dataset.date] = t.value; state.shown = PAGE; render(); }
+  });
+
   // ---------- Búsqueda ----------
   $('#searchToggle').addEventListener('click', () => {
     const bar = $('#searchbar'); bar.hidden = !bar.hidden;
     if (!bar.hidden) { window.scrollTo(0, 0); $('#q').focus(); } else if (state.q) { $('#q').value = ''; state.q = ''; render(); }
   });
   let qt;
-  $('#q').addEventListener('input', (e) => { clearTimeout(qt); qt = setTimeout(() => { state.q = e.target.value.trim(); state.shown = PAGE; state.f = {}; render(); }, 180); });
+  $('#q').addEventListener('input', (e) => { clearTimeout(qt); qt = setTimeout(() => { loadArchive().then(() => state.q && render()); state.q = e.target.value.trim(); state.shown = PAGE; state.f = {}; render(); }, 180); });
 
   // ---------- Carga ----------
   $('#today').textContent = new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' });
@@ -304,6 +432,7 @@
       $('#updated').textContent = 'Sin conexión: mostrando lo último guardado.';
     }
     state.route = '';
+    updateBadge();
     route();
   }
   load();

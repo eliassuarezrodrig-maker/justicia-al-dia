@@ -49,7 +49,9 @@ function classify(i, source) {
   const doc = DOCS.find(([, re]) => re.test(text))?.[0] || '';
   let court = COURTS.find(([, re]) => re.test(text))?.[0] || '';
   if (!court && source.court) court = source.court;
-  return { doc: source.ruling ? (doc || 'Resolución') : (doc && court ? doc : ''), court };
+  const ecli = text.match(/ECLI:[A-Z]{2}:[A-Z]+:\d{4}:\d+[A-Z]?/i)?.[0]?.toUpperCase() || '';
+  const recurso = text.match(/\b(?:recurso|rec\.|procedimiento|asunto)\s+(?:de\s+\S+\s+)?(?:n[ºo°.]*\s*)?(\d{1,6}\/\d{4}|C-\d+\/\d{2})/i)?.[1] || text.match(/\basunto\s+(C-\d+\/\d{2})/i)?.[1] || '';
+  return { ecli, recurso, doc: source.ruling ? (doc || 'Resolución') : (doc && court ? doc : ''), court };
 }
 
 const decode = (s = '') => s
@@ -139,6 +141,30 @@ async function get(url, ms, accept, simple = false) {
   } finally { clearTimeout(timer); }
 }
 
+// Páginas oficiales sin RSS: se leen los enlaces de la página de noticias.
+function parseHtmlList(html, source, pageUrl) {
+  const re = new RegExp(source.linkPattern, 'i');
+  const items = []; const seen = new Set();
+  for (const m of html.matchAll(/<a\b[^>]*href=["']([^"'#]+)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
+    let link; try { link = new URL(decode(m[1]), pageUrl).href; } catch { continue; }
+    if (!re.test(link) || seen.has(link)) continue;
+    const title = strip(m[2]);
+    if (title.length < (source.minTitle || 30)) continue;
+    seen.add(link);
+    // Fecha en el texto cercano (dd/mm/aaaa) si existe.
+    const around = html.slice(Math.max(0, m.index - 400), m.index + m[0].length + 400);
+    const dm = around.match(/(\d{1,2})[\/.-](\d{1,2})[\/.-](20\d{2})/);
+    const date = dm ? new Date(Date.UTC(+dm[3], +dm[2] - 1, +dm[1], 12)).toISOString() : '';
+    items.push({
+      id: link, title, link, summary: '', image: '', date: date || new Date().toISOString(),
+      origin: source.outlet || source.name, originUrl: source.home || pageUrl, sourceId: source.id,
+      topics: Object.entries(TOPICS).filter(([, r]) => r.test(title)).map(([k]) => k),
+    });
+    if (items.length >= (source.max || 20)) break;
+  }
+  return items;
+}
+
 async function fetchSource(source) {
   const urls = source.urls || [source.url];
   let lastErr = '';
@@ -147,7 +173,7 @@ async function fetchSource(source) {
       let xml;
       try { xml = await get(url, 25000, 'application/rss+xml, application/atom+xml, application/xml, text/xml, */*'); }
       catch (e) { if (/HTTP (403|406|415)/.test(e.message)) xml = await get(url, 25000, '*/*', true); else throw e; }
-      const items = parseFeed(xml, { ...source, url });
+      const items = source.type === 'html' ? parseHtmlList(xml, source, url) : parseFeed(xml, { ...source, url });
       if (!items.length) throw new Error('sin noticias legibles');
       return { items, status: { id: source.id, name: source.name, ok: true, count: items.length, url } };
     } catch (e) {
@@ -246,6 +272,40 @@ for (let k = 0; k < needImg.length; k += 10) {
 const statuses = results.map((r) => r.status);
 await mkdir(new URL('data/', ROOT), { recursive: true });
 await writeFile(OUT, JSON.stringify({ updated: new Date().toISOString(), sources: statuses, items: all }));
+
+// Archivo permanente de sentencias y recursos, un archivo por año.
+const ARCH_DIR = new URL('data/sentencias/', ROOT);
+await mkdir(ARCH_DIR, { recursive: true });
+const KEEP = ['id', 'title', 'link', 'url', 'summary', 'image', 'date', 'origin', 'originUrl', 'source', 'scope', 'kind', 'doc', 'court', 'topics', 'ecli', 'recurso'];
+const slim = (i) => Object.fromEntries(KEEP.filter((k) => i[k] !== undefined && i[k] !== '' && !(Array.isArray(i[k]) && !i[k].length)).map((k) => [k, i[k]]));
+const byYear = new Map();
+for (const i of all.filter((i) => i.doc && i.title !== 'Sumario')) {
+  const y = i.date.slice(0, 4);
+  if (!byYear.has(y)) byYear.set(y, []);
+  byYear.get(y).push(i);
+}
+let archIndex = { years: {} };
+try { archIndex = JSON.parse(await readFile(new URL('index.json', ARCH_DIR), 'utf8')); } catch {}
+let archAdded = 0;
+for (const [y, list] of byYear) {
+  const file = new URL(`${y}.json`, ARCH_DIR);
+  let arch = [];
+  try { arch = JSON.parse(await readFile(file, 'utf8')); } catch {}
+  const ids = new Map(arch.map((a, k) => [a.id, k]));
+  const tset = new Set(arch.map((a) => normTitle(a.title)));
+  for (const i of list) {
+    if (ids.has(i.id)) { arch[ids.get(i.id)] = { ...arch[ids.get(i.id)], ...slim(i) }; continue; }
+    const t = normTitle(i.title);
+    if (tset.has(t)) continue;
+    arch.push(slim(i)); tset.add(t); archAdded++;
+  }
+  arch.sort((a, b) => new Date(b.date) - new Date(a.date));
+  await writeFile(file, JSON.stringify(arch));
+  archIndex.years[y] = arch.length;
+}
+archIndex.updated = new Date().toISOString();
+await writeFile(new URL('index.json', ARCH_DIR), JSON.stringify(archIndex));
+console.log(`Archivo de sentencias: +${archAdded} · ${JSON.stringify(archIndex.years)}`);
 
 for (const s of statuses) console.log(`${s.ok ? 'OK ' : 'ERR'} ${s.name}: ${s.ok ? `${s.count} noticias (${s.url})` : s.error}`);
 console.log(`Nuevas: ${added} · Total: ${all.length} · Con foto: ${all.filter((i) => i.image).length} · Fotos buscadas: ${needImg.length}`);

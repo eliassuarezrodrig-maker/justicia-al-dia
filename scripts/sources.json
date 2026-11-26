@@ -35,6 +35,78 @@
     "noImages": true
   },
   {
+    "id": "of-ts",
+    "name": "Tribunal Supremo · Noticias oficiales",
+    "scope": "Nacional",
+    "kind": "Oficial",
+    "outlet": "Poder Judicial",
+    "home": "https://www.poderjudicial.es",
+    "type": "html",
+    "court": "Tribunal Supremo",
+    "urls": [
+      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Tribunal-Supremo/Noticias-Judiciales/"
+    ],
+    "linkPattern": "/Tribunal-Supremo/Noticias-Judiciales/.+"
+  },
+  {
+    "id": "of-cgpj",
+    "name": "Poder Judicial · Noticias oficiales",
+    "scope": "Nacional",
+    "kind": "Oficial",
+    "outlet": "Poder Judicial",
+    "home": "https://www.poderjudicial.es",
+    "type": "html",
+    "urls": [
+      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Noticias-Judiciales/"
+    ],
+    "linkPattern": "/Noticias-Judiciales/.+"
+  },
+  {
+    "id": "of-an",
+    "name": "Audiencia Nacional · Noticias oficiales",
+    "scope": "Nacional",
+    "kind": "Oficial",
+    "outlet": "Poder Judicial",
+    "home": "https://www.poderjudicial.es",
+    "type": "html",
+    "court": "Audiencia Nacional",
+    "urls": [
+      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Audiencia-Nacional/Noticias-Judiciales/"
+    ],
+    "linkPattern": "/Audiencia-Nacional/Noticias-Judiciales/.+"
+  },
+  {
+    "id": "of-tsjc",
+    "name": "TSJ de Canarias · Noticias oficiales",
+    "scope": "Canarias",
+    "kind": "Oficial",
+    "outlet": "Poder Judicial",
+    "home": "https://www.poderjudicial.es",
+    "type": "html",
+    "court": "TSJ de Canarias",
+    "urls": [
+      "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Tribunales-Superiores-de-Justicia/TSJ-Canarias/Noticias-Judiciales-TSJ-Canarias/"
+    ],
+    "linkPattern": "Noticias-Judiciales-TSJ-Canarias/.+"
+  },
+  {
+    "id": "of-tc",
+    "name": "Tribunal Constitucional · Notas de prensa",
+    "scope": "Nacional",
+    "kind": "Oficial",
+    "outlet": "Tribunal Constitucional",
+    "home": "https://www.tribunalconstitucional.es",
+    "type": "html",
+    "court": "Tribunal Constitucional",
+    "ruling": true,
+    "urls": [
+      "https://www.tribunalconstitucional.es/es/salaPrensa/Paginas/default.aspx",
+      "https://www.tribunalconstitucional.es/es/salaPrensa/Paginas/Notas-de-prensa.aspx",
+      "https://www.tribunalconstitucional.es/es/Paginas/default.aspx"
+    ],
+    "linkPattern": "NotasDePrensaDocumentos|salaPrensa/Paginas/.+NP|/NP_"
+  },
+  {
     "id": "confilegal",
     "name": "Confilegal",
     "scope": "Nacional",
@@ -186,6 +258,37 @@
     "scope": "Canarias",
     "kind": "Prensa",
     "url": "https://news.google.com/rss/search?q=(%22TSJ+de+Canarias%22+OR+TSJC+OR+%22Tribunal+Superior+de+Justicia+de+Canarias%22)+(sentencia+OR+recurso+OR+fallo)+when:7d&hl=es&gl=ES&ceid=ES:es"
+  },
+  {
+    "id": "of-curia",
+    "name": "TJUE · Comunicados de prensa (CURIA)",
+    "scope": "Europa",
+    "kind": "Oficial",
+    "outlet": "CURIA",
+    "home": "https://curia.europa.eu",
+    "type": "html",
+    "court": "TJUE",
+    "ruling": true,
+    "urls": [
+      "https://curia.europa.eu/jcms/jcms/Jo2_7052/es/",
+      "https://curia.europa.eu/jcms/jcms/Jo2_7052/"
+    ],
+    "linkPattern": "/jcms/upload/docs/application/pdf/.+cp|/jcms/jcms/p1_",
+    "minTitle": 20
+  },
+  {
+    "id": "of-echr",
+    "name": "TEDH · Comunicados de prensa",
+    "scope": "Europa",
+    "kind": "Oficial",
+    "outlet": "TEDH",
+    "home": "https://www.echr.coe.int",
+    "court": "TEDH",
+    "ruling": true,
+    "urls": [
+      "https://hudoc.echr.coe.int/app/transform/rss?library=echrpress&query=contentsitename%3AECHR&sort=kpdate%20Descending&start=0&length=20",
+      "https://www.echr.coe.int/rss/press"
+    ]
   },
   {
     "id": "gn-europa",
