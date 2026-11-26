@@ -249,7 +249,7 @@
       <button class="btn" data-alert>${ICON.bell} Crear alerta</button>
     </div>
     <p class="hint">Consejo: usa "comillas" para una frase exacta y un guion para excluir (por ejemplo: despido "fuerza mayor" -ERTE).</p>`;
-    renderList(`“${state.q}”`, archive && archive.length ? 'Noticias recientes y archivo de sentencias' : 'Resultados en todas las secciones', base, [
+    renderList(`Búsqueda: ${state.q}`, archive && archive.length ? 'Noticias recientes y archivo de sentencias' : 'Resultados en todas las secciones', base, [
       ['doc', DOC_ORDER, 'Cualquier tipo'],
       ['court', COURT_ORDER, 'Todos los tribunales'],
       ['scope', ['Nacional', 'Canarias', 'Europa', 'Internacional'], 'Todos los ámbitos'],
@@ -274,7 +274,7 @@
     return `<div class="col-thumbs">${cells.join('')}</div>`;
   }
   function renderColecciones() {
-    view.innerHTML = `<h1 class="page-title">Colecciones</h1><p class="page-sub">Tus noticias guardadas, organizadas a tu manera. Se guardan en este dispositivo.</p>
+    view.innerHTML = `<h1 class="page-title">Mis guardados</h1><p class="page-sub">Tus alertas y colecciones. Se guardan en este dispositivo; usa “Exportar copia” para pasarlas a otro.</p>
       <div class="toolbar"><button class="btn primary" data-newcol>+ Nueva colección</button><button class="btn" data-export>Exportar copia</button><button class="btn" data-import>Importar copia</button></div>
       <div class="sec-head"><h2>Alertas</h2></div>${alertsHtml()}
       <div class="sec-head"><h2>Colecciones</h2></div>
