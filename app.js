@@ -92,7 +92,7 @@
   const uniq = (list) => list.filter((v, k, a) => a.indexOf(v) === k);
 
   function renderPortada() {
-    const all = state.items.filter((i) => i.kind !== 'Oficial');
+    const all = state.items.filter((i) => i.kind !== 'Oficial' && (i.scope === 'Nacional' || i.scope === 'Canarias'));
     const pool = withImg(fresh(all, 48)).length >= 5 ? withImg(fresh(all, 48)) : withImg(all);
     const lead = pool[0] || all[0];
     const side = uniq([...pool, ...all]).filter((i) => i !== lead).slice(0, 4);
