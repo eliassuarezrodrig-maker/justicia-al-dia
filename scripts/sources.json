@@ -75,6 +75,6 @@
     "id": "gn-canarias",
     "name": "Prensa · Tribunales en Canarias",
     "group": "Prensa general",
-    "url": "https://news.google.com/rss/search?q=(TSJC+OR+%22Audiencia+Provincial%22)+Canarias+when:3d&hl=es&gl=ES&ceid=ES:es"
+    "url": "https://news.google.com/rss/search?q=(%22TSJ+de+Canarias%22+OR+%22TSJC%22+OR+%22Audiencia+Provincial+de+Las+Palmas%22+OR+%22Audiencia+Provincial+de+Santa+Cruz+de+Tenerife%22+OR+%22juzgado+de+Las+Palmas%22+OR+%22juzgado+de+Santa+Cruz%22)+-TSJCyL+-Castilla+when:3d&hl=es&gl=ES&ceid=ES:es"
   }
 ]

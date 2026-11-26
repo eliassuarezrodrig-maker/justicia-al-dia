@@ -94,7 +94,9 @@
       state.items = data.items || [];
       const up = data.updated ? new Date(data.updated) : null;
       $('#updated').textContent = up ? `Actualizado: ${up.toLocaleDateString('es-ES', { day: 'numeric', month: 'short' })}, ${fmtTime(up)} · ${state.items.length} noticias` : 'Aún sin datos';
-      const groups = [...new Set(state.items.map((i) => i.group))];
+      const ORDER = ['Oficial', 'Prensa jurídica', 'Prensa general'];
+      const groups = [...new Set(state.items.map((i) => i.group))].sort((x, y) => rank(x) - rank(y));
+      function rank(g) { const i = ORDER.indexOf(g); return i < 0 ? 99 : i; }
       const topics = [...new Set(state.items.flatMap((i) => i.topics || []))].sort();
       chips($('#groups'), groups, 'group');
       chips($('#topics'), topics, 'topic');
