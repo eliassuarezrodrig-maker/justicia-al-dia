@@ -7,7 +7,8 @@ const SOURCES = JSON.parse(await readFile(process.env.SOURCES_FILE || new URL('s
 const OUT = new URL('data/news.json', ROOT);
 const KEEP_DAYS = 60;
 const MAX_ITEMS = 2500;
-const MAX_OG_LOOKUPS = 60; // fotos buscadas en la página de la noticia por ejecución
+const MAX_OG_LOOKUPS = 150; // fotos buscadas en la página de la noticia por ejecución
+const MAX_GN_RESOLVE = 250; // enlaces de Google News convertidos al del periódico por ejecución
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36 JusticiaAlDia/1.0';
 
 const TOPICS = {
@@ -134,6 +135,31 @@ async function ogImage(url) {
   } catch { return ''; }
 }
 
+// Google News da un enlace intermedio; esto obtiene el enlace real del periódico.
+async function resolveGN(link) {
+  try {
+    const id = new URL(link).pathname.split('/').pop();
+    const html = await get(`https://news.google.com/articles/${id}?hl=es&gl=ES&ceid=ES:es`, 10000, 'text/html');
+    const sg = html.match(/data-n-a-sg="([^"]+)"/)?.[1];
+    const ts = html.match(/data-n-a-ts="([^"]+)"/)?.[1];
+    if (!sg || !ts) return '';
+    const inner = `["garturlreq",[["X","X",["X","X"],null,null,1,1,"ES:es",null,1,null,null,null,null,null,0,1],"X","X",1,[1,1,1],1,1,null,0,0,null,0],"${id}",${ts},"${sg}"]`;
+    const body = 'f.req=' + encodeURIComponent(JSON.stringify([[['Fbv4je', inner]]]));
+    const ctrl = new AbortController(); const timer = setTimeout(() => ctrl.abort(), 10000);
+    try {
+      const res = await fetch('https://news.google.com/_/DotsSplashUi/data/batchexecute', {
+        method: 'POST', signal: ctrl.signal, body,
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8', 'User-Agent': UA },
+      });
+      if (!res.ok) return '';
+      const text = await res.text();
+      const chunk = JSON.parse(text.split('\n\n')[1]);
+      const url = JSON.parse(chunk[0][2])[1];
+      return /^https?:\/\//.test(url) ? url : '';
+    } finally { clearTimeout(timer); }
+  } catch { return ''; }
+}
+
 // --- Ejecución ---
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const bySource = new Map(SOURCES.map((s) => [s.id, s]));
@@ -172,9 +198,17 @@ const all = [...byId.values()]
   .slice(0, MAX_ITEMS)
   .map((i) => { const s = bySource.get(i.sourceId); return { ...i, source: s.name, scope: s.scope, kind: s.kind }; });
 
-const needImg = all.filter((i) => !i.image && !i.noImage && !i.link.includes('news.google.') && !bySource.get(i.sourceId).noImages).slice(0, MAX_OG_LOOKUPS);
-for (let k = 0; k < needImg.length; k += 8) {
-  await Promise.all(needImg.slice(k, k + 8).map(async (i) => { i.image = await ogImage(i.link); if (!i.image) i.noImage = true; }));
+const needUrl = all.filter((i) => i.link.includes('news.google.') && !i.url && !i.noUrl).slice(0, MAX_GN_RESOLVE);
+let resolved = 0;
+for (let k = 0; k < needUrl.length; k += 4) {
+  await Promise.all(needUrl.slice(k, k + 4).map(async (i) => { i.url = await resolveGN(i.link); if (i.url) resolved++; else i.noUrl = true; }));
+  await sleep(400);
+}
+console.log(`Enlaces de Google News resueltos: ${resolved}/${needUrl.length}`);
+
+const needImg = all.filter((i) => !i.image && !i.noImage && (i.url || !i.link.includes('news.google.')) && !bySource.get(i.sourceId).noImages).slice(0, MAX_OG_LOOKUPS);
+for (let k = 0; k < needImg.length; k += 10) {
+  await Promise.all(needImg.slice(k, k + 10).map(async (i) => { i.image = await ogImage(i.url || i.link); if (!i.image) i.noImage = true; }));
 }
 
 const statuses = results.map((r) => r.status);
