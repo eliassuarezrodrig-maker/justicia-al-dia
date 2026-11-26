@@ -33,5 +33,5 @@ jobs:
             echo "Sin cambios"
           else
             git commit -m "Actualizar noticias $(date -u +'%Y-%m-%d %H:%M') UTC"
-            git push
+            for i in 1 2 3; do git pull --rebase -X theirs && git push && break; sleep 5; done
           fi
