@@ -19,7 +19,9 @@
   if (!Array.isArray(cols)) cols = [{ id: 'leer', name: 'Leer más tarde', items: {}, created: Date.now() }];
   const saveCols = () => { store.set('jad-colecciones', cols); updateBadge(); };
 
-  const state = { items: [], byId: new Map(), q: '', kind: '', topic: '', shown: PAGE, route: 'portada' };
+  const state = { items: [], byId: new Map(), q: '', f: {}, shown: PAGE, route: 'portada' };
+  const DOC_ORDER = ['Sentencia', 'Auto', 'Recurso', 'Resolución'];
+  const COURT_ORDER = ['Tribunal Supremo', 'Tribunal Constitucional', 'Audiencia Nacional', 'TSJ de Canarias', 'Otros TSJ', 'Audiencias provinciales', 'Juzgados', 'DGSJFP', 'TJUE', 'TEDH', 'Cortes internacionales'];
 
   // ---------- Utilidades ----------
   const esc = (s = '') => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -55,7 +57,8 @@
     return `<article class="${cls}" data-id="${esc(i.id)}">
       ${media(i)}
       <div class="body">
-        <div class="meta"><img class="fav" src="${fav(i.originUrl || href(i))}" alt="" loading="lazy"><span class="origin">${esc(i.origin || i.source)}</span><span>· ${ago(i.date)}</span>${variant !== 'row' && i.kind === 'Oficial' ? '<span class="pill">Oficial</span>' : ''}</div>
+        <div class="meta"><img class="fav" src="${fav(i.originUrl || href(i))}" alt="" loading="lazy"><span class="origin">${esc(i.origin || i.source)}</span><span>· ${ago(i.date)}</span></div>
+        ${i.doc ? `<div class="ruling"><span class="pill doc">${esc(i.doc)}</span>${i.court ? `<span class="pill">${esc(i.court)}</span>` : ''}</div>` : (variant !== 'row' && i.kind === 'Oficial' ? '<div class="ruling"><span class="pill">Oficial</span></div>' : '')}
         <h3><a href="${esc(href(i))}" target="_blank" rel="noopener">${esc(i.title)}</a></h3>
         ${i.summary && variant !== 'row' ? `<p class="sum">${esc(i.summary)}</p>` : ''}
         <div class="foot">
@@ -93,8 +96,14 @@
     const used = new Set([lead, ...side].filter(Boolean).map((i) => i.id));
     let html = '';
     if (lead) html += `<section class="hero">${card(lead, 'lead')}<div class="side">${side.map((i) => card(i, 'row')).join('')}</div></section>`;
+    const rs = rulings().filter((i) => !used.has(i.id));
+    const rsPick = uniq([...fresh(rs.filter((i) => i.kind === 'Oficial'), 72).slice(0, 2), ...rs]).slice(0, 6).sort((a, b) => new Date(b.date) - new Date(a.date));
+    if (rsPick.length) {
+      rsPick.forEach((i) => used.add(i.id));
+      html += `<div class="sec-head"><h2>Sentencias y recursos</h2><a href="#sentencias">Ver todo →</a></div><div class="cols">${rsPick.map((i) => card(i, 'row')).join('')}</div>`;
+    }
     for (const [key, s] of Object.entries(SCOPES)) {
-      const list = state.items.filter((i) => i.scope === s.name && i.kind !== 'Oficial' && !used.has(i.id));
+      const list = state.items.filter((i) => i.scope === s.name && i.kind !== 'Oficial' && !i.doc && !used.has(i.id));
       const pick = uniq([...withImg(fresh(list, 72)), ...list]).slice(0, 4).sort((a, b) => new Date(b.date) - new Date(a.date));
       if (!pick.length) continue;
       pick.forEach((i) => used.add(i.id));
@@ -102,7 +111,7 @@
     }
     const docs = state.items.filter((i) => i.kind === 'Oficial' && /BOE|BOC/.test(i.origin)).slice(0, 8);
     if (docs.length) {
-      html += `<div class="sec-head"><h2>Boletines oficiales</h2><a href="#nacional" data-kind="Oficial">Ver todo →</a></div><ul class="doclist">${docs.map((i) =>
+      html += `<div class="sec-head"><h2>Boletines oficiales</h2><a href="#nacional" data-preset='{"kind":"Oficial"}'>Ver todo →</a></div><ul class="doclist">${docs.map((i) =>
         `<li><span class="doc">${esc(i.origin)}</span><div><a href="${esc(href(i))}" target="_blank" rel="noopener">${esc(i.title)}</a><span class="when">${esc(i.source)} · ${ago(i.date)}</span></div></li>`).join('')}</ul>`;
     }
     view.innerHTML = html || '<p class="empty">Aún no hay noticias. La primera actualización llegará pronto.</p>';
@@ -110,20 +119,46 @@
 
   function chipsHtml(values, current, attr, allLabel) {
     return `<div class="chips">${[['', allLabel], ...values.map((v) => [v, v])].map(([v, l]) =>
-      `<button class="chip${current === v ? ' on' : ''}" data-${attr}="${esc(v)}">${esc(l)}</button>`).join('')}</div>`;
+      `<button class="chip${current === v ? ' on' : ''}" data-f="${attr}" data-v="${esc(v)}">${esc(l)}</button>`).join('')}</div>`;
   }
 
-  function renderList(title, sub, base) {
+  // filters: [[campo, valores, etiqueta "todos"]]; los temas son una lista dentro de cada noticia.
+  function renderList(title, sub, base, filters) {
+    filters = filters || [['kind', KIND_ORDER, 'Todas las fuentes'], ['topics', null, 'Todos los temas']];
     let list = base;
-    const kinds = KIND_ORDER.filter((k) => base.some((i) => i.kind === k));
-    const topics = [...new Set(base.flatMap((i) => i.topics || []))].sort();
-    if (state.kind) list = list.filter((i) => i.kind === state.kind);
-    if (state.topic) list = list.filter((i) => (i.topics || []).includes(state.topic));
-    let html = `<h1 class="page-title">${esc(title)}</h1><p class="page-sub">${esc(sub)} · ${list.length} noticias</p>`;
-    html += `<div class="filters">${chipsHtml(kinds, state.kind, 'kind', 'Todas las fuentes')}${topics.length ? chipsHtml(topics, state.topic, 'topic', 'Todos los temas') : ''}</div>`;
+    let chips = '';
+    for (const [field, order, allLabel] of filters) {
+      const present = field === 'topics' ? [...new Set(base.flatMap((i) => i.topics || []))].sort() : (order || []).filter((v) => base.some((i) => i[field] === v));
+      if (present.length > 1 || state.f[field]) chips += chipsHtml(present, state.f[field] || '', field, allLabel);
+      const v = state.f[field];
+      if (v) list = list.filter((i) => (field === 'topics' ? (i.topics || []).includes(v) : i[field] === v));
+    }
+    let html = `<h1 class="page-title">${esc(title)}</h1><p class="page-sub">${esc(sub)} · ${list.length} ${list.length === 1 ? 'resultado' : 'resultados'}</p>`;
+    if (chips) html += `<div class="filters">${chips}</div>`;
     html += list.length ? `<div class="grid">${list.slice(0, state.shown).map((i) => card(i)).join('')}</div>` : '<p class="empty">No hay noticias con estos filtros.</p>';
     if (list.length > state.shown) html += `<button class="more" data-more>Ver más (${list.length - state.shown})</button>`;
     view.innerHTML = html;
+  }
+
+  // Quita noticias casi iguales (la misma sentencia contada por varios medios).
+  const words = (t) => new Set(norm(t).split(/[^a-z0-9ñ]+/).filter((w) => w.length > 3));
+  function dedupe(list) {
+    const kept = [];
+    for (const i of list) {
+      const w = words(i.title);
+      const dup = kept.slice(-80).some((k) => { const kw = k._w; let n = 0; for (const x of w) if (kw.has(x)) n++; return n / Math.max(1, Math.min(w.size, kw.size)) >= 0.6; });
+      if (!dup) { i._w = w; kept.push(i); }
+    }
+    return kept;
+  }
+  let rulingsCache = null;
+  const rulings = () => rulingsCache || (rulingsCache = dedupe(state.items.filter((i) => i.doc && i.title !== 'Sumario')));
+  function renderSentencias() {
+    renderList('Sentencias y recursos', 'Sentencias, autos, recursos y resoluciones de los tribunales', rulings(), [
+      ['doc', DOC_ORDER, 'Todo'],
+      ['court', COURT_ORDER, 'Todos los tribunales'],
+      ['scope', ['Nacional', 'Canarias', 'Europa', 'Internacional'], 'Todos los ámbitos'],
+    ]);
   }
 
   function renderSearch() {
@@ -157,6 +192,7 @@
     document.querySelectorAll('#tabs a').forEach((a) => a.classList.toggle('on', a.dataset.tab === r.split('/')[0].replace('coleccion', 'colecciones').replace('coleccioneses', 'colecciones')));
     if (state.q) return renderSearch();
     if (r === 'portada') return renderPortada();
+    if (r === 'sentencias') return renderSentencias();
     if (SCOPES[r]) return renderList(SCOPES[r].name, SCOPES[r].sub, state.items.filter((i) => i.scope === SCOPES[r].name));
     if (r === 'colecciones') return renderColecciones();
     if (r.startsWith('coleccion/')) return renderColeccion(decodeURIComponent(r.slice(10)));
@@ -164,7 +200,7 @@
   }
   function route() {
     const r = (location.hash || '#portada').slice(1) || 'portada';
-    if (r !== state.route) { state.kind = state.pendingKind || ''; state.topic = ''; state.shown = PAGE; state.pendingKind = ''; }
+    if (r !== state.route) { state.f = state.pending || {}; state.shown = PAGE; state.pending = null; }
     state.route = r;
     if (state.q) { state.q = ''; $('#q').value = ''; $('#searchbar').hidden = true; }
     render();
@@ -208,9 +244,8 @@
     const d = t.dataset;
     if (d.save) { e.preventDefault(); openSheet(d.save); }
     else if (d.more !== undefined) { state.shown += PAGE; render(); }
-    else if (d.kind !== undefined && t.classList.contains('chip')) { state.kind = d.kind; state.shown = PAGE; render(); }
-    else if (d.kind !== undefined && t.tagName === 'A') { state.pendingKind = d.kind; }
-    else if (d.topic !== undefined) { state.topic = d.topic; state.shown = PAGE; render(); }
+    else if (d.f) { state.f[d.f] = d.v; state.shown = PAGE; render(); }
+    else if (d.preset) { state.pending = JSON.parse(d.preset); }
     else if (d.open) location.hash = '#coleccion/' + encodeURIComponent(d.open);
     else if (d.go) location.hash = d.go;
     else if (d.newcol !== undefined) {
@@ -250,7 +285,7 @@
     if (!bar.hidden) { window.scrollTo(0, 0); $('#q').focus(); } else if (state.q) { $('#q').value = ''; state.q = ''; render(); }
   });
   let qt;
-  $('#q').addEventListener('input', (e) => { clearTimeout(qt); qt = setTimeout(() => { state.q = e.target.value.trim(); state.shown = PAGE; state.kind = ''; state.topic = ''; render(); }, 180); });
+  $('#q').addEventListener('input', (e) => { clearTimeout(qt); qt = setTimeout(() => { state.q = e.target.value.trim(); state.shown = PAGE; state.f = {}; render(); }, 180); });
 
   // ---------- Carga ----------
   $('#today').textContent = new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' });

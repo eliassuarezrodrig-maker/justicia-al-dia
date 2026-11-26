@@ -1,13 +1,15 @@
 [
   {
     "id": "boe-tc",
-    "name": "BOE · Tribunal Constitucional",
+    "name": "BOE · Sentencias y autos del Constitucional",
     "scope": "Nacional",
     "kind": "Oficial",
     "outlet": "BOE",
     "home": "https://www.boe.es",
     "url": "https://www.boe.es/rss/boe.php?s=T",
-    "noImages": true
+    "noImages": true,
+    "ruling": true,
+    "court": "Tribunal Constitucional"
   },
   {
     "id": "boe-1",
@@ -17,6 +19,19 @@
     "outlet": "BOE",
     "home": "https://www.boe.es",
     "url": "https://www.boe.es/rss/boe.php?s=1",
+    "noImages": true
+  },
+  {
+    "id": "boe-dgsjfp",
+    "name": "BOE · Recursos resueltos por la DGSJFP",
+    "scope": "Nacional",
+    "kind": "Oficial",
+    "outlet": "BOE",
+    "home": "https://www.boe.es",
+    "url": "https://www.boe.es/rss/boe.php?s=3",
+    "include": "Seguridad Jur[ií]dica|recurso",
+    "ruling": true,
+    "court": "DGSJFP",
     "noImages": true
   },
   {
@@ -90,6 +105,27 @@
     "url": "https://news.google.com/rss/search?q=(%22Audiencia+Nacional%22+OR+%22Fiscal%C3%ADa+General%22+OR+%22Ministerio+de+Justicia%22)+when:3d&hl=es&gl=ES&ceid=ES:es"
   },
   {
+    "id": "gn-casacion",
+    "name": "Supremo · Casación y doctrina",
+    "scope": "Nacional",
+    "kind": "Prensa",
+    "url": "https://news.google.com/rss/search?q=(%22recurso+de+casaci%C3%B3n%22+OR+%22fija+doctrina%22+OR+%22unifica+doctrina%22+OR+%22sienta+doctrina%22)+Supremo+when:7d&hl=es&gl=ES&ceid=ES:es"
+  },
+  {
+    "id": "gn-tc-recursos",
+    "name": "Constitucional · Amparo e inconstitucionalidad",
+    "scope": "Nacional",
+    "kind": "Prensa",
+    "url": "https://news.google.com/rss/search?q=(%22recurso+de+amparo%22+OR+%22recurso+de+inconstitucionalidad%22+OR+%22cuesti%C3%B3n+de+inconstitucionalidad%22)+when:7d&hl=es&gl=ES&ceid=ES:es"
+  },
+  {
+    "id": "gn-an-sentencias",
+    "name": "Audiencia Nacional · Sentencias",
+    "scope": "Nacional",
+    "kind": "Prensa",
+    "url": "https://news.google.com/rss/search?q=%22Audiencia+Nacional%22+(sentencia+OR+condena+OR+absuelve+OR+recurso)+when:3d&hl=es&gl=ES&ceid=ES:es"
+  },
+  {
     "id": "staj",
     "name": "STAJ",
     "scope": "Nacional",
@@ -145,11 +181,32 @@
     "url": "https://news.google.com/rss/search?q=(site:canarias7.es+OR+site:laprovincia.es+OR+site:eldia.es+OR+site:canariasahora.es+OR+site:diariodeavisos.elespanol.com)+(juzgado+OR+tribunal+OR+sentencia+OR+fiscal%C3%ADa+OR+condenado)+when:3d&hl=es&gl=ES&ceid=ES:es"
   },
   {
+    "id": "gn-tsjc-sentencias",
+    "name": "TSJ de Canarias · Sentencias",
+    "scope": "Canarias",
+    "kind": "Prensa",
+    "url": "https://news.google.com/rss/search?q=(%22TSJ+de+Canarias%22+OR+TSJC+OR+%22Tribunal+Superior+de+Justicia+de+Canarias%22)+(sentencia+OR+recurso+OR+fallo)+when:7d&hl=es&gl=ES&ceid=ES:es"
+  },
+  {
     "id": "gn-europa",
     "name": "Justicia europea",
     "scope": "Europa",
     "kind": "Prensa",
     "url": "https://news.google.com/rss/search?q=(TJUE+OR+%22Tribunal+de+Justicia+de+la+UE%22+OR+%22Tribunal+de+Justicia+de+la+Uni%C3%B3n+Europea%22+OR+TEDH+OR+%22Tribunal+Europeo+de+Derechos+Humanos%22+OR+%22Fiscal%C3%ADa+Europea%22)+when:3d&hl=es&gl=ES&ceid=ES:es"
+  },
+  {
+    "id": "gn-tjue-sentencias",
+    "name": "TJUE · Sentencias y cuestiones prejudiciales",
+    "scope": "Europa",
+    "kind": "Prensa",
+    "url": "https://news.google.com/rss/search?q=(TJUE+OR+%22Tribunal+de+Justicia+de+la+UE%22)+(sentencia+OR+%22cuesti%C3%B3n+prejudicial%22+OR+dictamina+OR+falla)+when:7d&hl=es&gl=ES&ceid=ES:es"
+  },
+  {
+    "id": "gn-tedh-sentencias",
+    "name": "TEDH · Sentencias",
+    "scope": "Europa",
+    "kind": "Prensa",
+    "url": "https://news.google.com/rss/search?q=(TEDH+OR+%22Tribunal+Europeo+de+Derechos+Humanos%22+OR+Estrasburgo)+(sentencia+OR+condena+OR+demanda)+when:7d&hl=es&gl=ES&ceid=ES:es"
   },
   {
     "id": "gn-ue-derecho",

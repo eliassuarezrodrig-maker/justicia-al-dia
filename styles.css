@@ -188,3 +188,8 @@ button { font: inherit; color: inherit; touch-action: manipulation; -webkit-tap-
 .lead .foot { margin-top: 0; padding-top: 10px; }
 .lead .ph span { display: none; }
 .lead .ph img.fav { width: 64px; height: 64px; opacity: .9; margin-bottom: 140px; }
+
+/* Sentencias */
+.ruling { display: flex; gap: 6px; flex-wrap: wrap; }
+.pill.doc { background: var(--text); color: var(--bg); }
+.lead .pill { background: rgba(255,255,255,.18); color: #fff; }

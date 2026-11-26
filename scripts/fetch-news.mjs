@@ -23,6 +23,35 @@ const TOPICS = {
   'Violencia de género': /\b(violencia de g[eé]nero|violencia machista|maltrato|orden de alejamiento)/i,
 };
 
+// Tipo de resolución y tribunal, para la sección "Sentencias y recursos".
+const DOCS = [
+  ['Sentencia', /\bsentencias?\b/i],
+  ['Auto', /\b(un auto|el auto|mediante auto|en un auto|autos? del|auto de (procesamiento|apertura|prisi[oó]n))\b/i],
+  ['Recurso', /\b(recursos?|casaci[oó]n|amparo|apelaci[oó]n|cuesti[oó]n de inconstitucionalidad|cuesti[oó]n prejudicial)\b/i],
+  ['Sentencia', /\b(condena|condenad[oa]s?|absuelve|absuelt[oa]s?|avala|anula|tumba|revoca|dictamina|ratifica|desestima|ampara|da la raz[oó]n|fallo)\b/i],
+  ['Resolución', /\b(resoluci[oó]n de la Direcci[oó]n General de Seguridad Jur[ií]dica|DGSJFP|doctrina del Tribunal Econ[oó]mico|dictamen)\b/i],
+];
+const COURTS = [
+  ['Tribunal Supremo', /\b(Tribunal Supremo|el Supremo|TS\b|Sala (de lo )?(Penal|Civil|Social|Contencioso|Tercera|Segunda|Primera|Cuarta) del Supremo)/i],
+  ['Tribunal Constitucional', /\b(Tribunal Constitucional|el Constitucional|TC\b|recurso de amparo|inconstitucionalidad)/i],
+  ['Audiencia Nacional', /\bAudiencia Nacional\b/i],
+  ['TSJ de Canarias', /\b(TSJ de Canarias|TSJC\b|Tribunal Superior de Justicia de Canarias)/i],
+  ['Otros TSJ', /\b(TSJ|Tribunal Superior de Justicia)\b/i],
+  ['Audiencias provinciales', /\bAudiencia Provincial\b/i],
+  ['Juzgados', /\bjuzgados?\b|\bjueza?\b/i],
+  ['TJUE', /\b(TJUE|Tribunal de Justicia de la (UE|Uni[oó]n Europea)|tribunal de Luxemburgo)/i],
+  ['TEDH', /\b(TEDH|Tribunal Europeo de Derechos Humanos|Estrasburgo)/i],
+  ['Cortes internacionales', /\b(Corte Penal Internacional|Corte Internacional de Justicia|CPI\b|Corte Interamericana)/i],
+  ['DGSJFP', /\b(Direcci[oó]n General de Seguridad Jur[ií]dica|DGSJFP)\b/i],
+];
+function classify(i, source) {
+  const text = `${i.title} ${i.summary || ''}`;
+  const doc = DOCS.find(([, re]) => re.test(text))?.[0] || '';
+  let court = COURTS.find(([, re]) => re.test(text))?.[0] || '';
+  if (!court && source.court) court = source.court;
+  return { doc: source.ruling ? (doc || 'Resolución') : (doc && court ? doc : ''), court };
+}
+
 const decode = (s = '') => s
   .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
   .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'")
@@ -77,6 +106,7 @@ function parseFeed(xml, source) {
       summary = '';
     }
     if (!title || !link) continue;
+    if (source.include && !new RegExp(source.include, 'i').test(title)) continue;
     const d = new Date(date);
     const text = `${title} ${summary}`;
     items.push({
@@ -172,9 +202,9 @@ const direct = Promise.all(SOURCES.filter((s) => !isGN(s)).map(fetchSource));
 const gn = [];
 for (const s of SOURCES.filter(isGN)) {
   let r = await fetchSource(s);
-  if (!r.status.ok && /429/.test(r.status.error)) { await sleep(10000); r = await fetchSource(s); }
+  if (!r.status.ok && /429/.test(r.status.error)) { await sleep(process.env.FAST ? 0 : 10000); r = await fetchSource(s); }
   gn.push(r);
-  await sleep(2500);
+  await sleep(process.env.FAST ? 0 : 2500);
 }
 const results = [...(await direct), ...gn];
 
@@ -196,7 +226,7 @@ const all = [...byId.values()]
   .filter((i) => new Date(i.date).getTime() >= cutoff)
   .sort((a, b) => new Date(b.date) - new Date(a.date))
   .slice(0, MAX_ITEMS)
-  .map((i) => { const s = bySource.get(i.sourceId); return { ...i, source: s.name, scope: s.scope, kind: s.kind }; });
+  .map((i) => { const s = bySource.get(i.sourceId); return { ...i, source: s.name, scope: s.scope, kind: s.kind, ...classify(i, s) }; });
 
 const needUrl = all.filter((i) => i.link.includes('news.google.') && !i.url && !i.noUrl).slice(0, MAX_GN_RESOLVE);
 let resolved = 0;
